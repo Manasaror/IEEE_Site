@@ -1,0 +1,69 @@
+---
+/**
+ * Navbar
+ * Shared site navigation. Structure only at this stage — visual design
+ * will be implemented in a later pass. Active route is highlighted via
+ * `aria-current="page"`, which is also hooked for future styling.
+ */
+import Container from '@components/layout/Container.astro';
+import { primaryNav } from '@data/navigation';
+
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string): boolean {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<header>
+  <Container as="nav" class="flex items-center justify-between py-4">
+    <a href="/" class="font-bold" aria-label={`${'IEEE GBPIET Student Branch'} — Home`}>
+      IEEE GBPIET
+    </a>
+
+    <button
+      type="button"
+      class="md:hidden"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+      aria-label="Toggle navigation menu"
+      data-nav-toggle
+    >
+      Menu
+    </button>
+
+    <ul id="primary-navigation" class="hidden items-center gap-6 md:flex">
+      {
+        primaryNav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+              data-active={isActive(item.href)}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <a href="/join" class="hidden md:inline-block">
+      Join IEEE
+    </a>
+  </Container>
+</header>
+
+<script>
+  // Minimal structural behavior for the mobile menu toggle.
+  // No visual/animation treatment yet — that belongs to a later pass.
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const menu = document.getElementById('primary-navigation');
+
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+  });
+</script>

@@ -1,0 +1,24 @@
+---
+/**
+ * SectionHeading
+ * Consistent heading block for page sections (eyebrow + title + optional
+ * description). Enforces heading-level hierarchy via the `level` prop
+ * instead of letting each section hardcode <h2>/<h3>.
+ */
+interface Props {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  level?: 2 | 3 | 4;
+  class?: string;
+}
+
+const { eyebrow, title, description, level = 2, class: className = '' } = Astro.props;
+const Tag = `h${level}` as 'h2' | 'h3' | 'h4';
+---
+
+<div class:list={['flex flex-col gap-2', className]}>
+  {eyebrow && <p>{eyebrow}</p>}
+  <Tag>{title}</Tag>
+  {description && <p>{description}</p>}
+</div>

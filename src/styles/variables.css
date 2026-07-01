@@ -1,0 +1,36 @@
+/**
+ * Global design tokens.
+ *
+ * These CSS custom properties mirror the values configured in
+ * `tailwind.config.ts`. Keep both in sync when the design system changes.
+ * Prefer Tailwind utility classes in components; use these variables only
+ * where raw CSS is required (e.g. third-party overrides, inline SVGs).
+ */
+:root {
+  /* Color tokens */
+  --color-primary: #2563eb; /* Primary Blue */
+  --color-accent: #facc15; /* Golden Yellow */
+  --color-white: #ffffff;
+  --color-background-soft: #f8fafc;
+  --color-text: #1f2937; /* Dark Text */
+  --color-text-muted: #6b7280; /* Muted Text */
+  --color-border: #d1d5db;
+
+  /* Typography */
+  --font-family-primary:
+    Helvetica, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Spacing / layout */
+  --container-max-width: 1280px;
+  --container-padding: 1rem;
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+}

@@ -1,0 +1,36 @@
+---
+/**
+ * EventCard
+ * Displays a single event or workshop. Minimal placeholder markup —
+ * visual design deferred.
+ */
+import Card from '@components/ui/Card.astro';
+import { formatDate } from '@utils/formatDate';
+import type { EventItem } from '@/types/content';
+
+interface Props {
+  event: EventItem;
+}
+
+const { event } = Astro.props;
+---
+
+<Card as="article" class="flex flex-col gap-3 p-4">
+  <img
+    src={event.imageUrl ?? '/images/event-placeholder.svg'}
+    alt={`Cover image for ${event.title}`}
+    width="400"
+    height="225"
+    loading="lazy"
+  />
+  <h3>{event.title}</h3>
+  {event.date && <p>{formatDate(event.date)}</p>}
+  {event.location && <p>{event.location}</p>}
+  <p>{event.description}</p>
+
+  {event.registrationUrl && (
+    <a href={event.registrationUrl} target="_blank" rel="noopener noreferrer">
+      Register
+    </a>
+  )}
+</Card>

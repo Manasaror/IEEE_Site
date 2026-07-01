@@ -1,0 +1,41 @@
+---
+/**
+ * TeamCard
+ * Displays a single executive committee / team member. Minimal
+ * placeholder markup — visual design deferred.
+ */
+import Card from '@components/ui/Card.astro';
+import type { TeamMember } from '@/types/content';
+
+interface Props {
+  member: TeamMember;
+}
+
+const { member } = Astro.props;
+---
+
+<Card as="article" class="flex flex-col gap-3 p-4">
+  <img
+    src={member.photoUrl ?? '/images/team-placeholder.svg'}
+    alt={`Portrait of ${member.name}`}
+    width="200"
+    height="200"
+    loading="lazy"
+  />
+  <h3>{member.name}</h3>
+  <p>{member.role}</p>
+  {member.domain && <p>{member.domain}</p>}
+
+  <div class="flex gap-3">
+    {member.linkedinUrl && (
+      <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+    )}
+    {member.githubUrl && (
+      <a href={member.githubUrl} target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    )}
+  </div>
+</Card>

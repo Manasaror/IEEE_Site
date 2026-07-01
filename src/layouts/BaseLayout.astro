@@ -1,0 +1,52 @@
+---
+/**
+ * BaseLayout
+ * Global layout inherited by every page. Provides shared navigation,
+ * footer, metadata/SEO, a responsive container, and the global stylesheet.
+ *
+ * Usage:
+ *   ---
+ *   import BaseLayout from '@layouts/BaseLayout.astro';
+ *   ---
+ *   <BaseLayout title="Projects & Workshops">
+ *     <h1>Projects & Workshops</h1>
+ *   </BaseLayout>
+ */
+import '@styles/globals.css';
+import Seo from '@components/common/Seo.astro';
+import Navbar from '@components/navigation/Navbar.astro';
+import Footer from '@components/layout/Footer.astro';
+import type { SeoProps } from '@/types/seo';
+
+interface Props extends SeoProps {}
+
+const { title, description, canonicalUrl, ogImage, ogType, noindex } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <Seo
+      title={title}
+      description={description}
+      canonicalUrl={canonicalUrl}
+      ogImage={ogImage}
+      ogType={ogType}
+      noindex={noindex}
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <a href="#main-content" class="sr-only-focusable">Skip to main content</a>
+
+    <Navbar />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
