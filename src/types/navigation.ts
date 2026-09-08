@@ -5,4 +5,6 @@ export interface NavItem {
   href: string;
   /** Marks the item as opening in a new tab. */
   external?: boolean;
+  description?: string;
+  children?: NavItem[];
 }

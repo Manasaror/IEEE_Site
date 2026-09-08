@@ -1,12 +1,9 @@
 import type { Config } from 'tailwindcss';
 
 /**
- * Global Tailwind design tokens for the IEEE GBPIET Student Branch website.
+ * IEEE GBPIET Student Branch — Tailwind Design System
  *
- * Color and typography values are sourced from the project's design system.
- * Do NOT hardcode hex values in components — always reference these tokens
- * (or the CSS variables in `src/styles/variables.css`) so the palette can be
- * updated from a single source of truth.
+ * Sourced from official IEEE Brand Guidelines & modern engineering aesthetics.
  */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,ts,tsx,md,mdx}'],
@@ -14,47 +11,57 @@ export default {
   theme: {
     extend: {
       colors: {
+        dark: {
+          DEFAULT: '#292929', // PRIMARY BACKGROUND
+          secondary: '#303030', // SECONDARY BACKGROUND / CARDS
+          darker: '#1F1F1F', // DARKER BACKGROUND / FOOTER
+        },
+        nav: {
+          blue: '#1E5F88', // NAVIGATION BLUE
+        },
+        ieee: {
+          blue: '#1E5F88',
+          accent: '#0077B6', // IEEE ACCENT BLUE
+          bright: '#1689C9', // OPTIONAL BRIGHT ACCENT
+          deep: '#103952',
+        },
         primary: {
-          DEFAULT: '#2563EB', // Primary Blue
-          foreground: '#FFFFFF',
+          DEFAULT: '#0077B6',
+          foreground: '#F5F5F5',
+          blue: '#1E5F88',
+          accent: '#0077B6',
         },
-        accent: {
-          DEFAULT: '#FACC15', // Golden Yellow
-          foreground: '#1F2937',
+        content: {
+          primary: '#F5F5F5', // PRIMARY TEXT
+          secondary: '#C9C9C9', // SECONDARY TEXT
+          muted: '#9CA3AF', // MUTED TEXT
         },
-        background: {
-          DEFAULT: '#FFFFFF',
-          soft: '#F8FAFC',
-        },
-        text: {
-          DEFAULT: '#1F2937', // Dark Text
-          muted: '#6B7280', // Muted Text
+        surface: {
+          DEFAULT: '#292929',
+          card: '#303030',
+          darker: '#1F1F1F',
+          border: '#3A3A3A',
         },
         border: {
-          DEFAULT: '#D1D5DB',
+          DEFAULT: '#3A3A3A',
+          subtle: '#3A3A3A',
+          accent: '#0077B6',
         },
       },
       fontFamily: {
-        sans: ['Helvetica', 'Helvetica Neue', 'Arial', 'sans-serif'],
-      },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '1.5rem',
-          lg: '2rem',
-          xl: '2.5rem',
-        },
-      },
-      screens: {
-        xs: '480px',
-        // sm, md, lg, xl, 2xl use Tailwind defaults (tablet/laptop/desktop)
+        sans: ['Inter', 'Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['Inter', 'Plus Jakarta Sans', 'sans-serif'],
+        mono: ['Space Grotesk', 'ui-monospace', 'monospace'],
+        tech: ['Space Grotesk', 'sans-serif'],
       },
       borderRadius: {
-        sm: '0.25rem',
-        md: '0.5rem',
-        lg: '0.75rem',
-        xl: '1rem',
+        DEFAULT: '0.5rem', // 8px
+        sm: '0.375rem', // 6px
+        md: '0.5rem', // 8px
+        lg: '0.625rem', // 10px
+      },
+      maxWidth: {
+        container: '1280px',
       },
     },
   },

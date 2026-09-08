@@ -16,11 +16,7 @@ interface FadeInProps {
   className?: string;
 }
 
-export default function FadeIn({
-  children,
-  delay = 0,
-  className,
-}: PropsWithChildren<FadeInProps>) {
+export default function FadeIn({ children, delay = 0, className }: PropsWithChildren<FadeInProps>) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 12 }}

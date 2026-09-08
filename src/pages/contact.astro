@@ -1,21 +1,15 @@
 ---
 /**
- * Contact — /contact
- * Placeholder heading with the ContactForm island wired in. Full page
- * layout/design is deferred — this verifies the form island hydrates.
+ * Contact & Inquiries — /contact
+ * Official contact page for IEEE GBPIET Student Branch.
  */
 import BaseLayout from '@layouts/BaseLayout.astro';
-import Container from '@components/layout/Container.astro';
-import ContactForm from '@components/forms/ContactForm.tsx';
+import ContactSection from '@components/home/ContactSection.astro';
 ---
 
 <BaseLayout
-  title="Contact"
-  description="Get in touch with the IEEE GBPIET Student Branch."
+  title="Contact Us | IEEE GBPIET Student Branch"
+  description="Reach out to the IEEE GBPIET Student Branch for membership inquiries, research collaborations, workshop enrollments, and sponsorship opportunities."
 >
-  <Container class="py-16">
-    <h1>Contact Us</h1>
-    <p>Content coming soon.</p>
-    <ContactForm client:load />
-  </Container>
+  <ContactSection />
 </BaseLayout>

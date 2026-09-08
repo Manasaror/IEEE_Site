@@ -28,6 +28,12 @@ const { title, description, canonicalUrl, ogImage, ogType, noindex } = Astro.pro
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <Seo
       title={title}
       description={description}
@@ -38,7 +44,9 @@ const { title, description, canonicalUrl, ogImage, ogType, noindex } = Astro.pro
     />
     <slot name="head" />
   </head>
-  <body>
+  <body
+    class="flex min-h-screen flex-col bg-[#292929] text-[#F5F5F5] selection:bg-[#0077B6]/30 selection:text-white"
+  >
     <a href="#main-content" class="sr-only-focusable">Skip to main content</a>
 
     <Navbar />

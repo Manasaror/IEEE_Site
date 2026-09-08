@@ -5,7 +5,6 @@
  * provided, otherwise as a native <button>. Visual styling intentionally
  * left minimal — a later design pass will flesh out variants/sizes.
  */
-import { cn } from '@utils/cn';
 import type { ButtonVariant, ButtonSize } from '@/types/content';
 
 interface Props {
@@ -26,7 +25,8 @@ const {
   disabled = false,
 } = Astro.props;
 
-const baseClasses = 'inline-flex items-center justify-center rounded-md font-medium transition-colors';
+const baseClasses =
+  'inline-flex items-center justify-center rounded-md font-medium transition-colors';
 const Tag = href ? 'a' : 'button';
 ---
 

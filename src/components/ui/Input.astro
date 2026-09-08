@@ -62,9 +62,11 @@ const describedBy = error ? `${id}-error` : undefined;
     )
   }
 
-  {error && (
-    <p id={`${id}-error`} role="alert">
-      {error}
-    </p>
-  )}
+  {
+    error && (
+      <p id={`${id}-error`} role="alert">
+        {error}
+      </p>
+    )
+  }
 </div>

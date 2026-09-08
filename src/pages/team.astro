@@ -1,19 +1,29 @@
 ---
 /**
- * Team — /team
- * Placeholder heading only. Populate `src/data/team.ts` and render
- * <TeamCard /> items here once the executive committee roster is ready.
+ * Executive Leadership & Committee — /team
+ * Complete roster of IEEE GBPIET Student Branch leadership.
  */
 import BaseLayout from '@layouts/BaseLayout.astro';
-import Container from '@components/layout/Container.astro';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import TeamCard from '@components/cards/TeamCard.astro';
+import { teamMembers } from '@data/team';
 ---
 
 <BaseLayout
-  title="Team"
-  description="Meet the executive committee of the IEEE GBPIET Student Branch."
+  title="Our Team | IEEE GBPIET Student Branch"
+  description="Meet the executive committee, branch counselor, and student leads driving the IEEE GBPIET Student Branch."
 >
-  <Container class="py-16">
-    <h1>Team</h1>
-    <p>Content coming soon.</p>
-  </Container>
+  <div class="bg-[#292929] py-16 text-[#F5F5F5] sm:py-20">
+    <div class="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
+      <SectionHeading
+        title="Our Team /"
+        subtitle="Meet the executive committee, faculty advisor, and technical heads guiding the IEEE GBPIET Student Branch."
+      />
+
+      <!-- Team Members Grid -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
+        {teamMembers.map((member) => <TeamCard member={member} />)}
+      </div>
+    </div>
+  </div>
 </BaseLayout>
