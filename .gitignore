@@ -4,9 +4,6 @@ dist/
 .vercel/
 .netlify/
 
-# Astro
-.astro/
-
 # Dependencies
 node_modules/
 
