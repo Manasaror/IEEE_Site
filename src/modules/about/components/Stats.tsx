@@ -2,20 +2,20 @@ import { statsData } from '@/data/about/content';
 
 export default function AboutStats() {
   return (
-    <section className="relative overflow-hidden bg-black py-20 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-black py-10 sm:py-12 lg:py-14">
       {/* Background glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#00629b]/[0.06] blur-[120px]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         {/* Section header */}
-        <div className="mb-14 text-center sm:mb-16">
+        <div className="mb-8 text-center sm:mb-10">
           <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#00629b]">
             Our Impact
           </p>
-          <h2 className="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
+          <h2 className="text-3xl font-black tracking-[-0.04em] text-white sm:text-4xl lg:text-5xl">
             By the <span className="text-[#00629b]">Numbers.</span>
           </h2>
-          <div className="mx-auto mt-6 flex w-fit items-center gap-2">
+          <div className="mx-auto mt-4 flex w-fit items-center gap-2">
             <span className="h-1 w-12 rounded-full bg-[#00629b]" />
             <span className="h-1 w-3 rounded-full bg-yellow-400" />
           </div>
