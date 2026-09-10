@@ -17,14 +17,16 @@ export function TeamsPage() {
             Meet Our Team
           </h1>
           <p className="mt-4 text-lg text-white/65 leading-relaxed max-w-[520px] mx-auto">
-            The passionate minds driving innovation, knowledge, and community
-            across disciplines.
+            The passionate minds driving innovation, knowledge, and community across disciplines.
           </p>
         </div>
       </section>
 
       {/* ── Zigzag member grid ── */}
-      <section id="teams-grid" className="relative max-w-[900px] mx-auto px-8 py-16 max-sm:px-4 max-sm:py-10">
+      <section
+        id="teams-grid"
+        className="relative max-w-[900px] mx-auto px-8 py-16 max-sm:px-4 max-sm:py-10"
+      >
         {/* Vertical connector line (hidden on mobile) */}
         <div
           className="absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 pointer-events-none max-md:hidden"

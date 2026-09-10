@@ -69,7 +69,10 @@ export function MemberCard({ member, index }: { member: TeamMember; index: numbe
       />
 
       {/* ── Avatar ── */}
-      <div className="relative shrink-0 w-24 h-24 max-sm:w-22 max-sm:h-22 grid place-items-center" aria-hidden="true">
+      <div
+        className="relative shrink-0 w-24 h-24 max-sm:w-22 max-sm:h-22 grid place-items-center"
+        aria-hidden="true"
+      >
         <span
           className="
             text-2xl max-sm:text-xl font-extrabold tracking-wide text-white
