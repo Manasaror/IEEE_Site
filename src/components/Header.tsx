@@ -42,7 +42,6 @@ export default function Header() {
       "
     >
       {/* Thin IEEE blue line */}
-      <div className="absolute inset-x-0 top-0 h-[3px] bg-[#00629b]" />
 
       {/* Navbar container */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
