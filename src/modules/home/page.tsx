@@ -4,6 +4,7 @@ import Stats from './components/stats';
 import Whowedo from './components/whatwedo';
 import UpcomingEvents from './components/UpcomingEvents';
 import Gallery from './components/Gallery';
+import JoinIeee from './components/join.CTA';
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Whowedo />
       <UpcomingEvents />
       <Gallery />
+      <JoinIeee />
     </div>
   );
 }
