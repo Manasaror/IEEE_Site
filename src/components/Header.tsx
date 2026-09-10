@@ -9,24 +9,16 @@ export default function Header() {
   // Mobile menu state
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // -------------------------------------------------------
-  // Lock body scroll when mobile menu is open
-  // -------------------------------------------------------
+  // Lock page scrolling while mobile menu is open
   useEffect(() => {
-    if (mobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
 
     return () => {
       document.body.style.overflow = '';
     };
   }, [mobileMenuOpen]);
 
-  // -------------------------------------------------------
-  // Navigation links
-  // -------------------------------------------------------
+  // Navbar links
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
@@ -39,8 +31,8 @@ export default function Header() {
     <header
       className="
         fixed
+        inset-x-0
         top-0
-        left-0
         z-50
         w-full
         border-b
@@ -49,19 +41,22 @@ export default function Header() {
         backdrop-blur-md
       "
     >
-      {/* ---------------------------------------------------
-          Thin IEEE blue line at the top
-          --------------------------------------------------- */}
-      <div className="absolute left-0 top-0 h-[3px] w-full bg-[#00629b]" />
+      {/* Thin IEEE blue line */}
+      <div className="absolute inset-x-0 top-0 h-[3px] bg-[#00629b]" />
 
-      {/* ---------------------------------------------------
-          NAVBAR CONTAINER
-          --------------------------------------------------- */}
+      {/* Navbar container */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
-        {/* =================================================
-            LEFT - LOGO + BRAND
-            ================================================= */}
-        <Link to="/" className="flex items-center gap-2 sm:gap-3">
+        {/* =========================
+            LOGO / BRAND
+            ========================= */}
+        <Link
+          to="/"
+          className="flex items-center gap-2 sm:gap-3"
+          onClick={() => {
+            setMobileMenuOpen(false);
+            setAdminOpen(false);
+          }}
+        >
           <img
             src="/images/IeeeLogo.webp"
             alt="IEEE Logo"
@@ -70,14 +65,13 @@ export default function Header() {
 
           <div className="text-lg font-bold tracking-tight sm:text-2xl">
             <span className="text-[#00629b]">IEEE</span>
-
             <span className="ml-1 text-white">GBPIET</span>
           </div>
         </Link>
 
-        {/* =================================================
-            MIDDLE - DESKTOP NAVIGATION
-            ================================================= */}
+        {/* =========================
+            DESKTOP NAVIGATION
+            ========================= */}
         <nav className="hidden items-center gap-6 lg:flex lg:gap-8">
           {navLinks.map((link) => (
             <Link
@@ -115,17 +109,17 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* =================================================
-            RIGHT - ADMIN + HAMBURGER
-            ================================================= */}
+        {/* =========================
+            RIGHT SIDE
+            ========================= */}
         <div className="flex items-center gap-2">
-          {/* -------------------------------------------------
-              ADMIN BUTTON
-              Desktop only
-              ------------------------------------------------- */}
+          {/* Desktop Admin */}
           <div className="relative hidden lg:block">
             <button
-              onClick={() => setAdminOpen(!adminOpen)}
+              type="button"
+              onClick={() => setAdminOpen((prev) => !prev)}
+              aria-expanded={adminOpen}
+              aria-label="Open admin menu"
               className="
                 flex
                 items-center
@@ -143,17 +137,11 @@ export default function Header() {
 
               <ChevronDown
                 size={16}
-                className={`
-                  transition-transform
-                  duration-200
-                  ${adminOpen ? 'rotate-180' : ''}
-                `}
+                className={`transition-transform duration-200 ${adminOpen ? 'rotate-180' : ''}`}
               />
             </button>
 
-            {/* -------------------------------------------------
-                ADMIN DROPDOWN
-                ------------------------------------------------- */}
+            {/* Admin dropdown */}
             {adminOpen && (
               <div
                 className="
@@ -170,6 +158,7 @@ export default function Header() {
                 "
               >
                 <button
+                  type="button"
                   className="
                     flex
                     w-full
@@ -187,19 +176,18 @@ export default function Header() {
                   "
                 >
                   <User size={18} />
-
                   <span>Login</span>
                 </button>
               </div>
             )}
           </div>
 
-          {/* -------------------------------------------------
-              HAMBURGER BUTTON
-              Mobile + Tablet only
-              ------------------------------------------------- */}
+          {/* Mobile / Tablet hamburger */}
           <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            type="button"
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileMenuOpen}
             className="
               flex
               items-center
@@ -213,45 +201,44 @@ export default function Header() {
               hover:text-white
               lg:hidden
             "
-            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X size={26} strokeWidth={2} /> : <Menu size={26} strokeWidth={2} />}
           </button>
         </div>
       </div>
 
-      {/* =====================================================
-          MOBILE MENU OVERLAY
-          ===================================================== */}
+      {/* =========================
+          MOBILE MENU
+          ========================= */}
       <div
         className={`
           fixed
-          inset-0
+          inset-x-0
+          bottom-0
           top-16
           z-40
-          transition-all
-          duration-300
-          sm:top-20
           lg:hidden
-          ${mobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'}
+          sm:top-20
+          ${mobileMenuOpen ? 'visible opacity-100' : 'invisible pointer-events-none opacity-0'}
         `}
       >
-        {/* ---------------------------------------------------
-            Dark backdrop
-            --------------------------------------------------- */}
-        <div
+        {/* Backdrop */}
+        <button
+          type="button"
+          aria-label="Close menu"
+          onClick={() => setMobileMenuOpen(false)}
           className="
             absolute
             inset-0
-            bg-black/50
+            h-full
+            w-full
+            cursor-default
+            bg-black/60
             backdrop-blur-sm
           "
-          onClick={() => setMobileMenuOpen(false)}
         />
 
-        {/* ---------------------------------------------------
-            Mobile menu panel
-            --------------------------------------------------- */}
+        {/* Menu panel */}
         <div
           className={`
             relative
@@ -259,14 +246,14 @@ export default function Header() {
             border-white/10
             bg-[#080b0f]/95
             backdrop-blur-xl
-            transition-all
+            transition-transform
             duration-300
-            ${mobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}
+            ${mobileMenuOpen ? 'translate-y-0' : '-translate-y-4'}
           `}
         >
           <nav className="flex flex-col px-6 py-4">
-            {/* Mobile navigation links */}
-            {navLinks.map((link, index) => (
+            {/* Mobile links */}
+            {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
@@ -287,9 +274,6 @@ export default function Header() {
                   hover:pl-2
                   hover:text-[#00629b]
                 "
-                style={{
-                  animationDelay: `${index * 50}ms`,
-                }}
               >
                 <span>{link.name}</span>
 
@@ -305,10 +289,10 @@ export default function Header() {
               </Link>
             ))}
 
-            {/* -------------------------------------------------
-                Mobile Login Button
-                ------------------------------------------------- */}
+            {/* Mobile Login */}
             <button
+              type="button"
+              onClick={() => setMobileMenuOpen(false)}
               className="
                 mb-2
                 mt-4
@@ -328,10 +312,8 @@ export default function Header() {
                 hover:bg-[#007bbd]
                 active:scale-[0.98]
               "
-              onClick={() => setMobileMenuOpen(false)}
             >
               <User size={20} />
-
               <span>Login</span>
             </button>
           </nav>
