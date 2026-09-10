@@ -1,4 +1,7 @@
-import { ModulePlaceholder } from '@/components/ModulePlaceholder';
-export function ActivitiesPage() {
-  return <ModulePlaceholder name="Activities" />;
+export default function ActivitiesPage() {
+  return (
+    <div>
+      <h1> Activies </h1>
+    </div>
+  );
 }

@@ -1,5 +1,5 @@
 import { teamMembers } from '@/data/teams/members';
-import { MemberCard } from '@/modules/teams/components/MemberCard';
+import { MemberCard } from './components/MemberCard';
 
 export function TeamsPage() {
   return (
