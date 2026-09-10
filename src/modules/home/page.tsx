@@ -1,5 +1,7 @@
-import { ModulePlaceholder } from '@/components/ModulePlaceholder';
-
-export function HomePage() {
-  return <ModulePlaceholder name="Home" />;
+export default function HomePage() {
+  return (
+    <div>
+      <h1> HOme </h1>
+    </div>
+  );
 }

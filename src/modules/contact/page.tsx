@@ -1,5 +1,7 @@
-import { ModulePlaceholder } from '@/components/ModulePlaceholder';
-
-export function ContactPage() {
-  return <ModulePlaceholder name="Contact" />;
+export default function ContactPage() {
+  return (
+    <div>
+      <h1> Contact </h1>
+    </div>
+  );
 }

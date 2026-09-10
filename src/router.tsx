@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { AboutPage } from '@/modules/about/page';
-import { ActivitiesPage } from '@/modules/activities/page';
-import { ContactPage } from '@/modules/contact/page';
-import { HomePage } from '@/modules/home/page';
+import AboutPage from '@/modules/about/page';
+import ActivitiesPage from '@/modules/activities/page';
+import ContactPage from '@/modules/contact/page';
+import HomePage from '@/modules/home/page';
 import { TeamsPage } from '@/modules/teams/page';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 
