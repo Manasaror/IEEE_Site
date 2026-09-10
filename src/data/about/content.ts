@@ -1,15 +1,14 @@
 // -------------------------------------------------------------
-//  About Page � Structured Data Layer
+//  About Page - Structured Data Layer
 //  IEEE GBPIET Student Branch
 // -------------------------------------------------------------
 
 // -- Hero ------------------------------------------------------
 export const heroContent = {
-  badge: 'IEEE at a Glance',
-  heading: 'Advancing Technology',
-  headingAccent: 'for Humanity.',
+  heading: 'IEEE',
+  headingAccent: 'GBPIET',
   subtitle:
-    'IEEE GBPIET Student Branch � a community of innovators, engineers, and thinkers shaping the future of technology at Govind Ballabh Pant Institute of Engineering and Technology.',
+    'IEEE GBPIET Student Branch - a community of innovators, engineers, and thinkers shaping the future of technology at Govind Ballabh Pant Institute of Engineering and Technology.',
   cta: { label: 'Join the Branch', href: '/contact' },
   ctaSecondary: { label: 'Our Activities', href: '/activities' },
 };
@@ -27,7 +26,7 @@ export const strategicPlan = {
   mission: {
     tag: 'Mission',
     heading: 'Our Mission',
-    body: 'To foster technical excellence, professional growth, and service to the community through hands-on engineering, continuous learning, and collaborative innovation � empowering every member to engineer a better world.',
+    body: 'To foster technical excellence, professional growth, and service to the community through hands-on engineering, continuous learning, and collaborative innovation - empowering every member to engineer a better world.',
   },
   vision: {
     tag: 'Vision',
@@ -55,7 +54,7 @@ export const ethicsValues: ValueItem[] = [
   {
     title: 'Integrity & Ethics',
     description:
-      'We act with honesty, transparency and professional responsibility � guided by the IEEE Code of Ethics in all our work and interactions.',
+      'We act with honesty, transparency and professional responsibility - guided by the IEEE Code of Ethics in all our work and interactions.',
     iconId: 'integrity',
     accent: 'cyan',
   },
@@ -93,6 +92,7 @@ export const ethicsValues: ValueItem[] = [
 export interface LeaderItem {
   name: string;
   role: string;
+  image?: string;
   department: string;
   initials: string;
   isPrimary?: boolean;
@@ -117,6 +117,7 @@ export const leadershipData: LeaderItem[] = [
     role: 'Vice Chairperson',
     department: 'Executive Committee',
     initials: 'VC',
+    image: '/images/sample-vc.jpg',
   },
   {
     name: 'Secretary',
@@ -191,5 +192,40 @@ export const societiesData: SocietyItem[] = [
     glowColor: 'bg-pink-500/10',
     badgeColor: 'bg-pink-500/10 text-pink-400 border-pink-500/20',
     iconId: 'wie',
+  },
+];
+
+// -- Quick Links -----------------------------------------------
+export interface QuickLinkItem {
+  label: string;
+  href: string;
+  description: string;
+  isExternal?: boolean;
+}
+
+export const quickLinks: QuickLinkItem[] = [
+  {
+    label: 'Join IEEE Global',
+    href: 'https://www.ieee.org/membership/join/index.html',
+    description: 'Become part of the world largest technical professional organization.',
+    isExternal: true,
+  },
+  {
+    label: 'Read Our Bylaws',
+    href: 'https://www.ieee.org/about/help/structure.html',
+    description: 'Governance rules and operating procedures of IEEE student branches.',
+    isExternal: true,
+  },
+  {
+    label: 'Contact the Branch',
+    href: '/contact',
+    description: 'Get in touch with our student branch executive committee.',
+    isExternal: false,
+  },
+  {
+    label: 'Explore Activities',
+    href: '/activities',
+    description: 'Browse workshops, technical sessions, and upcoming events.',
+    isExternal: false,
   },
 ];
