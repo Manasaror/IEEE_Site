@@ -14,10 +14,10 @@ export function TeamGrid({ title, members }: TeamGridProps) {
   return (
     <section
       id={`teams-${title.toLowerCase().replace(/\s+/g, '-')}`}
-      className="relative max-w-[900px] mx-auto px-8 py-12 max-sm:px-4 max-sm:py-8"
+      className="relative max-w-6xl mx-auto px-6 py-12 max-sm:px-4 max-sm:py-8"
     >
-      {/* Section heading */}
-      <h2 className="flex justify-center mb-10 max-sm:mb-6">
+      {/* Section Heading */}
+      <h2 className="flex justify-center mb-12 max-sm:mb-8">
         <span
           className="
             inline-block px-8 py-3 max-sm:px-5 max-sm:py-2.5
@@ -26,25 +26,15 @@ export function TeamGrid({ title, members }: TeamGridProps) {
             shadow-[0_4px_20px_rgba(0,102,153,0.4)]
             cursor-default select-none
             transition-all duration-300
-            hover:scale-110 hover:shadow-[0_8px_30px_rgba(0,102,153,0.5)]
+            hover:scale-105 hover:shadow-[0_8px_30px_rgba(0,102,153,0.5)]
           "
         >
           {title}
         </span>
       </h2>
 
-      {/* Vertical connector line (hidden on mobile) */}
-      <div
-        className="absolute left-1/2 top-24 bottom-0 w-0.5 -translate-x-1/2 pointer-events-none max-md:hidden"
-        style={{
-          background:
-            'linear-gradient(to bottom, transparent 0%, #006699 8%, #3399cc 50%, #006699 92%, transparent 100%)',
-          opacity: 0.25,
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="flex flex-col gap-12 max-sm:gap-8 relative z-10 max-md:items-center">
+      {/* 2-Column Responsive Grid Layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 items-start relative z-10">
         {members.map((member, i) => (
           <MemberCard key={member.name} member={member} index={i} />
         ))}
