@@ -5,7 +5,7 @@ export default function HomePage() {
       <div
         className="absolute inset-0 bg-cover bg-center scale-105 animate-[zoom_15s_ease-in-out_infinite_alternate]"
         style={{
-          backgroundImage: "url('/images/BannerAbout.webp')",
+          backgroundImage: "url('/images/hero.jpg')",
         }}
       />
 
@@ -22,7 +22,7 @@ export default function HomePage() {
           <img
             src="/images/IeeeLogo.webp"
             alt="IEEE Logo"
-            className="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain"
+            className="h-18 w-18 sm:h-14 sm:w-14 md:h-28 md:w-28 object-contain"
           />
 
           <h1 className="animate-[fadeUp_1s_ease-out] text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
