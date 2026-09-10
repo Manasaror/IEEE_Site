@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { User, ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [adminOpen, setAdminOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -77,36 +76,8 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* RIGHT - ADMIN + HAMBURGER */}
+        {/* RIGHT - HAMBURGER */}
         <div className="flex items-center gap-2">
-          {/* Admin - Desktop only */}
-          <div className="relative hidden lg:block">
-            <button
-              onClick={() => setAdminOpen(!adminOpen)}
-              className={`flex items-center gap-1 rounded-full p-2 transition-all duration-200 ${
-                scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/20'
-              }`}
-            >
-              <User size={22} strokeWidth={1.8} />
-
-              <ChevronDown
-                size={16}
-                className={`transition-transform duration-200 ${adminOpen ? 'rotate-180' : ''}`}
-              />
-            </button>
-
-            {/* DROPDOWN */}
-            {adminOpen && (
-              <div className="absolute right-0 top-14 w-44 rounded-xl border border-gray-100 bg-white p-2 shadow-lg">
-                <button className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-blue-600">
-                  <User size={18} />
-
-                  <span>Login</span>
-                </button>
-              </div>
-            )}
-          </div>
-
           {/* Hamburger - Mobile/Tablet only */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -154,15 +125,6 @@ export default function Header() {
                 />
               </a>
             ))}
-
-            {/* Mobile Login Button */}
-            <button
-              className="mt-4 mb-2 flex items-center justify-center gap-3 rounded-xl bg-[#00629b] px-6 py-3.5 text-base font-semibold text-white transition-all duration-200 hover:bg-[#007bbd] active:scale-[0.98]"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <User size={20} />
-              <span>Login</span>
-            </button>
           </nav>
         </div>
       </div>
