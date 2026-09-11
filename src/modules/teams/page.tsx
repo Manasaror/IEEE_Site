@@ -1,6 +1,7 @@
 import { teamMembers } from '@/data/teams/members';
 import { TeamHero } from './components/TeamHero';
 import { TeamGrid } from './components/TeamGrid';
+import { PreviousMember } from './components/previousmember';
 
 export function TeamsPage() {
   const executiveMembers = teamMembers
@@ -20,10 +21,13 @@ export function TeamsPage() {
       </div>
 
       {/* Foreground Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 pb-16">
         <TeamHero />
         <TeamGrid title="Executive Committee" members={executiveMembers} />
         <TeamGrid title="Student Committee" members={studentMembers} />
+
+        {/* Previous Year Members Dropdown (Sabse Niche) */}
+        <PreviousMember />
       </div>
     </div>
   );
