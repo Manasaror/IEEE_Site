@@ -22,7 +22,15 @@ export default function Header() {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Activities', href: '/activities' },
+
+    {
+      name: 'Activities',
+      dropdown: [
+        { name: 'Events', href: '/activities/events' },
+        { name: 'Robotics', href: '/activities/robotics' },
+      ],
+    },
+
     { name: 'Teams', href: '/teams' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -41,10 +49,9 @@ export default function Header() {
         backdrop-blur-md
       "
     >
-      {/* Thin IEEE blue line */}
-
       {/* Navbar container */}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
+
         {/* =========================
             LOGO / BRAND
             ========================= */}
@@ -73,38 +80,138 @@ export default function Header() {
             ========================= */}
         <nav className="hidden items-center gap-6 lg:flex lg:gap-8">
           {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.href}
-              className="
-                group
-                relative
-                text-base
-                font-medium
-                text-white/75
-                transition-colors
-                duration-200
-                hover:text-white
-                lg:text-lg
-              "
-            >
-              {link.name}
+            <div key={link.name} className="relative group">
 
-              {/* Hover underline */}
-              <span
-                className="
-                  absolute
-                  -bottom-2
-                  left-0
-                  h-0.5
-                  w-0
-                  bg-[#00629b]
-                  transition-all
-                  duration-300
-                  group-hover:w-full
-                "
-              />
-            </Link>
+              {/* Normal navigation link */}
+              {!link.dropdown && (
+                <Link
+                  to={link.href}
+                  className="
+                    relative
+                    text-base
+                    font-medium
+                    text-white/75
+                    transition-colors
+                    duration-200
+                    hover:text-white
+                    lg:text-lg
+                  "
+                >
+                  {link.name}
+
+                  {/* Hover underline */}
+                  <span
+                    className="
+                      absolute
+                      -bottom-2
+                      left-0
+                      h-0.5
+                      w-0
+                      bg-[#00629b]
+                      transition-all
+                      duration-300
+                      group-hover:w-full
+                    "
+                  />
+                </Link>
+              )}
+
+              {/* Activities dropdown */}
+              {link.dropdown && (
+                <>
+                  <button
+                    type="button"
+                    className="
+                      flex
+                      items-center
+                      gap-1
+                      text-base
+                      font-medium
+                      text-white/75
+                      transition-colors
+                      duration-200
+                      hover:text-white
+                      lg:text-lg
+                    "
+                  >
+                    {link.name}
+
+                    <ChevronDown
+                      size={16}
+                      className="
+                        transition-transform
+                        duration-200
+                        group-hover:rotate-180
+                      "
+                    />
+                  </button>
+
+                  {/* Dropdown menu */}
+                  <div
+                    className="
+                      invisible
+                      absolute
+                      left-1/2
+                      top-full
+                      mt-3
+                      w-44
+                      -translate-x-1/2
+                      translate-y-2
+                      rounded-xl
+                      border
+                      border-white/10
+                      bg-[#080b0f]
+                      p-2
+                      opacity-0
+                      shadow-xl
+                      transition-all
+                      duration-200
+                      group-hover:visible
+                      group-hover:translate-y-0
+                      group-hover:opacity-100
+                    "
+                  >
+                    {/* Events */}
+                    <Link
+                      to="/activities/events"
+                      className="
+                        block
+                        rounded-lg
+                        px-4
+                        py-3
+                        text-sm
+                        font-medium
+                        text-white/70
+                        transition-colors
+                        hover:bg-white/10
+                        hover:text-white
+                      "
+                    >
+                      Events
+                    </Link>
+
+                    {/* Robotics */}
+                    <Link
+                      to="/activities/robotics"
+                      className="
+                        block
+                        rounded-lg
+                        px-4
+                        py-3
+                        text-sm
+                        font-medium
+                        text-white/70
+                        transition-colors
+                        hover:bg-white/10
+                        hover:text-white
+                      "
+                    >
+                      Robotics
+                    </Link>
+                  </div>
+                </>
+              )}
+            </div>
           ))}
         </nav>
 
@@ -112,6 +219,7 @@ export default function Header() {
             RIGHT SIDE
             ========================= */}
         <div className="flex items-center gap-2">
+
           {/* Desktop Admin */}
           <div className="relative hidden lg:block">
             <button
@@ -136,7 +244,9 @@ export default function Header() {
 
               <ChevronDown
                 size={16}
-                className={`transition-transform duration-200 ${adminOpen ? 'rotate-180' : ''}`}
+                className={`transition-transform duration-200 ${
+                  adminOpen ? 'rotate-180' : ''
+                }`}
               />
             </button>
 
@@ -201,7 +311,11 @@ export default function Header() {
               lg:hidden
             "
           >
-            {mobileMenuOpen ? <X size={26} strokeWidth={2} /> : <Menu size={26} strokeWidth={2} />}
+            {mobileMenuOpen ? (
+              <X size={26} strokeWidth={2} />
+            ) : (
+              <Menu size={26} strokeWidth={2} />
+            )}
           </button>
         </div>
       </div>
@@ -218,9 +332,14 @@ export default function Header() {
           z-40
           lg:hidden
           sm:top-20
-          ${mobileMenuOpen ? 'visible opacity-100' : 'invisible pointer-events-none opacity-0'}
+          ${
+            mobileMenuOpen
+              ? 'visible opacity-100'
+              : 'invisible pointer-events-none opacity-0'
+          }
         `}
       >
+
         {/* Backdrop */}
         <button
           type="button"
@@ -247,45 +366,109 @@ export default function Header() {
             backdrop-blur-xl
             transition-transform
             duration-300
-            ${mobileMenuOpen ? 'translate-y-0' : '-translate-y-4'}
+            ${
+              mobileMenuOpen
+                ? 'translate-y-0'
+                : '-translate-y-4'
+            }
           `}
         >
           <nav className="flex flex-col px-6 py-4">
+
             {/* Mobile links */}
             {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="
-                  group
-                  flex
-                  items-center
-                  justify-between
-                  border-b
-                  border-white/10
-                  py-4
-                  text-lg
-                  font-medium
-                  text-white
-                  transition-all
-                  duration-200
-                  hover:pl-2
-                  hover:text-[#00629b]
-                "
-              >
-                <span>{link.name}</span>
+              <div key={link.name}>
 
-                <ChevronDown
-                  size={16}
-                  className="
-                    -rotate-90
-                    text-white/30
-                    transition-colors
-                    group-hover:text-[#00629b]
-                  "
-                />
-              </Link>
+                {/* Normal mobile link */}
+                {!link.dropdown && (
+                  <Link
+                    to={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="
+                      group
+                      flex
+                      items-center
+                      justify-between
+                      border-b
+                      border-white/10
+                      py-4
+                      text-lg
+                      font-medium
+                      text-white
+                      transition-all
+                      duration-200
+                      hover:pl-2
+                      hover:text-[#00629b]
+                    "
+                  >
+                    <span>{link.name}</span>
+
+                    <ChevronDown
+                      size={16}
+                      className="
+                        -rotate-90
+                        text-white/30
+                        transition-colors
+                        group-hover:text-[#00629b]
+                      "
+                    />
+                  </Link>
+                )}
+
+                {/* Activities mobile section */}
+                {link.dropdown && (
+                  <>
+                    <div
+                      className="
+                        border-b
+                        border-white/10
+                        py-4
+                        text-lg
+                        font-medium
+                        text-white
+                      "
+                    >
+                      {link.name}
+                    </div>
+
+                    <div className="border-b border-white/10 pl-4">
+
+                      {/* Events */}
+                      <Link
+                        to="/activities/events"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="
+                          block
+                          py-3
+                          text-base
+                          text-white/70
+                          transition-colors
+                          hover:text-[#00629b]
+                        "
+                      >
+                        Events
+                      </Link>
+
+                      {/* Robotics */}
+                      <Link
+                        to="/activities/robotics"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="
+                          block
+                          py-3
+                          text-base
+                          text-white/70
+                          transition-colors
+                          hover:text-[#00629b]
+                        "
+                      >
+                        Robotics
+                      </Link>
+
+                    </div>
+                  </>
+                )}
+              </div>
             ))}
 
             {/* Mobile Login */}
@@ -315,6 +498,7 @@ export default function Header() {
               <User size={20} />
               <span>Login</span>
             </button>
+
           </nav>
         </div>
       </div>

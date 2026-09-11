@@ -2,40 +2,67 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { ActivityCard } from './components/ActivityCard';
+import { ActivityDetailCard } from './components/ActivityDetailedCard';
 import { activities } from '@/data/activities/items';
 
-const branches = ['CSE', 'CSE-AIML', 'Biotechnology', 'Electrical', 'Electronics'];
+const branches = [
+  'CSE',
+  'CSE-AIML',
+  'Biotechnology',
+  'Electrical',
+  'Electronics',
+];
 
 const categories = ['All', 'Workshops', 'Projects'];
 
-export default function ActivitiesPage() {
+export default function EventsPage() {
   const [selectedBranch, setSelectedBranch] = useState('CSE');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Selected activity for detailed view
+  const [selectedActivity, setSelectedActivity] = useState<
+    (typeof activities)[number] | null
+  >(null);
+
   const cardDeckRef = useRef<HTMLDivElement>(null);
+
   const touchStartX = useRef<number | null>(null);
   const touchStartY = useRef<number | null>(null);
 
+  /*
+   * FILTER ACTIVITIES
+   */
   const filteredActivities = useMemo(() => {
     return activities.filter((activity) => {
       const branchMatch = activity.branch === selectedBranch;
 
-      const categoryMatch = selectedCategory === 'All' || activity.category === selectedCategory;
+      const categoryMatch =
+        selectedCategory === 'All' ||
+        activity.category === selectedCategory;
 
       return branchMatch && categoryMatch;
     });
   }, [selectedBranch, selectedCategory]);
 
+  /*
+   * RESET ACTIVE CARD WHEN FILTER CHANGES
+   */
   useEffect(() => {
     setActiveIndex(0);
   }, [selectedBranch, selectedCategory]);
 
   /*
-    DESKTOP:
-    Mouse wheel changes cards while cursor is over deck.
-    Page itself does not scroll.
-  */
+   * CLOSE DETAIL VIEW WHEN FILTER CHANGES
+   */
+  useEffect(() => {
+    setSelectedActivity(null);
+  }, [selectedBranch, selectedCategory]);
+
+  /*
+   * DESKTOP:
+   * Mouse wheel changes cards while cursor is over deck.
+   */
   useEffect(() => {
     const deck = cardDeckRef.current;
 
@@ -59,9 +86,13 @@ export default function ActivitiesPage() {
       scrolling = true;
 
       if (event.deltaY > 0) {
-        setActiveIndex((prev) => (prev === filteredActivities.length - 1 ? 0 : prev + 1));
+        setActiveIndex((prev) =>
+          prev === filteredActivities.length - 1 ? 0 : prev + 1,
+        );
       } else if (event.deltaY < 0) {
-        setActiveIndex((prev) => (prev === 0 ? filteredActivities.length - 1 : prev - 1));
+        setActiveIndex((prev) =>
+          prev === 0 ? filteredActivities.length - 1 : prev - 1,
+        );
       }
 
       setTimeout(() => {
@@ -69,7 +100,9 @@ export default function ActivitiesPage() {
       }, 650);
     };
 
-    deck.addEventListener('wheel', handleWheel, { passive: false });
+    deck.addEventListener('wheel', handleWheel, {
+      passive: false,
+    });
 
     return () => {
       deck.removeEventListener('wheel', handleWheel);
@@ -77,16 +110,20 @@ export default function ActivitiesPage() {
   }, [filteredActivities.length]);
 
   /*
-    MOBILE:
-    Swipe left  -> next card
-    Swipe right -> previous card
-  */
-  const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+   * MOBILE:
+   * Swipe left  -> next card
+   * Swipe right -> previous card
+   */
+  const handleTouchStart = (
+    event: React.TouchEvent<HTMLDivElement>,
+  ) => {
     touchStartX.current = event.touches[0].clientX;
     touchStartY.current = event.touches[0].clientY;
   };
 
-  const handleTouchEnd = (event: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchEnd = (
+    event: React.TouchEvent<HTMLDivElement>,
+  ) => {
     if (
       touchStartX.current === null ||
       touchStartY.current === null ||
@@ -119,36 +156,72 @@ export default function ActivitiesPage() {
     }
   };
 
+  /*
+   * NEXT CARD
+   */
   const nextCard = () => {
     if (filteredActivities.length < 2) {
       return;
     }
 
-    setActiveIndex((prev) => (prev === filteredActivities.length - 1 ? 0 : prev + 1));
+    setActiveIndex((prev) =>
+      prev === filteredActivities.length - 1 ? 0 : prev + 1,
+    );
   };
 
+  /*
+   * PREVIOUS CARD
+   */
   const previousCard = () => {
     if (filteredActivities.length < 2) {
       return;
     }
 
-    setActiveIndex((prev) => (prev === 0 ? filteredActivities.length - 1 : prev - 1));
+    setActiveIndex((prev) =>
+      prev === 0 ? filteredActivities.length - 1 : prev - 1,
+    );
   };
 
+  /*
+   * BRANCH CHANGE
+   */
   const handleBranchChange = (branch: string) => {
     setSelectedBranch(branch);
     setActiveIndex(0);
   };
 
+  /*
+   * CATEGORY CHANGE
+   */
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
     setActiveIndex(0);
   };
 
+  /*
+   * OPEN DETAIL
+   */
+  const handleActivityClick = (
+    activity: (typeof activities)[number],
+  ) => {
+    setSelectedActivity(activity);
+  };
+
+  /*
+   * CLOSE DETAIL
+   */
+  const handleCloseDetail = () => {
+    setSelectedActivity(null);
+  };
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-black px-4 pb-24 pt-28 sm:px-8 sm:pb-28 sm:pt-32">
-      {/* Background */}
+
+      {/* =========================
+          BACKGROUND
+          ========================= */}
       <div className="pointer-events-none absolute inset-0">
+
         <div className="absolute left-1/2 top-20 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-[#00629b]/10 blur-[100px] sm:h-[500px] sm:w-[500px] sm:blur-[120px]" />
 
         <div className="absolute -left-40 top-1/2 h-[250px] w-[250px] rounded-full bg-[#00629b]/5 blur-[80px] sm:h-[350px] sm:w-[350px] sm:blur-[100px]" />
@@ -165,35 +238,49 @@ export default function ActivitiesPage() {
         />
       </div>
 
+      {/* =========================
+          MAIN CONTENT
+          ========================= */}
       <div className="relative mx-auto max-w-7xl">
-        {/* Heading */}
+
+        {/* =========================
+            HEADING
+            ========================= */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
+
           <p className="mb-3 text-xs font-bold tracking-[0.3em] text-[#008dcc] sm:mb-4 sm:text-sm sm:tracking-[0.4em]">
             IEEE GBPIET
           </p>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Explore Our
+
             <span className="block bg-gradient-to-r from-[#00629b] via-[#008dcc] to-white bg-clip-text text-transparent">
               Activities
             </span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-white/50 sm:mt-6 sm:text-lg sm:leading-7">
-            Discover workshops, competitions and projects happening across our student branches.
+            Discover workshops, competitions and projects happening
+            across our student branches.
           </p>
 
           <div className="mx-auto mt-7 flex items-center justify-center gap-3 sm:mt-8">
+
             <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#00629b] sm:w-16" />
 
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#008dcc]" />
 
             <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#00629b] sm:w-16" />
+
           </div>
         </div>
 
-        {/* Branch Filter */}
+        {/* =========================
+            BRANCH FILTER
+            ========================= */}
         <div className="mb-5 flex justify-center sm:mb-6">
+
           <div
             className="flex max-w-full gap-1.5 overflow-x-auto rounded-2xl border border-white/10 bg-[#080b0f]/80 p-2 shadow-2xl backdrop-blur-xl"
             style={{
@@ -201,6 +288,7 @@ export default function ActivitiesPage() {
               touchAction: 'pan-x',
             }}
           >
+
             {branches.map((branch) => (
               <button
                 key={branch}
@@ -215,11 +303,15 @@ export default function ActivitiesPage() {
                 {branch}
               </button>
             ))}
+
           </div>
         </div>
 
-        {/* Category Filter */}
+        {/* =========================
+            CATEGORY FILTER
+            ========================= */}
         <div className="mb-8 flex justify-center sm:mb-12">
+
           <div
             className="flex max-w-full gap-6 overflow-x-auto border-b border-white/10 px-3 sm:gap-7 sm:px-4"
             style={{
@@ -227,6 +319,7 @@ export default function ActivitiesPage() {
               touchAction: 'pan-x',
             }}
           >
+
             {categories.map((category) => (
               <button
                 key={category}
@@ -245,10 +338,13 @@ export default function ActivitiesPage() {
                 )}
               </button>
             ))}
+
           </div>
         </div>
 
-        {/* Activity Cards */}
+        {/* =========================
+            ACTIVITY CARDS
+            ========================= */}
         {filteredActivities.length > 0 ? (
           <div
             ref={cardDeckRef}
@@ -256,12 +352,14 @@ export default function ActivitiesPage() {
             onTouchEnd={handleTouchEnd}
             className="relative mx-auto h-[820px] max-w-6xl touch-pan-y sm:h-[680px]"
           >
+
             <div
               className="relative mx-auto h-[620px] w-full sm:h-[560px]"
               style={{
                 perspective: '1400px',
               }}
             >
+
               {filteredActivities.map((activity, index) => {
                 const total = filteredActivities.length;
 
@@ -292,24 +390,51 @@ export default function ActivitiesPage() {
                         scale(${isActive ? 1 : 0.84})
                       `,
                       zIndex: isActive ? 100 : 50 - distance,
-                      opacity: distance > 2 ? 0 : isActive ? 1 : 0.45,
-                      filter: isActive ? 'none' : 'brightness(0.5) blur(0.5px)',
+                      opacity:
+                        distance > 2
+                          ? 0
+                          : isActive
+                            ? 1
+                            : 0.45,
+                      filter: isActive
+                        ? 'none'
+                        : 'brightness(0.5) blur(0.5px)',
                     }}
                   >
-                    <ActivityCard activity={activity} />
+
+                    <div
+                      onClick={() => handleActivityClick(activity)}
+                      className={
+                        isActive
+                          ? 'cursor-pointer'
+                          : 'pointer-events-none'
+                      }
+                    >
+                      <ActivityCard
+                       activity={activity}
+                        onClick={() => handleActivityClick(activity)}
+                        />
+                    </div>
+
                   </div>
                 );
               })}
+
             </div>
 
-            {/* Mobile Swipe Hint */}
+            {/* =========================
+                MOBILE SWIPE HINT
+                ========================= */}
             <div className="absolute bottom-[55px] left-1/2 -translate-x-1/2 whitespace-nowrap text-xs text-white/25 sm:hidden">
               ← Swipe to explore →
             </div>
 
-            {/* Controls */}
+            {/* =========================
+                CONTROLS
+                ========================= */}
             {filteredActivities.length > 1 && (
               <div className="absolute left-1/2 top-[625px] flex -translate-x-1/2 items-center gap-3 sm:top-[570px] sm:gap-6">
+
                 {/* Previous */}
                 <button
                   type="button"
@@ -325,6 +450,7 @@ export default function ActivitiesPage() {
 
                 {/* Dots */}
                 <div className="flex max-w-[130px] items-center gap-1.5 overflow-hidden sm:max-w-none sm:gap-2">
+
                   {filteredActivities.map((activity, index) => (
                     <button
                       key={activity.title}
@@ -338,6 +464,7 @@ export default function ActivitiesPage() {
                       aria-label={`Show ${activity.title}`}
                     />
                   ))}
+
                 </div>
 
                 {/* Next */}
@@ -352,23 +479,61 @@ export default function ActivitiesPage() {
                     className="transition-transform duration-300 group-hover:translate-x-1 sm:h-6 sm:w-6"
                   />
                 </button>
+
               </div>
             )}
+
           </div>
         ) : (
+
+          /* =========================
+             NO ACTIVITIES
+             ========================= */
           <div className="flex min-h-[400px] items-center justify-center">
+
             <div className="rounded-3xl border border-white/10 bg-[#080b0f] px-8 py-12 text-center shadow-2xl sm:px-12 sm:py-14">
+
               <div className="mx-auto mb-6 h-3 w-3 animate-pulse rounded-full bg-[#008dcc] shadow-[0_0_20px_#008dcc]" />
 
-              <h2 className="text-2xl font-semibold text-white">No activities yet</h2>
+              <h2 className="text-2xl font-semibold text-white">
+                No activities yet
+              </h2>
 
               <p className="mt-3 max-w-sm text-sm leading-6 text-white/40">
                 Activities for {selectedBranch} will appear here soon.
               </p>
+
             </div>
+
           </div>
         )}
       </div>
+
+      {/* =========================
+          DETAILED ACTIVITY OVERLAY
+          ========================= */}
+      {selectedActivity && (
+        <div
+          className="
+            fixed
+            inset-0
+            z-[100]
+            overflow-y-auto
+            bg-black/80
+            px-4
+            py-8
+            backdrop-blur-md
+            sm:px-8
+            sm:py-12
+          "
+        >
+          <ActivityDetailCard
+            activity={selectedActivity}
+            onClose={handleCloseDetail}
+          />
+        </div>
+      )}
+
     </section>
   );
 }
