@@ -47,7 +47,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. V.K Banga',
     role: 'Chief Patron & Director',
     department: 'GBPIET',
-    photo: '',
+    photo: '/images/vk banga director.jpeg',
     priority: 1,
     committee: 'executive',
     socials: {
@@ -58,7 +58,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Kamaljit Singh Bhatia',
     role: 'Sr. Member IEEE, Branch Counsellor',
     department: 'Coordinator Professional Societies, GBPIET',
-    photo: '',
+    photo: '/public/images/bhatia.jpg',
     priority: 2,
     committee: 'executive',
     socials: {
@@ -69,7 +69,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Mamta Baunthiyal',
     role: 'DEAN R&D',
     department: 'GBPIET',
-    photo: '',
+    photo: '/public/images/mamta dean.jpeg',
     priority: 3,
     committee: 'executive',
     socials: {
@@ -80,7 +80,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Sanjay Gairola',
     role: 'Sr. Member IEEE, OIC Library',
     department: 'GBPIET',
-    photo: '',
+    photo:'/public/images/gairola.jpg',
     priority: 4,
     committee: 'executive',
     socials: {
@@ -91,7 +91,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Jitendra Singh Rauthan',
     role: 'Member IEEE & Branch Advisor',
     department: 'CSE Department',
-    photo: '',
+    photo: '/images/rauthan.jpeg',
     priority: 5,
     committee: 'executive',
     socials: {
@@ -102,7 +102,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Mr. Neem Sagar',
     role: 'Member IEEE & Branch Advisor',
     department: 'EE Department',
-    photo: '',
+    photo: '/images/neemsagar.jpeg',
     priority: 6,
     committee: 'executive',
     socials: {
@@ -113,7 +113,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Sandeep Kumar',
     role: 'Member IEEE & Branch Advisor',
     department: 'ECE Department',
-    photo: '',
+    photo: '/Users/mehakgusain/IEEE_Site-1/public/images/sandeepkumar.jpeg',
     priority: 7,
     committee: 'executive',
     socials: {
@@ -124,7 +124,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Mr. Pranshu Dangwal',
     role: 'Member IEEE & Branch Advisor',
     department: 'BT Department',
-    photo: '',
+    photo: '/images/pranshudangwal.jpeg',
     priority: 8,
     committee: 'executive',
     socials: {
@@ -139,7 +139,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Jiyanshi Batra',
     role: 'Student Branch Chair',
     department: 'IEEE Student Branch',
-    photo: '',
+    photo: '/images/jiyanshi.jpg',
     priority: 1,
     committee: 'student',
     socials: {
@@ -152,7 +152,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Paras Dhiman',
     role: 'Student Branch Vice Chair',
     department: 'IEEE Student Branch',
-    photo: '',
+    photo: '/images/paras-new-274x278.jpg',
     priority: 2,
     committee: 'student',
     socials: {
@@ -165,7 +165,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Vanshika Painuly',
     role: 'Student Secretary',
     department: 'IEEE Student Branch',
-    photo: '',
+    photo: '/images/vanshika-274x278.jpg',
     priority: 3,
     committee: 'student',
     socials: {
@@ -177,7 +177,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Akriti Chauhan',
     role: 'Student Treasurer',
     department: 'IEEE Student Branch',
-    photo: '',
+    photo: '/images/akriti-274x278.jpg',
     priority: 4,
     committee: 'student',
     socials: {
@@ -189,7 +189,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Muskan Singh',
     role: 'Creative Media Head',
     department: 'IEEE Student Branch',
-    photo: '',
+    photo: '/images/muskan-new-e1725214912834-218x278.jpg',
     priority: 5,
     committee: 'student',
     socials: {
