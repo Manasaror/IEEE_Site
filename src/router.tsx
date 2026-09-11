@@ -11,13 +11,14 @@ export function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/activities" element={<ActivitiesPage />} />
-          <Route path="/teams" element={<TeamsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="activities" element={<ActivitiesPage />} />
+          <Route path="teams" element={<TeamsPage />} />
+          <Route path="contact" element={<ContactPage />} />
         </Route>
+
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
