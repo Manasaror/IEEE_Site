@@ -1,8 +1,16 @@
+import {useEffect} from 'react'
 import { teamMembers } from '@/data/teams/members';
 import { TeamHero } from './components/TeamHero';
 import { TeamGrid } from './components/TeamGrid';
 
+
+
 export function TeamsPage() {
+
+      useEffect(() => {
+    document.title = "IEEE Gbpiet Teams ";
+  }, []);
+
   const executiveMembers = teamMembers
     .filter((m) => m.committee === 'executive')
     .sort((a, b) => a.priority - b.priority);

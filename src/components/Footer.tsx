@@ -109,7 +109,7 @@ export default function Footer() {
           {/* NAVIGATION / GET INVOLVED */}
           <div>
             <p className="mb-6 text-xl font-bold uppercase tracking-[0.25em] text-[#00629b]">
-              Get Involved
+              Get  Involved
             </p>
 
             <div className="space-y-4">
