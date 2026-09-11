@@ -58,7 +58,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Kamaljit Singh Bhatia',
     role: 'Sr. Member IEEE, Branch Counsellor',
     department: 'Coordinator Professional Societies, GBPIET',
-    photo: '/public/images/bhatia.jpg',
+    photo: '/Users/mehakgusain/IEEE_Site-1/public/images/bhatia.jpg',
     priority: 2,
     committee: 'executive',
     socials: {
@@ -69,7 +69,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Mamta Baunthiyal',
     role: 'DEAN R&D',
     department: 'GBPIET',
-    photo: '/public/images/mamta dean.jpeg',
+    photo: '/images/mamta dean.jpeg',
     priority: 3,
     committee: 'executive',
     socials: {
@@ -186,10 +186,10 @@ export const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Muskan Singh',
+    name: 'Rohit Thapliyal', //updated
     role: 'Creative Media Head',
     department: 'IEEE Student Branch',
-    photo: '/images/muskan-new-e1725214912834-218x278.jpg',
+    photo: '/images/rohit.thapliyal.jpeg',
     priority: 5,
     committee: 'student',
     socials: {
