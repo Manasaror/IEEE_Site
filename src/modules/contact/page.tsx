@@ -1,8 +1,14 @@
+
+import { useEffect } from 'react';
 import { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { CheckCircle2, FileText, Mail, Paperclip, Send, User, X } from 'lucide-react';
 
 export default function ContactPage() {
+
+      useEffect(() => {
+    document.title = "Contact Us ";
+  }, []);
   // -------------------------------------------------------
   // Form reference
   // EmailJS sendForm() directly HTML form ko read karega.

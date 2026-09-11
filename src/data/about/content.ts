@@ -15,7 +15,7 @@ export const heroContent = {
 
 // -- Stats -----------------------------------------------------
 export const statsData = [
-  { number: '120+', label: 'Active Members', description: 'Passionate student engineers' },
+  { number: '30+', label: 'Active Members', description: 'Passionate student engineers' },
   { number: '112+', label: 'Events Hosted', description: 'Workshops, seminars & hackathons' },
   { number: '30+', label: 'Projects Built', description: 'Research & hands-on innovation' },
   { number: '10+', label: 'Years of Legacy', description: 'Shaping futures since founding' },

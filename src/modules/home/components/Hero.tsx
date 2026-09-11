@@ -5,7 +5,7 @@ export default function HomePage() {
       <div
         className="absolute inset-0 bg-cover bg-center scale-105 animate-[zoom_15s_ease-in-out_infinite_alternate]"
         style={{
-          backgroundImage: "url('/images/hero.jpg')",
+          backgroundImage: "url('/images/HomeBanner.jpg')",
         }}
       />
 
