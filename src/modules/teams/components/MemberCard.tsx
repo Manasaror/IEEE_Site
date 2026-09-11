@@ -49,8 +49,6 @@ function getInitials(name: string): string {
 }
 
 export function MemberCard({ member, index }: { member: TeamMember; index: number }) {
-  const formattedIndex = String(index + 1).padStart(2, '0');
-
   return (
     <article
       id={`member-${index}`}
@@ -77,10 +75,6 @@ export function MemberCard({ member, index }: { member: TeamMember; index: numbe
 
       {/* Member Photo Frame */}
       <div className="relative z-10 shrink-0 w-40 h-44 max-sm:w-36 max-sm:h-40 overflow-hidden rounded-xl bg-transparent border border-cyan-500/30">
-        <span className="absolute top-2 left-2 z-10 text-[10px] font-bold tracking-widest text-cyan-200 bg-slate-950/60 backdrop-blur-sm px-2 py-0.5 rounded-md border border-cyan-500/30">
-          {formattedIndex}
-        </span>
-
         {member.photo && member.photo.trim() !== '' ? (
           <img
             src={member.photo}
@@ -89,23 +83,18 @@ export function MemberCard({ member, index }: { member: TeamMember; index: numbe
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-transparent border border-dashed border-cyan-500/30">
-            <span
-              className="text-3xl font-extrabold tracking-widest text-transparent"
-              style={{ WebkitTextStroke: '1px #67e8f9' }}
-            >
+            <span className="text-3xl font-extrabold tracking-widest text-cyan-300">
               {getInitials(member.name)}
             </span>
           </div>
         )}
       </div>
 
-      {/* Member Info with Outline Text */}
+      {/* Member Info */}
       <div className="relative z-10 flex flex-1 flex-col justify-between min-w-0 h-full py-1 max-sm:items-center">
         <div>
-          <h3
-            className="m-0 text-xl font-extrabold tracking-wide text-transparent truncate max-w-full"
-            style={{ WebkitTextStroke: '1px white' }}
-          >
+          {/* Member Name */}
+          <h3 className="m-0 text-xl font-extrabold tracking-wide text-white truncate max-w-full drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
             {member.name}
           </h3>
 
@@ -113,10 +102,7 @@ export function MemberCard({ member, index }: { member: TeamMember; index: numbe
             {member.role}
           </p>
 
-          <p
-            className="m-0 mt-2 text-xs font-semibold text-transparent line-clamp-2"
-            style={{ WebkitTextStroke: '0.5px rgba(255,255,255,0.85)' }}
-          >
+          <p className="m-0 mt-2 text-xs font-semibold text-slate-200 line-clamp-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
             {member.department}
           </p>
         </div>
