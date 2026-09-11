@@ -58,7 +58,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Kamaljit Singh Bhatia',
     role: 'Sr. Member IEEE, Branch Counsellor',
     department: 'Coordinator Professional Societies, GBPIET',
-    photo: '/Users/mehakgusain/IEEE_Site-1/public/images/bhatia.jpg',
+    photo: '/images/kamaljeet-150x150.jpg',
     priority: 2,
     committee: 'executive',
     socials: {
@@ -80,7 +80,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Sanjay Gairola',
     role: 'Sr. Member IEEE, OIC Library',
     department: 'GBPIET',
-    photo:'/public/images/gairola.jpg',
+    photo: '/images/sanjay-gairola-e1774373677242.jpg',
     priority: 4,
     committee: 'executive',
     socials: {
@@ -113,7 +113,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Sandeep Kumar',
     role: 'Member IEEE & Branch Advisor',
     department: 'ECE Department',
-    photo: '/Users/mehakgusain/IEEE_Site-1/public/images/sandeepkumar.jpeg',
+    photo: '/images/sandeeppp.jpeg',
     priority: 7,
     committee: 'executive',
     socials: {
