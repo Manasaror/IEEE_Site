@@ -1,36 +1,124 @@
-import { useEffect, useState } from 'react';
-import { User, ChevronDown, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { User, ChevronDown, Menu, X, ExternalLink } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+
+interface DropdownItem {
+  name: string;
+  href: string;
+  isExternal?: boolean;
+}
+
+interface NavItem {
+  name: string;
+  href?: string;
+  dropdown?: DropdownItem[];
+}
 
 export default function Header() {
-  // Admin dropdown state
+  const location = useLocation();
+
+  // Admin / User dropdown state
   const [adminOpen, setAdminOpen] = useState(false);
 
   // Mobile menu state
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Mobile accordion active dropdown
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+
+  // Desktop active dropdown state for touch/click
+  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState<string | null>(null);
+
+  // Ref for admin dropdown click-outside
+  const adminRef = useRef<HTMLDivElement>(null);
+  const desktopNavRef = useRef<HTMLElement>(null);
+
+  // Close menus when route changes
+  useEffect(() => {
+    setAdminOpen(false);
+    setMobileMenuOpen(false);
+    setDesktopDropdownOpen(null);
+    setMobileDropdownOpen(null);
+  }, [location.pathname]);
+
   // Lock page scrolling while mobile menu is open
   useEffect(() => {
-    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
 
     return () => {
       document.body.style.overflow = '';
     };
   }, [mobileMenuOpen]);
 
-  // Navbar links
-  const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+  // Click outside to close admin dropdown & desktop dropdowns, and handle Escape key
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node;
 
+      // Close admin dropdown if clicked outside
+      if (adminRef.current && !adminRef.current.contains(target)) {
+        setAdminOpen(false);
+      }
+
+      // Close desktop dropdown if clicked outside
+      if (desktopNavRef.current && !desktopNavRef.current.contains(target)) {
+        setDesktopDropdownOpen(null);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setAdminOpen(false);
+        setDesktopDropdownOpen(null);
+        setMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  // Navbar navigation items
+  const navLinks: NavItem[] = [
+    { name: 'Home', href: '/' },
+    {
+      name: 'About',
+      dropdown: [
+        {
+          name: 'About IEEE GBPIET',
+          href: '/about',
+          isExternal: false,
+        },
+        {
+          name: 'About IEEE',
+          href: 'https://www.ieee.org',
+          isExternal: true,
+        },
+        {
+          name: 'IEEE UP Section',
+          href: 'https://ieeeup.org',
+          isExternal: true,
+        },
+      ],
+    },
     {
       name: 'Activities',
       dropdown: [
-        { name: 'Events', href: '/activities/events' },
-        { name: 'Robotics', href: '/activities/robotics' },
+        { name: 'Events', href: '/activities/events', isExternal: false },
+        { name: 'Robotics', href: '/activities/robotics', isExternal: false },
       ],
     },
-
     { name: 'Teams', href: '/teams' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -38,14 +126,12 @@ export default function Header() {
   return (
     <header
       className="
-        fixed
-        inset-x-0
-        top-0
-        z-50
+        relative
+        z-40
         w-full
         border-b
         border-white/10
-        bg-black/90
+        bg-black/95
         backdrop-blur-md
       "
     >
@@ -61,6 +147,7 @@ export default function Header() {
           onClick={() => {
             setMobileMenuOpen(false);
             setAdminOpen(false);
+            setDesktopDropdownOpen(null);
           }}
         >
           <img
@@ -78,53 +165,26 @@ export default function Header() {
         {/* =========================
             DESKTOP NAVIGATION
             ========================= */}
-        <nav className="hidden items-center gap-6 lg:flex lg:gap-8">
-          {navLinks.map((link) => (
-            <div key={link.name} className="relative group">
+        <nav
+          ref={desktopNavRef}
+          className="hidden items-center gap-6 lg:flex lg:gap-8"
+        >
+          {navLinks.map((link) => {
+            const isDropdownActive = desktopDropdownOpen === link.name;
 
-              {/* Normal navigation link */}
-              {!link.dropdown && (
-                <Link
-                  to={link.href}
-                  className="
-                    relative
-                    text-base
-                    font-medium
-                    text-white/75
-                    transition-colors
-                    duration-200
-                    hover:text-white
-                    lg:text-lg
-                  "
-                >
-                  {link.name}
-
-                  {/* Hover underline */}
-                  <span
+            return (
+              <div
+                key={link.name}
+                className="relative group"
+                onMouseEnter={() => setDesktopDropdownOpen(link.name)}
+                onMouseLeave={() => setDesktopDropdownOpen(null)}
+              >
+                {/* Normal navigation link */}
+                {!link.dropdown && link.href && (
+                  <Link
+                    to={link.href}
                     className="
-                      absolute
-                      -bottom-2
-                      left-0
-                      h-0.5
-                      w-0
-                      bg-[#00629b]
-                      transition-all
-                      duration-300
-                      group-hover:w-full
-                    "
-                  />
-                </Link>
-              )}
-
-              {/* Activities dropdown */}
-              {link.dropdown && (
-                <>
-                  <button
-                    type="button"
-                    className="
-                      flex
-                      items-center
-                      gap-1
+                      relative
                       text-base
                       font-medium
                       text-white/75
@@ -136,92 +196,150 @@ export default function Header() {
                   >
                     {link.name}
 
-                    <ChevronDown
-                      size={16}
+                    {/* Hover underline */}
+                    <span
                       className="
-                        transition-transform
-                        duration-200
-                        group-hover:rotate-180
+                        absolute
+                        -bottom-2
+                        left-0
+                        h-0.5
+                        w-0
+                        bg-[#00629b]
+                        transition-all
+                        duration-300
+                        group-hover:w-full
                       "
                     />
-                  </button>
+                  </Link>
+                )}
 
-                  {/* Dropdown menu */}
-                  <div
-                    className="
-                      invisible
-                      absolute
-                      left-1/2
-                      top-full
-                      mt-3
-                      w-44
-                      -translate-x-1/2
-                      translate-y-2
-                      rounded-xl
-                      border
-                      border-white/10
-                      bg-[#080b0f]
-                      p-2
-                      opacity-0
-                      shadow-xl
-                      transition-all
-                      duration-200
-                      group-hover:visible
-                      group-hover:translate-y-0
-                      group-hover:opacity-100
-                    "
-                  >
-                    {/* Events */}
-                    <Link
-                      to="/activities/events"
+                {/* Dropdown navigation item (About & Activities) */}
+                {link.dropdown && (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setDesktopDropdownOpen((prev) =>
+                          prev === link.name ? null : link.name
+                        )
+                      }
+                      aria-expanded={isDropdownActive}
                       className="
-                        block
-                        rounded-lg
-                        px-4
-                        py-3
-                        text-sm
+                        flex
+                        items-center
+                        gap-1.5
+                        text-base
                         font-medium
-                        text-white/70
+                        text-white/75
                         transition-colors
-                        hover:bg-white/10
+                        duration-200
                         hover:text-white
+                        lg:text-lg
                       "
                     >
-                      Events
-                    </Link>
+                      <span>{link.name}</span>
 
-                    {/* Robotics */}
-                    <Link
-                      to="/activities/robotics"
-                      className="
-                        block
-                        rounded-lg
-                        px-4
-                        py-3
-                        text-sm
-                        font-medium
-                        text-white/70
-                        transition-colors
-                        hover:bg-white/10
-                        hover:text-white
-                      "
+                      <ChevronDown
+                        size={16}
+                        className={`
+                          transition-transform
+                          duration-200
+                          ${isDropdownActive ? 'rotate-180' : 'group-hover:rotate-180'}
+                        `}
+                      />
+                    </button>
+
+                    {/* Dropdown Menu Container */}
+                    <div
+                      className={`
+                        absolute
+                        left-1/2
+                        top-full
+                        mt-2
+                        w-56
+                        -translate-x-1/2
+                        rounded-xl
+                        border
+                        border-white/10
+                        bg-[#080b0f]
+                        p-2
+                        shadow-2xl
+                        transition-all
+                        duration-200
+                        ${
+                          isDropdownActive
+                            ? 'visible translate-y-0 opacity-100'
+                            : 'invisible translate-y-2 opacity-0 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100'
+                        }
+                      `}
                     >
-                      Robotics
-                    </Link>
-                  </div>
-                </>
-              )}
-            </div>
-          ))}
+                      {link.dropdown.map((subItem) => {
+                        if (subItem.isExternal) {
+                          return (
+                            <a
+                              key={subItem.name}
+                              href={subItem.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => setDesktopDropdownOpen(null)}
+                              className="
+                                flex
+                                items-center
+                                justify-between
+                                rounded-lg
+                                px-4
+                                py-2.5
+                                text-sm
+                                font-medium
+                                text-white/70
+                                transition-colors
+                                hover:bg-white/10
+                                hover:text-white
+                              "
+                            >
+                              <span>{subItem.name}</span>
+                              <ExternalLink size={14} className="text-[#00629b]" />
+                            </a>
+                          );
+                        }
+
+                        return (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.href}
+                            onClick={() => setDesktopDropdownOpen(null)}
+                            className="
+                              block
+                              rounded-lg
+                              px-4
+                              py-2.5
+                              text-sm
+                              font-medium
+                              text-white/70
+                              transition-colors
+                              hover:bg-white/10
+                              hover:text-white
+                            "
+                          >
+                            {subItem.name}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </>
+                )}
+              </div>
+            );
+          })}
         </nav>
 
         {/* =========================
-            RIGHT SIDE
+            RIGHT SIDE ACTIONS
             ========================= */}
         <div className="flex items-center gap-2">
 
-          {/* Desktop Admin */}
-          <div className="relative hidden lg:block">
+          {/* Desktop User / Admin Menu */}
+          <div ref={adminRef} className="relative hidden lg:block">
             <button
               type="button"
               onClick={() => setAdminOpen((prev) => !prev)}
@@ -230,7 +348,7 @@ export default function Header() {
               className="
                 flex
                 items-center
-                gap-1
+                gap-1.5
                 rounded-full
                 p-2
                 text-white/80
@@ -257,41 +375,43 @@ export default function Header() {
                   absolute
                   right-0
                   top-14
-                  w-44
+                  w-48
                   rounded-xl
                   border
                   border-white/10
                   bg-[#080b0f]
                   p-2
-                  shadow-xl
+                  shadow-2xl
+                  z-50
                 "
               >
-                <button
-                  type="button"
+                <Link
+                  to="/login"
+                  onClick={() => setAdminOpen(false)}
                   className="
                     flex
                     w-full
                     items-center
                     gap-3
                     rounded-lg
-                    px-3
+                    px-3.5
                     py-2.5
                     text-sm
                     font-medium
-                    text-white/70
+                    text-white/80
                     transition-colors
                     hover:bg-white/10
                     hover:text-white
                   "
                 >
-                  <User size={18} />
+                  <User size={18} className="text-[#00629b]" />
                   <span>Login</span>
-                </button>
+                </Link>
               </div>
             )}
           </div>
 
-          {/* Mobile / Tablet hamburger */}
+          {/* Mobile / Tablet Hamburger Toggle */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
@@ -321,7 +441,7 @@ export default function Header() {
       </div>
 
       {/* =========================
-          MOBILE MENU
+          MOBILE MENU DRAWER
           ========================= */}
       <div
         className={`
@@ -329,18 +449,18 @@ export default function Header() {
           inset-x-0
           bottom-0
           top-16
-          z-40
+          z-50
+          overflow-y-auto
           lg:hidden
           sm:top-20
           ${
             mobileMenuOpen
-              ? 'visible opacity-100'
+              ? 'visible pointer-events-auto opacity-100'
               : 'invisible pointer-events-none opacity-0'
           }
         `}
       >
-
-        {/* Backdrop */}
+        {/* Semi-transparent Backdrop */}
         <button
           type="button"
           aria-label="Close menu"
@@ -351,15 +471,16 @@ export default function Header() {
             h-full
             w-full
             cursor-default
-            bg-black/60
+            bg-black/70
             backdrop-blur-sm
           "
         />
 
-        {/* Menu panel */}
+        {/* Menu drawer panel */}
         <div
           className={`
             relative
+            min-h-full
             border-t
             border-white/10
             bg-[#080b0f]/95
@@ -373,14 +494,14 @@ export default function Header() {
             }
           `}
         >
-          <nav className="flex flex-col px-6 py-4">
+          <nav className="flex flex-col px-6 py-5">
 
             {/* Mobile links */}
             {navLinks.map((link) => (
-              <div key={link.name}>
+              <div key={link.name} className="border-b border-white/10">
 
-                {/* Normal mobile link */}
-                {!link.dropdown && (
+                {/* Normal link */}
+                {!link.dropdown && link.href && (
                   <Link
                     to={link.href}
                     onClick={() => setMobileMenuOpen(false)}
@@ -389,8 +510,6 @@ export default function Header() {
                       flex
                       items-center
                       justify-between
-                      border-b
-                      border-white/10
                       py-4
                       text-lg
                       font-medium
@@ -415,69 +534,117 @@ export default function Header() {
                   </Link>
                 )}
 
-                {/* Activities mobile section */}
+                {/* Dropdown mobile section */}
                 {link.dropdown && (
-                  <>
-                    <div
+                  <div>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMobileDropdownOpen((prev) =>
+                          prev === link.name ? null : link.name
+                        )
+                      }
                       className="
-                        border-b
-                        border-white/10
+                        flex
+                        w-full
+                        items-center
+                        justify-between
                         py-4
                         text-lg
                         font-medium
                         text-white
                       "
                     >
-                      {link.name}
+                      <span>{link.name}</span>
+
+                      <ChevronDown
+                        size={18}
+                        className={`
+                          text-white/40
+                          transition-transform
+                          duration-200
+                          ${
+                            mobileDropdownOpen === link.name
+                              ? 'rotate-180 text-[#00629b]'
+                              : ''
+                          }
+                        `}
+                      />
+                    </button>
+
+                    {/* Submenu items */}
+                    <div
+                      className={`
+                        space-y-1
+                        overflow-hidden
+                        pl-4
+                        transition-all
+                        duration-300
+                        ${
+                          mobileDropdownOpen === link.name
+                            ? 'max-h-60 pb-3 opacity-100'
+                            : 'max-h-0 opacity-0'
+                        }
+                      `}
+                    >
+                      {link.dropdown.map((subItem) => {
+                        if (subItem.isExternal) {
+                          return (
+                            <a
+                              key={subItem.name}
+                              href={subItem.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="
+                                flex
+                                items-center
+                                justify-between
+                                py-2.5
+                                pr-2
+                                text-base
+                                text-white/70
+                                transition-colors
+                                hover:text-[#00629b]
+                              "
+                            >
+                              <span>{subItem.name}</span>
+                              <ExternalLink size={14} className="text-[#00629b]" />
+                            </a>
+                          );
+                        }
+
+                        return (
+                          <Link
+                            key={subItem.name}
+                            to={subItem.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="
+                              block
+                              py-2.5
+                              text-base
+                              text-white/70
+                              transition-colors
+                              hover:text-[#00629b]
+                            "
+                          >
+                            {subItem.name}
+                          </Link>
+                        );
+                      })}
                     </div>
-
-                    <div className="border-b border-white/10 pl-4">
-
-                      {/* Events */}
-                      <Link
-                        to="/activities/events"
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="
-                          block
-                          py-3
-                          text-base
-                          text-white/70
-                          transition-colors
-                          hover:text-[#00629b]
-                        "
-                      >
-                        Events
-                      </Link>
-
-                      {/* Robotics */}
-                      <Link
-                        to="/activities/robotics"
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="
-                          block
-                          py-3
-                          text-base
-                          text-white/70
-                          transition-colors
-                          hover:text-[#00629b]
-                        "
-                      >
-                        Robotics
-                      </Link>
-
-                    </div>
-                  </>
+                  </div>
                 )}
               </div>
             ))}
 
-            {/* Mobile Login */}
-            <button
-              type="button"
+            {/* Mobile Login Button */}
+            <Link
+              to="/login"
               onClick={() => setMobileMenuOpen(false)}
               className="
                 mb-2
-                mt-4
+                mt-6
                 flex
                 items-center
                 justify-center
@@ -489,6 +656,8 @@ export default function Header() {
                 text-base
                 font-semibold
                 text-white
+                shadow-lg
+                shadow-[#00629b]/25
                 transition-all
                 duration-200
                 hover:bg-[#007bbd]
@@ -497,7 +666,7 @@ export default function Header() {
             >
               <User size={20} />
               <span>Login</span>
-            </button>
+            </Link>
 
           </nav>
         </div>

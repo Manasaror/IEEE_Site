@@ -248,22 +248,18 @@ export default function EventsPage() {
             ========================= */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
 
-          <p className="mb-3 text-xs font-bold tracking-[0.3em] text-[#008dcc] sm:mb-4 sm:text-sm sm:tracking-[0.4em]">
-            IEEE GBPIET
-          </p>
+
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Explore Our
+            Explore Our 
 
-            <span className="block bg-gradient-to-r from-[#00629b] via-[#008dcc] to-white bg-clip-text text-transparent">
+             <span className="block bg-gradient-to-r from-[#00629b] via-[#008dcc] to-white bg-clip-text text-transparent">
               Activities
-            </span>
+            </span> 
           </h1>
 
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-6 text-white/50 sm:mt-6 sm:text-lg sm:leading-7">
-            Discover workshops, competitions and projects happening
-            across our student branches.
-          </p>
+
+
 
           <div className="mx-auto mt-7 flex items-center justify-center gap-3 sm:mt-8">
 
