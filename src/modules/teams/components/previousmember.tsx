@@ -20,7 +20,6 @@ export function PreviousMember() {
             <span className="text-white font-medium text-base">{m.name}</span>
           </div>
           <div className="flex items-center gap-4 text-xs sm:text-sm text-slate-300 max-sm:ml-7">
-            <span>{m.branch}</span>
             {m.role && (
               <span className="text-cyan-400/80 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20">
                 {m.role}
