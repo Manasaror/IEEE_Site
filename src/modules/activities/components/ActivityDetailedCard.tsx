@@ -6,10 +6,7 @@ interface ActivityDetailCardProps {
   onClose: () => void;
 }
 
-export function ActivityDetailCard({
-  activity,
-  onClose,
-}: ActivityDetailCardProps) {
+export function ActivityDetailCard({ activity, onClose }: ActivityDetailCardProps) {
   return (
     <article
       className="
@@ -58,11 +55,7 @@ export function ActivityDetailCard({
 
       {/* Hero Image */}
       <div className="relative h-[280px] sm:h-[420px]">
-        <img
-          src={activity.image}
-          alt={activity.title}
-          className="h-full w-full object-cover"
-        />
+        <img src={activity.image} alt={activity.title} className="h-full w-full object-cover" />
 
         <div
           className="
@@ -102,22 +95,13 @@ export function ActivityDetailCard({
 
       {/* Content */}
       <div className="p-6 sm:p-10 lg:p-12">
-
         {/* Meta */}
         <div className="flex flex-wrap items-center gap-3 text-sm">
+          <span className="text-[#008dcc]">{activity.date}</span>
 
-          <span className="text-[#008dcc]">
-            {activity.date}
-          </span>
+          <span className="text-white/20">•</span>
 
-          <span className="text-white/20">
-            •
-          </span>
-
-          <span className="text-white/40">
-            {activity.branch}
-          </span>
-
+          <span className="text-white/40">{activity.branch}</span>
         </div>
 
         {/* Title */}
@@ -141,7 +125,6 @@ export function ActivityDetailCard({
 
         {/* Description */}
         <div className="max-w-3xl">
-
           <p
             className="
               mb-4
@@ -165,12 +148,10 @@ export function ActivityDetailCard({
           >
             {activity.longDescription}
           </p>
-
         </div>
 
         {/* Activity information */}
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
-
           <div
             className="
               rounded-2xl
@@ -180,13 +161,9 @@ export function ActivityDetailCard({
               p-5
             "
           >
-            <p className="text-xs uppercase tracking-wider text-white/30">
-              Category
-            </p>
+            <p className="text-xs uppercase tracking-wider text-white/30">Category</p>
 
-            <p className="mt-2 font-semibold text-white">
-              {activity.category}
-            </p>
+            <p className="mt-2 font-semibold text-white">{activity.category}</p>
           </div>
 
           <div
@@ -198,13 +175,9 @@ export function ActivityDetailCard({
               p-5
             "
           >
-            <p className="text-xs uppercase tracking-wider text-white/30">
-              Student Branch
-            </p>
+            <p className="text-xs uppercase tracking-wider text-white/30">Student Branch</p>
 
-            <p className="mt-2 font-semibold text-white">
-              {activity.branch}
-            </p>
+            <p className="mt-2 font-semibold text-white">{activity.branch}</p>
           </div>
 
           <div
@@ -216,13 +189,9 @@ export function ActivityDetailCard({
               p-5
             "
           >
-            <p className="text-xs uppercase tracking-wider text-white/30">
-              Date
-            </p>
+            <p className="text-xs uppercase tracking-wider text-white/30">Date</p>
 
-            <p className="mt-2 font-semibold text-white">
-              {activity.date}
-            </p>
+            <p className="mt-2 font-semibold text-white">{activity.date}</p>
           </div>
 
           <div
@@ -234,17 +203,11 @@ export function ActivityDetailCard({
               p-5
             "
           >
-            <p className="text-xs uppercase tracking-wider text-white/30">
-              IEEE GBPIET
-            </p>
+            <p className="text-xs uppercase tracking-wider text-white/30">IEEE GBPIET</p>
 
-            <p className="mt-2 font-semibold text-white">
-              Student Activity
-            </p>
+            <p className="mt-2 font-semibold text-white">Student Activity</p>
           </div>
-
         </div>
-
       </div>
     </article>
   );
