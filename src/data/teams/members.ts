@@ -136,36 +136,37 @@ export const teamMembers: TeamMember[] = [
   // STUDENT COMMITTEE
   // ===========================================================================
   {
-    name: 'Jiyanshi Batra',
+    name: 'Rachita Pant', //updated
     role: 'Student Branch Chair',
     department: 'IEEE Student Branch',
-    photo: '/images/jiyanshi.jpg',
+    photo: '/images/rachitamam.jpeg',
     priority: 1,
     committee: 'student',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/rachita-pant/',
       github: 'https://github.com/',
-      instagram: 'https://instagram.com/',
+      instagram: 'https://www.instagram.com/rachitaa._?stkn=MWJpMTV1YTlyNWJjOA==',
     },
   },
   {
-    name: 'Paras Dhiman',
+    name: 'Mohit Rawat', //updated
     role: 'Student Branch Vice Chair',
     department: 'IEEE Student Branch',
-    photo: '/images/paras-new-274x278.jpg',
+    photo: '/images/mohit.sir.jpeg',
     priority: 2,
     committee: 'student',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin:
+        'https://www.linkedin.com/in/mohit-rawat-00764a290?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       github: 'https://github.com/',
-      instagram: 'https://instagram.com/',
+      instagram: '',
     },
   },
   {
-    name: 'Vanshika Painuly',
+    name: '',
     role: 'Student Secretary',
     department: 'IEEE Student Branch',
-    photo: '/images/vanshika-274x278.jpg',
+    photo: '/',
     priority: 3,
     committee: 'student',
     socials: {
@@ -174,10 +175,10 @@ export const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Akriti Chauhan',
+    name: '',
     role: 'Student Treasurer',
     department: 'IEEE Student Branch',
-    photo: '/images/akriti-274x278.jpg',
+    photo: '',
     priority: 4,
     committee: 'student',
     socials: {
@@ -198,16 +199,16 @@ export const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: 'Shivam Dangwal',
+    name: 'Asmi Naithani', //updated
     role: 'Web Master',
     department: 'IEEE Student Branch',
-    photo: '',
+    photo: '/images/asmi.mam.jpeg',
     priority: 6,
     committee: 'student',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/asminaithani',
       github: 'https://github.com/',
-      instagram: 'https://instagram.com/',
+      instagram: 'https://www.instagram.com/asmi_naithani',
     },
   },
 ];
