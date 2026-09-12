@@ -1,6 +1,6 @@
 // DATA FEEDING TEAM:
 // Naye member add karne ke liye niche wale format me object add karein.
-// - 'name' aur 'branch' mandatory hain.
+// - 'name' mandatory hai.
 // - 'role' optional hai.
 
 export interface PastMember {
@@ -9,8 +9,6 @@ export interface PastMember {
 }
 
 export const pastMembers2026: PastMember[] = [
-  { name: 'Rahul Sharma', role: 'Technical Lead' },
-  { name: 'Priya Verma', role: 'Executive Member' },
   { name: 'Jiyanshi Batra', role: 'Branch Chair' },
   { name: 'Paras Dhiman', role: 'Branch Vice Chair' },
   { name: 'Vanshika Painuly', role: 'Secretary' },
@@ -20,27 +18,32 @@ export const pastMembers2026: PastMember[] = [
 ];
 
 export const pastMembers2025: PastMember[] = [
-  { name: 'Amit Kumar', role: 'Chairperson' },
-  { name: 'Neha Gupta', role: 'Vice Chairperson' },
+  // Branch Chair
   { name: 'Tejas Chhabra', role: 'Branch Chair' },
   { name: 'Nitin Goswami', role: 'Branch Chair' },
   { name: 'Jiyanshi Batra', role: 'Branch Chair' },
+
+  // Branch Vice Chair
   { name: 'Parth Uniyal', role: 'Branch Vice Chair' },
   { name: 'Kritesh Purohit', role: 'Branch Vice Chair' },
   { name: 'Rakshit Pant', role: 'Branch Vice Chair' },
+
+  // Secretary
   { name: 'Vanshika Painuly', role: 'Secretary' },
   { name: 'Ananya Chauhan', role: 'Secretary' },
   { name: 'Asmit Rana', role: 'Secretary' },
+
+  // Treasurer
   { name: 'Antriksha Saklani', role: 'Treasurer' },
   { name: 'Sehna Saraswat', role: 'Treasurer' },
   { name: 'Akriti Chauhan', role: 'Treasurer' },
+
+  // Web Master
   { name: 'Khushi Lingwal', role: 'Web Master' },
-  { name: 'Divyanshi Nathani', role: 'Web Master' },
+  { name: 'Divyanshi Naithani', role: 'Web Master' },
   { name: 'Shivam Dangwal', role: 'Web Master' },
+
+  // Creative Media Head
   { name: 'Paras Dhiman', role: 'Creative Media Head' },
   { name: 'Muskan Singh', role: 'Creative Media Head' },
 ];
-
-
-
-
