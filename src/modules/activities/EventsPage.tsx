@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import { ActivityCard } from './components/ActivityCard';
 import { ActivityDetailCard } from './components/ActivityDetailedCard';
-import { activities } from '@/data/activities/items';
+import { activities } from '@/data/activities/events';
 
 const branches = [
   'CSE',

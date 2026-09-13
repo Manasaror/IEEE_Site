@@ -1,5 +1,5 @@
 import { X } from 'lucide-react';
-import type { Activity } from '@/data/activities/items';
+import type { Activity } from '@/data/activities/events';
 
 interface ActivityDetailCardProps {
   activity: Activity;

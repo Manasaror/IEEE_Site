@@ -1,4 +1,4 @@
-import type { Activity } from '@/data/activities/items';
+import type { Activity } from '@/data/activities/events';
 
 interface ActivityCardProps {
   activity: Activity;
