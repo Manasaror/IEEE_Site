@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Mail, ArrowUpRight, ChevronDown } from 'lucide-react';
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { useState } from 'react';
 
 export default function Footer() {
+  const [activitiesOpen, setActivitiesOpen] = useState(false);
+
   const quickLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
@@ -25,17 +28,27 @@ export default function Footer() {
       {/* Subtle glow */}
       <div className="pointer-events-none absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-[#00629b]/10 blur-[120px]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-8 pt-14 sm:px-8 sm:pt-16 lg:px-12 lg:pt-20">
+      <div className="relative mx-auto max-w-7xl px-5 pb-7 pt-12 sm:px-8 sm:pt-14 lg:px-12 lg:pb-8 lg:pt-20">
 
         {/* =========================
             MAIN FOOTER
             ========================= */}
-        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr] md:gap-10 lg:gap-20">
+        <div
+          className="
+            grid
+            gap-10
+            sm:grid-cols-2
+            sm:gap-x-12
+            sm:gap-y-12
+            lg:grid-cols-[1.5fr_1fr_1fr]
+            lg:gap-20
+          "
+        >
 
           {/* =========================
               BRAND
               ========================= */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
 
             <Link
               to="/"
@@ -44,11 +57,11 @@ export default function Footer() {
               <img
                 src="/images/IeeeLogo.webp"
                 alt="IEEE Logo"
-                className="h-14 w-14 object-contain sm:h-16 sm:w-16"
+                className="h-12 w-12 object-contain sm:h-14 sm:w-14 lg:h-16 lg:w-16"
               />
 
               <div>
-                <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
+                <h2 className="text-2xl font-black tracking-tight sm:text-3xl lg:text-4xl">
                   <span className="text-[#00629b]">
                     IEEE
                   </span>{' '}
@@ -58,20 +71,20 @@ export default function Footer() {
                   </span>
                 </h2>
 
-                <p className="mt-1 text-xs font-medium uppercase tracking-[0.25em] text-white/40">
+                <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.2em] text-white/40 sm:text-xs sm:tracking-[0.25em]">
                   Student Branch
                 </p>
               </div>
             </Link>
 
-            <p className="mt-7 max-w-sm text-sm leading-6 text-white/45 sm:text-base sm:leading-7">
+            <p className="mt-6 max-w-sm text-sm leading-6 text-white/45 sm:mt-7 sm:text-base sm:leading-7">
               IEEE GBPIET Student Branch is a community of students
               passionate about technology, innovation, research and
               creating meaningful impact.
             </p>
 
             {/* Location */}
-            <div className="mt-6">
+            <div className="mt-5 sm:mt-6">
               <p className="text-sm font-semibold text-white/80">
                 GBPIET Pauri
               </p>
@@ -82,24 +95,19 @@ export default function Footer() {
             </div>
 
             {/* Socials */}
-            <div className="mt-7 flex items-center gap-3">
+            <div className="mt-6 flex items-center gap-3 sm:mt-7">
 
               {/* Instagram */}
               <a
                 href="#"
                 aria-label="Instagram"
                 className="
-                  flex
-                  h-10
-                  w-10
-                  items-center
-                  justify-center
+                  flex h-10 w-10 shrink-0
+                  items-center justify-center
                   rounded-full
-                  border
-                  border-white/10
+                  border border-white/10
                   text-white/45
-                  transition-all
-                  duration-300
+                  transition-all duration-300
                   hover:border-[#00629b]
                   hover:bg-[#00629b]
                   hover:text-white
@@ -113,17 +121,12 @@ export default function Footer() {
                 href="#"
                 aria-label="LinkedIn"
                 className="
-                  flex
-                  h-10
-                  w-10
-                  items-center
-                  justify-center
+                  flex h-10 w-10 shrink-0
+                  items-center justify-center
                   rounded-full
-                  border
-                  border-white/10
+                  border border-white/10
                   text-white/45
-                  transition-all
-                  duration-300
+                  transition-all duration-300
                   hover:border-[#00629b]
                   hover:bg-[#00629b]
                   hover:text-white
@@ -137,17 +140,12 @@ export default function Footer() {
                 href="mailto:ieee@gbpiet.ac.in"
                 aria-label="Email"
                 className="
-                  flex
-                  h-10
-                  w-10
-                  items-center
-                  justify-center
+                  flex h-10 w-10 shrink-0
+                  items-center justify-center
                   rounded-full
-                  border
-                  border-white/10
+                  border border-white/10
                   text-white/45
-                  transition-all
-                  duration-300
+                  transition-all duration-300
                   hover:border-[#00629b]
                   hover:bg-[#00629b]
                   hover:text-white
@@ -164,7 +162,7 @@ export default function Footer() {
               ========================= */}
           <div>
 
-            <p className="mb-6 text-xl font-bold uppercase tracking-[0.25em] text-[#00629b]">
+            <p className="mb-5 text-lg font-bold uppercase tracking-[0.2em] text-[#00629b] sm:mb-6 sm:text-xl sm:tracking-[0.25em]">
               Quick Links
             </p>
 
@@ -183,28 +181,22 @@ export default function Footer() {
                       to={link.href}
                       className="
                         group/link
-                        flex
-                        items-center
-                        gap-2
+                        flex items-center gap-2
                         py-2
                         text-base
                         text-white/50
-                        transition-all
-                        duration-300
+                        transition-all duration-300
                         hover:pl-2
                         hover:text-white
                       "
                     >
-                      <span>
-                        {link.name}
-                      </span>
+                      <span>{link.name}</span>
 
                       <ArrowUpRight
                         size={13}
                         className="
                           opacity-0
-                          transition-all
-                          duration-300
+                          transition-all duration-300
                           group-hover/link:translate-x-1
                           group-hover/link:-translate-y-1
                           group-hover/link:opacity-100
@@ -219,54 +211,64 @@ export default function Footer() {
                     <div className="w-full">
 
                       {/* Activities heading */}
-                      <div
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setActivitiesOpen(!activitiesOpen)
+                        }
                         className="
-                          flex
-                          items-center
-                          gap-2
+                          flex w-full
+                          items-center gap-2
                           py-2
+                          text-left
                           text-base
                           font-medium
                           text-white/50
+                          transition-colors
+                          hover:text-white
+                          lg:cursor-default
                         "
                       >
-                        <span>
-                          {link.name}
-                        </span>
+                        <span>{link.name}</span>
 
                         <ChevronDown
                           size={15}
-                          className="
-                            transition-transform
-                            duration-300
-                            group-hover:rotate-180
-                          "
+                          className={`
+                            transition-transform duration-300
+                            ${
+                              activitiesOpen
+                                ? 'rotate-180'
+                                : ''
+                            }
+                            lg:group-hover:rotate-180
+                          `}
                         />
-                      </div>
+                      </button>
 
                       {/* Activities submenu */}
                       <div
-                        className="
+                        className={`
                           ml-3
-                          max-h-0
                           overflow-hidden
-                          border-l
-                          border-white/10
+                          border-l border-white/10
                           pl-4
-                          opacity-0
-                          transition-all
-                          duration-300
-                          group-hover:max-h-32
-                          group-hover:opacity-100
-                        "
+                          transition-all duration-300
+                          ${
+                            activitiesOpen
+                              ? 'max-h-32 opacity-100'
+                              : 'max-h-0 opacity-0'
+                          }
+                          lg:max-h-0
+                          lg:opacity-0
+                          lg:group-hover:max-h-32
+                          lg:group-hover:opacity-100
+                        `}
                       >
 
                         <Link
                           to="/activities/events"
                           className="
-                            flex
-                            items-center
-                            gap-2
+                            flex items-center gap-2
                             py-2
                             text-sm
                             text-white/40
@@ -274,19 +276,14 @@ export default function Footer() {
                             hover:text-[#008dcc]
                           "
                         >
-                          <span>
-                            Events
-                          </span>
-
+                          <span>Events</span>
                           <ArrowUpRight size={12} />
                         </Link>
 
                         <Link
                           to="/activities/robotics"
                           className="
-                            flex
-                            items-center
-                            gap-2
+                            flex items-center gap-2
                             py-2
                             text-sm
                             text-white/40
@@ -294,10 +291,7 @@ export default function Footer() {
                             hover:text-[#008dcc]
                           "
                         >
-                          <span>
-                            Robotics
-                          </span>
-
+                          <span>Robotics</span>
                           <ArrowUpRight size={12} />
                         </Link>
 
@@ -317,11 +311,11 @@ export default function Footer() {
               ========================= */}
           <div>
 
-            <p className="mb-6 text-xl font-bold uppercase tracking-[0.25em] text-[#00629b]">
+            <p className="mb-5 text-lg font-bold uppercase tracking-[0.2em] text-[#00629b] sm:mb-6 sm:text-xl sm:tracking-[0.25em]">
               Get Involved
             </p>
 
-            <div className="space-y-5">
+            <div className="space-y-4 sm:space-y-5">
 
               {/* Join IEEE */}
               <Link
@@ -373,12 +367,19 @@ export default function Footer() {
         {/* =========================
             DIVIDER
             ========================= */}
-        <div className="my-10 h-px bg-white/10 sm:my-12" />
+        <div className="my-8 h-px bg-white/10 sm:my-10 lg:my-12" />
 
         {/* =========================
             BOTTOM BAR
             ========================= */}
-        <div className="flex flex-col gap-4 text-center text-sm text-white/30 sm:flex-row sm:items-center sm:justify-between">
+        <div
+          className="
+            flex flex-col gap-3
+            text-center text-xs text-white/30
+            sm:flex-row sm:items-center sm:justify-between
+            sm:text-sm
+          "
+        >
 
           <p>
             © 2026 IEEE GBPIET Student Branch. All rights reserved.
