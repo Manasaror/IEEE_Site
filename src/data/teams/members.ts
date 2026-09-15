@@ -166,7 +166,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Janmejay',
     role: 'Student Secretary',
     department: 'IEEE Student Branch',
-    photo: 'public/images/janmajay.jpeg',
+    photo: '/public/images/janmajay.jpeg',
     priority: 3,
     committee: 'student',
     socials: {
@@ -178,7 +178,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Ojasvi Arora',
     role: 'Vice chair',
     department: 'IEEE Student Branch',
-    photo: '/public/images/ojasvi mam.jpeg',
+    photo: '/public/images/ojasss.jpeg',
     priority: 3,
     committee: 'student',
     socials: {
@@ -202,7 +202,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Ansh dhamija',
     role:'student Treasurer',
     department: 'IEEE Student Branch',
-    photo: 'public/images/ansh dhamija.jpeg',
+    photo: '/public/images/ansh dhamija.jpeg',
     priority: 4,
     committee: 'student',
     socials: {
