@@ -163,14 +163,26 @@ export const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: '',
+    name: 'Janmejay',
     role: 'Student Secretary',
     department: 'IEEE Student Branch',
-    photo: '/',
+    photo: 'public/images/janmajay.jpeg',
     priority: 3,
     committee: 'student',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/janmejay-pant-b2329b289?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      instagram: 'https://instagram.com/',
+    },
+  },
+  {
+    name: 'Ojasvi Arora',
+    role: 'Vice chair',
+    department: 'IEEE Student Branch',
+    photo: '/public/images/ojasvi mam.jpeg',
+    priority: 3,
+    committee: 'student',
+    socials: {
+      linkedin: 'https://www.linkedin.com/in/ojasviarora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       instagram: 'https://instagram.com/',
     },
   },
@@ -188,9 +200,9 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: 'Ansh dhamija',
-    role: 'Student Treasurer',
+    role:'student Treasurer',
     department: 'IEEE Student Branch',
-    photo: '/images/ansh dhamija.jpeg',
+    photo: 'public/images/ansh dhamija.jpeg',
     priority: 4,
     committee: 'student',
     socials: {
