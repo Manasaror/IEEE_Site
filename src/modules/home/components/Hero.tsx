@@ -3,12 +3,12 @@ export default function HomePage() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
 
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-105 animate-[zoom_15s_ease-in-out_infinite_alternate]"
+      {/* <div
+        className="absolute inset-0 scale-105 bg-cover bg-center animate-[zoom_15s_ease-in-out_infinite_alternate]"
         style={{
           backgroundImage: "url('/images/HomeBanner.jpg')",
         }}
-      />
+      /> */}
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/55" />
@@ -19,22 +19,27 @@ export default function HomePage() {
       {/* Hero Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
 
-
-
         {/* Main Heading */}
-        <h1 className="animate-[fadeUp_1s_ease-out] text-6xl font-extrabold leading-tight tracking-tight sm:text-7xl md:text-8xl">
+        <div className="flex items-center justify-center gap-5">
 
+          {/* IEEE Logo - Desktop Only */}
+          <img
+            src="/images/IeeeLogo.webp"
+            alt="IEEE Logo"
+            className="hidden h-24 w-24 shrink-0 object-contain md:block"
+          />
 
-          <img src="/images/IeeeLogo.webp" alt="IEEE Logo" className="h-12 w-12 object-contain" />
-          <span className="text-[#00629b] drop-shadow-[0_4px_15px_rgba(0,98,155,0.4)]">
-            IEEE
-          </span>
+          <h1 className="animate-[fadeUp_1s_ease-out] text-6xl font-extrabold leading-tight tracking-tight sm:text-7xl md:text-8xl">
+            <span className="text-[#00629b] drop-shadow-[0_4px_15px_rgba(0,98,155,0.4)]">
+              IEEE
+            </span>
 
-          <span className="text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.5)]">
-            {" "} X GBPIET
-          </span>
+            <span className="text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.5)]">
+              {" "}X GBPIET
+            </span>
+          </h1>
 
-        </h1>
+        </div>
 
         {/* Subtitle */}
         <p className="mx-auto mt-5 max-w-2xl animate-[fadeUp_1.2s_ease-out] text-xl leading-relaxed text-white/85 sm:text-2xl">
@@ -45,7 +50,6 @@ export default function HomePage() {
         {/* Buttons */}
         <div className="mt-10 flex animate-[fadeUp_1.4s_ease-out] flex-col items-center justify-center gap-4 sm:flex-row">
 
-          {/* Join Us */}
           <a
             href="/contact"
             className="group relative overflow-hidden rounded-full bg-yellow-400 px-8 py-4 font-semibold text-gray-900 shadow-[0_10px_35px_rgba(250,204,21,0.35)] transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_15px_45px_rgba(250,204,21,0.5)]"
@@ -57,7 +61,6 @@ export default function HomePage() {
             <span className="absolute inset-0 -translate-x-full bg-white/30 transition-transform duration-500 group-hover:translate-x-0" />
           </a>
 
-          {/* About Us */}
           <a
             href="/about"
             className="group rounded-full border border-white/40 bg-[#00629b]/90 px-8 py-4 font-semibold text-white shadow-[0_10px_35px_rgba(0,98,155,0.35)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#00629b] hover:shadow-[0_15px_45px_rgba(0,98,155,0.55)]"
