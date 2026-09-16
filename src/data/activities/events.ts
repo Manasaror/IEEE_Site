@@ -34,7 +34,7 @@ export const activities: Activity[] = [
   // CSE
   // =========================
   {
-    id: 'CSE26001',
+    id: 'CSE26001', // CSE26001
 
     title: 'Web Development Workshop',
     category: 'Workshops',
@@ -63,8 +63,9 @@ export const activities: Activity[] = [
 
     studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
 
-    image: '/images/hero_engineering_lab.jpg',
+    image: '/activies/CSE/hero_engineering_lab.jpg',
   },
+
 
   // ========================
   // CSE -AIML
