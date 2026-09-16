@@ -5,10 +5,7 @@ interface ActivityCardProps {
   onClick?: () => void;
 }
 
-export function ActivityCard({
-  activity,
-  onClick,
-}: ActivityCardProps) {
+export function ActivityCard({ activity, onClick }: ActivityCardProps) {
   return (
     <article
       onClick={onClick}
@@ -33,7 +30,9 @@ export function ActivityCard({
         sm:rounded-[28px]
       "
     >
-      {/* Image */}
+      {/* =========================
+          IMAGE
+          ========================= */}
       <div className="relative h-[230px] overflow-hidden sm:h-[270px]">
         <img
           src={activity.image}
@@ -48,37 +47,14 @@ export function ActivityCard({
           "
         />
 
+        {/* Image Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#080b0f] via-black/10 to-transparent" />
-
-        {/* Category */}
-        <div
-          className="
-            absolute
-            left-4
-            top-4
-            rounded-full
-            border
-            border-white/20
-            bg-black/50
-            px-3
-            py-1.5
-            text-xs
-            font-semibold
-            text-white
-            backdrop-blur-md
-            sm:left-5
-            sm:top-5
-            sm:px-4
-            sm:py-2
-          "
-        >
-          {activity.category}
-        </div>
       </div>
 
-      {/* Content */}
+      {/* =========================
+          CONTENT
+          ========================= */}
       <div className="p-5 sm:p-7">
-
         {/* Date */}
         <p
           className="
@@ -110,7 +86,7 @@ export function ActivityCard({
           {activity.title}
         </h2>
 
-        {/* SHORT DESCRIPTION ONLY */}
+        {/* Overview */}
         <p
           className="
             min-h-[72px]
@@ -123,12 +99,14 @@ export function ActivityCard({
             [-webkit-line-clamp:3]
           "
         >
-          {activity.description}
+          {activity.overview}
         </p>
 
-        {/* Click indicator */}
-        <div className="mt-5 flex items-center gap-3 sm:mt-7">
 
+        {/* =========================
+            CLICK INDICATOR
+            ========================= */}
+        <div className="mt-5 flex items-center gap-3 sm:mt-7">
           <div
             className="
               h-px
@@ -152,9 +130,7 @@ export function ActivityCard({
           >
             →
           </span>
-
         </div>
-
       </div>
     </article>
   );

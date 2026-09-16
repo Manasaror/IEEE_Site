@@ -1,79 +1,53 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from "react";
 
-import { ActivityCard } from './components/ActivityCard';
-import { ActivityDetailCard } from './components/ActivityDetailedCard';
-import { activities } from '@/data/activities/events';
+import { ActivityCard } from "./components/ActivityCard";
+import ActivityDetailedCard from "./components/ActivityDetailedCard";
+import { activities } from "@/data/activities/events";
 
-const branches = ['CSE', 'CSE-AIML', 'Biotechnology', 'Electrical', 'Electronics'];
+const branches = [
+  "CSE",
+  "AIML",
+  "BT",
+  "EE",
+  "ECE",
+];
 
-const categories = ['All', 'Workshops', 'Projects'];
+const categories = ["All", "Workshops", "Projects"];
 
 export default function EventsPage() {
-  const [selectedBranch, setSelectedBranch] = useState('CSE');
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedBranch, setSelectedBranch] = useState("CSE");
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Selected activity for detailed view
   const [selectedActivity, setSelectedActivity] = useState<
     (typeof activities)[number] | null
   >(null);
-  /*
-   * FILTER ACTIVITIES
-   */
+
   const filteredActivities = useMemo(() => {
     return activities.filter((activity) => {
       const branchMatch = activity.branch === selectedBranch;
 
       const categoryMatch =
-        selectedCategory === 'All' ||
+        selectedCategory === "All" ||
         activity.category === selectedCategory;
 
       return branchMatch && categoryMatch;
     });
   }, [selectedBranch, selectedCategory]);
 
-  /*
-   * CLOSE DETAIL VIEW WHEN FILTER CHANGES
-   */
   useEffect(() => {
     setSelectedActivity(null);
   }, [selectedBranch, selectedCategory]);
 
-  /*
-   * BRANCH CHANGE
-   */
-  const handleBranchChange = (branch: string) => {
-    setSelectedBranch(branch);
-  };
-
-  /*
-   * CATEGORY CHANGE
-   */
-  const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
-  };
-
-  /*
-   * OPEN DETAIL
-   */
   const handleActivityClick = (
-    activity: (typeof activities)[number],
+    activity: (typeof activities)[number]
   ) => {
     setSelectedActivity(activity);
-  };
-
-  /*
-   * CLOSE DETAIL
-   */
-  const handleCloseDetail = () => {
-    setSelectedActivity(null);
   };
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-black px-4 pb-24 pt-28 sm:px-8 sm:pb-28 sm:pt-32">
 
-      {/* =========================
-          BACKGROUND
-          ========================= */}
+      {/* Background */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-20 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-[#00629b]/10 blur-[100px] sm:h-[500px] sm:w-[500px] sm:blur-[120px]" />
 
@@ -85,20 +59,16 @@ export default function EventsPage() {
           className="absolute inset-0 opacity-[0.035]"
           style={{
             backgroundImage:
-              'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
+              "linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
           }}
         />
       </div>
 
-      {/* =========================
-          MAIN CONTENT
-          ========================= */}
+      {/* Main Content */}
       <div className="relative mx-auto max-w-7xl">
 
-        {/* =========================
-            HEADING
-            ========================= */}
+        {/* Heading */}
         <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Explore Our
@@ -116,26 +86,24 @@ export default function EventsPage() {
           </div>
         </div>
 
-        {/* =========================
-            BRANCH FILTER
-            ========================= */}
+        {/* Branch Filter */}
         <div className="mb-5 flex justify-center sm:mb-6">
           <div
             className="flex max-w-full gap-1.5 overflow-x-auto rounded-2xl border border-white/10 bg-[#080b0f]/80 p-2 shadow-2xl backdrop-blur-xl"
             style={{
-              scrollbarWidth: 'none',
-              touchAction: 'pan-x',
+              scrollbarWidth: "none",
+              touchAction: "pan-x",
             }}
           >
             {branches.map((branch) => (
               <button
                 key={branch}
                 type="button"
-                onClick={() => handleBranchChange(branch)}
+                onClick={() => setSelectedBranch(branch)}
                 className={`whitespace-nowrap rounded-xl px-4 py-2.5 text-xs font-semibold transition-all duration-300 sm:px-5 sm:py-3 sm:text-sm ${
                   selectedBranch === branch
-                    ? 'bg-[#00629b] text-white shadow-[0_0_30px_rgba(0,98,155,0.35)]'
-                    : 'text-white/50 hover:bg-white/5 hover:text-white'
+                    ? "bg-[#00629b] text-white shadow-[0_0_30px_rgba(0,98,155,0.35)]"
+                    : "text-white/50 hover:bg-white/5 hover:text-white"
                 }`}
               >
                 {branch}
@@ -144,26 +112,24 @@ export default function EventsPage() {
           </div>
         </div>
 
-        {/* =========================
-            CATEGORY FILTER
-            ========================= */}
+        {/* Category Filter */}
         <div className="mb-8 flex justify-center sm:mb-12">
           <div
             className="flex max-w-full gap-6 overflow-x-auto border-b border-white/10 px-3 sm:gap-7 sm:px-4"
             style={{
-              scrollbarWidth: 'none',
-              touchAction: 'pan-x',
+              scrollbarWidth: "none",
+              touchAction: "pan-x",
             }}
           >
             {categories.map((category) => (
               <button
                 key={category}
                 type="button"
-                onClick={() => handleCategoryChange(category)}
+                onClick={() => setSelectedCategory(category)}
                 className={`relative whitespace-nowrap pb-3 text-xs font-medium transition-colors duration-300 sm:pb-4 sm:text-sm ${
                   selectedCategory === category
-                    ? 'text-[#008dcc]'
-                    : 'text-white/40 hover:text-white'
+                    ? "text-[#008dcc]"
+                    : "text-white/40 hover:text-white"
                 }`}
               >
                 {category}
@@ -176,39 +142,23 @@ export default function EventsPage() {
           </div>
         </div>
 
-        {/* =========================
-            ACTIVITY CARDS
-            ========================= */}
+        {/* Activity Cards */}
         {filteredActivities.length > 0 ? (
-          <div className="mx-auto w-full">
-
-            {/* 
-              All filtered cards are rendered here.
-              No pagination.
-              No next/previous.
-              No carousel.
-              No swipe.
-            */}
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {filteredActivities.map((activity) => (
-                <div
-                  key={activity.title}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredActivities.map((activity) => (
+              <div
+                key={activity.id}
+                onClick={() => handleActivityClick(activity)}
+                className="cursor-pointer"
+              >
+                <ActivityCard
+                  activity={activity}
                   onClick={() => handleActivityClick(activity)}
-                  className="cursor-pointer"
-                >
-                  <ActivityCard
-                    activity={activity}
-                    onClick={() => handleActivityClick(activity)}
-                  />
-                </div>
-              ))}
-            </div>
-
+                />
+              </div>
+            ))}
           </div>
         ) : (
-          /* =========================
-             NO ACTIVITIES
-             ========================= */
           <div className="flex min-h-[400px] items-center justify-center">
             <div className="rounded-3xl border border-white/10 bg-[#080b0f] px-8 py-12 text-center shadow-2xl sm:px-12 sm:py-14">
               <div className="mx-auto mb-6 h-3 w-3 animate-pulse rounded-full bg-[#008dcc] shadow-[0_0_20px_#008dcc]" />
@@ -225,29 +175,12 @@ export default function EventsPage() {
         )}
       </div>
 
-      {/* =========================
-          DETAILED ACTIVITY OVERLAY
-          ========================= */}
+      {/* Detailed Activity */}
       {selectedActivity && (
-        <div
-          className="
-            fixed
-            inset-0
-            z-[100]
-            overflow-y-auto
-            bg-black/80
-            px-4
-            py-8
-            backdrop-blur-md
-            sm:px-8
-            sm:py-12
-          "
-        >
-          <ActivityDetailCard
-            activity={selectedActivity}
-            onClose={handleCloseDetail}
-          />
-        </div>
+        <ActivityDetailedCard
+          activity={selectedActivity}
+          onClose={() => setSelectedActivity(null)}
+        />
       )}
     </section>
   );

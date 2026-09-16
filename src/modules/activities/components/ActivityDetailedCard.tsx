@@ -1,214 +1,198 @@
-import { X } from 'lucide-react';
-import type { Activity } from '@/data/activities/events';
 
-interface ActivityDetailCardProps {
+import { X } from "lucide-react";
+
+type Activity = {
+  id: string;
+  title: string;
+  category: string;
+  branch: string;
+  date: string;
+  time: string;
+  venue: string;
+  organizedBy: string;
+  reportAuthor: string;
+  overview: string;
+  description: string;
+  keyDiscussion: string[];
+  studentsPresent: string[];
+  image: string;
+};
+
+interface ActivityDetailedCardProps {
   activity: Activity;
   onClose: () => void;
 }
 
-export function ActivityDetailCard({ activity, onClose }: ActivityDetailCardProps) {
+export default function ActivityDetailedCard({
+  activity,
+  onClose,
+}: ActivityDetailedCardProps) {
   return (
-    <article
-      className="
-        relative
-        mx-auto
-        w-full
-        max-w-5xl
-        overflow-hidden
-        rounded-[28px]
-        border
-        border-white/10
-        bg-[#080b0f]
-        shadow-[0_30px_100px_rgba(0,0,0,0.7)]
-      "
-    >
-      {/* Close */}
-      <button
-        type="button"
-        onClick={onClose}
-        aria-label="Close activity details"
-        className="
-          absolute
-          right-5
-          top-5
-          z-20
-          flex
-          h-10
-          w-10
-          items-center
-          justify-center
-          rounded-full
-          border
-          border-white/10
-          bg-black/50
-          text-white/60
-          backdrop-blur-md
-          transition-all
-          duration-300
-          hover:border-[#008dcc]
-          hover:bg-[#00629b]
-          hover:text-white
-        "
-      >
-        <X size={20} />
-      </button>
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/80 backdrop-blur-sm">
+      <div className="min-h-screen px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-white/10 bg-[#080b0f] shadow-2xl">
+          
+          {/* Header */}
+          <div className="relative">
+            <img
+              src={activity.image}
+              alt={activity.title}
+              className="h-52 w-full object-cover sm:h-64 lg:h-80"
+            />
 
-      {/* Hero Image */}
-      <div className="relative h-[280px] sm:h-[420px]">
-        <img src={activity.image} alt={activity.title} className="h-full w-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#080b0f] via-black/30 to-transparent" />
 
-        <div
-          className="
-            absolute
-            inset-0
-            bg-gradient-to-t
-            from-[#080b0f]
-            via-[#080b0f]/30
-            to-transparent
-          "
-        />
+            <button
+              onClick={onClose}
+              className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/50 text-white transition hover:bg-black/80"
+              aria-label="Close"
+            >
+              <X size={20} />
+            </button>
 
-        {/* Category */}
-        <div
-          className="
-            absolute
-            bottom-6
-            left-6
-            rounded-full
-            border
-            border-white/20
-            bg-black/50
-            px-4
-            py-2
-            text-xs
-            font-semibold
-            uppercase
-            tracking-wider
-            text-white
-            backdrop-blur-md
-            sm:left-10
-          "
-        >
-          {activity.category}
-        </div>
-      </div>
+            <div className="absolute bottom-5 left-5 right-5 sm:bottom-7 sm:left-8 sm:right-8">
+              <div className="mb-3 flex flex-wrap gap-2">
+                <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-cyan-400">
+                  {activity.category}
+                </span>
 
-      {/* Content */}
-      <div className="p-6 sm:p-10 lg:p-12">
-        {/* Meta */}
-        <div className="flex flex-wrap items-center gap-3 text-sm">
-          <span className="text-[#008dcc]">{activity.date}</span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-gray-300">
+                  {activity.branch}
+                </span>
+              </div>
 
-          <span className="text-white/20">•</span>
-
-          <span className="text-white/40">{activity.branch}</span>
-        </div>
-
-        {/* Title */}
-        <h1
-          className="
-            mt-4
-            max-w-4xl
-            text-3xl
-            font-bold
-            leading-tight
-            tracking-tight
-            text-white
-            sm:text-5xl
-          "
-        >
-          {activity.title}
-        </h1>
-
-        {/* Divider */}
-        <div className="my-8 h-px bg-white/10" />
-
-        {/* Description */}
-        <div className="max-w-3xl">
-          <p
-            className="
-              mb-4
-              text-xs
-              font-bold
-              uppercase
-              tracking-[0.25em]
-              text-[#008dcc]
-            "
-          >
-            About the Activity
-          </p>
-
-          <p
-            className="
-              text-base
-              leading-8
-              text-white/60
-              sm:text-lg
-            "
-          >
-            {activity.longDescription}
-          </p>
-        </div>
-
-        {/* Activity information */}
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
-          <div
-            className="
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/[0.025]
-              p-5
-            "
-          >
-            <p className="text-xs uppercase tracking-wider text-white/30">Category</p>
-
-            <p className="mt-2 font-semibold text-white">{activity.category}</p>
+              <h1 className="text-2xl font-semibold leading-tight text-white sm:text-3xl lg:text-4xl">
+                {activity.title}
+              </h1>
+            </div>
           </div>
 
-          <div
-            className="
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/[0.025]
-              p-5
-            "
-          >
-            <p className="text-xs uppercase tracking-wider text-white/30">Student Branch</p>
+          {/* Content */}
+          <div className="px-5 py-7 sm:px-8 sm:py-9 lg:px-10">
 
-            <p className="mt-2 font-semibold text-white">{activity.branch}</p>
+            {/* Event Information */}
+            <div className="mb-10 grid grid-cols-2 gap-x-6 gap-y-5 border-b border-white/10 pb-8 sm:grid-cols-4">
+              <div>
+                <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-400">
+                  Date
+                </p>
+                <p className="text-sm text-gray-300 sm:text-base">
+                  {activity.date}
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-400">
+                  Time
+                </p>
+                <p className="text-sm text-gray-300 sm:text-base">
+                  {activity.time}
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-400">
+                  Venue
+                </p>
+                <p className="text-sm text-gray-300 sm:text-base">
+                  {activity.venue}
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-400">
+                  Organized By
+                </p>
+                <p className="text-sm text-gray-300 sm:text-base">
+                  {activity.organizedBy}
+                </p>
+              </div>
+            </div>
+
+            {/* Overview */}
+            <section className="mb-10">
+              <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                Overview
+              </h2>
+
+              <p className="text-base leading-8 text-gray-300 sm:text-lg sm:leading-9">
+                {activity.overview}
+              </p>
+            </section>
+
+            {/* Description */}
+            <section className="mb-10">
+              <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                Description
+              </h2>
+
+              <p className="text-base leading-8 text-gray-300 sm:text-lg sm:leading-9">
+                {activity.description}
+              </p>
+            </section>
+
+            {/* Key Discussion */}
+            <section className="mb-10">
+              <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                Key Discussion
+              </h2>
+
+              <ul className="space-y-4">
+                {activity.keyDiscussion.map((point, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start gap-4 text-base leading-7 text-gray-300 sm:text-lg sm:leading-8"
+                  >
+                    <span className="mt-[11px] h-2 w-2 shrink-0 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)]" />
+
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            {/* Students Present */}
+            <section className="mb-8">
+              <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                Following Students Were Present
+              </h2>
+
+              <div className="space-y-3">
+                {activity.studentsPresent.map((student, index) => (
+                  <p
+                    key={index}
+                    className="text-base leading-7 text-gray-300 sm:text-lg sm:leading-8"
+                  >
+                    <span className="mr-3 text-cyan-400">
+                      {index + 1}.
+                    </span>
+                    {student}
+                  </p>
+                ))}
+              </div>
+            </section>
+
+            {/* Report Author */}
+            <div className="border-t border-white/10 pt-6">
+              <p className="text-xs uppercase tracking-[0.2em] text-gray-500">
+                Report Author
+              </p>
+
+              <p className="mt-2 text-sm text-gray-300 sm:text-base">
+                {activity.reportAuthor}
+              </p>
+            </div>
+
           </div>
 
-          <div
-            className="
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/[0.025]
-              p-5
-            "
-          >
-            <p className="text-xs uppercase tracking-wider text-white/30">Date</p>
-
-            <p className="mt-2 font-semibold text-white">{activity.date}</p>
-          </div>
-
-          <div
-            className="
-              rounded-2xl
-              border
-              border-white/10
-              bg-white/[0.025]
-              p-5
-            "
-          >
-            <p className="text-xs uppercase tracking-wider text-white/30">IEEE GBPIET</p>
-
-            <p className="mt-2 font-semibold text-white">Student Activity</p>
+          {/* Footer */}
+          <div className="border-t border-white/10 px-5 py-5 sm:px-8">
+            <p className="text-center text-xs tracking-wide text-gray-500 sm:text-sm">
+              IEEE GBPIET Student Branch • Activity Report
+            </p>
           </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
