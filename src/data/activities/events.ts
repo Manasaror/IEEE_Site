@@ -39,6 +39,19 @@ export const activities: Activity[] = [
     branch: 'CSE',
   },
 
+    {
+    id: 'AIML-development-workshop',
+    title: 'AIML Development Workshop',
+    category: 'Workshops',
+    date: 'September 2026',
+    description:
+      'A hands-on workshop covering modern web development and application design.',
+    longDescription:
+      'The Web Development Workshop provides students with practical exposure to modern web technologies and application design. The activity focuses on understanding how websites and web applications are structured, developed, and brought together into usable digital products.',
+    image: '/images/about_engineering_bench.jpg',
+    branch: 'CSE',
+  },
+
   {
     id: 'campus-connect',
     title: 'Campus Connect',
