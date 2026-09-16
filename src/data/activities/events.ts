@@ -231,5 +231,5 @@ export const activities: Activity[] = [
       'Smart Automation is an electronics project focused on intelligent automation and connected devices. Students can explore how electronic components and control logic can be combined to create systems capable of performing automated tasks.',
     image: '/images/project_rover.jpg',
     branch: 'Electronics',
-  },
+  }
 ];

@@ -1,4 +1,5 @@
-import { ExternalLink, Cpu } from 'lucide-react';
+import { useRef } from 'react';
+import { ChevronLeft, ChevronRight, ExternalLink, Cpu } from 'lucide-react';
 
 import { ActivityCard } from './components/ActivityCard';
 import { roboticsActivities } from '@/data/activities/robotics';
@@ -7,6 +8,14 @@ export default function RoboticsPage() {
   const workshops = roboticsActivities.filter(
     (activity) => activity.category === 'Workshops'
   );
+  const workshopsScrollerRef = useRef<HTMLDivElement>(null);
+
+  const scrollWorkshops = (direction: 'left' | 'right') => {
+    workshopsScrollerRef.current?.scrollBy({
+      left: direction === 'right' ? 414 : -414,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-black px-4 py-24 sm:px-8 sm:py-32">
@@ -50,6 +59,11 @@ export default function RoboticsPage() {
           <p className="mt-3 text-sm text-white/50 sm:text-base">
             Discover our latest build sessions and technical workshops.
           </p>
+          <div className="mx-auto mt-8 flex max-w-xs items-center gap-3">
+            <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#00629b]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#008dcc] shadow-[0_0_12px_#008dcc]" />
+            <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#00629b]" />
+          </div>
         </div>
 
         {/* =========================
