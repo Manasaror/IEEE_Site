@@ -16,7 +16,6 @@ export default function EventsPage() {
   const [selectedActivity, setSelectedActivity] = useState<
     (typeof activities)[number] | null
   >(null);
-
   /*
    * FILTER ACTIVITIES
    */
