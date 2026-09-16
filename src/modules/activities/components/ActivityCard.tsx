@@ -15,7 +15,7 @@ export function ActivityCard({
       className="
         group
         relative
-        w-[calc(100vw-40px)]
+        w-full
         max-w-[390px]
         cursor-pointer
         overflow-hidden
