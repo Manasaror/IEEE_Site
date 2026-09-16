@@ -73,7 +73,7 @@ export default function HomePage() {
         {/* Bottom Text */}
         <div className="mt-14 animate-[fadeUp_1.6s_ease-out]">
           <p className="text-base tracking-widest text-white/60">
-            INNOVATE • CONNECT • LEAD
+            INNOVATE  • CONNECT • LEAD
           </p>
         </div>
 
