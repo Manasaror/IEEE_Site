@@ -190,7 +190,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Harsh Sharma',
     role: 'Student Treasurer',
     department: 'IEEE Student Branch',
-    photo: '/images/harsh sharma.jpeg',
+    photo: '/public/images/harsh sharma.jpeg',
     priority: 4,
     committee: 'student',
     socials: {
