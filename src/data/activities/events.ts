@@ -1245,6 +1245,243 @@ export const activities: Activity[] = [
 
   image: '/public/activities/ECE/ECE23001.jpg',
 },
+{
+  id: 'ECE23010',
+
+  title: 'IEEE Outreach Event - IoT Home Automation Workshop at Government School',
+  category: 'Outreach',
+  branch: 'ECE',
+
+  date: 'November 1, 2023',
+  time: 'N/A',
+  venue: 'Government Primary School, Ghurdauri',
+  organizedBy: 'GBPIET Student Teacher Branch of IEEE',
+
+  reportAuthor: 'IEEE Student Branch',
+
+  overview:
+    'The IEEE outreach event at Government Primary School Ghurdauri aimed to introduce students to the Internet of Things (IoT) and home automation through interactive sessions, hands-on projects, and practical demonstrations.',
+
+  description:
+    'The IEEE outreach event was organized at Government Primary School Ghurdauri to familiarize students with IoT and its applications in home automation. The event began with an introduction to the Internet of Things and its relevance in everyday life. Students were provided with hands-on experience involving electronic components and coding to understand the development of IoT-based projects. The volunteers also explained the projects and their applications to the students. The event included refreshments, a motivational session, and a question-and-answer session where students could interact with the volunteers and clarify their doubts. The event successfully provided students with a practical understanding of IoT and encouraged them to explore technology and innovation.',
+
+  keyDiscussion: [
+    'Introduction to the Internet of Things (IoT).',
+    'Understanding the relevance of IoT in daily life.',
+    'Introduction to IoT-based home automation.',
+    'Hands-on experience with electronic components.',
+    'Understanding coding for IoT-based projects.',
+    'Explanation and demonstration of IoT projects.',
+    'Motivational session encouraging students to explore technology.',
+    'Interactive question-and-answer session.',
+  ],
+
+  studentsPresent: [
+    'Parth Uniyal',
+    'Shubham Bhatt',
+    'Priyanshu Bisht',
+    'Aditya Raj Haldia',
+    'Vinay Kathait',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},
+{
+  id: 'ECE23011',
+
+  title: 'Initiative in the Field of Social Welfare by Ghurdauri Engineering College',
+  category: 'Outreach',
+  branch: 'ECE',
+
+  date: 'September 21, 2023',
+  time: 'N/A',
+  venue: 'Ghurdauri Junior School',
+  organizedBy: 'Ghurdauri Engineering College through IEEE Branch Chapter',
+
+  reportAuthor: 'Ghurdauri Engineering College',
+
+  overview:
+    'Ghurdauri Engineering College has been undertaking various social welfare initiatives to support the educational development and upliftment of students at Ghurdauri Junior School.',
+
+  description:
+    'As part of its ongoing social welfare initiatives, Ghurdauri Engineering College organized a programme at Ghurdauri Junior School on September 21, 2023. College teachers distributed reading materials among all the students and provided guidance and encouragement for their bright future. The initiative is being conducted through the IEEE Branch Chapter, with an objective of helping school students develop their talents and skills across various fields. Prof. Sanjay Gairola, Dr. K. S. Bhatia, Dr. Manoj Kumar, Mr. Pushkar Praveen, and Dr. Ajay Kumar, along with teachers from the school, were present during the programme. College Director Dr. V.N. Kala has also assured continued support for educational welfare initiatives.',
+
+  keyDiscussion: [
+    'Social welfare initiatives undertaken by Ghurdauri Engineering College.',
+    'Distribution of reading materials among school students.',
+    'Guidance and encouragement for students’ educational development.',
+    'Supporting the upliftment of students at Ghurdauri Junior School.',
+    'Development of students’ talents and skills through IEEE initiatives.',
+    'Collaboration between college teachers and school teachers.',
+    'Continued institutional support for educational welfare programmes.',
+  ],
+
+  studentsPresent: [
+    'Students of Ghurdauri Junior School',
+    'Prof. Sanjay Gairola',
+    'Dr. K. S. Bhatia',
+    'Dr. Manoj Kumar',
+    'Mr. Pushkar Praveen',
+    'Dr. Ajay Kumar',
+    'Teachers of Ghurdauri Junior School',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},
+{
+  id: 'ECE23012',
+
+  title: 'Nurturing Innovation and Insight - Think Tank Session',
+  category: 'Meetings',
+  branch: 'ECE',
+
+  date: 'August 26, 2023',
+  time: 'N/A',
+  venue: 'N/A',
+  organizedBy: 'IEEE Student Chapter',
+
+  reportAuthor: 'IEEE Student Chapter',
+
+  overview:
+    'IEEE Student Chapter hosted an engaging and enlightening event to introduce students to IEEE, its benefits, functioning, and the opportunities associated with becoming an IEEE member.',
+
+  description:
+    'The event began with a comprehensive introduction to IEEE (Institute of Electrical and Electronics Engineers), covering its global presence, diverse membership, and the various technical fields it encompasses. The session emphasized the benefits of IEEE membership, including access to research, networking opportunities, workshops, conferences, and career development resources. The highlight of the event was an interactive Think Tank session where students were encouraged to share their views and ideas on innovation and invention. The session provided students with a platform for intellectual discussion and encouraged them to explore innovative ideas and their potential to contribute to positive change.',
+
+  keyDiscussion: [
+    'Introduction to IEEE and its global presence.',
+    'Understanding IEEE membership and its benefits.',
+    'Overview of technical fields covered by IEEE.',
+    'Access to research, networking, workshops, and conferences.',
+    'Career development opportunities through IEEE.',
+    'Interactive Think Tank session on innovation and invention.',
+    'Encouraging students to share innovative ideas and perspectives.',
+    'Exploring the potential of students to drive positive change through innovation.',
+  ],
+
+  studentsPresent: [
+    'IEEE Student Chapter members',
+    'Students participating in the Think Tank session',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},
+{
+  id: 'ECE20013',
+
+  title: 'Online International Conference on Smart Machine Intelligence and Real-Time Computing (SMART COM 2020)',
+  category: 'Conferences',
+  branch: 'ECE',
+
+  date: 'June 26, 2020 - June 27, 2020',
+  time: 'N/A',
+  venue: 'Online',
+  organizedBy: 'Department of Electronics & Communication Engineering, Computer Science Engineering and Electrical Engineering, GBPIET Pauri',
+
+  reportAuthor: 'GBPIET Pauri',
+
+  overview:
+    'SMART COM 2020 was an Online International Conference focused on frontier topics in smart machine intelligence, real-time computing, and related fields, with the vision of promoting the development of intelligent solutions for the future.',
+
+  description:
+    'The Department of Electronics & Communication Engineering, Computer Science Engineering, and Electrical Engineering at GBPIET Pauri collectively organized the Online International Conference on Smart Machine Intelligence and Real-Time Computing (SMART COM 2020) during June 26-27, 2020, sponsored by TEQIP-3. The conference focused on emerging topics in smart machine intelligence, real-time computing, and related areas. It provided a platform for researchers to discuss practical solutions, scientific results, and methodologies for solving challenging problems. The conference also encouraged interaction among researchers actively involved in emerging research fields. A total of 151 research papers were accepted, out of which 116 research papers were presented during the conference.',
+
+  keyDiscussion: [
+    'Smart machine intelligence and emerging technologies.',
+    'Real-time computing and related research fields.',
+    'Development of intelligent solutions for future applications.',
+    'Discussion of practical solutions to challenging problems.',
+    'Presentation of scientific research results and methodologies.',
+    'Interaction and knowledge sharing among researchers.',
+    'Research in emerging fields of smart computing and intelligence.',
+    'Presentation of 116 accepted research papers.',
+  ],
+
+  studentsPresent: [
+    'Researchers and participants from various institutions',
+    'Authors of accepted research papers',
+    '116 research paper presentations',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},
+{
+  id: 'ECE20014',
+
+  title: 'Industrial Training on "Current Industry Scenario"',
+  category: 'Training',
+  branch: 'ECE',
+
+  date: 'July 29, 2020 - August 9, 2020',
+  time: 'N/A',
+  venue: 'Online',
+  organizedBy: 'Electronics & Communication Engineering Department, GBPIET Pauri',
+
+  reportAuthor: 'Electronics & Communication Engineering Department, GBPIET Pauri',
+
+  overview:
+    'An online industrial training programme was conducted to provide students with insights into the latest industry trends, work culture, business processes, and innovation across IT and core sectors.',
+
+  description:
+    'The Electronics & Communication Engineering Department, GBPIET Pauri conducted an online Industrial Training programme on "Current Industry Scenario" from July 29 to August 9, 2020. Around 100 students participated in the live webinar sessions delivered by highly qualified and experienced industry professionals. The training aimed to familiarize students with the latest trends in industry, business process management, current industry work culture, and innovation in IT and core sectors. The experts also shared valuable guidance and tips to help students understand career opportunities and prepare for professional growth in their respective industries.',
+
+  keyDiscussion: [
+    'Overview of the current industry scenario.',
+    'Latest trends and developments in the industry.',
+    'Introduction to business process management.',
+    'Understanding current industry work culture.',
+    'Innovation and opportunities in the IT sector.',
+    'Innovation and developments in core industries.',
+    'Insights from experienced industry professionals.',
+    'Career guidance and tips for professional growth.',
+  ],
+
+  studentsPresent: [
+    'Around 100 participating students',
+    'Industry professionals and experts',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},
+{
+  id: 'ECE20015',
+
+  title: 'Hands-on Workshop on "MATLAB and Data Science using Python"',
+  category: 'Workshops',
+  branch: 'ECE',
+
+  date: 'September 21, 2020 - September 25, 2020',
+  time: 'N/A',
+  venue: 'Online',
+  organizedBy: 'Department of Electronics & Communication Engineering, GBPIET',
+
+  reportAuthor: 'Department of Electronics & Communication Engineering, GBPIET',
+
+  overview:
+    'A hands-on online workshop was organized to provide participants with practical knowledge of MATLAB and introduce them to data science using Python, covering programming fundamentals, data manipulation, and analysis tools.',
+
+  description:
+    'The Department of Electronics & Communication Engineering, GBPIET organized a hands-on online workshop on "MATLAB and Data Science using Python" from September 21 to September 25, 2020. Dr. Tapan Kr Jain from IIIT Nagpur conducted three sessions on MATLAB, followed by sessions on data science using Python delivered by Dr. Pooja Jain from IIIT Nagpur. Dr. Tapan introduced participants to MATLAB and demonstrated how its built-in tools and programming capabilities can be used to enhance computing and problem-solving experiences. Dr. Pooja introduced learners to the Python programming environment and fundamental programming techniques, including lambda functions, reading and manipulating CSV files, and the NumPy library. She also covered data manipulation and cleaning techniques using the Python Pandas library and introduced Series and DataFrame as central data structures for data analysis.',
+
+  keyDiscussion: [
+    'Introduction to MATLAB and its applications.',
+    'Practical use of MATLAB built-in tools.',
+    'Programming techniques for enhancing computing with MATLAB.',
+    'Introduction to the Python programming environment.',
+    'Fundamental Python programming techniques and lambda functions.',
+    'Reading and manipulating CSV files using Python.',
+    'Introduction to the NumPy library.',
+    'Data manipulation and cleaning using Pandas.',
+    'Understanding Series and DataFrame for data analysis.',
+  ],
+
+  studentsPresent: [
+    'Workshop participants',
+    'Learners from the Department of Electronics & Communication Engineering',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},s
 
 
 ];
