@@ -66,7 +66,6 @@ export const activities: Activity[] = [
     image: '/activies/CSE/hero_engineering_lab.jpg',
   },
 
-
   // ========================
   // CSE -AIML
   //=========================
@@ -111,36 +110,758 @@ export const activities: Activity[] = [
   {
     id: 'BT26001',
 
-    title: 'Web Development Workshop',
+    title: "Earth's Micro Batteries",
     category: 'Workshops',
     branch: 'BT',
 
-    date: 'September 15, 2026',
-    time: '10:00 AM - 1:00 PM',
-    venue: 'Computer Lab, GBPIET',
-    organizedBy: 'IEEE GBPIET Student Branch',
+    date: '29 April 2026',
+    time: '2:00 PM - 5:00 PM',
+    venue: 'Biotechnology Seminar Hall',
+    organizedBy: 'IEEE in collaboration with Genesis Society of Biotechnology',
 
-    reportAuthor: 'Chandan Singh',
-
-    overview:
-      'A technical workshop focused on modern web development technologies and practical application development.',
+    reportAuthor: 'IEEE Student Branch',
+    overview: 'A technical workshop on microbial batteries and sustainable bio-energy.',
 
     description:
-      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
-
+      "The Genesis Society of Biotechnology and IEEE GBPIET organized an interactive workshop on Earth's Micro Batteries. The event included MICROVISION (E-Poster presentation) ECO-GENIUS   (Quiz), and BioSpark hands-on workshop.",
     keyDiscussion: [
-      'Introduction to modern web development technologies.',
-      'Understanding the structure of web applications.',
-      'Frontend development using HTML, CSS and JavaScript.',
-      'Responsive web design principles.',
-      'Deployment and development workflows.',
+      'Introduction to microbial batteries',
+      'BioSpark hands-on workshop',
+      'Quiz and E-poster presentation',
+      'Sustainable bio-energy applications',
     ],
 
-    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
+    studentsPresent: [
+      '1st Year Biotechnology Students',
+      '2nd Year Biotechnology Students',
+      'Faculty Members',
+    ],
 
-    image: '/images/hero_engineering_lab.jpg',
+    image: '/activities/BT/BT26001.jpeg',
   },
- 
+  {
+    id: 'BT24001',
+
+    title: 'Introductory Meet for First Year Students 2024-25',
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 10, 2024',
+    time: '4:00 PM - 5:30 PM',
+    venue: 'LT-5, CSED',
+    organizedBy: 'IEEE Core Team Members',
+
+    reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+
+    overview: 'An introductory meeting for newly admitted first-year students.',
+    description:
+      'IEEE student branch representatives organized an interactive session to introduce IEEE, its global presence, benefits, and upcoming activities to newly joined engineering students.',
+    keyDiscussion: [
+      'Introduction of IEEE core members',
+      'Benefits and opportunities of joining IEEE',
+      'Overview of GBPIET Student Branch activities',
+      'Future plans and upcoming events',
+    ],
+
+    studentsPresent: ['First Year Students (ECE, EE, BT)', 'IEEE Core Team Members'],
+
+    image: '/activities/BT/BT24001.png',
+  },
+  {
+    id: 'BT24002',
+
+    title: "Interview for IEEE Recruitment ('Empowering Innovation, Connecting Minds')",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'August 26, 2024',
+    time: '2:30 PM - 5:00 PM',
+    venue: 'Lt-03, BTED',
+    organizedBy: 'IEEE Student Chapter',
+
+    reportAuthor: 'Akriti Chauhan and Vanshrika Patni',
+
+    overview: 'Recruitment drive to select new core team members and volunteers for IEEE.',
+    description:
+      'Multi-stage offline interview session conducted for interested students to evaluate their skill sets, communication, and interest in serving the IEEE student chapter.',
+    keyDiscussion: [
+      'Self-introduction and domain interest',
+      'Skill alignment for specific club positions',
+      'Problem-solving and peer interaction',
+      'Queries and performance feedback',
+    ],
+
+    studentsPresent: ['Registered Student Applicants', 'IEEE Core Interview Panel'],
+
+    image: '/activities/BT/BT24002.jpeg',
+  },
+  {
+    id: 'BT23003',
+
+    title: 'IEEE Introductory Meet tailored for CSE, AIML, BT and ECE students',
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'December 9, 2023',
+    time: '4:00 PM - 5:15 PM',
+    venue: 'Lt-2, Department of Electrical Engineering',
+    organizedBy: 'IEEE Student Branch',
+
+    reportAuthor: 'Akriti Chauhan and Vanshrika Patni',
+
+    overview: 'Detailed orientation session for engineering branches on IEEE global exposure.',
+    description:
+      'An engaging session focusing on how students across multiple engineering branches can leverage IEEE memberships, technical societies, and leadership roles.',
+    keyDiscussion: [
+      'Global network and benefits of IEEE',
+      'Technical fields and domain-specific opportunities',
+      'Role of student leaders in shaping IEEE community',
+      'Q&A session with senior members',
+    ],
+
+    studentsPresent: ['CSE, AIML, BT, and ECE Students', 'IEEE Office Bearers'],
+
+    image: '/activities/BT/BT23003.jpeg',
+  },
+  {
+    id: 'BT23004',
+
+    title: "Food Festival - 'Rasyaan'",
+    category: ' workshops',
+    branch: 'BT',
+
+    date: '22nd September 2023',
+    time: '10:00 AM onwards',
+    venue: 'GBPIET Campus',
+    organizedBy: 'Genesis Society of Biotechnology in coordination with Women Empowerment Dept.',
+
+    reportAuthor: 'Genesis Society',
+
+    overview:
+      'A cultural and food festival promoting traditional food varieties and nutritional values.',
+    description:
+      'A lively event featuring cultural performances, traditional dish stalls, poster competitions, and e-competitions held to spread nutritional awareness.',
+    keyDiscussion: [
+      'Nutritional values of traditional Indian food',
+      'Cultural ethics and heritage',
+      'Poster, Food Fest, and Musical competitions',
+    ],
+
+    studentsPresent: ['GBPIET Students', 'Faculty & Invited Guests'],
+
+    image: '/activities/BT/BT23004.png',
+  },
+  {
+    id: 'BT22001',
+
+    title: 'TechFest - Laboratory Safety and Security',
+    category: 'projects',
+    branch: 'BT',
+
+    date: 'May 28, 2022',
+    time: 'Full Day',
+    venue: 'Department of Biotechnology',
+    organizedBy: 'Genesis Society of Biotechnology in collab with IEEE GBPIET',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'A multi-event fest covering meditation, quizzes, poster presentations, and debate.',
+    description:
+      "Fest consisting of four key modules: Meditation Session, Quiz Competition, Poster Presentation on 'Laboratory Safety and Security', and Tech Advocate debate competition.",
+    keyDiscussion: [
+      'Yoga and stress management techniques',
+      'Assessment of lab safety and security protocols',
+      "Debate: 'Is technology a trend or foe?'",
+    ],
+
+    studentsPresent: ['Biotechnology Students', 'Department Faculty Members'],
+
+    image: '/activities/BT/BT22001.png',
+  },
+  {
+    id: 'BT22002',
+
+    title: "Webinar on 'GC & its application in Food Research'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'May 26, 2022',
+    time: '10:00 AM - 1:00 PM',
+    venue: 'MS Teams (Online)',
+    organizedBy: 'Genesis Society of Biotechnology (SAJAG)',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Technical webinar on Gas Chromatography and its applications in food analysis.',
+    description:
+      'Dr. Rahul Shrivastava delivered an insightful lecture covering renewable energy, lignin degradation, catalytic lignin valorization, and GC techniques in food research.',
+    keyDiscussion: [
+      'Principles of Gas Chromatography (GC)',
+      'Applications of GC in food research and safety',
+      'Lignin valorization and bio-depolymerization',
+      'Future prospects in bio-energy',
+    ],
+
+    studentsPresent: ['125 Participants', '10 Faculty Members'],
+
+    image: '/activities/BT/BT22002.png',
+  },
+  {
+    id: 'BT22003',
+
+    title: "Webinar on 'Lignin Valorization- Towards a Sustainable Future'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'May 25, 2022',
+    time: '11:00 AM - 12:30 PM',
+    venue: 'MS Teams (Online)',
+    organizedBy: 'Genesis Society of Biotechnology (SAJAG)',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Webinar exploring sustainable bio-energy and lignin utilization.',
+    description:
+      'Dr. Piyush Parkhey (Assistant Professor, Amity University) discussed lignin structure, applications as a renewable energy source, and depolymerization techniques.',
+    keyDiscussion: [
+      'Lignin structure and bio-refinery concepts',
+      'Catalytic lignin valorization methods',
+      'Lignin as a sustainable renewable energy source',
+      'Industrial scale applications',
+    ],
+
+    studentsPresent: ['115 Participants', '10 Faculty Members'],
+
+    image: '/activities/BT/BT22003.png',
+  },
+  {
+    id: 'BT22004',
+
+    title: "Webinar on 'Laboratory Biosafety & Security'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'May 24, 2022',
+    time: '10:00 AM - 1:00 PM',
+    venue: 'MS Teams (Online)',
+    organizedBy: 'Genesis Society of Biotechnology (SAJAG)',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Session focused on biological risk assessment and lab safety standards.',
+    description:
+      'Dr. Shraddha Chauhan (Postdoctoral Fellow, IISER Bhopal) presented on biosafety levels, microbiological techniques, biological material transport, and risk management.',
+    keyDiscussion: [
+      'Microbiological risk assessment methods',
+      'Biological safety levels (BSL) & biosecurity implementation',
+      'Transport of infectious material and risk in genetic engineering',
+      'Laboratory biosecurity protocols',
+    ],
+
+    studentsPresent: ['130 Participants', '10 Faculty Members'],
+
+    image: '/activities/BT/BT22004.png',
+  },
+  {
+    id: 'BT22005',
+
+    title: 'Science Day Celebration',
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'February 28 - March 5, 2022',
+    time: 'Online Submission',
+    venue: 'Online Mode',
+    organizedBy: 'SAJAG Club & IEEE Student Branch',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview:
+      "Online competitions held on the theme 'Science, Technology & Innovation in the time of COVID-19'.",
+    description:
+      'Celebration featuring Poster Making, Slogan Writing, and Logo Competition aimed at enhancing creativity, vocabulary, and technical presentation skills among students.',
+    keyDiscussion: [
+      'Digital poster design on pandemic tech innovations',
+      'Slogan competition promoting scientific awareness',
+      'Logo design competition for SAJAG club',
+    ],
+
+    studentsPresent: ['Student Participants across all Branches', 'Event Faculty Judges'],
+
+    image: '/activities/BT/BT22005.png',
+  },
+  {
+    id: 'BT22006',
+
+    title: "Webinar on 'Made in India COVID vaccines: India's contribution to world'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'February 28, 2022',
+    time: '11:00 AM to 1:00 PM',
+    venue: 'MS Teams (Online)',
+    organizedBy: 'SAJAG Club & IEEE Student Branch',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'National Science Day talk highlighting vaccine research in India.',
+    description:
+      "Dr. Ashwin Kumar (Assistant Professor, NIIT University) discussed bioinformatics, biotechnology contributions, and India's role in global healthcare during COVID-19.",
+    keyDiscussion: [
+      'Bioinformatics in vaccine development',
+      'Indigenous COVID-19 vaccine production processes',
+      'Global impact of Indian biotechnology advancements',
+    ],
+
+    studentsPresent: ['200 Attendees overall', '10 Academic Members'],
+
+    image: '/activities/BT/BT22006.png',
+  },
+
+  {
+    id: 'BT22007',
+
+    title: 'Tree Plantation Drive',
+    category: ' projects',
+    branch: 'BT',
+
+    date: 'August 24, 2022',
+    time: 'Online / Field Mode',
+    venue: 'Google Meet / GBPIET Campus',
+    organizedBy: 'Genesis Society of Biotechnology (Azadi Ka Amrit Mahotsav)',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Webinar and tree plantation drive held under Azadi Ka Amrit Mahotsav.',
+    description:
+      'An initiative organized to spread awareness about environmental sustainability along with a technical talk by Mr. Subrat Sahu (Examiner of Patent and Designs) on IPR and patent filing.',
+    keyDiscussion: [
+      'Environmental conservation and plantation',
+      'Types of Intellectual Property Rights (IPR)',
+      'Patentability vs Non-patentability conditions',
+      'Process of filing online patent applications',
+    ],
+
+    studentsPresent: ['90 Participants (including students)', '10 Faculty Members'],
+
+    image: '/activities/BT/BT22007.png',
+  },
+  {
+    id: 'BT22008',
+
+    title: "Webinar on 'IPR awareness programme' under NIPAM",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'August 24, 2022',
+    time: '11:00 AM - 12:00 PM',
+    venue: 'Google Meet',
+    organizedBy: 'Department of Biotechnology & NIPAM / IEEE',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'National Intellectual Property Awareness Mission (NIPAM) awareness session.',
+    description:
+      'Special IP awareness webinar delivered by Mr. Subrat Sahu, Patent Office, Government of India, focusing on trademarks, copyrights, and geographical indications.',
+    keyDiscussion: [
+      'National Intellectual Property Awareness Mission framework',
+      'Subject matter of trademarks and copyrights',
+      'Geographical Indications (GI) and trade secrets',
+      'Role of IPR in boosting student research innovations',
+    ],
+
+    studentsPresent: ['Biotechnology Students', 'Department Faculty Members'],
+
+    image: '/activities/BT/BT22008.png',
+  },
+
+  {
+    id: 'BT20001',
+
+    title: "Session 13: 'Indian Army: Where growth is a way of life'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'September 30, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Inspirational career guidance talk by an Indian Army officer.',
+    description:
+      'Captain Bhanu Pratap Singh Bisht shared insights on SSB preparation, permanent vs short service commissions, and career opportunities for biotechnology engineers in armed forces.',
+    keyDiscussion: [
+      'Life and ethos of the Indian Army',
+      'Technological requirements in defense forces',
+      'SSB entry procedures and interview preparation',
+      'Career growth path for M.Tech/B.Tech graduates',
+    ],
+
+    studentsPresent: ['2nd Year & Pre-final Year Students', 'Faculty Members'],
+
+    image: '/activities/BT/BT20001.png',
+  },
+  {
+    id: 'BT20002',
+
+    title: "Session 12: 'Launch yourself into ISRO'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 23, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Career pathway session on joining ISRO and space research organizations.',
+    description:
+      'Mr. Deepak Chandra Paliwal (Scientist/Engineer, UR Rao Satellite Centre) shared GATE exam strategies, interview experience, and research opportunities at ISRO.',
+    keyDiscussion: [
+      'GATE preparation strategy for top ranks',
+      'Work culture and satellite project insights at ISRO',
+      'Selection procedure for Scientist/Engineer posts',
+    ],
+
+    studentsPresent: ['Biotechnology & Electrical Engineering Students', 'Department Faculty'],
+
+    image: '/activities/BT/BT20002.png',
+  },
+  {
+    id: 'BT20003',
+
+    title: "Session 11: 'Resume formatting and designing & Tips for HR interview'",
+    category: 'workshopst',
+    branch: 'BT',
+
+    date: 'October 22, 2020',
+
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Practical session on professional resume building and HR interview mastery.',
+    description:
+      'Ms. Sonia Patwal (HR Specialist at Accenture) guided students on impactful resume formatting, corporate culture adaptation, and answering common HR interview questions.',
+    keyDiscussion: [
+      'Effective resume structuring and key sections',
+      "Do's and Don'ts during HR interviews",
+      'Corporate expectations and soft skills requirement',
+    ],
+
+    studentsPresent: ['Engineering Students across Departments', 'Placement Cell Members'],
+    image: '/activities/BT/BT20003.png',
+  },
+  {
+    id: 'BT20004',
+
+    title: "Session 10: 'Role of communication skills for enhancement of career'",
+    category: 'workshops ',
+    branch: 'BT',
+
+    date: 'October 22, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Interactive session on effective verbal and written communication.',
+    description:
+      'Mr. Vinay Devrani emphasized how strong English communication, IELTS readiness, and active listening skills accelerate professional growth.',
+    keyDiscussion: [
+      'The communication process and barrier breakdown',
+      'Importance of professional writing in corporate/academia',
+      'IELTS exam preparation overview',
+    ],
+
+    studentsPresent: ['Engineering Students', 'Faculty Participants'],
+
+    image: '/activities/BT/BT20004.png',
+  },
+  {
+    id: 'BT20005',
+
+    title:
+      "Session 9: 'Opportunities for students with special reference to Gov. of India schemes'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 21, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Session detailing government scholarships, grants, and international fellowships.',
+    description:
+      'Dr. Ajeet Singh (Regional Officer, AICTE) explained Government of India schemes including Pragati, Saksham, BIG (Biotechnology Ignition Grant), and MITACS Canada internships.',
+    keyDiscussion: [
+      'Government scholarships for SC/ST and women entrepreneurs',
+      'BIG grant & funding support by BIRAC',
+      'International research opportunities (MITACS Canada)',
+    ],
+
+    studentsPresent: ['Biotechnology & Engineering Students', 'Faculty Coordinators'],
+
+    image: '/activities/BT/BT20005.png',
+  },
+  {
+    id: 'BT20006',
+
+    title: "Session 8: 'Paving the way towards corporate'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 21, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Guidance talk on corporate transition and industry readiness.',
+    description:
+      'Ms. Garima Rana (Team Lead, BMTC Advisons) shared personal experiences on selecting corporate paths post-graduation, finance/ops roles, and workplace adaptiveness.',
+    keyDiscussion: [
+      'Choosing right career paths after M.Tech/B.Tech',
+      'Self-analysis and identifying personal strengths',
+      'Understanding corporate work environment',
+    ],
+
+    studentsPresent: ['Engineering Students', 'Department Staff'],
+
+    image: '/activities/BT/BT20006.png',
+  },
+  {
+    id: 'BT20007',
+
+    title: "Session 6: 'India to USA: Dreams to Reality'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 21, 2020',
+    time: '9:30 AM',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Interactive guidance session on higher studies and careers in the USA.',
+    description:
+      'Ms. Monica Jain (Business Analyst, AWS) & Mr. Abhijit Kuve shared insights on pursuing MS/MBA in the USA, profile building, and navigating international admissions.',
+    keyDiscussion: [
+      'Planning for MS abroad and GRE/TOEFL timeline',
+      'Application process for top US universities',
+      'Transitioning from Engineering to Data Analytics / Business Roles',
+    ],
+
+    studentsPresent: ['Aspiring Study-Abroad Students', 'Faculty Members'],
+
+    image: '/activities/BT/BT20007.png',
+  },
+  {
+    id: 'BT20008',
+
+    title: "Session 5: 'Life beyond engineering'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 20, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Motivational session on clearing competitive exams and diverse career choices.',
+    description:
+      'Mr. Naveen Bijalwan (Junior Court Officer, Supreme Court of India & GATE AIR 190) shared his journey of hard work, cracking competitive exams, and constitutional awareness.',
+    keyDiscussion: [
+      'Cracking GATE and public sector exams',
+      'Career options in judiciary/civil services post engineering',
+      'Maintaining focus and determination during preparation',
+    ],
+
+    studentsPresent: ['Engineering Students', 'IEEE Student Branch Members'],
+
+    image: '/activities/BT/BT20008.png',
+  },
+  {
+    id: 'BT20009',
+
+    title: "Session 4: 'Opportunities in entrepreneurship, technology management and IPR space'",
+    category: ' workshops',
+    branch: 'BT',
+
+    date: 'October 20, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Lecture on Intellectual Property Rights (IPR) and tech commercialization.',
+    description:
+      'Mr. Anand Pandey (IIT Gandhinagar Research Park) discussed innovation ecosystems, patents, technology transfers, and starting tech ventures in India.',
+    keyDiscussion: [
+      'Why innovation and technology commercialization matter',
+      'Intellectual Property Rights (IPR) fundamentals',
+      'Startup incubation & research park ecosystems',
+    ],
+
+    studentsPresent: ['B.Tech & M.Tech Students', 'Faculty Coordinators'],
+
+    image: '/activities/BT/BT20009.png',
+  },
+  {
+    id: 'BT20010',
+
+    title: "Session 3: 'Exploring and Excelling in your career choices'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 21, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Computer Science Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Webinar on software engineering trends and global career pathways.',
+    description:
+      'Ms. Anjali Doneria (Software Engineer, Google) shared 14+ years of industry experience, covering MS in Information Systems, Data Science careers, and preparing for tech giants.',
+    keyDiscussion: [
+      'Building a strong profile for tech majors like Google',
+      "Pursuing Master's in CS/IS in the US",
+      'Handling career choices and industry expectations',
+    ],
+
+    studentsPresent: ['Biotechnology & CSE Students', 'Department Staff'],
+
+    image: '/activities/BT/BT20010.png',
+  },
+  {
+    id: 'BT20011',
+
+    title: "Session 2: 'From Engineering to MBA & Beyond- a Primer on CAT & GD-PI Preparation'",
+    category: 'workshops',
+    branch: 'BT',
+
+    date: 'October 20, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Strategy session on clearing CAT, GD-PI, and life after an MBA.',
+    description:
+      'Mr. Prateek Gahlot (MBA IIM Bangalore, BITS Pilani alumnus) explained CAT preparation techniques, resume building for B-schools, and management consulting careers.',
+    keyDiscussion: [
+      'CAT exam preparation methodology',
+      'Cracking Group Discussions and Personal Interviews (GD-PI)',
+      'Management Consulting & post-MBA career scope',
+    ],
+
+    studentsPresent: ['Engineering Students across all Years', 'IEEE Team Members'],
+
+    image: '/activities/BT/BT20011.png',
+  },
+  {
+    id: 'BT20012',
+
+    title: "Session 1: 'Current scenario and career opportunities: Beginning of self-reliance'",
+    category: ' workshops',
+    branch: 'BT',
+
+    date: 'October 19, 2020',
+    time: 'Online Mode',
+    venue: 'Microsoft Teams',
+    organizedBy: 'Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview: 'Opening session of the Campus-to-Career webinar series.',
+    description:
+      'Dr. Ashok Kumar Rathoure delivered the inaugural lecture on environmental biotechnology, developing entrepreneurial potential, and building self-reliance.',
+    keyDiscussion: [
+      'Environmental biotechnology research & publications',
+      'Developing entrepreneurial mindset in technical domains',
+      'Overcoming competition and career stress',
+    ],
+
+    studentsPresent: ['Department Students & Faculty', 'Series Registrants'],
+
+    image: '/activities/BT/BT20012.png',
+  },
+  {
+    id: 'BT20013',
+
+    title:
+      "One Week International Online Workshop / Interactive Session on 'Campus to Career- Webinar Series for Graduates'",
+    category: ' Workshops',
+    branch: 'BT',
+
+    date: '19th to 23rd October 2020',
+    time: 'Multi-session (10:00 AM onwards)',
+    venue: 'Online Mode (Microsoft Teams)',
+    organizedBy: 'Jointly Organized by Department of Biotechnology & Electrical Engineering',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview:
+      'A comprehensive 1-week international workshop to bridge campus learning and industry expectations.',
+    description:
+      'A flagship multi-session international series featuring talks from industry veterans, IAS/defence officers, study-abroad experts, and corporate HR managers across 13 dedicated tracks.',
+    keyDiscussion: [
+      'Global opportunities in higher education & MS in USA',
+      'Corporate readiness and resume designing strategies',
+      'Entrepreneurship, IPR, and start-up commercialization',
+      'Preparation pathways for CAT, ISRO, and Armed Forces',
+    ],
+
+    studentsPresent: ['Over 300+ Engineering Graduates', 'Faculty across multiple departments'],
+
+    image: '/activities/BT/BT20013.png',
+  },
+  {
+    id: 'BT20014',
+
+    title:
+      "TEQIP-III Sponsored Two-Week Online Industrial Internship on 'Current Practices in Pharmabiotech'",
+    category: ' projects',
+    branch: 'BT',
+
+    date: '17th to 28th August 2020',
+    time: 'Two-Week Schedule',
+    venue: 'Online Mode',
+    organizedBy: 'Department of Biotechnology (TEQIP-III Sponsored)',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview:
+      'Two-week hands-on virtual industrial training in pharma and biotechnology practices.',
+    description:
+      'Industrial training program exposing students to biopharmaceutical processing, quality control/quality assurance standards, regulatory compliance, and industrial scale fermentation.',
+    keyDiscussion: [
+      'Current industrial practices in pharma-bioprocessing',
+      'GMP (Good Manufacturing Practices) and FDA guidelines',
+      'Upstream and downstream processing in pharmaceutical units',
+      'Quality control techniques in modern biotechnology labs',
+    ],
+
+    studentsPresent: ['Biotechnology Undergraduate Students', 'Post-Graduate Research Scholars'],
+
+    image: '/activities/BT/BT20014.png',
+  },
 
   // =========================
   // Electrical
