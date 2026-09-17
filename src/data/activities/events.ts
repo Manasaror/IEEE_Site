@@ -1476,7 +1476,7 @@ export const activities: Activity[] = [
   ],
 
   studentsPresent: [
-    'Workshop participants',s
+    'Workshop participants',
     'Learners from the Department of Electronics & Communication Engineering',
   ],
 
