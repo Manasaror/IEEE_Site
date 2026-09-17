@@ -935,4 +935,263 @@ export const activities: Activity[] = [
 
     image: '/images/hero_engineering_lab.jpg',
   },
+
+  {
+  id: 'ECE26001',
+
+  title: 'KiCraft Workshop & Competition',
+  category: 'Workshops',
+  branch: 'ECE',
+
+  date: 'March 19, 2026',
+  time: '10:00 AM - 5:30 PM',
+  venue: 'Seminar Hall, ECED',
+  organizedBy: 'IEEE Student Branch',
+
+  reportAuthor: 'Sumit Rawat',
+
+  overview:
+    'KiCraft was organized by the 2nd year volunteers of the IEEE Student Branch, GBPIET, with guidance and support from third-year members. The event aimed to introduce participants to PCB design and enhance their practical skills using KiCad software.',
+
+  description:
+    'The event was conducted in two phases. The first phase consisted of an interactive workshop on KiCad, covering schematic design, component placement, PCB layout, and 3D design. The second phase featured a competition where participants applied the concepts learned during the workshop to complete practical tasks. More than 30 students participated enthusiastically, and the winners were awarded certificates, medals, and cash prizes.',
+
+  keyDiscussion: [
+    'Introduction to PCB design using KiCad software.',
+    'Understanding schematic design and component placement.',
+    'PCB layout and design workflow.',
+    'Introduction to 3D PCB design.',
+    'Hands-on application of KiCad concepts.',
+    'Competition based on the concepts covered during the workshop.',
+    'Encouraging teamwork, creativity, innovation, and practical learning.',
+  ],
+
+  studentsPresent: [
+    'Paras Dhiman',
+    'Anurag Gupta',
+    'Harshit Giri',
+    'Rachita Pant',
+    'Ojasvi Thapa',
+    'Suraj Khanduri',
+    'Sumit Rawat',
+    'Vijay Saini',
+    'Priyanshu Nautiyal',
+    'Vaibhav Pokhriyal',
+    'Vikrant Kumar',
+    'Daksh Kandpal',
+    'Priyanshu Gusain',
+    'Nitin Rawat',
+    'Nikhil Suyal',
+    'Aahana',
+    'Ishita Sati',
+    'Yash Joshi',
+    'Naval',
+  ],
+
+  image: '/activities/ECE/ECE26002.jpeg',
+},
+{
+  id: 'ECE25003',
+
+  title: '2 Day Introductory Workshop on EDA Tools',
+  category: 'Workshops',
+  branch: 'ECE',
+
+  date: 'April 28, 2025 - April 29, 2025',
+  time: '5:00 PM - 6:00 PM',
+  venue: 'Seminar Hall, ECED',
+  organizedBy: 'IEEE Core Team Members,Ojasvi Thapa',
+  
+
+  reportAuthor: 'Janmejay Pant, Samriddhi Bhatt and Ojasvi Thapa',
+
+  overview:
+    'A two-day introductory workshop on EDA Tools was conducted by the IEEE Student Branch to introduce students to basic EDA tools, their features, methodologies, and practical applications.',
+
+  description:
+    'The workshop was conducted over two days. On the first day, students were introduced to the basics and features of various EDA tools through presentations covering their introduction, methodologies, and practical insights. On the second day, practical implementation using KiCad and Xilinx Vivado was demonstrated. Students designed a 555 timer and a blink circuit using transistors on KiCad, while coding, schematic design, and simulations using Verilog on Xilinx Vivado were also explained. The workshop concluded with students sharing their views and feedback. The primary audience consisted of first and second-year students from the ECE and EE branches.',
+
+  keyDiscussion: [
+    'Introduction to Electronic Design Automation (EDA) tools.',
+    'Understanding the features and applications of various EDA tools.',
+    'Introduction to EDA methodologies and workflows.',
+    'Practical implementation using KiCad.',
+    'Designing a 555 timer circuit using KiCad.',
+    'Designing a blink circuit using transistors.',
+    'Introduction to Xilinx Vivado.',
+    'Coding, schematic design, and simulation using Verilog.',
+    'Student feedback and discussion about the workshop.',
+  ],
+
+  studentsPresent: [
+    'Akriti Chauhan',
+    'Akshita Nautiyal',
+    'Anurag Gupta',
+    'Ankita Negi',
+    'Rachita Pant',
+    'Mahi Devli',
+    'Ojasvi Thapa',
+  ],
+
+  image: '/activities/ECE/ECE26002.png',
+},
+{
+  id: 'ECE24004',
+
+  title: 'Introductory Meet for First Year Students 2024-25',
+  category: 'Meetings',
+  branch: 'ECE',
+
+  date: 'October 10, 2024',
+  time: '4:00 PM - 5:00 PM',
+  venue: 'LT-6, CSED',
+  organizedBy: 'IEEE Core Team Members',
+
+  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+
+  overview:
+    'IEEE Student Branch representatives from the pre-final year and second-year volunteers organized an introductory meeting for newly admitted first-year students to introduce them to IEEE and its activities.',
+
+  description:
+    'The meeting began with an introduction of the current IEEE members present. The representatives then introduced students to IEEE and discussed the various opportunities and benefits associated with being a part of the organization. The session concluded with an overview of the IEEE GBPIET Student Branch, including its activities and future plans. A total of 82 students from the ECE, EE, and BT branches attended the meeting.',
+
+  keyDiscussion: [
+    'Introduction of the current IEEE Student Branch members.',
+    'Introduction to IEEE and its purpose.',
+    'Opportunities and benefits associated with IEEE.',
+    'Overview of the IEEE GBPIET Student Branch.',
+    'Discussion about IEEE GBPIET activities.',
+    'Introduction to future plans and initiatives of the student branch.',
+    'Interaction with newly admitted first-year students.',
+  ],
+
+  studentsPresent: [
+    'First-year students from ECE, EE, and BT branches',
+    'IEEE pre-final year representatives',
+    'IEEE second-year volunteers',
+  ],
+
+  image: '/activities/ECE/ECE24001.png',
+},
+{
+  id: 'ECE24005',
+
+  title: 'SIH Internal Hackathon 2024',
+  category: 'Hackathons',
+  branch: 'ECE',
+
+  date: 'September 4, 2024 - September 5, 2024',
+  time: '10:00 AM - 1:00 PM',
+  venue: 'Seminar Room, ECED',
+  organizedBy: 'IEEE (Student Chapter)',
+  reportAuthor:'',
+  overview:
+    'The SIH Internal Hackathon 2024 was organized by the IEEE Student Branch, GBPIET, as a two-day programme to provide students with an opportunity to develop and present solutions based on selected problem statements.',
+
+  description:
+    'The internal hackathon was conducted from September 4th to September 5th, 2024, with a total of 24 teams from the college registered for the event. The hackathon began at 10:00 AM, with participating teams presenting their PowerPoint presentations based on their selected problem statements and project domains. The teams were briefed about the rules and regulations beforehand. Judges from different fields of expertise evaluated the presentations and asked questions related to the problem statements and project domains. Marks were awarded according to the specified judging criteria. The participating teams awaited the results, which were released on September 6th.',
+
+  keyDiscussion: [
+    'Introduction to the SIH Internal Hackathon and its objectives.',
+    'Presentation of solutions based on selected problem statements.',
+    'Evaluation of projects by judges from different fields of expertise.',
+    'Question-and-answer sessions following each team presentation.',
+    'Assessment according to specified judging criteria.',
+    'Participation of 24 teams from the college.',
+    'Announcement of hackathon results on September 6th, 2024.',
+  ],
+
+  studentsPresent: [
+    '24 participating teams from GBPIET',
+  ],
+
+  image: '/public/activities/ECE/ECE24003.png',
+},
+{
+  id: 'ECE24006',
+
+  title: 'Workshop on Basic Electronics Components',
+  category: 'Workshops',
+  branch: 'ECE',
+
+  date: 'May 10, 2024',
+  time: '2:00 PM - 5:00 PM',
+  venue: 'LT-05, ECED',
+  organizedBy: 'IEEE (Student Chapter ECE)',
+
+  reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+
+  overview:
+    'IEEE Student Branch (ECE) organized an informative workshop on Basic Electronics Components to introduce students to fundamental electronic components and provide them with practical hands-on experience.',
+
+  description:
+    'The session began with a PowerPoint presentation and an explanation of basic electronics components such as resistors, transistors, capacitors, and sensors, highlighting their importance as fundamental elements of electronic circuits and systems. Participants were given hands-on experience with the components and were guided through their working principles. Experts also addressed the doubts raised by the students. A special project was demonstrated during the session, which generated considerable interest among the participants. The session was hosted by Vinay Kathait, with Aditya Raj Haldiya serving as an expert for clarifying doubts. Yogesh Bisht and Akhil Kothari presented their project, while Jay presented the electronics components. Students from the ECE first year primarily attended the workshop.',
+
+  keyDiscussion: [
+    'Introduction to basic electronics components.',
+    'Understanding resistors, transistors, capacitors, and sensors.',
+    'Role of electronic components in circuits and systems.',
+    'Hands-on experience with basic electronic components.',
+    'Understanding the working principles of different components.',
+    'Interactive doubt-clearing session with experts.',
+    'Demonstration of a special electronics project.',
+    'Project presentation by students.',
+  ],
+
+  studentsPresent: [
+    'Parth Uniyal',
+    'Jay Kumar',
+    'Akriti Chauhan',
+    'Ashutosh Suyal',
+    'Mudit Panwar',
+    'Ashmit Rana',
+    'Aditya Raj Haldiya',
+    'Yogesh Bisht',
+    'Akhil Kothari',
+  ],
+
+  image: '/public/activities/ECE/ECE24004.png',
+},
+{
+  id: 'ECE24007',
+
+  title: 'Interview for IEEE Recruitment – Empowering Innovation, Connecting Minds',
+  category: 'Recruitment',
+  branch: 'ECE',
+
+  date: 'August 26, 2024',
+  time: '2:30 PM - 5:40 PM',
+  venue: 'LT-03, BTED',
+  organizedBy: 'IEEE (Student Chapter)',
+
+
+  reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+
+  overview:
+    'The IEEE Recruitment Interview was organized under the theme "Empowering Innovation, Connecting Minds" to identify students interested in taking up various positions and contributing to the efficient functioning of the IEEE Student Chapter.',
+
+  description:
+    'The session began with the members introducing themselves and discussing their desired positions. A briefing was provided about the various positions available and their significance in the effective functioning of the club. Students were then asked to introduce themselves in writing, mention their desired position, describe their skillset, and explain why they were suitable for the position. The first round of interviews was conducted with candidates appearing before the interview panel in groups of four. Candidates were asked about their desired positions and how they would contribute to the club. In the second round, students competed with their peers for their preferred positions and were encouraged to demonstrate their skills and distinguish themselves from other candidates. Queries were addressed and feedback on performance was provided by the Core Team. The results of the recruitment process were to be disclosed subsequently.',
+
+  keyDiscussion: [
+    'Introduction of IEEE members and discussion of desired positions.',
+    'Overview of various IEEE positions and their significance.',
+    'Submission of candidate introductions, skillsets, and preferred positions.',
+    'First-round interviews conducted in groups of four.',
+    'Discussion of candidates’ contributions to the IEEE Student Chapter.',
+    'Second-round interviews and evaluation of candidates.',
+    'Opportunity for candidates to demonstrate their skills and suitability.',
+    'Resolution of candidate queries and feedback from the Core Team.',
+    'Announcement of recruitment results at a later stage.',
+  ],
+
+  studentsPresent: [
+    'IEEE Student Chapter members',
+    'Students participating in the IEEE recruitment process',
+  ],
+
+  image: '/public/activities/ECE/ECE24006.png',
+},
+
+
 ];
