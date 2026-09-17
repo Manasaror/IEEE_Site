@@ -957,7 +957,7 @@ export const activities: Activity[] = [
     'Naval',
   ],
 
-  image: '/activities/ECE/ECE26002.jpeg',
+  image: '/public/activities/ECE/ECE26001.jpeg',
 },
 {
   id: 'ECE25003',
@@ -1074,7 +1074,7 @@ export const activities: Activity[] = [
     '24 participating teams from GBPIET',
   ],
 
-  image: '/public/activities/ECE/ECE24003.png',
+  image: '/public/activities/ECE/ECE24002.png',S
 },
 {
   id: 'ECE24006',
