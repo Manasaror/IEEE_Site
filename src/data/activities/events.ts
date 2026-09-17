@@ -903,38 +903,7 @@ export const activities: Activity[] = [
   // =========================
   // Electronics
   // =========================
-  {
-    id: 'ECE26001',
 
-    title: 'Web Development Workshop',
-    category: 'Workshops',
-    branch: 'ECE',
-
-    date: 'September 15, 2026',
-    time: '10:00 AM - 1:00 PM',
-    venue: 'Computer Lab, GBPIET',
-    organizedBy: 'IEEE GBPIET Student Branch',
-
-    reportAuthor: 'Chandan Singh',
-
-    overview:
-      'A technical workshop focused on modern web development technologies and practical application development.',
-
-    description:
-      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
-
-    keyDiscussion: [
-      'Introduction to modern web development technologies.',
-      'Understanding the structure of web applications.',
-      'Frontend development using HTML, CSS and JavaScript.',
-      'Responsive web design principles.',
-      'Deployment and development workflows.',
-    ],
-
-    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
-
-    image: '/images/hero_engineering_lab.jpg',
-  },
 
   {
   id: 'ECE26001',
