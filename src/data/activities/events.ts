@@ -1074,7 +1074,7 @@ export const activities: Activity[] = [
     '24 participating teams from GBPIET',
   ],
 
-  image: '/public/activities/ECE/ECE24002.png',S
+  image: '/public/activities/ECE/ECE24002.png',
 },
 {
   id: 'ECE24006',
@@ -1119,7 +1119,7 @@ export const activities: Activity[] = [
     'Akhil Kothari',
   ],
 
-  image: '/public/activities/ECE/ECE24004.png',
+  image: '/public/activities/ECE/ECE24003.png',
 },
 {
   id: 'ECE24007',
@@ -1159,7 +1159,91 @@ export const activities: Activity[] = [
     'Students participating in the IEEE recruitment process',
   ],
 
-  image: '/public/activities/ECE/ECE24006.png',
+  image: '/public/activities/ECE/ECE24004.jpg',
+},
+{
+  id: 'ECE24008',
+
+  title: 'IEEE Introductory Meet',
+  category: 'Meetings',
+  branch: 'ECE',
+
+  date: 'February 24, 2024',
+  time: '4:00 PM - 4:50 PM',
+  venue: 'LT-5, EEED',
+  organizedBy: 'IEEE (Student Branch ECE)',
+
+  reportAuthor: 'Akriti Chauhan',
+
+  overview:
+    'IEEE Student Branch (ECE) organized an engaging introductory meet to familiarize students with IEEE, its benefits, functioning, technical community, and opportunities for active participation.',
+
+  description:
+    'The event began with a comprehensive introduction to IEEE, covering its global presence, diverse membership, and the various technical fields associated with the organization. A PowerPoint presentation was used to explain IEEE and its activities in detail. Students were also introduced to various IEEE social media handles and websites. Different positions within the IEEE Student Branch were discussed, highlighting opportunities for students to actively contribute to the IEEE community and develop their identity as future engineers and technologists. Master Abhishekh Lakhera, Chairperson, Master Parth Uniyal, Secretary, and other IEEE members attended the event and shared their experiences and insights with the students. The session was coordinated by members of the IEEE Student Branch.',
+
+  keyDiscussion: [
+    'Introduction to IEEE and its global presence.',
+    'Understanding the benefits of IEEE membership.',
+    'Overview of IEEE functioning and technical fields.',
+    'Presentation on IEEE activities and opportunities.',
+    'Introduction to IEEE social media handles and websites.',
+    'Discussion of various positions within the IEEE Student Branch.',
+    'Opportunities for students to actively contribute to IEEE.',
+    'Interaction with the Chairperson, Secretary, and other IEEE members.',
+  ],
+
+  studentsPresent: [
+    'Akshita Nautiyal',
+    'Jai Kumar',
+    'Akriti Chauhan',
+    'Priyanka Bhandari',
+    'Mudit Panwar',
+    'Ashutosh Suyal',
+    'Abhishekh Lakhera',
+    'Parth Uniyal',
+  ],
+
+  image: '/public/activities/ECE/ECE24005.jpg',
+},
+{
+  id: 'ECE23009',
+
+  title: 'Recruitment of New Volunteers',
+  category: 'Recruitment',
+  branch: 'ECE',
+
+  date: 'October 14, 2023',
+  time: '10:00 AM',
+  venue: 'LT-3, BT Department',
+  organizedBy: 'IEEE Student Branch',
+
+
+  reportAuthor: 'IEEE Student Branch',
+
+  overview:
+    'The recruitment session was conducted to select new volunteers from the second year of the graduation course and provide them with an opportunity to learn management skills and handle responsibilities as IEEE members.',
+
+  description:
+    'The interview session was conducted on Saturday, October 14, 2023. The purpose of the session was to recruit volunteers from the second year of the graduation course and provide them with an opportunity to learn the management and handling of responsibilities as members of IEEE. The recruitment process was based on responses received through a Google Form circulated earlier, followed by an interview round. The session was coordinated by members of the IEEE Student Branch.',
+
+  keyDiscussion: [
+    'Recruitment of new IEEE Student Branch volunteers.',
+    'Selection of volunteers from the second year of the graduation course.',
+    'Review of responses submitted through the Google Form.',
+    'Conducting interviews for the recruitment process.',
+    'Understanding management and organizational responsibilities.',
+    'Introduction to responsibilities associated with being an IEEE member.',
+  ],
+
+  studentsPresent: [
+    'Abhishek Lakhera - Students Branch Chairman',
+    'Shobhit Kanswal - Students Branch Chairman',
+    'Tanmay Bisht - Creative Media Head',
+    'Tejas Chhabra - Students Branch Vice Chairman',
+    'Shaifali Bhardwaj - Students Branch Vice Chairman',
+  ],
+
+  image: '/public/activities/ECE/ECE23001.jpg',
 },
 
 
