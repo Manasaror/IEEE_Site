@@ -40,24 +40,24 @@ export default function WhoWeAre() {
 
           {/* ================= RIGHT ================= */}
           <div className="animate-[fadeUp_1s_ease-out] lg:pl-4">
-            <p className="text-lg leading-8 text-white/70 sm:text-xl sm:leading-9 lg:text-2xl lg:leading-10">
-              <span className="font-semibold text-white">IEEE GBPIET Student Branch</span> is a
-              student-driven technical community at Govind Ballabh Pant Institute of Engineering and
-              Technology, bringing together students who are passionate about technology, innovation
-              and learning beyond the classroom.
+            <p className="mt-6 text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
+              <span className="font-semibold text-white">IEEE GBPIET Student Branch</span> seeks to
+              enhance the learning experience of the student community in GBPIET. The Student Branch
+              focuses on conducting social and technical activities for students, and also
+              encourages the students to take full advantage of IEEE membership, including
+              scholarships, competitions, and conference grants.
             </p>
 
             <p className="mt-6 text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
-              We create opportunities for students to explore emerging technologies through
-              technical workshops, seminars, hands-on sessions, competitions and collaborative
-              projects. Our initiatives are designed to help students develop practical skills,
-              connect with peers and professionals, and turn ideas into meaningful solutions.
+              The Student Branch also intends to provide opportunities for students to network with
+              peers in other institutes, academicians, professionals, engineers, and scientists
+              through the on campus IEEE Student Branch and the Local IEEE Section, thereby
+              encouraging students to be a part of the global IEEE community.
             </p>
 
             <p className="mt-6 text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
-              From supporting students in research and technical exploration to organizing events
-              that encourage innovation and leadership, IEEE GBPIET aims to build a community where
-              students can learn, experiment, collaborate and grow together.
+              The IEEE student branch GBPIET is the complete institute level part of the IEEE Uttar
+              Pradesh Section{' '}
             </p>
           </div>
         </div>

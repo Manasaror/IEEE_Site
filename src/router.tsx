@@ -9,9 +9,11 @@ import { NotFoundPage } from '@/pages/NotFoundPage';
 import MainLayout from './layout/Layout';
 import Loginpage from '@/modules/admin/login';
 
+
 export function AppRouter() {
   return (
     <BrowserRouter>
+      
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />

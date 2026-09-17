@@ -92,7 +92,6 @@ export default function WhatWeDo() {
         {/* ================= CARDS ================= */}
         <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 lg:gap-6">
           {activities.map((item, index) => {
-            const Icon = item.icon;
 
             return (
               <article
@@ -118,16 +117,6 @@ export default function WhatWeDo() {
                     0{index + 1}
                   </span>
 
-                  {/* Icon */}
-                  <div
-                    className={`absolute bottom-3 left-3 flex h-9 w-9 items-center justify-center rounded-xl backdrop-blur-md transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110 sm:bottom-5 sm:left-5 sm:h-11 sm:w-11 ${item.iconBg} ${item.iconColor}`}
-                  >
-                    <Icon
-                      size={18}
-                      strokeWidth={1.8}
-                      className="transition-transform duration-500 group-hover:rotate-6"
-                    />
-                  </div>
                 </div>
 
                 {/* ================= CONTENT ================= */}
