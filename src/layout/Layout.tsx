@@ -1,17 +1,25 @@
-import { Outlet } from 'react-router-dom';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ScrollToTop from '@/components/ScrollToTop';
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
+
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import Loader from "@/components/Loader";
 
 export default function MainLayout() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <div className="relative flex min-h-screen flex-col bg-black text-white">
+      
+
       <Header />
-      {/* --------------------------- */}
+
+      {/* Main Content */}
       <main className="flex-1">
-        <Outlet />
+        {loading ? ( <Loader onComplete={() => setLoading(false)} />) : (<Outlet />)}
       </main>
-      {/* ------------------------------ */}
+
       <Footer />
       <ScrollToTop />
     </div>

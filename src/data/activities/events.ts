@@ -1483,5 +1483,4 @@ export const activities: Activity[] = [
   image: '/images/hero_engineering_lab.jpg',
 },
 
-
 ];
