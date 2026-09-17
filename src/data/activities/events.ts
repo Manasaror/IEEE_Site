@@ -1465,7 +1465,7 @@ export const activities: Activity[] = [
 
   keyDiscussion: [
     'Introduction to MATLAB and its applications.',
-    'Practical use of MATLAB built-in tools.',
+    'Practical use of MATLAB built-in tools.',ss
     'Programming techniques for enhancing computing with MATLAB.',
     'Introduction to the Python programming environment.',
     'Fundamental Python programming techniques and lambda functions.',
@@ -1481,7 +1481,7 @@ export const activities: Activity[] = [
   ],
 
   image: '/images/hero_engineering_lab.jpg',
-},s
+},
 
 
 ];
