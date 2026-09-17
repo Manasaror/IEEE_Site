@@ -1465,7 +1465,7 @@ export const activities: Activity[] = [
 
   keyDiscussion: [
     'Introduction to MATLAB and its applications.',
-    'Practical use of MATLAB built-in tools.',ss
+    'Practical use of MATLAB built-in tools.',
     'Programming techniques for enhancing computing with MATLAB.',
     'Introduction to the Python programming environment.',
     'Fundamental Python programming techniques and lambda functions.',
@@ -1476,7 +1476,7 @@ export const activities: Activity[] = [
   ],
 
   studentsPresent: [
-    'Workshop participants',
+    'Workshop participants',s
     'Learners from the Department of Electronics & Communication Engineering',
   ],
 
