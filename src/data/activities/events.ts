@@ -1482,7 +1482,7 @@ export const activities: Activity[] = [
     'Mr. Shashank Shekar - Industry Expert and GBPIET Alumnus',
   ],
 
-  image: 'activities/ECE/ECE20004.png',
+  image: '/activities/ECE/ECE20004.png',
 }
 
 
