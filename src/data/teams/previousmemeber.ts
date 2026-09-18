@@ -21,27 +21,27 @@ export const pastMembers2025: PastMember[] = [
   // Branch Chair
   { name: 'Tejas Chhabra', role: 'Branch Chair' },
   { name: 'Nitin Goswami', role: 'Branch Chair' },
-  { name: 'Jiyanshi Batra', role: 'Branch Chair' },
+  
 
   // Branch Vice Chair
   { name: 'Parth Uniyal', role: 'Branch Vice Chair' },
-  { name: 'Kritesh Purohit', role: 'Branch Vice Chair' },
+ 
   { name: 'Rakshit Pant', role: 'Branch Vice Chair' },
 
   // Secretary
   { name: 'Vanshika Painuly', role: 'Secretary' },
   { name: 'Ananya Chauhan', role: 'Secretary' },
-  { name: 'Asmit Rana', role: 'Secretary' },
+ 
 
   // Treasurer
   { name: 'Antriksha Saklani', role: 'Treasurer' },
   { name: 'Sehna Saraswat', role: 'Treasurer' },
-  { name: 'Akriti Chauhan', role: 'Treasurer' },
+ 
 
   // Web Master
   { name: 'Khushi Lingwal', role: 'Web Master' },
   { name: 'Divyanshi Naithani', role: 'Web Master' },
-  { name: 'Shivam Dangwal', role: 'Web Master' },
+  
 
   // Creative Media Head
   { name: 'Paras Dhiman', role: 'Creative Media Head' },

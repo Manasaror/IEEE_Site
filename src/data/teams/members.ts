@@ -1,43 +1,43 @@
 // IEEE GBPIET — Team Members Data
 // Source: https://edu.ieee.org/in-gbpiet/our-team/
 
-// HOW TO ADD A NEW MEMBER:
-//   Copy one of the objects below and fill in your details.
+// -----------------------------------------------------------------------------
+// DATA FEEDING GUIDE / INSTRUCTIONS
+// -----------------------------------------------------------------------------
+// 1. PHOTO:
+//    - Put image file in 'public/images/members/' folder (e.g., 'jiyanshi.jpg')
+//    - Set photo field: photo: '/images/members/jiyanshi.jpg'
+//    - Or paste a direct public URL: photo: 'https://example.com/photo.jpg'
 //
-//   name            → Full name of the member
-//   role            → Designation (e.g. "Chairperson", "Secretary")
-//   department      → Branch / Department name
-//   year            → Current year (e.g. "2nd Year", "3rd Year", "Faculty")
-//   photo           → (Optional) Paste the URL/path of the member's photo here.
-//                     Example: "/images/members/aarav.jpg" or "https://example.com/photo.jpg"
-//   socials         → Social media profile links (all optional).
-//                     Paste the full URL for each platform you want to show.
-//                     Supported: linkedin, github, instagram, twitter
-//                     Leave out or set to empty string if not available.
-//   priority        → Number controlling display order within a committee (lower = shown first).
-//   committee       → Which section this member belongs to: 'executive' or 'student'
+// 2. SOCIAL LINKS:
+//    - Paste full profile URL inside quotes.
+//    - Example: linkedin: 'https://www.linkedin.com/in/username'
+//    - If link is not available, leave it as empty string '' or omit the key.
+//
+// 3. ADDING NEW MEMBER:
+//    - Copy-paste any block below, adjust 'priority' (ordering), and set 'committee'.
+// -----------------------------------------------------------------------------
 
 export type SocialLinks = {
-  linkedin?: string; // e.g. "https://linkedin.com/in/your-username"
-  github?: string; // e.g. "https://github.com/your-username"
-  instagram?: string; // e.g. "https://instagram.com/your-username"
-  twitter?: string; // e.g. "https://twitter.com/your-username"  (or x.com)
+  linkedin?: string; // Full LinkedIn URL
+  github?: string;   // Full GitHub URL
+  instagram?: string;// Full Instagram URL
+  twitter?: string;  // Full Twitter/X URL
 };
 
 export type Committee = 'executive' | 'student';
 
 export type TeamMember = {
-  name: string; // Full name
-  role: string; // Designation / Position
-  department: string; // Branch / Department
-  photo?: string; // ← Paste photo URL/path here (optional)
-  socials: SocialLinks; // ← Paste social media links here
-  priority: number; // Sort order within committee (lower = higher rank)
-  committee: Committee; // 'executive' or 'student'
+  name: string;        // Full name
+  role: string;        // Designation / Position
+  department: string;  // Branch / Department
+  photo?: string;      // Photo path or URL
+  socials: SocialLinks;// Social links object
+  priority: number;    // Sort order (1 = top display position)
+  committee: Committee;// 'executive' or 'student'
 };
 
-// ── Member data ─────────────────────────────────────────────────
-// Ordered: Executive Committee first, then Student Committee
+// ── Member Data Source ───────────────────────────────────────────────────────
 
 export const teamMembers: TeamMember[] = [
   // ===========================================================================
@@ -47,88 +47,87 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. V.K Banga',
     role: 'Chief Patron & Director',
     department: 'GBPIET',
-    photo: '/images/vk banga director.jpeg',
+    photo: '', // e.g. '/images/members/vk-banga.jpg'
     priority: 1,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/kaushik-pathak-7150a5382/',
     },
   },
   {
     name: 'Dr. Kamaljit Singh Bhatia',
     role: 'Sr. Member IEEE, Branch Counsellor',
     department: 'Coordinator Professional Societies, GBPIET',
-    photo: '/images/kamaljeet-150x150.jpg',
+    photo: '', // e.g. '/images/members/kamaljit-bhatia.jpg'
     priority: 2,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
     },
   },
   {
     name: 'Dr. Mamta Baunthiyal',
     role: 'DEAN R&D',
     department: 'GBPIET',
-    photo: '/images/mamta dean.jpeg',
+    photo: '', // e.g. '/images/members/mamta-baunthiyal.jpg'
     priority: 3,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+
     },
   },
   {
     name: 'Dr. Sanjay Gairola',
     role: 'Sr. Member IEEE, OIC Library',
     department: 'GBPIET',
-    photo: '/images/sanjay-gairola-e1774373677242.jpg',
+    photo: '', // e.g. '/images/members/sanjay-gairola.jpg'
     priority: 4,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+
     },
   },
   {
     name: 'Dr. Jitendra Singh Rauthan',
     role: 'Member IEEE & Branch Advisor',
     department: 'CSE Department',
-    photo: '/images/rauthan.jpeg',
+    photo: '', // e.g. '/images/members/jitendra-rauthan.jpg'
     priority: 5,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+
     },
   },
   {
     name: 'Mr. Neem Sagar',
     role: 'Member IEEE & Branch Advisor',
     department: 'EE Department',
-    photo: '/images/neemsagar.jpeg',
+    photo: '', // e.g. '/images/members/neem-sagar.jpg'
     priority: 6,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+
     },
   },
   {
     name: 'Dr. Sandeep Kumar',
     role: 'Member IEEE & Branch Advisor',
     department: 'ECE Department',
-    photo: '/images/sandeeppp.jpeg',
+    photo: '', // e.g. '/images/members/sandeep-kumar.jpg'
     priority: 7,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+
     },
   },
   {
     name: 'Mr. Pranshu Dangwal',
     role: 'Member IEEE & Branch Advisor',
     department: 'BT Department',
-    photo: '/images/pranshudangwal.jpeg',
+    photo: '', // e.g. '/images/members/pranshu-dangwal.jpg'
     priority: 8,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+
     },
   },
 
@@ -136,103 +135,87 @@ export const teamMembers: TeamMember[] = [
   // STUDENT COMMITTEE
   // ===========================================================================
   {
-    name: 'Rachita Pant', //updated
+    name: 'Jiyanshi Batra',
     role: 'Student Branch Chair',
     department: 'IEEE Student Branch',
-    photo: '/images/rachitamam.jpeg',
+    photo: '', // e.g. '/images/members/jiyanshi-batra.jpg'
     priority: 1,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/rachita-pant/',
-      github: 'https://github.com/',
-      instagram: 'https://www.instagram.com/rachitaa._?stkn=MWJpMTV1YTlyNWJjOA==',
+      linkedin: '',  // e.g. 'https://www.linkedin.com/in/jiyanshi-batra'
+      github: '',    // e.g. 'https://github.com/jiyanshi-batra'
+      instagram: '', // e.g. 'https://www.instagram.com/jiyanshi_batra'
+      twitter: '',   // e.g. 'https://x.com/jiyanshi_batra'
     },
   },
   {
-    name: 'Mohit Rawat', //updated
+    name: 'Paras Dhiman',
     role: 'Student Branch Vice Chair',
     department: 'IEEE Student Branch',
-    photo: '/images/mohit.sir.jpeg',
+    photo: '', // e.g. '/images/members/paras-dhiman.jpg'
     priority: 2,
     committee: 'student',
     socials: {
-      linkedin:
-        'https://www.linkedin.com/in/mohit-rawat-00764a290?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-      github: 'https://github.com/',
-      instagram: '',
+      linkedin: '',  // e.g. 'https://www.linkedin.com/in/paras-dhiman'
+      github: '',    // e.g. 'https://github.com/paras-dhiman'
+      instagram: '', // e.g. 'https://www.instagram.com/paras_dhiman'
+      twitter: '',   // Optional
     },
   },
   {
-    name: 'Janmejay',
+    name: 'Vanshika Painuly',
     role: 'Student Secretary',
     department: 'IEEE Student Branch',
-    photo: '/public/images/janmajay.jpeg',
+    photo: '', // e.g. '/images/members/vanshika-painuly.jpg'
     priority: 3,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/janmejay-pant-b2329b289?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-      instagram: 'https://instagram.com/',
+      linkedin: '',  // e.g. 'https://www.linkedin.com/in/vanshika-painuly'
+      github: '',    // Optional
+      instagram: '', // e.g. 'https://www.instagram.com/vanshika_painuly'
+      twitter: '',   // Optional
     },
   },
   {
-    name: 'Ojasvi Arora',
-    role: 'Vice chair',
-    department: 'IEEE Student Branch',
-    photo: '/public/images/ojasss.jpeg',
-    priority: 3,
-    committee: 'student',
-    socials: {
-      linkedin: 'https://www.linkedin.com/in/ojasviarora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-      instagram: 'https://instagram.com/',
-    },
-  },
-  {
-    name: 'Harsh Sharma',
+    name: 'Akriti Chauhan',
     role: 'Student Treasurer',
     department: 'IEEE Student Branch',
-    photo: '/public/images/harsh sharma.jpeg',
+    photo: '', // e.g. '/images/members/akriti-chauhan.jpg'
     priority: 4,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/harsh-sharma-948186321?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-      instagram: 'https://instagram.com/',
+      linkedin: '',  // e.g. 'https://www.linkedin.com/in/akriti-chauhan'
+      github: '',    // Optional
+      instagram: '', // e.g. 'https://www.instagram.com/akriti_chauhan'
+      twitter: '',   // Optional
     },
   },
   {
-    name: 'Ansh dhamija',
-    role:'student Treasurer',
-    department: 'IEEE Student Branch',
-    photo: '/public/images/ansh dhamija.jpeg',
-    priority: 4,
-    committee: 'student',
-    socials: {
-      linkedin: 'https://www.linkedin.com/in/ansh-dhamija-0540ab295?utm_source=share_via&utm_content=profile&utm_medium=member_android',
-      instagram: 'https://instagram.com/',
-    },
-  },
-  {
-    name: 'Rohit Thapliyal', //updated
+    name: 'Muskan Singh',
     role: 'Creative Media Head',
     department: 'IEEE Student Branch',
-    photo: '/images/rohit.thapliyal.jpeg',
+    photo: '', // e.g. '/images/members/muskan-singh.jpg'
     priority: 5,
     committee: 'student',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
-      instagram: 'https://instagram.com/',
+      linkedin: '',  // e.g. 'https://www.linkedin.com/in/muskan-singh'
+      github: '',    // Optional
+      instagram: '', // e.g. 'https://www.instagram.com/muskan_singh'
+      twitter: '',   // Optional
     },
   },
   {
-    name: 'Asmi Naithani', //updated
+    name: 'Shivam Dangwal',
     role: 'Web Master',
     department: 'IEEE Student Branch',
-    photo: '/images/asmi.mam.jpeg',
+    photo: '', // e.g. '/images/members/shivam-dangwal.jpg'
     priority: 6,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/asminaithani',
-      github: 'https://github.com/',
-      instagram: 'https://www.instagram.com/asmi_naithani',
+      linkedin: '',  // e.g. 'https://www.linkedin.com/in/shivam-dangwal'
+      github: '',    // e.g. 'https://github.com/shivam-dangwal'
+      instagram: '', // e.g. 'https://www.instagram.com/shivam_dangwal'
+      twitter: '',   // Optional
     },
   },
 ];
