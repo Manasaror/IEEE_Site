@@ -957,7 +957,7 @@ export const activities: Activity[] = [
     'Naval',
   ],
 
-  image: '/public/activities/ECE/ECE26001.jpeg',
+  image: '/activities/ECE/ECE26001.jpeg',
 },
 {
   id: 'ECE25003',
@@ -1478,6 +1478,46 @@ export const activities: Activity[] = [
   studentsPresent: [
     'Workshop participants',
     'Learners from the Department of Electronics & Communication Engineering',
+  ],
+
+  image: '/images/hero_engineering_lab.jpg',
+},
+{
+  id: 'ECE22016',
+
+  title: 'Webinar on "Advanced Driver Assistance Systems (ADAS)"',
+  category: 'Webinars',
+  branch: 'ECE',
+
+  date: 'September 27, 2022',
+  time: 'N/A',
+  venue: 'Online',
+  organizedBy: 'Department of Electronics & Communication Engineering, GBPIET',
+
+
+  reportAuthor: 'Department of Electronics & Communication Engineering, GBPIET',
+
+  overview:
+    'The Department of Electronics & Communication Engineering, GBPIET organized a webinar on Advanced Driver Assistance Systems (ADAS) to introduce students to ADAS technologies, their applications in modern vehicles, and career opportunities in the field of Electronics and Communication Engineering.',
+
+  description:
+    'The Department of Electronics & Communication Engineering, GBPIET organized a webinar on "Advanced Driver Assistance Systems (ADAS)" on September 27, 2022. The session was delivered by industry expert Mr. Shashank Shekar from Netradyne, an alumnus of GBPIET who completed his B.Tech in ECE in 2013 and has more than nine years of industry experience with organizations including Broadcom, Micromax, and Netradyne. Mr. Shashank Shekar introduced participants to the basics of the ADAS environment and explained its applications in modern vehicles and related industries. The session covered applications such as fleet tracking, driver safety, the insurance industry, 3D mapping of roads, and data collection for autonomous vehicle testing and simulation. He also discussed various career and professional opportunities available in the field of Electronics and Communication Engineering. The webinar was supported by Mr. Pushkar Praveen and Dr. K.S. Bhatia.',
+
+  keyDiscussion: [
+    'Introduction to Advanced Driver Assistance Systems (ADAS).',
+    'Understanding the ADAS environment and its features.',
+    'Applications of ADAS in modern-day vehicles.',
+    'Fleet tracking and driver safety technologies.',
+    'Applications of ADAS in the insurance industry.',
+    '3D mapping of roads.',
+    'Data collection for autonomous vehicle testing and simulation.',
+    'Career and professional opportunities in Electronics and Communication Engineering.',
+    'Industry insights from an ECE alumnus and professional.',
+  ],
+
+  studentsPresent: [
+    'Students of the Department of Electronics & Communication Engineering',
+    'Mr. Shashank Shekar - Industry Expert and GBPIET Alumnus',
   ],
 
   image: '/images/hero_engineering_lab.jpg',
