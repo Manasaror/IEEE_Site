@@ -1441,7 +1441,7 @@ export const activities: Activity[] = [
     'Industry professionals and experts',
   ],
 
-  image: '/images/hero_engineering_lab.jpg',
+  image: '/public/activities/ECE/ECE20002.png',
 },
 {
   id: 'ECE20015',
