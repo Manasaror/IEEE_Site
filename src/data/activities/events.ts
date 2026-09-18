@@ -1284,7 +1284,7 @@ export const activities: Activity[] = [
     'Vinay Kathait',
   ],
 
-  image: '/activities/ECE/ECE23001.jpg',
+  image: '/activities/ECE/ECE23003.jpg',
 },
 {
   id: 'ECE23011',
