@@ -1364,7 +1364,7 @@ export const activities: Activity[] = [
     'Students participating in the Think Tank session',
   ],
 
-  image: '/images/hero_engineering_lab.jpg',
+  image: '/activities/ECE/ECE23004.jpg',
 },
 {
   id: 'ECE20013',
