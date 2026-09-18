@@ -33,7 +33,7 @@ export function PreviousMember() {
   );
 
   return (
-    <div className="mt-20 border-t border-cyan-500/30 pt-10">
+    <div className="mt-20 border-t border-cyan-500/30 pt-10 px-4 sm:px-6">
       <h2 className="text-2xl font-bold text-center text-cyan-400 mb-8">Previous Year Members</h2>
 
       <div className="space-y-4 max-w-4xl mx-auto">
