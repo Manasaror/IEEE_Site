@@ -1284,7 +1284,7 @@ export const activities: Activity[] = [
     'Vinay Kathait',
   ],
 
-  image: '/activities/ECE/ECE23003.jpg',
+  image: '/activities/ECE/ECE23002.png',
 },
 {
   id: 'ECE23011',
@@ -1326,7 +1326,7 @@ export const activities: Activity[] = [
     'Teachers of Ghurdauri Junior School',
   ],
 
-  image: '/images/hero_engineering_lab.jpg',
+  image: '/public/activities/ECE/ECE23003.jpg',
 },
 {
   id: 'ECE23012',
