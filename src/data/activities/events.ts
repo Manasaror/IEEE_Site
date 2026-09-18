@@ -1203,7 +1203,7 @@ export const activities: Activity[] = [
     'Parth Uniyal',
   ],
 
-  image: '/public/activities/ECE/ECE24005.jpg',
+  image: '/activities/ECE/ECE24005.jpg',
 },
 {
   id: 'ECE23009',
