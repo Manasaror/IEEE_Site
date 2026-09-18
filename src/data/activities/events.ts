@@ -1326,7 +1326,7 @@ export const activities: Activity[] = [
     'Teachers of Ghurdauri Junior School',
   ],
 
-  image: '/public/activities/ECE/ECE23003.jpg',
+  image: '/activities/ECE/ECE23003.jpg',
 },
 {
   id: 'ECE23012',
