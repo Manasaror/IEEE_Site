@@ -1442,7 +1442,7 @@ export const activities: Activity[] = [
     'Learners from the Department of Electronics & Communication Engineering',
   ],
 
-  image: '/images/hero_engineering_lab.jpg',
+  image:'/activities/ECE/ECE20002.png',
 },
 {
   id: 'ECE22016',
