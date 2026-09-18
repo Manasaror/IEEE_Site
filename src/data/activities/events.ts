@@ -1159,7 +1159,7 @@ export const activities: Activity[] = [
     'Students participating in the IEEE recruitment process',
   ],
 
-  image: '/public/activities/ECE/ECE24004.jpg',
+  image: '/activities/ECE/ECE24004.jpg',
 },
 {
   id: 'ECE24008',
