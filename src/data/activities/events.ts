@@ -1243,7 +1243,7 @@ export const activities: Activity[] = [
     'Shaifali Bhardwaj - Students Branch Vice Chairman',
   ],
 
-  image: '/activities/ECE/ECE24005.jpg',
+  image: '/activities/ECE/ECE23001.jpg',
 },
 {
   id: 'ECE23010',
