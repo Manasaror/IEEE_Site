@@ -1403,7 +1403,7 @@ export const activities: Activity[] = [
     '116 research paper presentations',
   ],
 
-  image: '/images/hero_engineering_lab.jpg',
+  image: 'public/activities/ECE/ECE20001.png',
 },
 {
   id: 'ECE20014',
