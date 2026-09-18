@@ -1366,45 +1366,7 @@ export const activities: Activity[] = [
 
   image: '/activities/ECE/ECE23004.jpg',
 },
-{
-  id: 'ECE20013',
 
-  title: 'Online International Conference on Smart Machine Intelligence and Real-Time Computing (SMART COM 2020)',
-  category: 'Conferences',
-  branch: 'ECE',
-
-  date: 'June 26, 2020 - June 27, 2020',
-  time: 'N/A',
-  venue: 'Online',
-  organizedBy: 'Department of Electronics & Communication Engineering, Computer Science Engineering and Electrical Engineering, GBPIET Pauri',
-
-  reportAuthor: 'GBPIET Pauri',
-
-  overview:
-    'SMART COM 2020 was an Online International Conference focused on frontier topics in smart machine intelligence, real-time computing, and related fields, with the vision of promoting the development of intelligent solutions for the future.',
-
-  description:
-    'The Department of Electronics & Communication Engineering, Computer Science Engineering, and Electrical Engineering at GBPIET Pauri collectively organized the Online International Conference on Smart Machine Intelligence and Real-Time Computing (SMART COM 2020) during June 26-27, 2020, sponsored by TEQIP-3. The conference focused on emerging topics in smart machine intelligence, real-time computing, and related areas. It provided a platform for researchers to discuss practical solutions, scientific results, and methodologies for solving challenging problems. The conference also encouraged interaction among researchers actively involved in emerging research fields. A total of 151 research papers were accepted, out of which 116 research papers were presented during the conference.',
-
-  keyDiscussion: [
-    'Smart machine intelligence and emerging technologies.',
-    'Real-time computing and related research fields.',
-    'Development of intelligent solutions for future applications.',
-    'Discussion of practical solutions to challenging problems.',
-    'Presentation of scientific research results and methodologies.',
-    'Interaction and knowledge sharing among researchers.',
-    'Research in emerging fields of smart computing and intelligence.',
-    'Presentation of 116 accepted research papers.',
-  ],
-
-  studentsPresent: [
-    'Researchers and participants from various institutions',
-    'Authors of accepted research papers',
-    '116 research paper presentations',
-  ],
-
-  image: 'public/activities/ECE/ECE20001.png',
-},
 {
   id: 'ECE20014',
 
@@ -1441,7 +1403,7 @@ export const activities: Activity[] = [
     'Industry professionals and experts',
   ],
 
-  image: '/public/activities/ECE/ECE20002.png',
+  image: '/activities/ECE/ECE20002.png',
 },
 {
   id: 'ECE20015',
