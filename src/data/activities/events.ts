@@ -957,7 +957,7 @@ export const activities: Activity[] = [
     'Naval',
   ],
 
-  image: '/activities/ECE/ECE26001.jpeg',
+  image: '/public/activities/ECE/ECE26001.jpeg',
 },
 {
   id: 'ECE25003',
@@ -1522,5 +1522,6 @@ export const activities: Activity[] = [
 
   image: '/images/hero_engineering_lab.jpg',
 },
+
 
 ];
