@@ -1074,7 +1074,7 @@ export const activities: Activity[] = [
     '24 participating teams from GBPIET',
   ],
 
-  image: '/public/activities/ECE/ECE24002.png',
+  image: '/activities/ECE/ECE24002.png',
 },
 {
   id: 'ECE24006',
