@@ -1119,7 +1119,7 @@ export const activities: Activity[] = [
     'Akhil Kothari',
   ],
 
-  image: '/public/activities/ECE/ECE24003.png',
+  image: '/activities/ECE/ECE24003.png',
 },
 {
   id: 'ECE24007',
