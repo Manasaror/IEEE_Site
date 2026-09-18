@@ -1484,6 +1484,45 @@ export const activities: Activity[] = [
 
   image: '/activities/ECE/ECE20004.png',
 }
+{
+  id: 'ECE20018',
+
+  title: 'Workshop on "OptiSystem Fundamentals and Design Techniques"',
+  category: 'Workshops',
+  branch: 'ECE',
+
+  date: 'September 14, 2020 - September 16, 2020',
+  time: 'N/A',
+  venue: 'Online',
+  organizedBy: 'Department of Electronics & Communication Engineering, GBPIET Pauri',
+
+  reportAuthor: 'Department of Electronics & Communication Engineering, GBPIET Pauri',
+
+  overview:
+    'An online workshop on OptiSystem Fundamentals and Design Techniques was organized to provide students with practical exposure to the design and simulation of optical links used in modern optical networks.',
+
+  description:
+    'The Department of Electronics & Communication Engineering, GBPIET Pauri organized an online workshop on "OptiSystem Fundamentals and Design Techniques" from September 14 to September 16, 2020, sponsored by TEQIP-3. The workshop aimed to provide participants with hands-on experience in designing and simulating optical links for modern optical networks. The workshop was attended by third and fourth-year students and was open to students from all branches, receiving active participation across the institute. Mr. Amandeep Singh from HR Universal System Inc. introduced participants to the OptiSystem software, its applications, and the basics of getting started with it. Interactive examples were used to explain theoretical concepts, including digital communication modulation techniques such as QPSK and FSK. The programme consisted of three two-hour sessions, with discussions and Q&A sessions between them to reinforce learning. During the final session, a satellite communication project was presented, integrating the concepts and knowledge acquired throughout the workshop. The programme was conducted successfully with the support and contributions of the Principal, faculty members, and students.',
+
+  keyDiscussion: [
+    'Introduction to OptiSystem software and its applications.',
+    'Fundamentals of optical communication systems.',
+    'Design and simulation of optical links.',
+    'Applications of optical networks in modern communication.',
+    'Digital communication modulation techniques such as QPSK and FSK.',
+    'Interactive software-based examples and demonstrations.',
+    'Discussion and question-and-answer sessions.',
+    'Satellite communication project using concepts covered during the workshop.',
+  ],
+
+  studentsPresent: [
+    'Third-year students',
+    'Fourth-year students',
+    'Students from various branches of GBPIET',
+  ],
+
+  image: '/activities/ECE/ECE20006.jpeg',
+},
 
 
 ];
