@@ -1197,6 +1197,60 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE23001.jpg',
 
 },
+{
+  id: 'EE23006',
+
+  title: 'Workshop on Design and Simulation of EV',
+
+  category: 'Workshops',
+
+  branch: 'EE',
+
+  date: 'August 12, 2023',
+
+  time: 'N/A',
+
+  venue: 'Electrical Department',
+
+  organizedBy: 'IEEE Branch Coordinators, Electrical Engineering Department',
+
+  reportAuthor: 'IEEE Student Branch',
+
+  overview:
+
+    'A technical workshop focused on the design and simulation of Electric Vehicles, providing students with an introduction to EV technology and practical insights into MATLAB-based design and simulation.',
+
+  description:
+
+    'A workshop on the Design and Simulation of Electric Vehicles was conducted on August 12, 2023, at the Electrical Department under IEEE. The workshop was organized by the Branch Coordinators from the Electrical Engineering Department and assisted by IEEE volunteers Anurag Joshi and Navtej Chaudhary, who shared their knowledge of EV manufacturing and simulation. Navtej Chaudhary, a third-year EE student, provided an introduction to Electric Vehicles and discussed their design and working. Anurag Joshi explained the use of MATLAB and its role in EV design and simulation. Various problems that can occur in Electric Vehicles were also discussed. Students from various branches participated in the workshop, which was managed and organized by the Branch Coordinators. The workshop received keen interest from the participants and was successfully conducted.',
+
+  keyDiscussion: [
+
+    'Introduction to Electric Vehicles and their working.',
+
+    'Design and simulation concepts related to Electric Vehicles.',
+
+    'Introduction to MATLAB and its applications in EV design.',
+
+    'Design and simulation of EV systems using MATLAB.',
+
+    'Manufacturing and simulation aspects of Electric Vehicles.',
+
+    'Common problems and challenges that can occur in Electric Vehicles.',
+
+    'Participation of students from various branches.',
+
+  ],
+
+  studentsPresent: [
+
+    'Students from various branches of GBPIET',
+
+  ],
+
+  image: '/activities/EE/EE23006.jpeg',
+
+},
 
 
 
