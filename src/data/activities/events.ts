@@ -1599,5 +1599,43 @@ export const activities: Activity[] = [
 
   image: '/activities/ECE/ECE22001.png',
 },
+{
+  id: 'ECE22020',
+
+  title: 'Webinar on "Carbon-Aware Computing @Google and Beyond"',
+  category: 'Webinars',
+  branch: 'ECE',
+
+  date: 'December 1, 2022',
+  time: 'N/A',
+  venue: 'Online - MS Teams',
+  organizedBy: 'IEEE GBPIET Student Branch',
+
+
+  reportAuthor: 'IEEE GBPIET Student Branch',
+
+  overview:
+    'An online webinar was organized to introduce students to the concept of carbon-aware computing, its development in recent years, and approaches for reducing the environmental impact of computing systems.',
+
+  description:
+    'The webinar was conducted on December 1, 2022, in online mode through MS Teams. The session was delivered by Ana Radovanovic, who holds a PhD in Electrical Engineering from Columbia University. The webinar introduced participants to the basic concept of carbon-aware computing and discussed its relevance and impact in recent years. The session also covered Google’s efforts towards reducing its carbon footprint and explored approaches and considerations associated with reducing the environmental impact of computing.',
+
+  keyDiscussion: [
+    'Introduction to carbon-aware computing.',
+    'Understanding the environmental impact of computing.',
+    'Development and relevance of carbon-aware computing in recent years.',
+    'Google’s efforts to reduce its carbon footprint.',
+    'Approaches for reducing carbon emissions from computing systems.',
+    'Environmental considerations in modern computing.',
+    'Future perspectives on sustainable and carbon-aware computing.',
+  ],
+
+  studentsPresent: [
+    'Students participating in the webinar',
+    'Faculty members of GBPIET',
+  ],
+
+  image: '/activities/ECE/ECE22002.png',
+},
 
 ];
