@@ -1317,7 +1317,65 @@ export const activities: Activity[] = [
 
 
 
+{
+  id: 'EE22008',
 
+  title: "Engineer's Day",
+
+  category: 'Webinars',
+
+  branch: 'EE',
+
+  date: 'September 15, 2022',
+
+  time: 'N/A',
+
+  venue: 'G.B. Pant Institute of Engineering and Technology',
+
+  organizedBy: 'Electrical Engineering Department',
+
+
+  reportAuthor: 'Electrical Engineering Department',
+
+  overview:
+
+    "Engineer's Day was celebrated on September 15, 2022, to commemorate the birth anniversary of Dr. M. Visvesvaraya. The celebration featured a webinar on Electrical Switch Testing and Commissioning, along with insights into power transmission, substation operation, and maintenance.",
+
+  description:
+
+    "Engineer's Day was celebrated on September 15, 2022, at G.B. Pant Institute of Engineering and Technology in honour of the birth anniversary of Dr. M. Visvesvaraya. A webinar on 'Electrical Switch: Testing and Commissioning' was organized as part of the celebration. Mr. Rohit Tyagi, Assistant Engineer at PTCUL Srinagar Garhwal, served as the speaker and chief guest. Dr. V.M. Mishra, HOD of the Electrical Engineering Department, Prof. M.K. Panda, and Dr. Sanjay Gairola accompanied the chief guest. Dr. V.M. Mishra delivered the welcome address and introduced the speaker. Mr. Rohit Tyagi discussed electrical switch testing and commissioning and provided an introduction to Power Transmission Corporation of Uttaranchal Limited (PTCUL), along with insights from his professional experience. A total of 60 third-year and final-year students, along with faculty members, attended the programme. Prof. M.K. Panda encouraged students to broaden their perspectives and enhance their skills, while Dr. Sanjay Gairola delivered an inspirational address encouraging students to become capable engineers and responsible citizens. The seminar aimed to increase awareness among students about substation working and maintenance.",
+
+  keyDiscussion: [
+
+    "Celebration of Engineer's Day and the birth anniversary of Dr. M. Visvesvaraya.",
+
+    'Electrical switch testing and commissioning.',
+
+    'Introduction to Power Transmission Corporation of Uttaranchal Limited (PTCUL).',
+
+    'Power transmission and the role of PTCUL.',
+
+    'Professional experiences and practical insights shared by the speaker.',
+
+    'Substation working and maintenance.',
+
+    'Importance of broadening perspectives and enhancing technical skills.',
+
+    'Role of engineers as responsible citizens.',
+
+  ],
+
+  studentsPresent: [
+
+    '60 third-year and final-year students',
+
+    'Faculty members of the Electrical Engineering Department',
+
+  ],
+
+  image: '/activities/EE/EE22001.jpg',
+
+},
 
 
 
