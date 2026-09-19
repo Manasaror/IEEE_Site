@@ -1251,6 +1251,69 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE23002.jpg',
 
 },
+{
+  id: 'EE22007',
+
+  title: 'Quiz and Logo Making Competition',
+
+  category: 'Competitions',
+
+  branch: 'EE',
+
+  date: 'October 2, 2022',
+
+  time: '3:00 PM - 5:00 PM',
+
+  venue: 'Electrical Engineering Department',
+
+  organizedBy: 'Society of Electrical Engineering (SEE) and IEEE Students',
+
+  reportAuthor: 'IEEE Student Branch',
+
+  overview:
+
+    'A combined aptitude quiz and logo making competition organized to develop students’ basic knowledge, assess their aptitude, and encourage creativity among undergraduate students.',
+
+  description:
+
+    'An aptitude assessment and quiz competition was conducted by the Society of Electrical Engineering on October 2, 2022, from 3:00 PM to 5:00 PM. Students from the second and third years of the Electrical Engineering Department participated in the event. The quiz consisted of moderately difficult questions, including questions based on basic electrical engineering concepts. Savan Kumar from the third year secured the first position, Mayank Panwar from the third year secured the second position, and Divyanshu Chauhan from the second year secured the third position. Following the quiz, a logo making competition was organized. Amisha Negi from the third year secured the first position, while Vansh Saini from the third year was the runner-up. The aptitude assessment aimed to strengthen students’ basic knowledge and support their preparation for examinations and interviews such as CAT, IIT JAM, GATE, and other competitive examinations. The event was successfully conducted through the efforts of IEEE students and SEE members.',
+
+  keyDiscussion: [
+
+    'Aptitude assessment for undergraduate students.',
+
+    'Quiz questions covering aptitude and basic electrical engineering concepts.',
+
+    'Participation of second-year and third-year Electrical Engineering students.',
+
+    'Development of basic knowledge for competitive examinations and interviews.',
+
+    'Logo making competition to encourage creativity among students.',
+
+    'Recognition of winners and participants in both competitions.',
+
+  ],
+
+  studentsPresent: [
+
+    'Savan Kumar - 1st position in Quiz',
+
+    'Mayank Panwar - 2nd position in Quiz',
+
+    'Divyanshu Chauhan - 3rd position in Quiz',
+
+    'Amisha Negi - 1st position in Logo Making Competition',
+
+    'Vansh Saini - Runner-up in Logo Making Competition',
+
+    'Students from 2nd and 3rd year Electrical Engineering',
+
+  ],
+
+  image: '/activities/EE/EE23003.png',
+
+},
+
 
 
 
