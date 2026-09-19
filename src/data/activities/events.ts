@@ -863,9 +863,10 @@ export const activities: Activity[] = [
     image: '/activities/BT/BT20014.png',
   },
 
-  // =========================
-  // Electrical
-  // =========================
+
+// =========================
+// Electrical
+// =========================
 {
   id: 'ECE25022',
 
