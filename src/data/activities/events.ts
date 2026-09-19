@@ -1483,7 +1483,7 @@ export const activities: Activity[] = [
   ],
 
   image: '/activities/ECE/ECE20004.png',
-}
+},
 {
   id: 'ECE20018',
 
@@ -1523,6 +1523,45 @@ export const activities: Activity[] = [
 
   image: '/activities/ECE/ECE20006.jpeg',
 },
+{
+  id: 'ECE22017',
 
+  title: 'Training and E-Content Development Programme on "Python Programming"',
+  category: 'Training',
+  branch: 'ECE',
+
+  date: 'September 15, 2022 - September 24, 2022',
+  time: 'N/A',
+  venue: 'Online',
+  organizedBy:
+    'PDPM Indian Institute of Information Technology, Design and Manufacturing, Jabalpur, India',
+
+  reportAuthor: 'PDPM IIITDM Jabalpur',
+
+  overview:
+    'A training and e-content development programme on Python programming was organized to provide participants with essential programming skills and advanced knowledge in machine learning and data visualization. The programme also aimed to empower girls and contribute towards reducing the gender gap in the IT sector in the South Asian region.',
+
+  description:
+    'The training programme on Python programming was conducted by PDPM Indian Institute of Information Technology, Design and Manufacturing, Jabalpur, India. The programme commenced on September 15, 2022, with the inauguration conducted by Dean Academics Dr. A.K. Gautam. The training was conducted from September 15-17 and September 22-24, 2022, with quizzes held on September 17 and September 24 to evaluate the progress of participants. Students were introduced to the essentials of Python programming, including data types, conditional statements, and error handling. The programme also provided in-depth knowledge of machine learning and data visualization. Approximately 1000 participants from different parts of the world registered for the programme. The training was completed successfully on September 24, 2022, with support from Dr. K.S. Bhatia, Dr. A.R. Verma, and Mr. Pushkar Praveen.',
+
+  keyDiscussion: [
+    'Introduction to Python programming.',
+    'Understanding Python data types.',
+    'Conditional statements and programming logic.',
+    'Error handling techniques in Python.',
+    'Introduction to machine learning.',
+    'Data visualization using Python.',
+    'Evaluation of participant progress through quizzes.',
+    'Empowering girls and reducing the gender gap in the IT sector.',
+    'Practical learning through training and e-content development.',
+  ],
+
+  studentsPresent: [
+    'Approximately 1000 registered participants',
+    'Participants from different parts of the world',
+  ],
+
+  image: '/activities/ECE/ECE20005.png',
+},
 
 ];
