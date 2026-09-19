@@ -1032,6 +1032,61 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE24002.jpeg',
 
 },
+{
+  id: 'EE24003',
+
+  title: 'SIH Internal Hackathon 2024',
+
+  category: 'Hackathons',
+
+  branch: 'EE',
+
+  date: 'September 4-5, 2024',
+
+  time: '10:00 AM - 1:00 PM',
+
+  venue: 'Seminar Room (ECED)',
+
+  organizedBy: 'IEEE Student Chapter',
+
+
+  reportAuthor: 'IEEE Student Chapter',
+
+  overview:
+
+    'A two-day internal hackathon organized as part of the Smart India Hackathon initiative, providing students with an opportunity to present solutions based on selected problem statements and project domains.',
+
+  description:
+
+    'The SIH Internal Hackathon 2024 was organized by the IEEE Student Branch GBPIET as a two-day programme from September 4 to September 5, 2024. A total of 24 teams from the college registered for the internal hackathon. The event began at 10:00 AM with teams presenting their PowerPoint presentations based on their selected problem statements and project domains. The participants were briefed about the rules and regulations to be followed. Judges from different fields of expertise evaluated the teams and asked questions related to their problem statements and project domains. Marks were awarded according to the specified judging criteria. The participating teams then awaited the results, which were released on September 6, 2024.',
+
+  keyDiscussion: [
+
+    'Presentation of solutions by participating teams.',
+
+    'Problem statements and project domains selected by the teams.',
+
+    'Rules and regulations of the internal hackathon.',
+
+    'Evaluation by judges from different fields of expertise.',
+
+    'Questions and discussions regarding the proposed projects.',
+
+    'Assessment based on the specified judging criteria.',
+
+    'Announcement of the hackathon results on September 6, 2024.',
+
+  ],
+
+  studentsPresent: [
+
+    '24 participating teams from GBPIET',
+
+  ],
+
+  image: '/activities/ECE/ECE24002.png',
+
+},
 
 
 
