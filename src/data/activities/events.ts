@@ -1376,6 +1376,63 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE22001.jpg',
 
 },
+{
+  id: 'EE22009',
+
+  title: 'Seminar on Electrical Switchyard Testing and Commissioning',
+
+  category: 'Seminars',
+
+  branch: 'EE',
+
+  date: 'September 9, 2022',
+
+  time: '10:00 AM onwards',
+
+  venue: 'Seminar Hall, GBPIET Ghurdauri',
+
+  organizedBy: 'Electrical Engineering Department, GBPIET Ghurdauri',
+
+
+  reportAuthor: 'Electrical Engineering Department',
+
+  overview:
+
+    'A guest lecture on Electrical Switchyard Testing and Commissioning conducted by the Electrical Engineering Department, featuring Mr. Krishna Kumar and providing students with technical and professional insights into electrical engineering and emerging technologies.',
+
+  description:
+
+    'A guest lecture was conducted by the Electrical Engineering Department of GBPIET Ghurdauri on September 9, 2022, from 10:00 AM onwards in the Seminar Hall. The session featured Mr. Krishna Kumar, who was working as a Research and Development Engineer at UJVNL Ltd. at the time of the lecture. The session was attended by students and faculty members of the Electrical Engineering Department. Mr. Krishna Kumar has more than 11 years of professional experience and has published numerous research papers in international journals. His research interests include Renewable Energy, Artificial Intelligence, Cloud Computing, and IoT. Before joining UJVNL, he worked as an Assistant Professor at BTKIT, Dwarahat. He completed his B.E. in Electronics and Communication Engineering from Govind Ballabh Pant Engineering College, Pauri Garhwal, and M.Tech in Digital Systems from Motilal Nehru NIT Allahabad. He was also pursuing his Ph.D. from the Indian Institute of Technology, Roorkee. The session was highly interactive, with students participating enthusiastically throughout the lecture.',
+
+  keyDiscussion: [
+
+    'Electrical switchyard testing and commissioning.',
+
+    'Practical and professional aspects of electrical engineering.',
+
+    'Renewable Energy and its applications.',
+
+    'Artificial Intelligence in engineering applications.',
+
+    'Cloud Computing and Internet of Things (IoT).',
+
+    'Research and development opportunities in electrical engineering.',
+
+    'Professional experiences and career insights from the guest speaker.',
+
+  ],
+
+  studentsPresent: [
+
+    'Students of the Electrical Engineering Department',
+
+    'Faculty members of the Electrical Engineering Department',
+
+  ],
+
+  image: '/activities/EE/EE22003.jpg',
+
+},
 
 
 
