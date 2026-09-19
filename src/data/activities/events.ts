@@ -1488,6 +1488,58 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE22004.jpg',
 
 },
+{
+  id: 'EE22011',
+
+  title: 'Webinar on Human Value and Ethics',
+
+  category: 'Webinars',
+
+  branch: 'EE',
+
+  date: 'N/A',
+
+  time: 'N/A',
+
+  venue: 'Online',
+
+  organizedBy: 'IEEE Student Branch',
+
+  reportAuthor: 'IEEE Student Branch',
+
+  overview:
+
+    'A webinar focused on understanding human values and ethics, with emphasis on basic human aspirations, life goals, physical facilities, and the importance of relationships.',
+
+  description:
+
+    'The webinar on Human Value and Ethics focused on helping students understand fundamental aspects of human aspirations and ethical living. The session explored how individuals can identify and achieve meaningful goals in real life, understand what is required beyond physical facilities, and recognize the importance of relationships in fulfilling human aspirations.',
+
+  keyDiscussion: [
+
+    'Understanding the fulfillment of basic human aspirations.',
+
+    'Defining meaningful goals in real life.',
+
+    'Approaches to achieving real-life goals.',
+
+    'Understanding what is required beyond physical facilities.',
+
+    'Importance and need of relationships.',
+
+    'Role of human values and ethics in everyday life.',
+
+  ],
+
+  studentsPresent: [
+
+    'Students participating in the webinar',
+
+  ],
+
+  image: '/activities/EE/EE22005.jpg',
+
+},
 
 
 
