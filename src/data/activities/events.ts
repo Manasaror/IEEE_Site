@@ -866,39 +866,48 @@ export const activities: Activity[] = [
   // =========================
   // Electrical
   // =========================
+{
+  id: 'ECE25022',
 
-  {
-    id: 'EE26001',
+  title: 'Online Speaker Session with Our College Alumni',
+  category: 'Speaker Sessions',
+  branch: 'ECE',
 
-    title: 'Web Development Workshop',
-    category: 'Workshops',
-    branch: 'EE',
+  date: 'March 22, 2025',
+  time: '4:00 PM - 5:30 PM',
+  venue: 'Seminar Hall, ECED',
+  organizedBy: 'IEEE Core Team Members',
+  
 
-    date: 'September 15, 2026',
-    time: '10:00 AM - 1:00 PM',
-    venue: 'Computer Lab, GBPIET',
-    organizedBy: 'IEEE GBPIET Student Branch',
+  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
 
-    reportAuthor: 'Chandan Singh',
+  overview:
+    'An interactive speaker session featuring college alumnus Mr. Abhishek Pandey, CEO of Deepaarogya AI, who shared insights from his entrepreneurship journey and career experiences.',
 
-    overview:
-      'A technical workshop focused on modern web development technologies and practical application development.',
+  description:
+    'The session began with the current second-year volunteer and host, Harshit Giri, addressing the participants and introducing the programme. Mr. Abhishek Pandey, CEO of Deepaarogya AI and a college alumnus, joined the session online. The host provided a brief introduction to his entrepreneurial journey and accomplishments. The session was interactive and engaging, with students actively participating in the discussion. Towards the end, the speaker addressed questions and doubts raised by the students. The session concluded with congratulations to Mr. Abhishek Pandey on his achievements and career journey built through hard work and persistence.',
 
-    description:
-      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
+  keyDiscussion: [
+    'Introduction to the speaker and his entrepreneurial journey.',
+    'Career experiences and accomplishments of college alumnus Mr. Abhishek Pandey.',
+    'Entrepreneurship and professional growth insights.',
+    'Interactive discussion with students.',
+    'Questions and doubts addressed by the speaker.',
+    'Lessons from the speaker’s career journey and persistence.',
+  ],
 
-    keyDiscussion: [
-      'Introduction to modern web development technologies.',
-      'Understanding the structure of web applications.',
-      'Frontend development using HTML, CSS and JavaScript.',
-      'Responsive web design principles.',
-      'Deployment and development workflows.',
-    ],
+  studentsPresent: [
+    'Jiyanshi Batra',
+    'Harshit Giri',
+    'Harsh Sharma',
+    'Anurag Gupta',
+    'Janmejay Pant',
+    'Rohit Mahant',
+    'Ojasvi Thapa',
+  ],
 
-    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
-
-    image: '/images/hero_engineering_lab.jpg',
-  },
+  image: '/activities/EE/EE25001.jpeg',
+},
 
   // =========================
   // Electronics
