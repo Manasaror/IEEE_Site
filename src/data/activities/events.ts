@@ -867,7 +867,79 @@ export const activities: Activity[] = [
 // =========================
 // Electrical
 // =========================
-{
+// =========================
+  // CSE
+  // =========================
+  {
+    id: 'CSE26001', // CSE26001
+
+    title: 'Web Development Workshop',
+    category: 'Workshops',
+    branch: 'CSE',
+
+    date: 'September 15, 2026',
+    time: '10:00 AM - 1:00 PM',
+    venue: 'Computer Lab, GBPIET',
+    organizedBy: 'IEEE GBPIET Student Branch',
+
+    reportAuthor: 'Chandan Singh',
+
+    overview:
+      'A technical workshop focused on modern web development technologies and practical application development.',
+
+    description:
+      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
+
+    keyDiscussion: [
+      'Introduction to modern web development technologies.',
+      'Understanding the structure of web applications.',
+      'Frontend development using HTML, CSS and JavaScript.',
+      'Responsive web design principles.',
+      'Deployment and development workflows.',
+    ],
+
+    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
+
+    image: '/activies/CSE/hero_engineering_lab.jpg',
+  },
+
+  // ========================
+  // Electrical
+  //=========================
+
+  {
+    id: 'AIML26001',
+
+    title: 'Web Development Workshop',
+    category: 'Workshops',
+    branch: 'AIML',
+
+    date: 'September 15, 2026',
+    time: '10:00 AM - 1:00 PM',
+    venue: 'Computer Lab, GBPIET',
+    organizedBy: 'IEEE GBPIET Student Branch',
+
+    reportAuthor: 'Kunal Singh',
+
+    overview:
+      'A technical workshop focused on modern web development technologies and practical application development.',
+
+    description:
+      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
+
+    keyDiscussion: [
+      'Introduction to modern web development technologies.',
+      'Understanding the structure of web applications.',
+      'Frontend development using HTML, CSS and JavaScript.',
+      'Responsive web design principles.',
+      'Deployment and development workflows.',
+    ],
+
+    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
+
+    image: '/images/hero_engineering_lab.jpg',
+  },
+  {
   id: 'ECE25022',
 
   title: 'Online Speaker Session with Our College Alumni',
@@ -878,7 +950,6 @@ export const activities: Activity[] = [
   time: '4:00 PM - 5:30 PM',
   venue: 'Seminar Hall, ECED',
   organizedBy: 'IEEE Core Team Members',
-  
 
   reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
 
@@ -907,43 +978,10 @@ export const activities: Activity[] = [
     'Ojasvi Thapa',
   ],
 
-  image: '/activities/EE/EE25001.jpeg',
+  image: '',
 },
-{
-  id: 'ECE24023',
 
-  title: 'Introductory Meet for First Year Students 2024-25',
-  category: 'Introductory Meets',
-  branch: 'ECE',
 
-  date: 'October 10, 2024',
-  time: '4:00 PM - 5:00 PM',
-  venue: 'LT-6, CSED',
-  organizedBy: 'IEEE Core Team Members',
-
-  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
-
-  overview:
-    'An introductory meeting organized for newly admitted first-year students to familiarize them with IEEE, its opportunities and benefits, and the activities of the IEEE GBPIET Student Branch.',
-
-  description:
-    'IEEE Student Branch representatives from the pre-final year and second-year volunteers organized an introductory meeting for newly admitted first-year students. The meeting began with introductions of the current IEEE members present. The discussion then introduced students to IEEE and highlighted various opportunities and benefits associated with the organization. The session concluded with an overview of the IEEE GBPIET Student Branch, its activities, and future plans. A total of 82 students from the ECE, EE, and BT branches attended the meeting.',
-
-  keyDiscussion: [
-    'Introduction of current IEEE Student Branch members.',
-    'Introduction to IEEE and its purpose.',
-    'Opportunities and benefits associated with IEEE membership.',
-    'Overview of the IEEE GBPIET Student Branch.',
-    'Activities conducted by the IEEE GBPIET Student Branch.',
-    'Future plans and initiatives of the student branch.',
-  ],
-
-  studentsPresent: [
-    '82 students from ECE, EE, and BT branches',
-  ],
-
-  image: '/activities/EE/EE24001.webp',
-},
 
 
 
