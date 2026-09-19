@@ -940,7 +940,7 @@ export const activities: Activity[] = [
     image: '/images/hero_engineering_lab.jpg',
   },
   {
-  id: 'ECE25022',
+  id: 'EE25001',
 
   title: 'Online Speaker Session with Our College Alumni',
   category: 'Speaker Sessions',
