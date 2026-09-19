@@ -1646,6 +1646,58 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE20002.png',
 
 },
+{
+  id: 'EE20014',
+
+  title: 'International Conference on Smart Machine Intelligence and Real-Time Computing',
+
+  category: 'Conferences',
+
+  branch: 'EE',
+
+  date: 'June 26-27, 2020',
+
+  time: 'N/A',
+
+  venue: 'Online',
+
+  organizedBy: 'Department of Computer Science, Electronics & Electrical Engineering, GBPIET Pauri',
+
+  reportAuthor: 'Department of Computer Science, Electronics & Electrical Engineering',
+
+  overview:
+
+    'An online international conference organized to bring together researchers, scientists, engineers, and research students to share original research, new ideas, and practical development experiences in Engineering and Technology.',
+
+  description:
+
+    'The Department of Computer Science, Electronics and Electrical Engineering, GBPIET Pauri, organized an Online International Conference on "Smart Machine Intelligence and Real-Time Computing" from June 26 to June 27, 2020. The conference was sponsored by TEQIP-3. It aimed to provide a platform for researchers, scientists, engineers, and research students working in various areas of Engineering and Technology to disseminate original research, innovative ideas, and practical development experiences. A total of 151 research papers were received, out of which 116 research papers were accepted and presented during the conference.',
+
+  keyDiscussion: [
+
+    'Smart Machine Intelligence and Real-Time Computing.',
+
+    'Original research and emerging ideas in Engineering and Technology.',
+
+    'Practical development experiences and technological applications.',
+
+    'Research contributions from scientists, engineers, and research students.',
+
+    'Presentation and dissemination of accepted research papers.',
+
+  ],
+
+  studentsPresent: [
+
+    'Researchers, scientists, engineers, and research students',
+
+    '116 accepted research papers presented at the conference',
+
+  ],
+
+  image: '/activities/ECE/ECE20001.png',
+
+},
 
 
   // =========================
