@@ -980,6 +980,58 @@ export const activities: Activity[] = [
 
   image: '/activities/EE/EE25001.jpeg',
 },
+{
+  id: 'EE24002',
+
+  title: 'Introductory Meet for First Year Students 2024-25',
+
+  category: 'Introductory Meets',
+
+  branch: 'EE',
+
+  date: 'October 10, 2024',
+
+  time: '4:00 PM - 5:00 PM',
+
+  venue: 'LT-6, CSED',
+
+  organizedBy: 'IEEE Core Team Members',
+
+  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+
+  overview:
+
+    'An introductory meeting organized for newly admitted first-year students to familiarize them with IEEE, its opportunities and benefits, and the activities of the IEEE GBPIET Student Branch.',
+
+  description:
+
+    'IEEE Student Branch representatives from the pre-final year and second-year volunteers organized an introductory meeting for newly admitted first-year students. The meeting began with introductions of the current IEEE members present. The discussion then introduced students to IEEE and highlighted various opportunities and benefits associated with the organization. The session concluded with an overview of the IEEE GBPIET Student Branch, its activities, and future plans. A total of 82 students from the ECE, EE, and BT branches attended the meet.',
+
+  keyDiscussion: [
+
+    'Introduction of current IEEE Student Branch members.',
+
+    'Introduction to IEEE and its purpose.',
+
+    'Opportunities and benefits associated with IEEE membership.',
+
+    'Overview of the IEEE GBPIET Student Branch.',
+
+    'Activities conducted by the IEEE GBPIET Student Branch.',
+
+    'Future plans and initiatives of the student branch.',
+
+  ],
+
+  studentsPresent: [
+
+    '82 students from ECE, EE, and BT branches',
+
+  ],
+
+  image: '/activities/EE/EE24002.jpeg',
+
+},
 
 
 
