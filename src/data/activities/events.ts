@@ -1540,7 +1540,56 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE22005.jpg',
 
 },
+{
+  id: 'EE20012',
 
+  title: 'Placement Team',
+
+  category: 'Student Activities',
+
+  branch: 'EE',
+
+  date: '2020-21',
+
+  time: 'N/A',
+
+  venue: 'Electrical Engineering Department',
+
+  organizedBy: 'Department of Electrical Engineering',
+
+  reportAuthor: 'Department of Electrical Engineering',
+
+  overview:
+
+    'The Department of Electrical Engineering constituted a departmental placement student team for the 2020-21 academic session, comprising students from the second, third, and fourth years.',
+
+  description:
+
+    'The Department of Electrical Engineering constituted a placement student team for the 2020-21 academic session. The team included students from the second, third, and fourth years and was formed to support and coordinate departmental placement-related activities.',
+
+  keyDiscussion: [
+
+    'Formation of the departmental placement student team for the 2020-21 session.',
+
+    'Participation of second-year, third-year, and fourth-year students.',
+
+    'Coordination and support for departmental placement-related activities.',
+
+  ],
+
+  studentsPresent: [
+
+    'Second-year students',
+
+    'Third-year students',
+
+    'Fourth-year students',
+
+  ],
+
+  image: '/activities/EE/EE20001.png',
+
+},
 
 
   // =========================
