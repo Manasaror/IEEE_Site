@@ -906,39 +906,6 @@ export const activities: Activity[] = [
   // ========================
   // Electrical
   //=========================
-
-  {
-    id: 'AIML26001',
-
-    title: 'Web Development Workshop',
-    category: 'Workshops',
-    branch: 'AIML',
-
-    date: 'September 15, 2026',
-    time: '10:00 AM - 1:00 PM',
-    venue: 'Computer Lab, GBPIET',
-    organizedBy: 'IEEE GBPIET Student Branch',
-
-    reportAuthor: 'Kunal Singh',
-
-    overview:
-      'A technical workshop focused on modern web development technologies and practical application development.',
-
-    description:
-      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
-
-    keyDiscussion: [
-      'Introduction to modern web development technologies.',
-      'Understanding the structure of web applications.',
-      'Frontend development using HTML, CSS and JavaScript.',
-      'Responsive web design principles.',
-      'Deployment and development workflows.',
-    ],
-
-    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
-
-    image: '/images/hero_engineering_lab.jpg',
-  },
   {
   id: 'EE25001',
 
@@ -1758,6 +1725,58 @@ export const activities: Activity[] = [
   ],
 
   image: '/activities/EE/EE20003.jpg',
+
+},
+{
+  id: 'EE20016',
+
+  title: 'VJ Hunt',
+
+  category: 'Competitions',
+
+  branch: 'EE',
+
+  date: 'February 16, 2020',
+
+  time: 'N/A',
+
+  venue: 'N/A',
+
+  organizedBy: 'Society of Electrical Engineering (SEE)',
+
+  reportAuthor: 'Society of Electrical Engineering',
+
+  overview:
+
+    'An interactive activity organized to encourage students to express their perspectives, connect different topics, and create an open and engaging environment among participants.',
+
+  description:
+
+    'The VJ Hunt was organized by the Society of Electrical Engineering on February 16, 2020. During the activity, participants picked chits containing different topics and were required to speak about each topic and establish connections between them. Students presented their individual perspectives and ideas, making the event interactive and enjoyable. The activity encouraged participants to think creatively, express their thoughts openly, and appreciate different viewpoints. The event aimed to create an open and friendly environment among students while promoting communication and spontaneous thinking.',
+
+  keyDiscussion: [
+
+    'Speaking on topics selected through chits.',
+
+    'Connecting and correlating different topics.',
+
+    'Expression of individual perspectives and ideas.',
+
+    'Creative and spontaneous thinking.',
+
+    'Encouraging open communication among students.',
+
+    'Creating an interactive and engaging environment.',
+
+  ],
+
+  studentsPresent: [
+
+    'Students of the Electrical Engineering Department',
+
+  ],
+
+  image: '/activities/EE/EE20004.png',
 
 },
 
