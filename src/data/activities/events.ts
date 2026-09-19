@@ -1433,6 +1433,61 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE22003.jpg',
 
 },
+{
+  id: 'EE22010',
+
+  title: 'Hands-on Session on Electronics Circuit Design for Electrical Engineers',
+
+  category: 'Hands-on Sessions',
+
+  branch: 'EE',
+
+  date: 'September 7, 2022',
+
+  time: '10:00 AM - 1:00 PM',
+
+  venue: 'EED2, Electrical Department',
+
+  organizedBy: 'Electrical Engineering Department',
+
+
+  reportAuthor: 'Electrical Engineering Department',
+
+  overview:
+
+    'A hands-on technical session designed to introduce Electrical and Electronics Engineering students to electronic circuit design, simulation, data acquisition, and analysis using various hardware and software tools.',
+
+  description:
+
+    'A hands-on session on Electronics Circuit Design for Electrical Engineers was conducted on September 7, 2022, from 10:00 AM to 1:00 PM at EED2 in the Electrical Department. The session was conducted by Mr. Sachin Negi, Assistant Professor, EED, GBPIET. A total of 108 students from the second year of the Electrical Engineering and Electronics departments attended the session. Students were introduced to electronic circuits used for data acquisition and analysis in different applications. The session covered Arduino-based microcontroller experiments, circuit simulation experiments, and PCB-based instrumentation experiments. Students were also given a basic introduction to circuit designing using PROTEUS and other software tools including LabVIEW, MATLAB, and PSPICE. The session aimed to familiarize upcoming Electrical and Electronics Engineers with the fundamentals and practical process of electronic circuit designing.',
+
+  keyDiscussion: [
+
+    'Introduction to electronic circuits for data acquisition and analysis.',
+
+    'Arduino-based microcontroller experiments.',
+
+    'Circuit simulation experiments.',
+
+    'PCB-based instrumentation experiments.',
+
+    'Basics of electronic circuit design using PROTEUS.',
+
+    'Applications of LabVIEW, MATLAB, and PSPICE in circuit design and simulation.',
+
+    'Practical approach to electronic circuit designing for Electrical and Electronics Engineers.',
+
+  ],
+
+  studentsPresent: [
+
+    '108 second-year students from Electrical Engineering and Electronics departments',
+
+  ],
+
+  image: '/activities/EE/EE22004.jpg',
+
+},
 
 
 
