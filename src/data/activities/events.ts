@@ -1563,5 +1563,41 @@ export const activities: Activity[] = [
 
   image: '/activities/ECE/ECE20005.png',
 },
+{
+  id: 'ECE22019',
+
+  title: 'Webinar on "Future Outlook of Grid Compliance for Wind Turbines and Wind Power Plants"',
+  category: 'Webinars',
+  branch: 'ECE',
+
+  date: 'October 19, 2022',
+  time: 'N/A',
+  venue: 'Online - MS Teams',
+  organizedBy: 'IEEE GBPIET Student Branch',
+  reportAuthor: 'IEEE GBPIET Student Branch',
+
+  overview:
+    'An online webinar was organized to provide students with insights into the future outlook of grid compliance for wind turbines and wind power plants, along with emerging innovations and developments in wind energy generation.',
+
+  description:
+    'The webinar was conducted on October 19, 2022, in online mode through MS Teams by the IEEE GBPIET Student Branch. The session was delivered by Gabriel Miguel Gomes Guerreiro from the Industrial PhD Department of Wind Energy at the Technical University of Denmark (DTU). Approximately 120-150 students registered their presence along with faculty members. The webinar focused on future developments and innovations in energy generation through wind energy. Participants gained insights into the growth and potential of wind power and the importance of integrating wind energy into modern power generation systems.',
+
+  keyDiscussion: [
+    'Future outlook of grid compliance for wind turbines.',
+    'Grid compliance requirements for wind power plants.',
+    'Emerging innovations in wind energy generation.',
+    'Growth and potential of wind power generation.',
+    'Integration of wind energy into modern power systems.',
+    'Future developments in renewable energy technologies.',
+    'Industry and research perspectives on wind energy.',
+  ],
+
+  studentsPresent: [
+    'Approximately 120-150 registered students',
+    'Faculty members of GBPIET',
+  ],
+
+  image: '/activities/ECE/ECE22001.png',
+},
 
 ];
