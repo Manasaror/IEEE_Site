@@ -1029,7 +1029,7 @@ export const activities: Activity[] = [
 
   ],
 
-  image: '/activities/EE/EE24002.jpeg',
+  image: '/activities/EE/EE24001.webp',
 
 },
 {
@@ -1087,6 +1087,7 @@ export const activities: Activity[] = [
   image: '/activities/ECE/ECE24002.png',
 
 },
+
 
 
 
