@@ -1590,6 +1590,62 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE20001.png',
 
 },
+{
+  id: 'EE20013',
+
+  title: 'Online Internship Program on MATLAB, VLAB & Applications in Electrical Engineering',
+
+  category: 'Internships',
+
+  branch: 'EE',
+
+  date: 'August 17-28, 2020',
+
+  time: 'N/A',
+
+  venue: 'Online',
+
+  organizedBy: 'Department of Electrical Engineering, GBPIET Pauri',
+
+
+
+  reportAuthor: 'Department of Electrical Engineering',
+
+  overview:
+
+    'An online internship program organized to provide Electrical Engineering students with practical exposure to MATLAB, VLAB, control systems, semiconductor devices, solar cells, renewable energy, and other core areas of Electrical Engineering.',
+
+  description:
+
+    'The Department of Electrical Engineering, GBPIET Pauri, organized an online internship program on "MATLAB, VLAB & Applications in Electrical Engineering" from August 17 to August 28, 2020. The program was sponsored by TEQIP-3 and conducted in collaboration with SmartBrain Engineers and Technologies Pvt. Ltd. A total of 105 second-year and third-year Electrical Engineering students participated in the internship. The program covered several important areas of Electrical Engineering, including MATLAB, VLAB, Control Systems, Semiconductor Devices, Solar Cells, Renewable Energy, and related applications.',
+
+  keyDiscussion: [
+
+    'Introduction to MATLAB and its applications in Electrical Engineering.',
+
+    'Virtual Laboratory (VLAB) and its applications.',
+
+    'Control Systems and their applications.',
+
+    'Semiconductor devices and related concepts.',
+
+    'Solar cells and their applications.',
+
+    'Renewable energy technologies.',
+
+    'Practical applications of software and technologies in Electrical Engineering.',
+
+  ],
+
+  studentsPresent: [
+
+    '105 second-year and third-year Electrical Engineering students',
+
+  ],
+
+  image: '/activities/EE/EE20002.png',
+
+},
 
 
   // =========================
