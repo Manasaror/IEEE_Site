@@ -1248,7 +1248,7 @@ export const activities: Activity[] = [
 
   ],
 
-  image: '/activities/EE/EE23006.jpeg',
+  image: '/activities/EE/EE23002.jpg',
 
 },
 
