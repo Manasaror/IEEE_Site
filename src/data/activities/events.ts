@@ -944,7 +944,7 @@ export const activities: Activity[] = [
 
   title: 'Online Speaker Session with Our College Alumni',
   category: 'Speaker Sessions',
-  branch: 'ECE',
+  branch: 'EE',
 
   date: 'March 22, 2025',
   time: '4:00 PM - 5:30 PM',
