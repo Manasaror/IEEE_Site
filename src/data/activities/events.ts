@@ -1144,6 +1144,60 @@ export const activities: Activity[] = [
   image: '/activities/ECE/ECE24004.jpg',
 
 },
+{
+  id: 'EE23005',
+
+  title: 'IEEE Recruitment Session - Recruitment of New Volunteers',
+
+  category: 'Recruitment',
+
+  branch: 'EE',
+
+  date: 'October 14, 2023',
+
+  time: '10:00 AM',
+
+  venue: 'LT-3, BT Department',
+
+  organizedBy: 'IEEE Student Branch',
+
+
+  reportAuthor: 'IEEE Student Branch',
+
+  overview:
+
+    'A recruitment session organized to select new volunteers from the second-year graduation course and introduce them to the management and responsibilities associated with being an IEEE member.',
+
+  description:
+
+    'The IEEE recruitment session was conducted on Saturday, October 14, 2023, with the objective of recruiting volunteers from the second-year graduation course. The session aimed to provide selected volunteers with an opportunity to learn about the management of activities and the responsibilities associated with being an IEEE member. The recruitment process was based on responses received through a Google Form circulated earlier, followed by an interview round. The session was coordinated by members of the IEEE Student Branch who guided the recruitment process.',
+
+  keyDiscussion: [
+
+    'Recruitment of new IEEE volunteers from the second-year graduation course.',
+
+    'Introduction to the responsibilities of an IEEE member.',
+
+    'Management and handling of IEEE Student Branch activities.',
+
+    'Evaluation based on previously submitted Google Form responses.',
+
+    'Interview round for prospective volunteers.',
+
+    'Coordination of the recruitment process by IEEE Student Branch members.',
+
+  ],
+
+  studentsPresent: [
+
+    'Second-year students participating in the recruitment session',
+
+  ],
+
+  image: '/activities/EE/EE23001.jpg',
+
+},
+
 
 
 
