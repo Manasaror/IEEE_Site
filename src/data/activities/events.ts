@@ -1637,5 +1637,42 @@ export const activities: Activity[] = [
 
   image: '/activities/ECE/ECE22002.png',
 },
+{
+  id: 'ECE22021',
+
+  title: 'Webinar on "Exposure for Beginners: Journey from Electrons to Photons Past, Present, and Future"',
+  category: 'Webinars',
+  branch: 'ECE',
+
+  date: 'May 13, 2022',
+  time: '3:00 PM - 4:00 PM',
+  venue: 'Online - MS Teams',
+  organizedBy: 'IEEE GBPIET Student Branch',
+
+  reportAuthor: 'IEEE GBPIET Student Branch',
+
+  overview:
+    'An online webinar organized on the occasion of International Day of Light 2022, focusing on the journey from electrons to photons and exploring its past, present, and future.',
+
+  description:
+    'The webinar was conducted on May 13, 2022, from 3:00 PM to 4:00 PM through MS Teams. The event was organized on the occasion of International Day of Light 2022 as part of the celebrations of Azadi Ka Amrit Mahotsav, commemorating the 75th Anniversary of Indian Independence. The session was delivered by Dr. Rikmantra Basu, a faculty member at NIT Delhi. Faculty members, IEEE members, and students participated in the webinar. The session provided insights into the origins, present developments, and future perspectives of the journey from electrons to photons.',
+
+  keyDiscussion: [
+    'Introduction to the journey from electrons to photons.',
+    'Historical origin and development of concepts related to electrons and photons.',
+    'Present scenario and advancements in the field.',
+    'Future perspectives and emerging possibilities involving electrons and photons.',
+    'Importance of light and photonics in modern technology.',
+    'Insights into the evolving role of photonics and related technologies.',
+  ],
+
+  studentsPresent: [
+    'Students participating in the webinar',
+    'IEEE members',
+    'Faculty members of GBPIET',
+  ],
+
+  image: '/activities/ECE/ECE22003.png',
+},
 
 ];
