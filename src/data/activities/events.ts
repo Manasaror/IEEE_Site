@@ -1698,7 +1698,68 @@ export const activities: Activity[] = [
   image: '/activities/ECE/ECE20001.png',
 
 },
+{
+  id: 'EE20015',
 
+  title: 'PowerPoint Presentation Program',
+
+  category: 'Competitions',
+
+  branch: 'EE',
+
+  date: 'March 1, 2020',
+
+  time: 'N/A',
+
+  venue: 'N/A',
+
+  organizedBy: 'Society of Electrical Engineering (SEE)',
+
+  reportAuthor: 'SEE Committee, Session 2019-20',
+
+  overview:
+
+    'A technical PowerPoint presentation competition organized to enhance students’ communication, presentation, research, and public speaking skills through presentations on technical topics of their choice.',
+
+  description:
+
+    'The PowerPoint Presentation Program was held on March 1, 2020, under the Society of Electrical Engineering. Students from the first and second years were asked to prepare presentations on technical topics of their choice and present their research work before a jury. The programme aimed to enhance students’ communication and presentation skills, encourage them to overcome the hesitation of speaking in public, and increase their awareness of technology and current developments. Respective juries evaluated the participants based on their presentation skills, capabilities, and ability to communicate their ideas and views. Students participated enthusiastically and demonstrated their technical knowledge and presentation abilities. The programme also provided an opportunity for students to understand and appreciate each other’s skills and perspectives.',
+
+  keyDiscussion: [
+
+    'Technical presentations on topics selected by the students.',
+
+    'Research work and technical knowledge sharing.',
+
+    'Development of communication and presentation skills.',
+
+    'Building confidence in public speaking.',
+
+    'Evaluation based on presentation skills and ability to communicate ideas.',
+
+    'Awareness of technological developments and current trends.',
+
+    'Exchange of knowledge, ideas, and perspectives among students.',
+
+  ],
+
+  studentsPresent: [
+
+    'First-year Electrical Engineering students',
+
+    'Second-year Electrical Engineering students',
+
+    '1st Position - Manas, Kunal, Nanak',
+
+    '2nd Position - Purvanshi, Prateek, Yogesh',
+
+    '3rd Position - Priyanshu, Karishma, Suja',
+
+  ],
+
+  image: '/activities/EE/EE20003.jpg',
+
+},
 
   // =========================
   // Electronics
