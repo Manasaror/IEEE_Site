@@ -944,6 +944,8 @@ export const activities: Activity[] = [
   image: '/activities/EE/EE24001.webp',
 },
 
+
+
   // =========================
   // Electronics
   // =========================
