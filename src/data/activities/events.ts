@@ -1087,6 +1087,63 @@ export const activities: Activity[] = [
   image: '/activities/ECE/ECE24002.png',
 
 },
+{
+  id: 'EE24004',
+
+  title: 'Interview for IEEE Recruitment ("Empowering Innovation, Connecting Minds")',
+
+  category: 'Recruitment',
+
+  branch: 'EE',
+
+  date: 'August 26, 2024',
+
+  time: '2:30 PM - 5:40 PM',
+
+  venue: 'LT-03, BTED',
+
+  organizedBy: 'IEEE Student Chapter',
+
+
+
+  reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+
+  overview:
+
+    'An IEEE recruitment interview session conducted to introduce students to various positions within the club and assess their skills, interests, and suitability for different roles.',
+
+  description:
+
+    'The recruitment session began with the members introducing themselves and sharing their desired positions. The participants were briefed about the various positions available within IEEE and their significance in the efficient functioning of the club.',
+  keyDiscussion: [
+
+    'Introduction of IEEE members and desired positions.',
+
+    'Overview of various IEEE positions and their significance.',
+
+    'Students presenting their desired positions and skillsets.',
+
+    'First-round interviews conducted in groups of four.',
+
+    'Discussion of candidates’ contributions to the IEEE club.',
+
+    'Second-round interviews and comparison of candidates for desired positions.',
+
+    'Resolution of candidate queries and feedback from the Core Team.',
+
+    'Announcement of recruitment results after the interview process.',
+
+  ],
+
+  studentsPresent: [
+
+    'IEEE recruitment candidates',
+
+  ],
+
+  image: '/activities/ECE/ECE24004.jpg',
+
+},
 
 
 
