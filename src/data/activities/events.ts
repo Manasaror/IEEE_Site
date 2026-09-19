@@ -906,7 +906,7 @@ export const activities: Activity[] = [
     'Ojasvi Thapa',
   ],
 
-  image: '/activities/EE/EE25001.jpeg',
+  image: '/activities/EE/EE25001.jpeg',S
 },
 
   // =========================
