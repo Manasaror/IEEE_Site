@@ -2511,7 +2511,7 @@ export const activities: Activity[] = [
     'Faculty members of GBPIET',
   ],
 
-  image: '/activities/ECE/ECE22003.png',s
+  image: '/activities/ECE/ECE22003.png',
 },
 
 ];
