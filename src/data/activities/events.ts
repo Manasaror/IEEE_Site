@@ -273,7 +273,7 @@ export const activities: Activity[] = [
     studentsPresent: [
       'Paras Dhiman'
     ],
-    image: '/activities/CSE/CSE25003.webp',
+    image: '/activities/CSE/CSE25003.png',
   },
   {
     id: 'CSE25004',
@@ -301,7 +301,7 @@ export const activities: Activity[] = [
       'Jiyanshi Batra',
       'Paras Dhiman'
     ],
-    image: '/activities/CSE/CSE25004.webp',
+    image: '/activities/CSE/CSE25004.jpg',
   },
   {
     id: 'CSE25005',
@@ -388,7 +388,7 @@ export const activities: Activity[] = [
       'Jiyanshi Batra',
       'Shivam Dangwal'
     ],
-    image: '/activities/CSE/CSE25007.jpeg',
+    image: '/activities/CSE/CSE25007.jpg',
   },
   {
     id: 'CSE25008',
@@ -416,7 +416,7 @@ export const activities: Activity[] = [
       'Paras Dhiman',
       'Muskan'
     ],
-    image: '/activities/CSE/CSE25008.jpeg',
+    image: '/activities/CSE/CSE25008.jpg',
   },
   {
     id: 'CSE24001',
@@ -445,7 +445,7 @@ export const activities: Activity[] = [
       'Paras Dhiman',
       'Akriti Chauhan'
     ],
-    image: '/activities/CSE/CSE24001.jpeg',
+    image: '/activities/CSE/CSE24001.png',
   },
   {
     id: 'CSE24002',
@@ -474,7 +474,7 @@ export const activities: Activity[] = [
       'Prakriti Arya',
       'Mohit Rawat'
     ],
-    image: '/activities/CSE/CSE24002.jpeg',
+    image: '/activities/CSE/CSE24002.webp',
   },
   {
     id: 'CSE24003',
@@ -507,7 +507,7 @@ export const activities: Activity[] = [
       'Sneha Saraswat',
       'Shivam Dangwal'
     ],
-    image: '/activities/CSE/CSE24003.jpeg',
+    image: '/activities/CSE/CSE24003.webp',
   },
   {
     id: 'CSE24004',
@@ -531,7 +531,7 @@ export const activities: Activity[] = [
       'Evaluation according to specified judging criteria.'
     ],
     studentsPresent: [],
-    image: '/activities/CSE/CSE24004.jpeg',
+    image: '/activities/CSE/CSE24004.webp',
   },
   {
     id: 'CSE24005',
@@ -554,7 +554,7 @@ export const activities: Activity[] = [
       'Candidate performance feedback from the Core Team.'
     ],
     studentsPresent: [],
-    image: '/activities/CSE/CSE24005.jpeg',
+    image: '/activities/CSE/CSE24005.jpg',
   },
   {
     id: 'CSE24006',
@@ -585,7 +585,7 @@ export const activities: Activity[] = [
       'Vibha Bora',
       'Divyanshi Naithani'
     ],
-    image: '/activities/CSE/CSE24006.jpeg',
+    image: '/activities/CSE/CSE24006.jpg',
   },
   {
     id: 'CSE24007',
@@ -611,7 +611,7 @@ export const activities: Activity[] = [
       'Jiyanshi',
       'Asmit Rana'
     ],
-    image: '/activities/CSE/CSE24007.jpeg',
+    image: '/activities/CSE/CSE24007.png',
   },
   {
     id: 'CSE23001',
@@ -637,7 +637,7 @@ export const activities: Activity[] = [
       'Vanshika Painuly',
       'Jiyanshi Batra'
     ],
-    image: '/activities/CSE/CSE23001.jpeg',
+    image: '/activities/CSE/CSE23001.webp',
   
   } , 
 
@@ -1264,53 +1264,16 @@ export const activities: Activity[] = [
   },
 
 
+
 // =========================
-// Electrical
-// =========================
-// =========================
-  // CSE
+  // AIml - CSE
   // =========================
-  {
-    id: 'CSE26001', // CSE26001
 
-    title: 'Web Development Workshop',
-    category: 'Workshops',
-    branch: 'CSE',
-
-    date: 'September 15, 2026',
-    time: '10:00 AM - 1:00 PM',
-    venue: 'Computer Lab, GBPIET',
-    organizedBy: 'IEEE GBPIET Student Branch',
-
-    reportAuthor: 'Chandan Singh',
-
-    overview:
-      'A technical workshop focused on modern web development technologies and practical application development.',
-
-    description:
-      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
-
-    keyDiscussion: [
-      'Introduction to modern web development technologies.',
-      'Understanding the structure of web applications.',
-      'Frontend development using HTML, CSS and JavaScript.',
-      'Responsive web design principles.',
-      'Deployment and development workflows.',
-    ],
-
-    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
-
-    image: '/activies/CSE/hero_engineering_lab.jpg',
-  },
-
-  // ========================
-  // Electrical
-  //=========================
 
   {
     id: 'AIML26001',
 
-    title: 'Web Development Workshop',
+    title: 'Sample Format for AIML',
     category: 'Workshops',
     branch: 'AIML',
 
@@ -1339,6 +1302,12 @@ export const activities: Activity[] = [
 
     image: '/images/hero_engineering_lab.jpg',
   },
+
+  // ========================
+  // Electrical
+  //=========================
+
+
   {
   id: 'EE25001',
 
