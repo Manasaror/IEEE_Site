@@ -34,37 +34,1108 @@ export const activities: Activity[] = [
   // CSE
   // =========================
   {
-    id: 'CSE26001', // CSE26001
+  id: 'CSE26001',
+  title: 'IEEE Student Branch Meeting Report',
+  category: 'Meetings',
+  branch: 'CSE',
+  date: 'September 10, 2026',
+  time: '4:00 PM - 5:30 PM',
+  venue: 'LT-04, Electrical Department',
+  organizedBy: 'IEEE Student Branch',
+  reportAuthor: 'Kavi Raj',
+  overview: 'The meeting was organized by the final-year IEEE members for the 2nd- and 3rd-year members as part of the branch’s ongoing coordination and preparation for upcoming activities.',
+  description: 'The interaction provided an opportunity for the senior members to brief the juniors on IEEE event management, responsibilities, and the practical procedures involved in organizing branch activities. It also served as a platform for assigning teams and establishing coordination for the upcoming work.',
+  keyDiscussion: [
+    'Proposed ideas and planning for Engineers’ Day, including the related roles assigned to members.',
+    'IEEE project budget and maintenance requirements.',
+    'Preparation of faculty invitations, official event mail, and certificates.',
+    'Responsibilities related to SIH and Engineers’ Day were distributed among the members.'
+  ],
+  studentsPresent: [
+    'Rachita Pant',
+    'Mohit Rawat',
+    'Ansh Dhamija',
+    'Janmejay Pant',
+    'Harsh',
+    'Rohit Thapliyal',
+    'Asmi Naithani',
+    'Vishwas Bhatia',
+    'Priyanshu Nautiyal',
+    'Priyanshu Shah',
+    'Suraj Khanduri',
+    'Vaibhav Pokhriyal',
+    'Rahul Joshi',
+    'Manas Arora',
+    'Naval Budhlakoti',
+    'Sumit Rawat',
+    'Nikhil Suyal',
+    'Priyanshu Gusain',
+    'Priya Maurya',
+    'Ahana',
+    'Aman'
+  ],
+  image: 'public\activities\CSE\CSE26001.png',
+},
 
-    title: 'Web Development Workshop',
+  {
+  id: 'CSE26002',
+  title: 'IEEE Student Branch Recruitment Drive 2026',
+  category: 'Recruitment',
+  branch: 'CSE',
+  date: 'September 6, 2026',
+  time: '3:00 PM - 6:00 PM',
+  venue: 'LT-04, Electrical Department',
+  organizedBy: 'IEEE Student Branch',
+  reportAuthor: 'Surbhi Naithani',
+  overview: 'The IEEE Student Branch of GBPIET conducted its annual recruitment drive at LT-04 in the Electrical Department. The session began with the Branch Chair addressing the students and giving a basic overview of IEEE and the available posts within the society.',
+  description: 'The event saw the participation of over 70 students. The recruitment process was divided into two stages. The first stage required all junior students to give a self-introduction to the existing members and fellow recruits, where they shared their skills and interests. This was followed by a one-on-one interview for each student. In the second stage, a team of members questioned students according to what was shared in their introductions, evaluating them based on their specific skills, communication, and dedication. The recruitment concluded with over 30 students being successfully shortlisted. The final results of the recruitment drive were announced on September 7, 2026.',
+  keyDiscussion: [
+    'Introduction to IEEE and available posts within the society.',
+    'Self-introduction by junior students.',
+    'Sharing of skills and interests.',
+    'One-on-one interviews.',
+    'Evaluation based on skills, communication, and dedication.',
+    'Shortlisting of students.'
+  ],
+  studentsPresent: [
+    'Suraj Khanduri',
+    'Priyanshu Shah',
+    'Priyanshu Nautiyal',
+    'Sumit Rawat',
+    'Priyanshu Gusain',
+    'Aadarsh',
+    'Nikhil Suyal',
+    'Ahana',
+    'Yash Saini',
+    'Rahul Joshi',
+    'Vaibhav Pokhriyal',
+    'Manas Arora'
+  ],
+  image: 'public\activities\CSE\CSE26002.png',
+},
+
+{
+  id: 'CSE26003',
+  title: 'SQL COMPETITION',
+  category: 'Competitions',
+  branch: 'CSE',
+  date: 'April 11, 2026',
+  time: '3:00 PM - 5:00 PM',
+  venue: 'Seminar Hall, ECED',
+  organizedBy: 'IEEE Student Branch',
+  reportAuthor: 'Priyanshu Nautiyal',
+  overview: 'IEEE Student Branch organized a SQL Competition to enhance the practical understanding of participants. The competition was conducted in a structured environment, allowing students to apply the concepts and techniques introduced during the workshop.',
+  description: 'The event commenced with a brief introduction by the organizing team, outlining the rules, evaluation criteria, and objectives of the competition. Participants were provided with a problem set based on real-world database scenarios, requiring the use of Data Definition Language (DDL) and Data Manipulation Language (DML) on the HACKERRANK platform. The questions were designed to test conceptual clarity, query-writing skills, and the ability to efficiently retrieve and manipulate data. During the competition, participants worked on solving SQL queries involving database creation, data insertion, filtering, sorting, and aggregation. The tasks also encouraged logical thinking and problem-solving under time constraints. The competition environment ensured fair evaluation and active engagement from all participants. The competition served as a valuable platform for participants to reinforce their learning, gain hands-on experience, and build confidence in SQL. It also highlighted the importance of practical application in mastering database management skills. Positive feedback and enthusiasm from participants reflected the success of both the workshop and the competition, encouraging the organization of similar technical events in the future.',
+  keyDiscussion: [
+    'SQL concepts and practical database management.',
+    'Data Definition Language (DDL).',
+    'Data Manipulation Language (DML).',
+    'Real-world database scenarios.',
+    'Database creation and data insertion.',
+    'Filtering, sorting, and aggregation.',
+    'Query-writing skills.',
+    'Logical thinking and problem-solving under time constraints.'
+  ],
+  studentsPresent: [
+    'Harshit Gini',
+    'Vishwas Bhatia',
+    'Ojasvi Thapa',
+    'Harsh Sharma',
+    'Suraj Khanduri',
+    'Sumit Rawat',
+    'Priyanshu Gusain',
+    'Priyanshu Nautiyal',
+    'Daksh Kandpal',
+    'Aman',
+    'Vikrant Kumar',
+    'Nikhil Suyal',
+    'Manas Arora',
+    'Rashid'
+  ],
+  image: 'public\activities\CSE\CSE26003.png',
+},
+
+{
+  id: 'CSE26004',
+  title: 'SQL PRACTICE SESSION',
+  category: 'Workshops',
+  branch: 'CSE',
+  date: 'March 27, 2026',
+  time: '4:00 PM - 6:00 PM',
+  venue: 'Seminar Hall, EED',
+  organizedBy: 'IEEE Student Branch',
+  reportAuthor: 'Priyanshu Nautiyal',
+  overview: 'The IEEE Student Branch organized a SQL Practice Session at the EED Seminar Hall on March 27, 2026. The session introduced attendees to DBMS and MySQL as the primary tools for the session.',
+  description: 'The session was commenced by the final year Branch Chair Jiyanshi Batra and Creative Media Head Paras Dhiman, who introduced the attendees to DBMS and MySQL as the primary tools for the session. The introductory segment covered the fundamentals of ER diagrams, database architecture, and table structure, establishing the conceptual groundwork for the hands-on work that followed. The technical segment progressed into the practical implementation of Data Definition Language (DDL), wherein a base database was created with structured tables and subsequently connected to CSV data files. Following the DDL segment, participants engaged in a practice session covering Data Manipulation Language (DML) commands, working directly with the created database to formulate and execute queries. Practice material comprising an ER diagram, relevant data files, and a set of practice questions has been shared with all attendees. All participants are advised to attempt the provided questions prior to the upcoming competition. For any doubts or clarifications regarding the material, participants may contact the session organizer directly. Interest in a follow-up session covering nested queries, joins, and advanced SQL topics has been noted; participants wishing to attend may register their interest by reaching out to the organizer.',
+  keyDiscussion: [
+    'DBMS and MySQL.',
+    'ER diagrams.',
+    'Database architecture.',
+    'Table structure.',
+    'Data Definition Language (DDL).',
+    'Connecting databases to CSV data files.',
+    'Data Manipulation Language (DML).',
+    'Formulating and executing SQL queries.',
+    'Nested queries, joins, and advanced SQL topics.'
+  ],
+  studentsPresent: [
+    'Jiyanshi Batra',
+    'Paras Dhiman',
+    'Anurag Gupta',
+    'Harshit Gini',
+    'Rachita Pant',
+    'Ojasvi Thapa',
+    'Priyanshu Nautiyal',
+    'Vaibhav Pokhriyal',
+    'Rahul Joshi',
+    'Daksh Kandpal',
+    'Aman',
+    'Nitin Rawat',
+    'Nikhil Suyal',
+    'Aahana',
+    'Priya Maurya',
+    'Yash Joshi',
+    'Naval'
+  ],
+  image: 'public\activities\CSE\CSE26004.png.jpg',
+},
+
+{
+  id: 'CSE25001',
+  title: 'IOT workshop and project demonstration',
+  category: 'Workshops',
+  branch: 'CSE',
+  date: 'November 29, 2025',
+  time: '4:00 PM - 5:30 PM',
+  venue: 'Seminar Room, CSED',
+  organizedBy: 'IEEE Student Branch',
+  reportAuthor: 'Priyanshu Nautiyal',
+  overview: 'IEEE student branch representatives from the pre-final year and second year volunteers organized an IoT workshop.',
+  description: 'The event commenced with a brief introduction outlining IEEE and its core objectives. The technical segment comprised a hands-on session detailing ESP32 microcontrollers, sensor integration, and real-time data processing concepts. A practical demonstration featured a functional hardware project named "air mouse", developed by the organizing team members. The workshop included a structured Q&A session where first-year students presented technical inquiries and indicated interest in future project development. The proceedings concluded with a technical quiz and the collection of student feedback regarding preferences for future events.',
+  keyDiscussion: [
+    'Introduction to IEEE and its core objectives.',
+    'ESP32 microcontrollers.',
+    'Sensor integration.',
+    'Real-time data processing concepts.',
+    'Practical demonstration of an air mouse project.',
+    'Structured Q&A session.',
+    'Technical quiz.',
+    'Collection of student feedback for future events.'
+  ],
+  studentsPresent: [
+    'Rachita Pant',
+    'Rohit Mahant'
+  ],
+  image: 'public\activities\CSE\CSE25001.jpeg',
+},
+
+{
+  id: 'CSE25002',
+  title: 'UTKARSH 1.0 – Internal Hackathon (Stage 1)',
+  category: 'Hackathons',
+  branch: 'CSE',
+  date: 'May 6, 2025',
+  time: '2:00 PM - 5:00 PM',
+  venue: 'CSED Seminar Hall',
+  organizedBy: 'IEEE Student Branch, GBPIET',
+  reportAuthor: 'Samriddhi Bhatt',
+  overview: 'The IEEE Student Branch of GBPIET successfully organized the internal hackathon UTKARSH 1.0 (Stage-1) on 6th May at the CSED Seminar Hall under the theme "AI Readiness for Sustainable Development."',
+  description: 'The hackathon featured active participation from four student teams: Project RAINS, Project AlertNest, Project Green City AI, and Project Sahayak, each consisting of 4 to 5 members. The teams presented their innovative AI-based solutions in front of an esteemed panel of judges: Dr. Priti Dimri, Dr. Ashish Negi, Dr. Surbhi Lingwal, and Dr. J.S. Rauthan. Judges posed insightful questions and provided valuable suggestions for improvement. The event was efficiently hosted by Jiyanshi Batra, and the atmosphere remained enthusiastic and interactive throughout. The hackathon encouraged critical thinking, innovation, and teamwork.',
+  keyDiscussion: [
+    'AI Readiness for Sustainable Development.',
+    'Project RAINS.',
+    'Project AlertNest.',
+    'Project Green City AI.',
+    'Project Sahayak.',
+    'AI-based solutions.',
+    'Project presentation and evaluation.',
+    'Critical thinking, innovation, and teamwork.'
+  ],
+  studentsPresent: [
+    'Jiyanshi Batra'
+  ],
+  image: 'public\activities\CSE\CSE25002.jpeg',
+},
+
+{
+  id: 'CSE25003',
+  title: 'Intra-college chess tournament',
+  category: 'Competitions',
+  branch: 'CSE',
+  date: 'April 27, 2025',
+  time: '4:00 PM - 6:00 PM',
+  venue: 'Auditorium Premises',
+  organizedBy: 'IEEE core team members',
+  reportAuthor: 'Janmejay Pant, Ojasvi Thapa and Samriddhi Bhatt',
+  overview: 'IEEE student branch representatives from pre-final year and second year volunteers organized an intra-college chess tournament.',
+  description: 'An initial online round was conducted on chess.com and the top 8 players were selected based on their performance. To maintain fair play and encounter cheating of any sort, players had to be present on Google Meet. A final offline round was conducted in single round-robin format among the top 8 players of the previous online round. The tournament concluded successfully and the top players were decided after a final match of armageddon.',
+  keyDiscussion: [
+    'Online preliminary round on chess.com.',
+    'Selection of the top 8 players.',
+    'Fair-play monitoring through Google Meet.',
+    'Offline single round-robin final.',
+    'Armageddon final match.'
+  ],
+  studentsPresent: [
+    'Paras Dhiman'
+  ],
+  image: 'public\activities\CSE\CSE25003.jpeg',
+},
+
+{
+  id: 'CSE25004',
+  title: 'A Virtual Session with Miss Shivani Pant',
+  category: 'Sessions',
+  branch: 'CSE',
+  date: 'March 30, 2025',
+  time: '09:15 PM - 10:15 PM',
+  venue: 'Online (Google Meet)',
+  organizedBy: 'IEEE Student Activity Cell',
+  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+  overview: 'The IEEE Student Activity Cell successfully hosted an insightful online session on March 30, 2025, featuring Shivani Pant, an Engineering Manager at Plaid.',
+  description: 'Shivani Pant shared her experiences and expertise on global data systems, fintech leadership, and career growth. She discussed career planning, career blueprints, and different career roles such as Software Engineer (SWE), Product Manager, Data Scientist, and Support Engineer. She emphasized building resumes through programming skills, internships, projects, and open-source contributions. She also shared her career path from BTech at IIT Allahabad to working at Amazon, Google (Tokyo & Seattle), and currently at Plaid. She provided insights into her work on Google Maps, BigQuery, and fintech innovations. The session included an interactive Q&A covering emerging technologies, AI’s impact on jobs, hands-on learning, and breaking into top tech firms.',
+  keyDiscussion: [
+    'Career planning and career blueprints.',
+    'Software Engineer, Product Manager, Data Scientist and Support Engineer roles.',
+    'Resume building through programming skills, internships and projects.',
+    'Open-source contributions.',
+    'Career journey through Amazon, Google and Plaid.',
+    'Google Maps and BigQuery.',
+    'Fintech innovation.',
+    'Emerging technologies and AI’s impact on jobs.'
+  ],
+  studentsPresent: [
+    'Jiyanshi Batra',
+    'Paras Dhiman'
+  ],
+  image: 'public\activities\CSE\CSE25004.jpeg',
+},
+
+{
+  id: 'CSE25005',
+  title: 'Chatbot Designing Event',
+  category: 'Workshops',
+  branch: 'CSE',
+  date: 'March 29, 2025',
+  time: '4:00 PM - 6:00 PM',
+  venue: 'LT-05, CSED',
+  organizedBy: 'IEEE Student Activity Cell',
+  reportAuthor: 'Samriddhi Bhatt',
+  overview: 'The IEEE Student Activity Cell of GBPIET successfully organized ChatBot Challenge 2025 as an interactive hands-on workshop.',
+  description: 'The event was conducted as an interactive hands-on workshop where Ojasvi guided students on how to design and develop an AI-based chatbot. Participants were introduced to the fundamentals of chatbot development, including conversational flow, response handling, and basic implementation using tools related to Natural Language Processing (NLP), APIs, and web frameworks. Students actively followed the live demonstration and created their own chatbots under guidance. The workshop provided practical exposure to conversational AI and helped students understand real-world applications such as automated assistance, customer support, and information retrieval while enhancing their technical and problem-solving skills.',
+  keyDiscussion: [
+    'Fundamentals of chatbot development.',
+    'Conversational flow.',
+    'Response handling.',
+    'Natural Language Processing (NLP).',
+    'APIs and web frameworks.',
+    'Live chatbot development demonstration.',
+    'Conversational AI applications.',
+    'Automated assistance, customer support and information retrieval.'
+  ],
+  studentsPresent: [
+    'Adeeb Arfi',
+    'Ojasvi Arora',
+    'Ansh Dhamija',
+    'Asmi Naithani',
+    'Harshit Gini',
+    'Janmejay Pant',
+    'Mohit Rawat',
+    'Prakriti Arya',
+    'Rachita Pant'
+  ],
+  image: 'public\activities\CSE\CSE25005.jpeg',
+},
+
+{
+  id: 'CSE25006',
+  title: 'Interactive speaker session with Mr. Devashish Mamgain',
+  category: 'Speaker Sessions',
+  branch: 'CSE',
+  date: 'March 26, 2025',
+  time: '4:30 PM - 5:30 PM',
+  venue: 'LT-1 BTD',
+  organizedBy: 'IEEE core team members',
+  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+  overview: 'IEEE student branch representatives from pre-final year and second year volunteers organized an interactive question and answer session with Mr. Devashish Mamgain, CEO and Co-Founder of Kommunicate.',
+  description: 'The meeting began with Mr. Devashish briefing the students on various aspects and opportunities in the tech industry and sharing his own experiences and views on the latest trends via a presentation. The discussion then proceeded with an interactive Q&A session. All the questions were answered gracefully and sincerely. The discussion concluded by congratulating him on his achievements and a great career that he has built with his hard work and persistence.',
+  keyDiscussion: [
+    'Opportunities in the technology industry.',
+    'Latest technology trends.',
+    'Entrepreneurship and industry experience.',
+    'Interactive Q&A session.',
+    'Career development and persistence.'
+  ],
+  studentsPresent: [
+    'Jiyanshi Batra',
+    'Paras Dhiman',
+    'Muskan Singh'
+  ],
+  image: 'public\activities\CSE\CSE25006.jpeg',
+},
+
+{
+  id: 'CSE25007',
+  title: 'Workshop on basics of a simple chatbot and its implementation',
+  category: 'Workshops',
+  branch: 'CSE',
+  date: 'March 26, 2025',
+  time: '4:30 PM - 5:30 PM',
+  venue: 'LT-1 BTD',
+  organizedBy: 'IEEE core team members',
+  reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+  overview: 'IEEE student branch representatives from pre-final year and second year volunteers organized a chatbot introduction and implementation workshop.',
+  description: 'The meeting began with Ms. Rachita Pant briefing the attendees about the basics, history, modern changes and market analysis of modern-day chatbots. The discussion then proceeded with a demonstration of the implementation of a simple chatbot made on DialogFlow and implemented as a Telegram bot by Ms. Ojasvi Arora. The workshop concluded with successful execution of a Telegram bot.',
+  keyDiscussion: [
+    'Basics and history of chatbots.',
+    'Modern changes in chatbot technology.',
+    'Market analysis of modern-day chatbots.',
+    'DialogFlow.',
+    'Implementation of a simple chatbot.',
+    'Telegram bot development.'
+  ],
+  studentsPresent: [
+    'Jiyanshi Batra',
+    'Shivam Dangwal'
+  ],
+  image: 'public\activities\CSE\CSE25007.jpeg',
+},
+
+{
+  id: 'CSE25008',
+  title: 'Web Capture 2025 - Live Web Design Challenge',
+  category: 'Competitions',
+  branch: 'CSE',
+  date: 'March 24, 2025',
+  time: '11:00 AM - 5:00 PM',
+  venue: 'Seminar hall, CSED',
+  organizedBy: 'IEEE Student Activity Cell of GBPIET',
+  reportAuthor: 'Samriddhi Bhatt',
+  overview: 'The IEEE Student Activity Cell of GBPIET successfully organized Web Capture 2025, a live web design competition focused on modern UI/UX design practices.',
+  description: 'Participants, working in teams of two, were presented with design themes at the beginning of the event and were tasked with building responsive, functional websites within a fixed timeframe. Evaluation parameters included originality, design aesthetics, responsiveness, technical execution, and adherence to the assigned theme. Participants utilized a wide range of web development frameworks and tools, demonstrating their versatility and proficiency in delivering quality outcomes. Web Capture 2025 served as a platform for students to showcase their design thinking, problem solving capabilities, and adaptability under time constraints.',
+  keyDiscussion: [
+    'Real-Time UI/UX-Based Website Design.',
+    'Team-based website development.',
+    'Responsive and functional website design.',
+    'Originality and design aesthetics.',
+    'Responsiveness and technical execution.',
+    'Web development frameworks and tools.',
+    'Design thinking and problem solving.',
+    'Adaptability under time constraints.'
+  ],
+  studentsPresent: [
+    'Paras Dhiman',
+    'Muskan'
+  ],
+  image: 'public\activities\CSE\CSE25008.jpeg',
+},
+
+{
+    id: 'CSE24001',
+    title: 'Interactive Question and Answer session with Ms. Vrinda Gupta',
+    category: 'Interactive Session',
+    branch: 'CSE',
+    date: 'November 16, 2024',
+    time: '4:30 PM - 5:30 PM',
+    venue: 'Seminar Hall, CSED',
+    organizedBy: 'IEEE core team members',
+    reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+    overview:
+        'IEEE student branch representatives from pre-final year and second year volunteers organized an interactive question and answer session with Ms. Vrinda Gupta (Ex. Microsoft SDE, current Google SDE).',
+    description:
+        'The meeting began with the introduction of Ms. Vrinda Gupta and her achievements in the tech industry. The discussion then proceeded with an interactive Q&A session where questions submitted by various students prior to the event and during the event were put before her. All the questions were answered gracefully and sincerely. The discussion concluded by congratulating her on her achievements and a great career that she has built with her hard work and persistence.',
+    keyDiscussion: [
+        'Interactive question and answer session with Ms. Vrinda Gupta.',
+        'Discussion about her achievements in the technology industry.',
+        'Questions submitted by students before and during the event.',
+        'Career insights and professional experiences.',
+        'Interaction between students and an industry professional.'
+    ],
+    studentsPresent: [
+        'Kritesh Purohit',
+        'Khushi Lingwal',
+        'Divyanshi Naithani',
+        'Ananya Chauhan',
+        'Paras Dhiman',
+        'Akriti Chauhan'
+    ],
+    image: 'public\activities\CSE\CSE24001.jpeg',
+},
+
+{
+    id: 'CSE24002',
+    title: 'Introductory Meet for First Year Students 2024-25',
+    category: 'Meet',
+    branch: 'CSE',
+    date: 'October 10, 2024',
+    time: '4:00 PM - 5:00 PM',
+    venue: 'LT-6, CSED',
+    organizedBy: 'IEEE core team members',
+    reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+    overview:
+        'IEEE student branch representatives from pre-final year and second year volunteers organized an introductory meeting for the newly admitted first year students.',
+    description:
+        'The meeting began with the introduction of all the current IEEE members present. The discussion then proceeded with the members introducing the organization IEEE and various opportunities and benefits associated with it. The discussion concluded with a description of the IEEE GBPIET Student Branch, its various activities and future plans.',
+    keyDiscussion: [
+        'Introduction of IEEE organization.',
+        'Opportunities and benefits associated with IEEE.',
+        'Introduction to IEEE GBPIET Student Branch.',
+        'IEEE student branch activities.',
+        'Future plans of the student branch.'
+    ],
+    studentsPresent: [
+        'Kritesh Purohit',
+        'Nitin Goswami',
+        'Asmi Naithani',
+        'Rachita Pant',
+        'Prakriti Arya',
+        'Mohit Rawat'
+    ],
+    image: 'public\activities\CSE\CSE24002.jpeg',
+},
+
+{
+    id: 'CSE24003',
+    title: 'Workshop on Open-Source Contribution and Freelancing',
     category: 'Workshops',
     branch: 'CSE',
+    date: 'September 8, 2024',
+    time: '11:00 AM - 12:30 PM',
+    venue: 'Seminar Hall, CSED',
+    organizedBy: 'IEEE Student Branch',
+    reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+    overview:
+        'A workshop on open-source contribution and freelancing was organized by the IEEE Student Branch.',
+    description:
+        'The session began with an introductory PowerPoint presentation by Rachita Pant and Prakriti Arya on open source and freelancing respectively. Both the volunteers briefed the students on how to get started and its benefits. The session was hosted by Tejas Chhabra, who shared his experiences on freelancing and open-source software. He also shared his exposure related to GitHub and LinkedIn. At the end of the session, doubts raised by the students were answered.',
+    keyDiscussion: [
+        'Introduction to open-source contribution.',
+        'Introduction to freelancing.',
+        'How to get started with open source and freelancing.',
+        'Benefits of open-source contribution.',
+        'Freelancing experiences.',
+        'GitHub and LinkedIn.',
+        'Question and answer session.'
+    ],
+    studentsPresent: [
+        'Jiyanshi Batra',
+        'Aakriti Chauhan',
+        'Rakshit Pant',
+        'Divyanshi Naithani',
+        'Ananya Chauhan',
+        'Vanshika Painuly',
+        'Sneha Saraswat',
+        'Shivam Dangwal'
+    ],
+    image: 'public\activities\CSE\CSE24003.jpeg',
+},
 
-    date: 'September 15, 2026',
+{
+    id: 'CSE24004',
+    title: 'SIH Internal Hackathon 2024',
+    category: 'Hackathons',
+    branch: 'CSE',
+    date: 'September 4-5, 2024',
     time: '10:00 AM - 1:00 PM',
-    venue: 'Computer Lab, GBPIET',
-    organizedBy: 'IEEE GBPIET Student Branch',
+    venue: 'Seminar Room, ECED',
+    organizedBy: 'IEEE Student Chapter',
+    reportAuthor: 'IEEE Student Chapter',
+    overview:
+        'The SIH Internal Hackathon 2024 was organized by the IEEE Student Branch GBPIET as a two-day programme.',
+    description:
+        'There were a total of 24 teams from the college registered for the internal hackathon. The hackathon was scheduled from September 4th to September 5th. It started at 10:00 AM wherein teams were to present their PowerPoint presentations. The teams were already made aware of the rules and regulations to be followed. Judges from different fields of expertise were present. After each presentation, the judges asked questions related to the problem statement and the project domains chosen. Simultaneously, the teams were awarded marks according to the specified judging criteria. The participating teams then awaited the results which were released on September 6th.',
+    keyDiscussion: [
+        'Internal Hackathon 2024.',
+        'Participation of 24 teams from the college.',
+        'PowerPoint project presentations.',
+        'Rules and regulations of the hackathon.',
+        'Evaluation by judges from different fields.',
+        'Problem statements and project domains.',
+        'Evaluation according to specified judging criteria.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE24004.jpeg',
+},
 
-    reportAuthor: 'Chandan Singh',
+{
+    id: 'CSE24005',
+    title: 'Interview for IEEE Recruitment ("Empowering Innovation, Connecting Minds")',
+    category: 'Recruitment',
+    branch: 'CSE',
+    date: 'August 26, 2024',
+    time: '2:30 PM - 5:40 PM',
+    venue: 'LT-03, BTED',
+    organizedBy: 'IEEE (Student Chapter)',
+    reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+    overview:
+        'An interview session was organized for IEEE recruitment under the theme "Empowering Innovation, Connecting Minds".',
+    description:
+        'The session began with the members introducing themselves and their desired posts. There was a briefing about the various positions and their significance in efficient functioning of the club. The students were then asked to introduce themselves on paper and mention their desired position, skillset and why they were suitable for the position.',
+    keyDiscussion: [
+        'Introduction of IEEE recruitment positions.',
+        'Significance of different positions in the club.',
+        'First round of interviews in groups of four.',
+        'Discussion about desired positions and contributions towards the club.',
+        'Second round of interviews.',
+        'Candidate performance feedback from the Core Team.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE24005.jpeg',
+},
+
+{
+    id: 'CSE24006',
+    title: 'Future Trek',
+    category: 'Seminar',
+    branch: 'CSE',
+    date: 'February 25, 2024',
+    time: '11:00 AM - 1:00 PM',
+    venue: 'LT-3, Department of Computer Science',
+    organizedBy: 'IEEE (Student Branch)',
+    reportAuthor: 'IEEE Student Branch',
+    overview:
+        'The "Future Trek" event hosted at the institution aimed to provide students with valuable guidance on upcoming trends in B.Tech, particularly focusing on placements and GATE examinations.',
+    description:
+        'The event featured motivational speeches by Tejas Chhabra, Tanishka Petwal and Vivek Naithani. Throughout the speeches, students were enlightened about the evolving landscape of the tech industry and the importance of staying abreast of future trends. Special emphasis was placed on the significance of placements and the GATE exam in shaping students’ career trajectories.',
+    keyDiscussion: [
+        'Upcoming trends in B.Tech.',
+        'Placement opportunities.',
+        'GATE examination.',
+        'Evolving technology industry.',
+        'Importance of continuous learning.',
+        'Career planning and professional development.'
+    ],
+    studentsPresent: [
+        'Ananya Chauhan',
+        'Khushi Lingwal',
+        'Kritesh Purohit',
+        'Nutan Senwal',
+        'Shrishti',
+        'Vibha Bora',
+        'Divyanshi Naithani'
+    ],
+    image: 'public\activities\CSE\CSE24006.jpeg',
+},
+
+{
+    id: 'CSE24007',
+    title: 'IEEE Workshop on "Introduction of GitHub"',
+    category: 'Workshops',
+    branch: 'CSE',
+    date: 'February 12, 2024',
+    time: '4:00 PM',
+    venue: 'LS, CSE Department',
+    organizedBy: 'IEEE Student Branch',
+    reportAuthor: 'IEEE Student Branch',
+    overview:
+        'The workshop was conducted on 12 February 2024 to introduce first-year and second-year students to GitHub software.',
+    description:
+        'It was an open workshop for all students of first and second year of any branch. The record of participation was collected with the help of a Google Form that was circulated with the poster a day before the event was scheduled.',
+    keyDiscussion: [
+        'Introduction to GitHub.',
+        'GitHub software and its uses.',
+        'Participation of first-year students.',
+        'Participation of second-year students.',
+        'Open workshop for students of all branches.'
+    ],
+    studentsPresent: [
+        'Kritesh Purohit',
+        'Jiyanshi',
+        'Asmit Rana'
+    ],
+    image: 'public\activities\CSE\CSE24007.jpeg',
+},
+
+{
+    id: 'CSE23001',
+    title: 'IEEE Introductory Meet tailored for CSE, AIML, BT and ECE students',
+    category: 'Meet',
+    branch: 'CSE',
+    date: 'December 6, 2023',
+    time: '4:00 PM - 5:15 PM',
+    venue: 'LT-5, Department of Computer Science',
+    organizedBy: 'IEEE (Student Branch)',
+    reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+    overview:
+        'IEEE Student Branch organized an engaging and enlightening event to introduce IEEE organization, its benefits, functioning and the reason for joining the same.',
+    description:
+        'The event began with a comprehensive introduction to IEEE, outlining its global presence, diverse membership and the various technical fields it encompasses. A PowerPoint presentation was presented to explain it better. Various social media handles and websites were introduced to the students. The positions were also discussed with the students that would allow them to actively contribute to the IEEE community, shaping their identity as future Engineers and Technologists.',
+    keyDiscussion: [
+        'Introduction to IEEE organization and its benefits.',
+        'IEEE global presence and diverse membership.',
+        'Various technical fields covered by IEEE.',
+        'Introduction to IEEE social media handles and websites.',
+        'Discussion of positions in the IEEE community.',
+        'Opportunities for students to contribute to IEEE.'
+    ],
+    studentsPresent: [
+        'Abhishekh Lakhera',
+        'Jiyanshi Batra',
+        'Akshita Nautiyal',
+        'Kritesh',
+        'Ashmit',
+        'Khushi Lingwal',
+        'Nitin Goswami',
+        'Divyanshi Naithani'
+    ],
+    image: 'public\activities\CSE\CSE23001.webp',
+},
+
+{
+    id: 'CSE23002',
+    title: 'Coding Competition',
+    category: 'Competitions',
+    branch: 'CSE',
+    date: 'October 29, 2023',
+    time: 'Not specified',
+    venue: 'Seminar Room, CSE Department',
+    organizedBy: 'Department of Computer Science IEEE Committee',
+    reportAuthor: 'Department of Computer Science IEEE Committee',
+    overview:
+        'The Department of Computer Science IEEE committee organized a Coding Competition for the students of first, second and third year on October 29, 2023.',
+    description:
+        'The event aimed to promote coding skills and foster interest in programming among the participants. The competition was focused on Data Structures and consisted of different levels of coding challenges, including real life problems. The competition was conducted online on HackerRank platform. The competition was for beginners and intermediate coders. The event witnessed a great turnout of enthusiastic coders from different branches and semesters. The first three winners were awarded with coupons and certificates of excellence. All the participants were given certificates of participation. The event was a successful and memorable one that achieved its objective and showcased the talent and potential of the students.',
+    keyDiscussion: [
+        'Promotion of coding skills and interest in programming.',
+        'Data Structures based coding challenges.',
+        'Different levels of coding challenges including real life problems.',
+        'Online competition conducted on HackerRank.',
+        'Participation of beginners and intermediate coders.',
+        'Awards and certificates for winners and participants.'
+    ],
+    studentsPresent: [
+        'Tanishka Petwal',
+        'Tejas Chhabra',
+        'Khushi Lingwal',
+        'Jiyanshi Batra',
+        'Divyanshi Naithani',
+        'Muskan Singh',
+        'Kritesh Purohit'
+    ],
+    image: 'public\activities\CSE\CSE23002.webp',
+},
+
+{
+    id: 'CSE23003',
+    title: 'Visit to Government Primary School',
+    category: 'Social Outreach',
+    branch: 'CSE',
+    date: 'May 12, 2023',
+    time: 'Not specified',
+    venue: 'Ghurdaun',
+    organizedBy: 'Department of Computer Science IEEE Committee',
+    reportAuthor: 'Department of Computer Science IEEE Committee',
+    overview:
+        'The team had the privilege of visiting the nearest government primary school to engage with the students of classes 6, 7 and 8.',
+    description:
+        'The objective of the visit was to provide valuable information about potential career options and prestigious educational institutions, including RIMC, Navodaya Vidyalaya and Sainik School. Additionally, the team aimed to motivate the students towards academic excellence, sports participation and all-around development. Multiple activities were conducted for the students including presentation on career options, introduction to RIMC, overview of Navodaya Vidyalaya, information about Sainik School, motivational talk, sports and extracurricular activities. The visit to the government primary school was a resounding success in terms of achieving the objectives.',
+    keyDiscussion: [
+        'Career options for school students.',
+        'Introduction to RIMC.',
+        'Overview of Navodaya Vidyalaya.',
+        'Information about Sainik School.',
+        'Motivational talk.',
+        'Sports participation.',
+        'Extracurricular activities.'
+    ],
+    studentsPresent: [
+        'Parth Uniyal',
+        'Shubham Bhatt',
+        'Tejas Chhabra',
+        'Vivek Naithani',
+        'Richa Gaur',
+        'Nandini',
+        'Shivangi Chamoli'
+    ],
+    image: 'public\activities\CSE\CSE23003.webp',
+},
+
+{
+    id: 'CSE23004',
+    title: 'Spardha, Coding Re-write',
+    category: 'Competitions',
+    branch: 'CSE',
+    date: 'April 22, 2023',
+    time: 'Not specified',
+    venue: 'Seminar Room, CSE Department',
+    organizedBy: 'Department of Computer Science IEEE Committee',
+    reportAuthor: 'Department of Computer Science IEEE Committee',
+    overview:
+        'The Coding Competition for Juniors was organized by the Department of Computer Science IEEE committee with the aim of promoting coding skills and fostering interest in programming among young participants.',
+    description:
+        'The competition was for beginners. It served as an excellent opportunity for participants to test their skills, learn from their peers and receive recognition for their coding prowess. The first three winners were awarded with coupons, swags and certificate.',
+    keyDiscussion: [
+        'Coding competition for juniors.',
+        'Promotion of coding skills.',
+        'Fostering interest in programming.',
+        'Opportunity for beginners to test their skills.',
+        'Learning from peers.',
+        'Recognition and awards for winners.'
+    ],
+    studentsPresent: [
+        'Anushka Uniyal',
+        'Tanishka Petwal',
+        'Tejas Chhabra',
+        'Vivek Naithani'
+    ],
+    image: 'public\activities\CSE\CSE23004.webp',
+},
+
+{
+    id: 'CSE23005',
+    title: 'Gynecologist Visit',
+    category: 'Awareness',
+    branch: 'CSE',
+    date: 'April 13, 2023',
+    time: 'Not specified',
+    venue: 'Seminar Room, CSE Department',
+    organizedBy: 'Department of Computer Science IEEE Committee',
+    reportAuthor: 'Department of Computer Science IEEE Committee',
+    overview:
+        'The gynecological visit aimed to promote women’s health awareness and provide access to healthcare services for the college community.',
+    description:
+        'The primary objectives of the visit were to educate students, faculty and staff on gynecological health, offer consultations and facilitate preventive screenings. It was specially conducted for girls’ health and delivered by Dr. Rajnandani. Topics covered included menstrual health, contraception options and common gynecological conditions. Following the seminar, a Q&A session provided an opportunity for attendees to seek expert advice. This visit proved to be a significant initiative in promoting women’s health awareness on campus.',
+    keyDiscussion: [
+        'Women’s health awareness.',
+        'Gynecological health education.',
+        'Menstrual health.',
+        'Contraception options.',
+        'Common gynecological conditions.',
+        'Healthcare consultations and preventive screenings.',
+        'Question and answer session.'
+    ],
+    studentsPresent: [
+        'Anushka Uniyal',
+        'Tanishka Petwal'
+    ],
+    image: 'public\activities\CSE\CSE23005.webp',
+},   
+ 
+{
+  id: 'CSE22001',
+  title: 'Introduction to Programming',
+  category: 'Workshops',
+  branch: 'CSE',
+  date: 'December 4, 2022',
+  time: '11:00 AM - 12:00 PM',
+  venue: 'GBPIET Pauri',
+  organizedBy: 'CSE Department in association with IEEE GBPIET Student Branch under IEEE UP Section',
+  reportAuthor: 'Department of CSE',
+  overview: 'A workshop on "Introduction to Programming" was organized by the CSE Department on 4 December, 2022 in association with IEEE GBPIET Student Branch under IEEE UP Section. The workshop introduced students to programming languages such as C, C++, Java and Python.',
+  description: 'The workshop was conducted for one hour, from 11 AM to 12 PM, with around 50 students participating. It focused on the need for programming languages, their evolution, and the basics of different programming languages. The maximum number of participating students were from the CSE, AIML and ECE departments.',
+  keyDiscussion: [
+    'Need for programming languages.',
+    'Evolution of programming languages.',
+    'Basics of C programming.',
+    'Basics of C++ programming.',
+    'Basics of Java programming.',
+    'Basics of Python programming.'
+  ],
+  studentsPresent: [],
+  image: 'public\activities\CSE\CSE22001.jpg',
+},
+
+{
+  id: 'CSE22002',
+  title: 'Disaster Management: Reflections on Science, Policy and Society',
+  category: 'Webinars',
+  branch: 'CSE',
+  date: 'September 24, 2022',
+  time: '1 hour',
+  venue: 'Online',
+  organizedBy: 'Mumbai Campus, Centre for Disasters and Development, Jamsetji Tata School of Disaster Studies for Campus in association with IEEE GBPIET Student Branch under IEEE UP Section',
+  reportAuthor: 'IEEE GBPIET Student Branch',
+  overview: 'A webinar on "Disaster Management: Reflections on Science, Policy and Society" was organized by Mumbai Campus, Centre for Disasters and Development, Jamsetji Tata School of Disaster Studies for Campus on 24th September, 2022 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+  description: 'It was a live online interactive session for the duration of 01 hour delivered by Prof. Janki Andharia, Chairperson - Centre for Disasters and Development, Jamsetji Tata School of Disaster Studies. The importance of collaboration between different professionals and organizations was discussed in order to prevent an effective management of disaster. This webinar helped the attendees to look into science, policy, and society and try to work towards integration and transdisciplinary. The discussion was about how disasters are rising and extreme weather events are around us all over the world and yet we find that there is a disconnect between science, policy, and society.',
+  keyDiscussion: [
+    'System approach: Understanding interconnections.',
+    'Barriers and challenges.',
+    'Collaboration between different professionals and organizations.',
+    'Integration and transdisciplinary approaches.',
+    'Science, policy, and society in disaster management.',
+    'Rising disasters and extreme weather events.'
+  ],
+  studentsPresent: [],
+  image: 'public\activities\CSE\CSE22002.jpg',
+},
+
+{
+  id: 'CSE22003',
+  title: 'DECODE',
+  category: 'Competitions',
+  branch: 'CSE',
+  date: 'September 17, 2022',
+  time: '10:00 AM - 11:30 AM',
+  venue: 'GBPIET Pauri',
+  organizedBy: 'CSE Department in association with IEEE GBPIET Student Branch under IEEE UP Section',
+  reportAuthor: 'Department of CSE',
+  overview: 'A coding competition "DECODE" was organized by the CSE Department on 17 September, 2022 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+  description: 'The competition was conducted for one and a half hours, from 10 AM to 11:30 AM, with around 40 students participating. The event was organized to assess the programming skills of students in various programming languages such as C, C++, Java and Python. The maximum number of participating students were from the CSE, AIML and ECE departments.',
+  keyDiscussion: [
+    'Programming skills assessment.',
+    'C programming.',
+    'C++ programming.',
+    'Java programming.',
+    'Python programming.',
+    'Participation from CSE, AIML and ECE departments.'
+  ],
+  studentsPresent: [],
+  image: 'public\activities\CSE\CSE22003.jpg',
+},
+
+{
+  id: 'CSE22004',
+  title: 'Webinar: Preparing the Next Generation of Cloud Engineers',
+  category: 'Webinars',
+  branch: 'CSE',
+  date: 'September 7, 2022',
+  time: '45 minutes',
+  venue: 'Online',
+  organizedBy: 'Coursera for Campus in association with IEEE GBPIET Student Branch under IEEE UP Section',
+  reportAuthor: 'IEEE GBPIET Student Branch',
+  overview: 'A webinar on "Preparing the Next Generation of Cloud Engineers" was organized by Coursera for Campus on 7th September, 2022 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+  description: 'The webinar was a live online interactive session of 45 minutes delivered by Coursera experts Miss Lauren Muller and Miss Aisha Lawrey. The session focused on how higher education institutions can effectively prepare students for emerging career opportunities in cloud engineering. The discussion explored the skills and hands-on experience required to excel in the field of cloud engineering.',
+  keyDiscussion: [
+    'Best practices for incorporating cloud skills into the curriculum.',
+    'Essential skills to support career outcomes for graduates.',
+    'Strategies for engaging students throughout their learning journey.',
+    'Emerging career opportunities in cloud engineering.',
+    'In-demand cloud skills and hands-on experience.'
+  ],
+  studentsPresent: [],
+  image: 'public\activities\CSE\CSE22004.jpg',
+},
+
+{
+  id: 'CSE22005',
+  title: 'Tech Fest',
+  category: 'Tech Fest',
+  branch: 'CSE',
+  date: 'May 29-30, 2022',
+  time: 'Not specified',
+  venue: 'GB Pant Institute of Engineering and Technology',
+  organizedBy: 'Vinci Innovative Society in association with IEEE GBPIET Student Branch under IEEE UP Section',
+  reportAuthor: 'IEEE GBPIET Student Branch',
+  overview: 'The Techfest "Eureka" was successfully organized by Vinci Innovative Society for G. B. Pant Institute of Engineering and Technology on 29 and 30 May, 2022 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+  description: 'The event included many technical sub-events. Four teams from seven departments participated in the event: Team 1 – Mechanical Engineering and Civil Engineering (Mech A Wars), Team 2 – Computer Science and Engineering and Artificial Intelligence and Machine Learning (TecQuilla), Team 3 – Electrical Engineering and Biotechnology (Arthra Bots), and Team 4 – Electronics and Communication Engineering (Tony Lohar). Approximately 150 students actively participated in the event, and the organizing team consisted of 20 members. The final rankings were Mech A Wars, TecQuilla, Tony Lohar, and ArthraBots.',
+  keyDiscussion: [
+    'Techfest "Eureka".',
+    'Technical sub-events.',
+    'Participation of seven departments.',
+    'Mech A Wars.',
+    'TecQuilla.',
+    'Arthra Bots.',
+    'Tony Lohar.',
+    'Approximately 150 student participants.',
+    'Organizing team of 20 members.',
+    'Final team rankings.'
+  ],
+  studentsPresent: [],
+  image: 'public\activities\CSE\CSE22005.jpg',
+},
+    
+  {
+    id: 'CSE20001',
+    title: 'Webinar: Demystifying Professional Communication and Business Ethics',
+    date: '10th October, 2020',
+    time: 'Not specified',
+    venue: 'Online',
+    organizedBy: 'CSE, Department of Computer Science & Engineering, GBPIET Pauri, in association with IEEE GBPIET Student Branch under IEEE UP Section',
+    reportAuthor: 'IEEE GBPIET Student Branch',
+    overview: 'A Webinar to celebrate IEEE Day, 2020 was organized by CSE, Department of Computer Science & Engineering, GBPIET Pauri on 10th October, 2020 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+    description: 'It was delivered by SmartBrains Engineers & Technologist Pvt. Ltd. Experts Mr. Naresh Yadav and Ms. S. Pandey. A total of 53 students have attended this webinar. The webinar covered confidence building, presentation skills, professional communication and business ethics.',
+    keyDiscussion: [
+      'Confidence building and presentation skills.',
+      'Professional communication.',
+      'Business ethics.',
+      'How to listen, speak and write while communicating ethically.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20001.webp',
+    category: "",
+    branch: ""
+  },
+
+  {
+    id: 'CSE20002',
+    title: 'CodeChef Contest Event',
+    date: '27th September, 2020',
+    time: 'Not specified',
+    venue: 'GBPIET Pauri',
+    organizedBy: 'CSE, Department of Computer Science & Engineering, GBPIET Pauri, in association with IEEE GBPIET Student Branch under IEEE UP Section',
+    reportAuthor: 'IEEE GBPIET Student Branch',
+    overview: 'CodeChef Contest Event was organized by CSE, Department of Computer Science & Engineering, GBPIET Pauri on 27th September, 2020 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+    description: 'The event was organized to spread the importance of competitive programming, developing programming culture in the campus and to let students know about CodeChef platform. A total of 46 students have successfully participated in this competitive contest. A virtual Lecture was also held to help, guide, motivate and instruct the students.',
+    keyDiscussion: [
+      'Importance of competitive programming.',
+      'Development of programming culture in the campus.',
+      'Introduction to CodeChef platform.',
+      'Competitive programming contest.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20002.jpg',
+    category: "",
+    branch: ""
+  },
+
+  {
+    id: 'CSE20003',
+    title: 'Virtual IoT Workshop',
+    date: '26th - 27th September, 2020',
+    time: '8 hours',
+    venue: 'Online',
+    organizedBy: 'CSE, Department of Computer Science & Engineering, GBPIET Pauri, in association with IEEE GBPIET Student Branch under IEEE UP Section',
+    reportAuthor: 'IEEE GBPIET Student Branch',
+    overview: 'Virtual workshop on IoT was organized by CSE, department of Computer Science & Engineering, GBPIET Pauri during 26th to 27th September 2020 in association with IEEE GBPIET Student Branch under IEEE UP Section.',
+    description: 'It was a live online interactive session on "Internet of Things (Applications & Security)" for the duration of 8 hours delivered by Ensino R&D Pvt Ltd. A total of 47 students have successfully completed the workshop.',
+    keyDiscussion: [
+      'Internet of Things.',
+      'IoT applications and security.',
+      'Automation.',
+      'Arduino IDE.',
+      'Relay.',
+      'Electromagnetic Switch.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20003.webp',
+    category: "",
+    branch: ""
+  },
+
+  {
+    id: 'CSE20004',
+    title: 'Microsoft Certification Program - 2020',
+    date: '06th August - 02nd September, 2020',
+    time: '40 to 50 hours',
+    venue: 'GBPIET Pauri',
+    organizedBy: 'Department of Computer Science & Engineering, GBPIET Pauri',
+    reportAuthor: 'Department of Computer Science & Engineering',
+    overview: 'Microsoft Certification Program - 2020 was organized by department of Computer Science & Engineering, GBPIET, Pauri from 6th August 2020 to 2nd September 2020.',
+    description: 'It was a four weeks live online interactive session on "Machine Learning with Python" for the duration of 40 to 50 hours delivered by Smart Brains Pvt. Ltd. Noida. A total of 21 students have enrolled and successfully completed the training program.',
+    keyDiscussion: [
+      'Machine Learning with Python.',
+      'Regression.',
+      'Clustering.',
+      'Decision Tree.',
+      'Random Forest.',
+      'Naive Bayes.',
+      'Reinforcement Learning.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20004.jpg',
+    category: "",
+    branch: ""
+  },
+
+  {
+    id: 'CSE20005',
+    title: 'Online International Conferencing',
+    date: '26th - 27th June, 2020',
+    time: 'Not specified',
+    venue: 'Online',
+    organizedBy: 'Department of Computer Science, Electronics & Electrical Engineering, GBPIET Pauri',
+    reportAuthor: 'Department of Computer Science, Electronics & Electrical Engineering',
+    overview: 'GBPIET Pauri has organized an Online International Conference on "Smart Machine Intelligence and Real-Time Computing" sponsored by TEQIP-3 during June 26-27, 2020.',
+    description: 'The aim of the conference was to bring together researchers, scientists, engineers and research students in areas of Engineering and Technology, and it provides them a national forum for dissemination of original research, new ideas and practical development experiences. A total of 151 research papers were accepted out of which 116 research papers were accepted and presented in this conference.',
+    keyDiscussion: [
+      'Smart Machine Intelligence.',
+      'Real-Time Computing.',
+      'Original research.',
+      'New ideas and practical development experiences.',
+      'Research paper presentation.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20005.webp',
+    category: "",
+    branch: ""
+  },
+
+  {
+    id: 'CSE20006',
+    title: 'Online Seminar',
+    date: '31st May, 2020',
+    time: '11:00 AM onwards',
+    venue: 'Online',
+    organizedBy: 'GBPIET Pauri and CORPIANS Noida',
+    reportAuthor: 'Department of Computer Science & Engineering',
+    overview: 'Online seminar on the topic "The Future of Programming MEAN Stacks" was conducted by GBPIET Pauri and CORPIANS Noida on 31st May 2020 from 11:00 AM onwards.',
+    description: 'A total of 12 students participated in this live webinar that was delivered by Mr. Ajay Shankar, Solution Architect, CORPIANS. The webinar briefly covered important topics in the field of computer science such as MongoDB, Express JS, Angular JS and Node JS.',
+    keyDiscussion: [
+      'MongoDB.',
+      'Express JS.',
+      'Angular JS.',
+      'Node JS.',
+      'MEAN Stack.',
+      'Future of programming.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20006.webp',
+    category: "",
+    branch: ""
+  },
+
+  {
+    id: 'CSE20007',
+
+    title: 'Coursera Certification',
+
+    date: 'April, 2020',
+    time: 'Not specified',
+    venue: 'Online',
+    organizedBy: 'GBPIET Pauri',
+
+    reportAuthor: 'GBPIET Pauri',
+
+    overview: 'GBPIET Pauri has subscribed for Coursera certification in the month of April, 2020.',
+
+    description: 'Coursera is a worldwide online learning platform founded by Stanford University which provides courses, certificates, and degrees online from world-class universities and companies. A number of courses provided by Coursera were freely available for students and faculty members from various departments for auditing and certification. A total of 365 participants including faculty members and students have enrolled for about 1662 courses.',
+    keyDiscussion: [
+      'Online learning through Coursera.',
+      'Courses and certifications.',
+      'Auditing and certification.',
+      'Participation of students and faculty members.'
+    ],
+    studentsPresent: [],
+    image: 'public\activities\CSE\CSE20007.webp',
+    category: "",
+    branch: ""
+  },
+  {
+    id: 'CSE19001',
+
+    title: 'Hackathon Events',
+    category: 'Hackathons',
+    branch: 'CSE',
+
+    date: 'December 23, 2019',
+    time: '10:00 AM - 5:00 PM',
+    venue: 'Seminar Hall, CSED',
+    organizedBy: 'Institute Innovation Cell, GBPIET Pauri',
+
+    reportAuthor: 'Institute Innovation Cell',
 
     overview:
-      'A technical workshop focused on modern web development technologies and practical application development.',
+      'The Institute Innovation Cell of GBPIET Pauri organized an internal hackathon event for shortlisting interested teams for Smart India Hackathon 2020.',
 
     description:
-      'The workshop introduced students to modern web development concepts through theoretical explanations and practical discussions.',
+      'The event was organized to provide students a platform to solve some of the pressing problems faced in daily life and to inculcate a culture of product innovation and a mindset of problem solving.',
 
     keyDiscussion: [
-      'Introduction to modern web development technologies.',
-      'Understanding the structure of web applications.',
-      'Frontend development using HTML, CSS and JavaScript.',
-      'Responsive web design principles.',
-      'Deployment and development workflows.',
+      'Internal hackathon for shortlisting teams for Smart India Hackathon 2020.',
+      'Participation of teams with different problem statements.',
+      'Evaluation based on novelty and complexity of the idea.',
+      'Assessment of clarity, feasibility and practicability.',
+      'Evaluation of sustainability, scale of impact and user experience.',
+      'Shortlisting of teams for the Smart India Hackathon 2020 finale.',
     ],
 
-    studentsPresent: ['Chandan Singh', 'Rahul Sharma', 'Aman Rawat', 'Priya Bisht', 'Aditya Negi'],
+    studentsPresent: [
+      // Add student names if available
+    ],
 
-    image: '/activies/CSE/hero_engineering_lab.jpg',
+    image: 'public\activities\CSE\CSE19001.png',
   },
+
 
   // ========================
   // CSE -AIML
@@ -1745,61 +2816,586 @@ export const activities: Activity[] = [
 
 
   {
-  id: 'ECE26001',
+    id: 'ECE26001',
 
-  title: 'KiCraft Workshop & Competition',
-  category: 'Workshops',
-  branch: 'ECE',
+    title: 'KiCraft Workshop & Competition',
+    category: 'Workshops',
+    branch: 'ECE',
 
-  date: 'March 19, 2026',
-  time: '10:00 AM - 5:30 PM',
-  venue: 'Seminar Hall, ECED',
-  organizedBy: 'IEEE Student Branch',
+    date: 'March 19, 2026',
+    time: '10:00 AM - 5:30 PM',
+    venue: 'Seminar Hall, ECED',
+    organizedBy: 'IEEE Student Branch',
 
-  reportAuthor: 'Sumit Rawat',
+    reportAuthor: 'Sumit Rawat',
 
-  overview:
-    'KiCraft was organized by the 2nd year volunteers of the IEEE Student Branch, GBPIET, with guidance and support from third-year members. The event aimed to introduce participants to PCB design and enhance their practical skills using KiCad software.',
+    overview:
+      'KiCraft was organized by the 2nd year volunteers of the IEEE Student Branch, GBPIET, with guidance and support from third-year members. The event aimed to introduce participants to PCB design and enhance their practical skills using KiCad software.',
 
-  description:
-    'The event was conducted in two phases. The first phase consisted of an interactive workshop on KiCad, covering schematic design, component placement, PCB layout, and 3D design. The second phase featured a competition where participants applied the concepts learned during the workshop to complete practical tasks. More than 30 students participated enthusiastically, and the winners were awarded certificates, medals, and cash prizes.',
+    description:
+      'The event was conducted in two phases. The first phase consisted of an interactive workshop on KiCad, covering schematic design, component placement, PCB layout, and 3D design. The second phase featured a competition where participants applied the concepts learned during the workshop to complete practical tasks. More than 30 students participated enthusiastically, and the winners were awarded certificates, medals, and cash prizes.',
 
-  keyDiscussion: [
-    'Introduction to PCB design using KiCad software.',
-    'Understanding schematic design and component placement.',
-    'PCB layout and design workflow.',
-    'Introduction to 3D PCB design.',
-    'Hands-on application of KiCad concepts.',
-    'Competition based on the concepts covered during the workshop.',
-    'Encouraging teamwork, creativity, innovation, and practical learning.',
-  ],
+    keyDiscussion: [
+      'Introduction to PCB design using KiCad software.',
+      'Understanding schematic design and component placement.',
+      'PCB layout and design workflow.',
+      'Introduction to 3D PCB design.',
+      'Hands-on application of KiCad concepts.',
+      'Competition based on the concepts covered during the workshop.',
+      'Encouraging teamwork, creativity, innovation, and practical learning.',
+    ],
 
-  studentsPresent: [
-    'Paras Dhiman',
-    'Anurag Gupta',
-    'Harshit Giri',
-    'Rachita Pant',
-    'Ojasvi Thapa',
-    'Suraj Khanduri',
-    'Sumit Rawat',
-    'Vijay Saini',
-    'Priyanshu Nautiyal',
-    'Vaibhav Pokhriyal',
-    'Vikrant Kumar',
-    'Daksh Kandpal',
-    'Priyanshu Gusain',
-    'Nitin Rawat',
-    'Nikhil Suyal',
-    'Aahana',
-    'Ishita Sati',
-    'Yash Joshi',
-    'Naval',
-  ],
+    studentsPresent: [
+      'Paras Dhiman',
+      'Anurag Gupta',
+      'Harshit Giri',
+      'Rachita Pant',
+      'Ojasvi Thapa',
+      'Suraj Khanduri',
+      'Sumit Rawat',
+      'Vijay Saini',
+      'Priyanshu Nautiyal',
+      'Vaibhav Pokhriyal',
+      'Vikrant Kumar',
+      'Daksh Kandpal',
+      'Priyanshu Gusain',
+      'Nitin Rawat',
+      'Nikhil Suyal',
+      'Aahana',
+      'Ishita Sati',
+      'Yash Joshi',
+      'Naval',
+    ],
 
-  image: '/activities/ECE/ECE26001.jpeg',
-},
+    image: '/activities/ECE/ECE26001.jpeg',
+  },
+  {
+    id: 'ECE25003',
+
+    title: '2 Day Introductory Workshop on EDA Tools',
+    category: 'Workshops',
+    branch: 'ECE',
+
+    date: 'April 28, 2025 - April 29, 2025',
+    time: '5:00 PM - 6:00 PM',
+    venue: 'Seminar Hall, ECED',
+    organizedBy: 'IEEE Core Team Members,Ojasvi Thapa',
+
+
+    reportAuthor: 'Janmejay Pant, Samriddhi Bhatt and Ojasvi Thapa',
+
+    overview:
+      'A two-day introductory workshop on EDA Tools was conducted by the IEEE Student Branch to introduce students to basic EDA tools, their features, methodologies, and practical applications.',
+
+    description:
+      'The workshop was conducted over two days. On the first day, students were introduced to the basics and features of various EDA tools through presentations covering their introduction, methodologies, and practical insights. On the second day, practical implementation using KiCad and Xilinx Vivado was demonstrated. Students designed a 555 timer and a blink circuit using transistors on KiCad, while coding, schematic design, and simulations using Verilog on Xilinx Vivado were also explained. The workshop concluded with students sharing their views and feedback. The primary audience consisted of first and second-year students from the ECE and EE branches.',
+
+    keyDiscussion: [
+      'Introduction to Electronic Design Automation (EDA) tools.',
+      'Understanding the features and applications of various EDA tools.',
+      'Introduction to EDA methodologies and workflows.',
+      'Practical implementation using KiCad.',
+      'Designing a 555 timer circuit using KiCad.',
+      'Designing a blink circuit using transistors.',
+      'Introduction to Xilinx Vivado.',
+      'Coding, schematic design, and simulation using Verilog.',
+      'Student feedback and discussion about the workshop.',
+    ],
+
+    studentsPresent: [
+      'Akriti Chauhan',
+      'Akshita Nautiyal',
+      'Anurag Gupta',
+      'Ankita Negi',
+      'Rachita Pant',
+      'Mahi Devli',
+      'Ojasvi Thapa',
+    ],
+
+    image: '/activities/ECE/ECE26002.png',
+  },
+  {
+    id: 'ECE24004',
+
+    title: 'Introductory Meet for First Year Students 2024-25',
+    category: 'Meetings',
+    branch: 'ECE',
+
+    date: 'October 10, 2024',
+    time: '4:00 PM - 5:00 PM',
+    venue: 'LT-6, CSED',
+    organizedBy: 'IEEE Core Team Members',
+
+    reportAuthor: 'Janmejay Pant and Ojasvi Thapa',
+
+    overview:
+      'IEEE Student Branch representatives from the pre-final year and second-year volunteers organized an introductory meeting for newly admitted first-year students to introduce them to IEEE and its activities.',
+
+    description:
+      'The meeting began with an introduction of the current IEEE members present. The representatives then introduced students to IEEE and discussed the various opportunities and benefits associated with being a part of the organization. The session concluded with an overview of the IEEE GBPIET Student Branch, including its activities and future plans. A total of 82 students from the ECE, EE, and BT branches attended the meeting.',
+
+    keyDiscussion: [
+      'Introduction of the current IEEE Student Branch members.',
+      'Introduction to IEEE and its purpose.',
+      'Opportunities and benefits associated with IEEE.',
+      'Overview of the IEEE GBPIET Student Branch.',
+      'Discussion about IEEE GBPIET activities.',
+      'Introduction to future plans and initiatives of the student branch.',
+      'Interaction with newly admitted first-year students.',
+    ],
+
+    studentsPresent: [
+      'First-year students from ECE, EE, and BT branches',
+      'IEEE pre-final year representatives',
+      'IEEE second-year volunteers',
+    ],
+
+    image: '/activities/ECE/ECE24001.png',
+  },
+  {
+    id: 'ECE24005',
+
+    title: 'SIH Internal Hackathon 2024',
+    category: 'Hackathons',
+    branch: 'ECE',
+
+    date: 'September 4, 2024 - September 5, 2024',
+    time: '10:00 AM - 1:00 PM',
+    venue: 'Seminar Room, ECED',
+    organizedBy: 'IEEE (Student Chapter)',
+    reportAuthor: '',
+    overview:
+      'The SIH Internal Hackathon 2024 was organized by the IEEE Student Branch, GBPIET, as a two-day programme to provide students with an opportunity to develop and present solutions based on selected problem statements.',
+
+    description:
+      'The internal hackathon was conducted from September 4th to September 5th, 2024, with a total of 24 teams from the college registered for the event. The hackathon began at 10:00 AM, with participating teams presenting their PowerPoint presentations based on their selected problem statements and project domains. The teams were briefed about the rules and regulations beforehand. Judges from different fields of expertise evaluated the presentations and asked questions related to the problem statements and project domains. Marks were awarded according to the specified judging criteria. The participating teams awaited the results, which were released on September 6th.',
+
+    keyDiscussion: [
+      'Introduction to the SIH Internal Hackathon and its objectives.',
+      'Presentation of solutions based on selected problem statements.',
+      'Evaluation of projects by judges from different fields of expertise.',
+      'Question-and-answer sessions following each team presentation.',
+      'Assessment according to specified judging criteria.',
+      'Participation of 24 teams from the college.',
+      'Announcement of hackathon results on September 6th, 2024.',
+    ],
+
+    studentsPresent: [
+      '24 participating teams from GBPIET',
+    ],
+
+    image: '/activities/ECE/ECE24002.png',
+  },
+  {
+    id: 'ECE24006',
+
+    title: 'Workshop on Basic Electronics Components',
+    category: 'Workshops',
+    branch: 'ECE',
+
+    date: 'May 10, 2024',
+    time: '2:00 PM - 5:00 PM',
+    venue: 'LT-05, ECED',
+    organizedBy: 'IEEE (Student Chapter ECE)',
+
+    reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+
+    overview:
+      'IEEE Student Branch (ECE) organized an informative workshop on Basic Electronics Components to introduce students to fundamental electronic components and provide them with practical hands-on experience.',
+
+    description:
+      'The session began with a PowerPoint presentation and an explanation of basic electronics components such as resistors, transistors, capacitors, and sensors, highlighting their importance as fundamental elements of electronic circuits and systems. Participants were given hands-on experience with the components and were guided through their working principles. Experts also addressed the doubts raised by the students. A special project was demonstrated during the session, which generated considerable interest among the participants. The session was hosted by Vinay Kathait, with Aditya Raj Haldiya serving as an expert for clarifying doubts. Yogesh Bisht and Akhil Kothari presented their project, while Jay presented the electronics components. Students from the ECE first year primarily attended the workshop.',
+
+    keyDiscussion: [
+      'Introduction to basic electronics components.',
+      'Understanding resistors, transistors, capacitors, and sensors.',
+      'Role of electronic components in circuits and systems.',
+      'Hands-on experience with basic electronic components.',
+      'Understanding the working principles of different components.',
+      'Interactive doubt-clearing session with experts.',
+      'Demonstration of a special electronics project.',
+      'Project presentation by students.',
+    ],
+
+    studentsPresent: [
+      'Parth Uniyal',
+      'Jay Kumar',
+      'Akriti Chauhan',
+      'Ashutosh Suyal',
+      'Mudit Panwar',
+      'Ashmit Rana',
+      'Aditya Raj Haldiya',
+      'Yogesh Bisht',
+      'Akhil Kothari',
+    ],
+
+    image: '/activities/ECE/ECE24003.png',
+  },
+  {
+    id: 'ECE24007',
+
+    title: 'Interview for IEEE Recruitment – Empowering Innovation, Connecting Minds',
+    category: 'Recruitment',
+    branch: 'ECE',
+
+    date: 'August 26, 2024',
+    time: '2:30 PM - 5:40 PM',
+    venue: 'LT-03, BTED',
+    organizedBy: 'IEEE (Student Chapter)',
+
+
+    reportAuthor: 'Akriti Chauhan and Vanshika Painuly',
+
+    overview:
+      'The IEEE Recruitment Interview was organized under the theme "Empowering Innovation, Connecting Minds" to identify students interested in taking up various positions and contributing to the efficient functioning of the IEEE Student Chapter.',
+
+    description:
+      'The session began with the members introducing themselves and discussing their desired positions. A briefing was provided about the various positions available and their significance in the effective functioning of the club. Students were then asked to introduce themselves in writing, mention their desired position, describe their skillset, and explain why they were suitable for the position. The first round of interviews was conducted with candidates appearing before the interview panel in groups of four. Candidates were asked about their desired positions and how they would contribute to the club. In the second round, students competed with their peers for their preferred positions and were encouraged to demonstrate their skills and distinguish themselves from other candidates. Queries were addressed and feedback on performance was provided by the Core Team. The results of the recruitment process were to be disclosed subsequently.',
+
+    keyDiscussion: [
+      'Introduction of IEEE members and discussion of desired positions.',
+      'Overview of various IEEE positions and their significance.',
+      'Submission of candidate introductions, skillsets, and preferred positions.',
+      'First-round interviews conducted in groups of four.',
+      'Discussion of candidates’ contributions to the IEEE Student Chapter.',
+      'Second-round interviews and evaluation of candidates.',
+      'Opportunity for candidates to demonstrate their skills and suitability.',
+      'Resolution of candidate queries and feedback from the Core Team.',
+      'Announcement of recruitment results at a later stage.',
+    ],
+
+    studentsPresent: [
+      'IEEE Student Chapter members',
+      'Students participating in the IEEE recruitment process',
+    ],
+
+    image: '/activities/ECE/ECE24004.jpg',
+  },
+  {
+    id: 'ECE24008',
+
+    title: 'IEEE Introductory Meet',
+    category: 'Meetings',
+    branch: 'ECE',
+
+    date: 'February 24, 2024',
+    time: '4:00 PM - 4:50 PM',
+    venue: 'LT-5, EEED',
+    organizedBy: 'IEEE (Student Branch ECE)',
+
+    reportAuthor: 'Akriti Chauhan',
+
+    overview:
+      'IEEE Student Branch (ECE) organized an engaging introductory meet to familiarize students with IEEE, its benefits, functioning, technical community, and opportunities for active participation.',
+
+    description:
+      'The event began with a comprehensive introduction to IEEE, covering its global presence, diverse membership, and the various technical fields associated with the organization. A PowerPoint presentation was used to explain IEEE and its activities in detail. Students were also introduced to various IEEE social media handles and websites. Different positions within the IEEE Student Branch were discussed, highlighting opportunities for students to actively contribute to the IEEE community and develop their identity as future engineers and technologists. Master Abhishekh Lakhera, Chairperson, Master Parth Uniyal, Secretary, and other IEEE members attended the event and shared their experiences and insights with the students. The session was coordinated by members of the IEEE Student Branch.',
+
+    keyDiscussion: [
+      'Introduction to IEEE and its global presence.',
+      'Understanding the benefits of IEEE membership.',
+      'Overview of IEEE functioning and technical fields.',
+      'Presentation on IEEE activities and opportunities.',
+      'Introduction to IEEE social media handles and websites.',
+      'Discussion of various positions within the IEEE Student Branch.',
+      'Opportunities for students to actively contribute to IEEE.',
+      'Interaction with the Chairperson, Secretary, and other IEEE members.',
+    ],
+
+    studentsPresent: [
+      'Akshita Nautiyal',
+      'Jai Kumar',
+      'Akriti Chauhan',
+      'Priyanka Bhandari',
+      'Mudit Panwar',
+      'Ashutosh Suyal',
+      'Abhishekh Lakhera',
+      'Parth Uniyal',
+    ],
+
+    image: '/activities/ECE/ECE24005.jpg',
+  },
+  {
+    id: 'ECE23009',
+
+    title: 'Recruitment of New Volunteers',
+    category: 'Recruitment',
+    branch: 'ECE',
+
+    date: 'October 14, 2023',
+    time: '10:00 AM',
+    venue: 'LT-3, BT Department',
+    organizedBy: 'IEEE Student Branch',
+
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview:
+      'The recruitment session was conducted to select new volunteers from the second year of the graduation course and provide them with an opportunity to learn management skills and handle responsibilities as IEEE members.',
+
+    description:
+      'The interview session was conducted on Saturday, October 14, 2023. The purpose of the session was to recruit volunteers from the second year of the graduation course and provide them with an opportunity to learn the management and handling of responsibilities as members of IEEE. The recruitment process was based on responses received through a Google Form circulated earlier, followed by an interview round. The session was coordinated by members of the IEEE Student Branch.',
+
+    keyDiscussion: [
+      'Recruitment of new IEEE Student Branch volunteers.',
+      'Selection of volunteers from the second year of the graduation course.',
+      'Review of responses submitted through the Google Form.',
+      'Conducting interviews for the recruitment process.',
+      'Understanding management and organizational responsibilities.',
+      'Introduction to responsibilities associated with being an IEEE member.',
+    ],
+
+    studentsPresent: [
+      'Abhishek Lakhera - Students Branch Chairman',
+      'Shobhit Kanswal - Students Branch Chairman',
+      'Tanmay Bisht - Creative Media Head',
+      'Tejas Chhabra - Students Branch Vice Chairman',
+      'Shaifali Bhardwaj - Students Branch Vice Chairman',
+    ],
+
+    image: '/activities/ECE/ECE23001.jpg',
+  },
+  {
+    id: 'ECE23010',
+
+    title: 'IEEE Outreach Event - IoT Home Automation Workshop at Government School',
+    category: 'Outreach',
+    branch: 'ECE',
+
+    date: 'November 1, 2023',
+    time: 'N/A',
+    venue: 'Government Primary School, Ghurdauri',
+    organizedBy: 'GBPIET Student Teacher Branch of IEEE',
+
+    reportAuthor: 'IEEE Student Branch',
+
+    overview:
+      'The IEEE outreach event at Government Primary School Ghurdauri aimed to introduce students to the Internet of Things (IoT) and home automation through interactive sessions, hands-on projects, and practical demonstrations.',
+
+    description:
+      'The IEEE outreach event was organized at Government Primary School Ghurdauri to familiarize students with IoT and its applications in home automation. The event began with an introduction to the Internet of Things and its relevance in everyday life. Students were provided with hands-on experience involving electronic components and coding to understand the development of IoT-based projects. The volunteers also explained the projects and their applications to the students. The event included refreshments, a motivational session, and a question-and-answer session where students could interact with the volunteers and clarify their doubts. The event successfully provided students with a practical understanding of IoT and encouraged them to explore technology and innovation.',
+
+    keyDiscussion: [
+      'Introduction to the Internet of Things (IoT).',
+      'Understanding the relevance of IoT in daily life.',
+      'Introduction to IoT-based home automation.',
+      'Hands-on experience with electronic components.',
+      'Understanding coding for IoT-based projects.',
+      'Explanation and demonstration of IoT projects.',
+      'Motivational session encouraging students to explore technology.',
+      'Interactive question-and-answer session.',
+    ],
+
+    studentsPresent: [
+      'Parth Uniyal',
+      'Shubham Bhatt',
+      'Priyanshu Bisht',
+      'Aditya Raj Haldia',
+      'Vinay Kathait',
+    ],
+
+    image: '/activities/ECE/ECE23002.png',
+  },
+  {
+    id: 'ECE23011',
+
+    title: 'Initiative in the Field of Social Welfare by Ghurdauri Engineering College',
+    category: 'Outreach',
+    branch: 'ECE',
+
+    date: 'September 21, 2023',
+    time: 'N/A',
+    venue: 'Ghurdauri Junior School',
+    organizedBy: 'Ghurdauri Engineering College through IEEE Branch Chapter',
+
+    reportAuthor: 'Ghurdauri Engineering College',
+
+    overview:
+      'Ghurdauri Engineering College has been undertaking various social welfare initiatives to support the educational development and upliftment of students at Ghurdauri Junior School.',
+
+    description:
+      'As part of its ongoing social welfare initiatives, Ghurdauri Engineering College organized a programme at Ghurdauri Junior School on September 21, 2023. College teachers distributed reading materials among all the students and provided guidance and encouragement for their bright future. The initiative is being conducted through the IEEE Branch Chapter, with an objective of helping school students develop their talents and skills across various fields. Prof. Sanjay Gairola, Dr. K. S. Bhatia, Dr. Manoj Kumar, Mr. Pushkar Praveen, and Dr. Ajay Kumar, along with teachers from the school, were present during the programme. College Director Dr. V.N. Kala has also assured continued support for educational welfare initiatives.',
+
+    keyDiscussion: [
+      'Social welfare initiatives undertaken by Ghurdauri Engineering College.',
+      'Distribution of reading materials among school students.',
+      'Guidance and encouragement for students’ educational development.',
+      'Supporting the upliftment of students at Ghurdauri Junior School.',
+      'Development of students’ talents and skills through IEEE initiatives.',
+      'Collaboration between college teachers and school teachers.',
+      'Continued institutional support for educational welfare programmes.',
+    ],
+
+    studentsPresent: [
+      'Students of Ghurdauri Junior School',
+      'Prof. Sanjay Gairola',
+      'Dr. K. S. Bhatia',
+      'Dr. Manoj Kumar',
+      'Mr. Pushkar Praveen',
+      'Dr. Ajay Kumar',
+      'Teachers of Ghurdauri Junior School',
+    ],
+
+    image: '/activities/ECE/ECE23003.jpg',
+  },
+  {
+    id: 'ECE23012',
+
+    title: 'Nurturing Innovation and Insight - Think Tank Session',
+    category: 'Meetings',
+    branch: 'ECE',
+
+    date: 'August 26, 2023',
+    time: 'N/A',
+    venue: 'N/A',
+    organizedBy: 'IEEE Student Chapter',
+
+    reportAuthor: 'IEEE Student Chapter',
+
+    overview:
+      'IEEE Student Chapter hosted an engaging and enlightening event to introduce students to IEEE, its benefits, functioning, and the opportunities associated with becoming an IEEE member.',
+
+    description:
+      'The event began with a comprehensive introduction to IEEE (Institute of Electrical and Electronics Engineers), covering its global presence, diverse membership, and the various technical fields it encompasses. The session emphasized the benefits of IEEE membership, including access to research, networking opportunities, workshops, conferences, and career development resources. The highlight of the event was an interactive Think Tank session where students were encouraged to share their views and ideas on innovation and invention. The session provided students with a platform for intellectual discussion and encouraged them to explore innovative ideas and their potential to contribute to positive change.',
+
+    keyDiscussion: [
+      'Introduction to IEEE and its global presence.',
+      'Understanding IEEE membership and its benefits.',
+      'Overview of technical fields covered by IEEE.',
+      'Access to research, networking, workshops, and conferences.',
+      'Career development opportunities through IEEE.',
+      'Interactive Think Tank session on innovation and invention.',
+      'Encouraging students to share innovative ideas and perspectives.',
+      'Exploring the potential of students to drive positive change through innovation.',
+    ],
+
+    studentsPresent: [
+      'IEEE Student Chapter members',
+      'Students participating in the Think Tank session',
+    ],
+
+    image: '/activities/ECE/ECE23004.jpg',
+  },
+
+  {
+    id: 'ECE20014',
+
+    title: 'Industrial Training on "Current Industry Scenario"',
+    category: 'Training',
+    branch: 'ECE',
+
+    date: 'July 29, 2020 - August 9, 2020',
+    time: 'N/A',
+    venue: 'Online',
+    organizedBy: 'Electronics & Communication Engineering Department, GBPIET Pauri',
+
+    reportAuthor: 'Electronics & Communication Engineering Department, GBPIET Pauri',
+
+    overview:
+      'An online industrial training programme was conducted to provide students with insights into the latest industry trends, work culture, business processes, and innovation across IT and core sectors.',
+
+    description:
+      'The Electronics & Communication Engineering Department, GBPIET Pauri conducted an online Industrial Training programme on "Current Industry Scenario" from July 29 to August 9, 2020. Around 100 students participated in the live webinar sessions delivered by highly qualified and experienced industry professionals. The training aimed to familiarize students with the latest trends in industry, business process management, current industry work culture, and innovation in IT and core sectors. The experts also shared valuable guidance and tips to help students understand career opportunities and prepare for professional growth in their respective industries.',
+
+    keyDiscussion: [
+      'Overview of the current industry scenario.',
+      'Latest trends and developments in the industry.',
+      'Introduction to business process management.',
+      'Understanding current industry work culture.',
+      'Innovation and opportunities in the IT sector.',
+      'Innovation and developments in core industries.',
+      'Insights from experienced industry professionals.',
+      'Career guidance and tips for professional growth.',
+    ],
+
+    studentsPresent: [
+      'Around 100 participating students',
+      'Industry professionals and experts',
+    ],
+
+    image: '/activities/ECE/ECE20002.png',
+  },
+  {
+    id: 'ECE20015',
+
+    title: 'Hands-on Workshop on "MATLAB and Data Science using Python"',
+    category: 'Workshops',
+    branch: 'ECE',
+
+    date: 'September 21, 2020 - September 25, 2020',
+    time: 'N/A',
+    venue: 'Online',
+    organizedBy: 'Department of Electronics & Communication Engineering, GBPIET',
+
+    reportAuthor: 'Department of Electronics & Communication Engineering, GBPIET',
+
+    overview:
+      'A hands-on online workshop was organized to provide participants with practical knowledge of MATLAB and introduce them to data science using Python, covering programming fundamentals, data manipulation, and analysis tools.',
+
+    description:
+      'The Department of Electronics & Communication Engineering, GBPIET organized a hands-on online workshop on "MATLAB and Data Science using Python" from September 21 to September 25, 2020. Dr. Tapan Kr Jain from IIIT Nagpur conducted three sessions on MATLAB, followed by sessions on data science using Python delivered by Dr. Pooja Jain from IIIT Nagpur. Dr. Tapan introduced participants to MATLAB and demonstrated how its built-in tools and programming capabilities can be used to enhance computing and problem-solving experiences. Dr. Pooja introduced learners to the Python programming environment and fundamental programming techniques, including lambda functions, reading and manipulating CSV files, and the NumPy library. She also covered data manipulation and cleaning techniques using the Python Pandas library and introduced Series and DataFrame as central data structures for data analysis.',
+
+    keyDiscussion: [
+      'Introduction to MATLAB and its applications.',
+      'Practical use of MATLAB built-in tools.',
+      'Programming techniques for enhancing computing with MATLAB.',
+      'Introduction to the Python programming environment.',
+      'Fundamental Python programming techniques and lambda functions.',
+      'Reading and manipulating CSV files using Python.',
+      'Introduction to the NumPy library.',
+      'Data manipulation and cleaning using Pandas.',
+      'Understanding Series and DataFrame for data analysis.',
+    ],
+
+    studentsPresent: [
+      'Workshop participants',
+      'Learners from the Department of Electronics & Communication Engineering',
+    ],
+
+    image: '/activities/ECE/ECE20002.png',
+  },
+  {
+    id: 'ECE22016',
+
+    title: 'Webinar on "Advanced Driver Assistance Systems (ADAS)"',
+    category: 'Webinars',
+    branch: 'ECE',
+
+    date: 'September 27, 2022',
+    time: 'N/A',
+    venue: 'Online',
+    organizedBy: 'Department of Electronics & Communication Engineering, GBPIET',
+
+
+    reportAuthor: 'Department of Electronics & Communication Engineering, GBPIET',
+
+    overview:
+      'The Department of Electronics & Communication Engineering, GBPIET organized a webinar on Advanced Driver Assistance Systems (ADAS) to introduce students to ADAS technologies, their applications in modern vehicles, and career opportunities in the field of Electronics and Communication Engineering.',
+
+    description:
+      'The Department of Electronics & Communication Engineering, GBPIET organized a webinar on "Advanced Driver Assistance Systems (ADAS)" on September 27, 2022. The session was delivered by industry expert Mr. Shashank Shekar from Netradyne, an alumnus of GBPIET who completed his B.Tech in ECE in 2013 and has more than nine years of industry experience with organizations including Broadcom, Micromax, and Netradyne. Mr. Shashank Shekar introduced participants to the basics of the ADAS environment and explained its applications in modern vehicles and related industries. The session covered applications such as fleet tracking, driver safety, the insurance industry, 3D mapping of roads, and data collection for autonomous vehicle testing and simulation. He also discussed various career and professional opportunities available in the field of Electronics and Communication Engineering. The webinar was supported by Mr. Pushkar Praveen and Dr. K.S. Bhatia.',
+
+    keyDiscussion: [
+      'Introduction to Advanced Driver Assistance Systems (ADAS).',
+      'Understanding the ADAS environment and its features.',
+      'Applications of ADAS in modern-day vehicles.',
+      'Fleet tracking and driver safety technologies.',
+      'Applications of ADAS in the insurance industry.',
+      '3D mapping of roads.',
+      'Data collection for autonomous vehicle testing and simulation.',
+      'Career and professional opportunities in Electronics and Communication Engineering.',
+      'Industry insights from an ECE alumnus and professional.',
+    ],
+
+    studentsPresent: [
+      'Students of the Department of Electronics & Communication Engineering',
+      'Mr. Shashank Shekar - Industry Expert and GBPIET Alumnus',
+    ],
+
+    image: '/activities/ECE/ECE20004.png',
+  }
 {
-  id: 'ECE25003',
+ 'ECE25003',
 
   title: '2 Day Introductory Workshop on EDA Tools',
   category: 'Workshops',
@@ -2364,6 +3960,44 @@ export const activities: Activity[] = [
 },
 {
   id: 'ECE22017',
+    id: 'ECE20018',
+
+    title: 'Workshop on "OptiSystem Fundamentals and Design Techniques"',
+    category: 'Workshops',
+    branch: 'ECE',
+
+    date: 'September 14, 2020 - September 16, 2020',
+    time: 'N/A',
+    venue: 'Online',
+    organizedBy: 'Department of Electronics & Communication Engineering, GBPIET Pauri',
+
+    reportAuthor: 'Department of Electronics & Communication Engineering, GBPIET Pauri',
+
+    overview:
+      'An online workshop on OptiSystem Fundamentals and Design Techniques was organized to provide students with practical exposure to the design and simulation of optical links used in modern optical networks.',
+
+    description:
+      'The Department of Electronics & Communication Engineering, GBPIET Pauri organized an online workshop on "OptiSystem Fundamentals and Design Techniques" from September 14 to September 16, 2020, sponsored by TEQIP-3. The workshop aimed to provide participants with hands-on experience in designing and simulating optical links for modern optical networks. The workshop was attended by third and fourth-year students and was open to students from all branches, receiving active participation across the institute. Mr. Amandeep Singh from HR Universal System Inc. introduced participants to the OptiSystem software, its applications, and the basics of getting started with it. Interactive examples were used to explain theoretical concepts, including digital communication modulation techniques such as QPSK and FSK. The programme consisted of three two-hour sessions, with discussions and Q&A sessions between them to reinforce learning. During the final session, a satellite communication project was presented, integrating the concepts and knowledge acquired throughout the workshop. The programme was conducted successfully with the support and contributions of the Principal, faculty members, and students.',
+
+    keyDiscussion: [
+      'Introduction to OptiSystem software and its applications.',
+      'Fundamentals of optical communication systems.',
+      'Design and simulation of optical links.',
+      'Applications of optical networks in modern communication.',
+      'Digital communication modulation techniques such as QPSK and FSK.',
+      'Interactive software-based examples and demonstrations.',
+      'Discussion and question-and-answer sessions.',
+      'Satellite communication project using concepts covered during the workshop.',
+    ],
+
+    studentsPresent: [
+      'Third-year students',
+      'Fourth-year students',
+      'Students from various branches of GBPIET',
+    ],
+
+    image: '/activities/ECE/ECE20006.jpeg',
+  },
 
   title: 'Training and E-Content Development Programme on "Python Programming"',
   category: 'Training',
