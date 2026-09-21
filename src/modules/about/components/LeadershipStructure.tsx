@@ -123,7 +123,7 @@ export default function LeadershipStructure() {
           </p>
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-5">
             {committee.map((leader, index) => (
-              <LeaderCard key={leader.role} leader={leader} index={index + 1} />
+              <LeaderCard key={leader.name} leader={leader} index={index + 1} />
             ))}
           </div>
         </div>

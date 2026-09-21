@@ -21,17 +21,24 @@ export const statsData = [
   { number: '10+', label: 'Years of Legacy', description: 'Shaping futures since founding' },
 ];
 
-// -- Strategic Plan (Mission & Vision) -------------------------
+// -- Strategic Direction (Student Branch & Aim) ----------------
 export const strategicPlan = {
-  mission: {
-    tag: 'Mission',
-    heading: 'Our Mission',
-    body: 'To foster technical excellence, professional growth, and service to the community through hands-on engineering, continuous learning, and collaborative innovation - empowering every member to engineer a better world.',
+  branch: {
+    tag: 'Student Branch',
+    heading: 'IEEE Student Branch',
+    body: 'IEEE is an opportunity. It will help you to interact with other IEEE members of your Student branch (SB) and also with the local section members. The membership will help you boost the technical knowledge in you and also keep oneself updated. Involving in SB activities not only helps you to acquire technical skills but helps you to get managerial skills as well as help to network with other enthusiastic students, volunteers as well as professional members. Its all about your passion towards a scientific and technical arena.',
   },
-  vision: {
-    tag: 'Vision',
-    heading: 'Our Vision',
-    body: 'To be the most impactful student technical community at GBPIET, recognized for producing skilled, ethical, and globally-minded engineers who contribute to the advancement of technology and humanity.',
+  aim: {
+    tag: 'Our Aim',
+    heading: 'Our Aim',
+    body: 'It aims to encourage and support students to put their creativity and intelligence into action. It helps students brings up a lot of amazing ideas. It was also created with the vision to give students the opportunity to meet and learn from fellow students, as well as faculty members and professionals in the field. As we want to make every student here in GBPIET to contribute her/his own bit to science and technology.',
+  },
+  // Backward compatibility aliases
+  get mission() {
+    return this.branch;
+  },
+  get vision() {
+    return this.aim;
   },
 };
 
@@ -100,42 +107,68 @@ export interface LeaderItem {
 
 export const leadershipData: LeaderItem[] = [
   {
-    name: 'Dr. Faculty Counselor',
-    role: 'Branch Counselor',
-    department: 'IEEE Faculty Advisor',
-    initials: 'FC',
+    name: 'Dr. Kamaljit Singh Bhatia',
+    role: 'Sr. Member IEEE, Branch Counsellor',
+    department: 'Coordinator Professional Societies, GBPIET',
+    initials: 'KB',
+    image: '/images/kamaljeet-150x150.jpg',
     isPrimary: true,
   },
   {
-    name: 'Chairperson',
-    role: 'Branch Chairperson',
-    department: 'Executive Committee',
-    initials: 'CH',
+    name: 'Rachita Pant',
+    role: 'Student Branch Chair',
+    department: 'IEEE Student Branch',
+    initials: 'RP',
+    image: '/images/rachitamam.jpeg',
   },
   {
-    name: 'Vice Chairperson',
-    role: 'Vice Chairperson',
-    department: 'Executive Committee',
-    initials: 'VC',
-    image: '/images/sample-vc.jpg',
+    name: 'Mohit Rawat',
+    role: 'Student Branch Vice Chair',
+    department: 'IEEE Student Branch',
+    initials: 'MR',
+    image: '/images/mohit.sir.jpeg',
   },
   {
-    name: 'Secretary',
-    role: 'Branch Secretary',
-    department: 'Executive Committee',
-    initials: 'SE',
+    name: 'Janmejay',
+    role: 'Student Secretary',
+    department: 'IEEE Student Branch',
+    initials: 'JP',
+    image: '/images/janmajay.jpeg',
   },
   {
-    name: 'Treasurer',
-    role: 'Branch Treasurer',
-    department: 'Executive Committee',
-    initials: 'TR',
+    name: 'Ojasvi Arora',
+    role: 'Vice Chair',
+    department: 'IEEE Student Branch',
+    initials: 'OA',
+    image: '/images/ojasss.jpeg',
   },
   {
-    name: 'Webmaster',
-    role: 'Technical Lead',
-    department: 'Executive Committee',
-    initials: 'WM',
+    name: 'Harsh Sharma',
+    role: 'Student Treasurer',
+    department: 'IEEE Student Branch',
+    initials: 'HS',
+    image: '/images/harsh sharma.jpeg',
+  },
+  {
+    name: 'Ansh Dhamija',
+    role: 'Student Treasurer',
+    department: 'IEEE Student Branch',
+    initials: 'AD',
+    image: '/images/ansh dhamija.jpeg',
+  },
+  {
+    name: 'Rohit Thapliyal',
+    role: 'Creative Media Head',
+    department: 'IEEE Student Branch',
+    initials: 'RT',
+    image: '/images/rohit.thapliyal.jpeg',
+  },
+  {
+    name: 'Asmi Naithani',
+    role: 'Web Master',
+    department: 'IEEE Student Branch',
+    initials: 'AN',
+    image: '/images/asmi.mam.jpeg',
   },
 ];
 

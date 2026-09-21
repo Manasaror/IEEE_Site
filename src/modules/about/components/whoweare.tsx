@@ -41,10 +41,10 @@ export default function WhoWeAre() {
           {/* ================= RIGHT ================= */}
           <div className="animate-[fadeUp_1s_ease-out] lg:pl-4">
             <p className="text-lg leading-8 text-white/70 sm:text-xl sm:leading-9 lg:text-2xl lg:leading-10">
-              <span className="font-semibold text-white">IEEE GBPIET Student Branch</span> is a
-              student-driven technical community at Govind Ballabh Pant Institute of Engineering and
-              Technology, bringing together students who are passionate about technology, innovation
-              and learning beyond the classroom.
+              <span className="font-semibold text-white">The IEEE Student Branch, GBPIET</span> is
+              the complete Institute level association that works under IEEE Uttar Pradesh Section
+              region 10. It consists of IEEE professionals and student members who share technical
+              interest and geographical proximity.
             </p>
 
             <p className="mt-6 text-base leading-7 text-white/50 sm:text-lg sm:leading-8">
