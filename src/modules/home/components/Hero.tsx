@@ -52,6 +52,8 @@ export default function HomePage() {
           {/* IEEE Logo - Desktop Only */}
           <img
             src="/images/IeeeLogo.webp"
+            width={1920}
+            height={1080}
             alt="IEEE Logo"
             className="hidden h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20 md:block md:h-24 md:w-24"
           />

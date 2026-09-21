@@ -108,6 +108,8 @@ export default function UpcomingEvents() {
                 <img
                   src={event.image}
                   alt={event.title}
+                  width={800}
+                  height={500}
                   className="
                     h-full
                     w-full

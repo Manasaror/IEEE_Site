@@ -50,9 +50,7 @@ export default function EventsPage() {
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-20 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-[#00629b]/10 blur-[100px] sm:h-[500px] sm:w-[500px] sm:blur-[120px]" />
-
         <div className="absolute -left-40 top-1/2 h-[250px] w-[250px] rounded-full bg-[#00629b]/5 blur-[80px] sm:h-[350px] sm:w-[350px] sm:blur-[100px]" />
-
         <div className="absolute -right-40 bottom-20 h-[250px] w-[250px] rounded-full bg-[#00629b]/5 blur-[80px] sm:h-[350px] sm:w-[350px] sm:blur-[100px]" />
 
         <div

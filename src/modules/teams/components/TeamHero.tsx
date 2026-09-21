@@ -23,11 +23,13 @@ export function TeamHero() {
       className="relative flex items-center justify-center text-center overflow-hidden"
       style={{ minHeight: '420px' }}
     >
-      {/* Slideshow images */}
+      {/* Hero images */}
       {heroImages.map((src, i) => (
         <img
           key={i}
           src={src}
+          height={1080}
+          width={1920}
           alt="IEEE GBPIET team"
           className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out"
           style={{ zIndex: 0, opacity: i === current ? 1 : 0 }}

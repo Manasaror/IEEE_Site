@@ -315,6 +315,8 @@ export default function Gallery() {
                       <img
                         src={image.src}
                         alt={image.title}
+                        width={1200}
+                        height={700}
                         className="
                           h-full
                           w-full

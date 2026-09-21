@@ -35,6 +35,8 @@ export function ActivityCard({ activity, onClick }: ActivityCardProps) {
           ========================= */}
       <div className="relative h-[230px] overflow-hidden sm:h-[270px]">
         <img
+          width={800}
+          height={500}
           src={activity.image}
           alt={activity.title}
           className="
@@ -101,7 +103,6 @@ export function ActivityCard({ activity, onClick }: ActivityCardProps) {
         >
           {activity.overview}
         </p>
-
 
         {/* =========================
             CLICK INDICATOR
