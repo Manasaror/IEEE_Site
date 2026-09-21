@@ -77,6 +77,8 @@ export function MemberCard({ member, index }: { member: TeamMember; index: numbe
       <div className="relative z-10 shrink-0 w-40 h-44 max-sm:w-36 max-sm:h-40 overflow-hidden rounded-xl bg-transparent border border-cyan-500/30">
         {member.photo && member.photo.trim() !== '' ? (
           <img
+          height={200}
+          width={400}
             src={member.photo}
             alt={member.name}
             className="h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-110"

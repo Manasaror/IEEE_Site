@@ -35,6 +35,8 @@ export default function ActivityDetailedCard({
           {/* Header */}
           <div className="relative">
             <img
+              width={1200}
+              height={700}
               src={activity.image}
               alt={activity.title}
               className="h-52 w-full object-cover sm:h-64 lg:h-80"
