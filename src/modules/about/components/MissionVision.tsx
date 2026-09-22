@@ -60,29 +60,31 @@ export default function MissionVision() {
         <div className="mb-8 sm:mb-10">
           <div className="mb-3 flex items-center gap-3">
             <span className="h-px w-10 bg-[#00629b]" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#00629b]">
-              Purpose &amp; Aim
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-blue-dark">
+              Strategic Direction
             </span>
           </div>
           <h2 className="text-3xl font-black leading-tight tracking-[-0.04em] text-white sm:text-4xl lg:text-5xl">
-            Student Branch &amp;{' '}
-            <span className="text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">Our Aim</span>
+            Mission &amp;{' '}
+            <span className="text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">
+              Vision
+            </span>
           </h2>
           <p className="mt-3 max-w-xl text-sm leading-6 text-white/45 sm:text-base">
-            The core purpose and opportunities driving IEEE GBPIET Student Branch.
+            The guiding principles that drive everything we do at IEEE GBPIET.
           </p>
         </div>
 
         {/* Cards grid */}
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-6">
           <MissionVisionCard
-            heading={strategicPlan.branch.heading}
-            body={strategicPlan.branch.body}
+            heading={strategicPlan.mission.heading}
+            body={strategicPlan.mission.body}
             isMission={true}
           />
           <MissionVisionCard
-            heading={strategicPlan.aim.heading}
-            body={strategicPlan.aim.body}
+            heading={strategicPlan.vision.heading}
+            body={strategicPlan.vision.body}
             isMission={false}
           />
         </div>
