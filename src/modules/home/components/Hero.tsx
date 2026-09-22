@@ -200,35 +200,37 @@ export default function Hero() {
 
           {/* Stats */}
           <div
-            className="flex flex-wrap items-start gap-y-4 lg:w-max lg:flex-nowrap"
-            style={{ marginTop: u(90, 40) }}
+            className="mx-auto w-full grid gap-6 sm:gap-8 lg:w-max lg:flex lg:flex-nowrap"
+            style={{
+              marginTop: u(90, 40),
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              maxWidth: 'calc(100% - 40px)',
+            }}
           >
-            {stats.map(({ icon: Icon, value, label }, index) => (
+            {stats.map(({ icon: Icon, value, label }) => (
               <div
                 key={label}
-                className={`flex items-start whitespace-nowrap ${
-                  index > 0 ? 'border-l border-white/15' : ''
-                }`}
+                className="flex flex-col items-center text-center lg:flex-row lg:text-left lg:items-start"
                 style={{
-                  minHeight: u(70),
                   gap: u(12),
-                  paddingLeft: index > 0 ? u(24) : 0,
-                  paddingRight: u(24),
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  minHeight: 'auto',
                 }}
               >
                 <Icon
                   strokeWidth={2}
                   className="shrink-0 text-brand-blue"
-                  style={{ width: u(30, 22), height: u(30, 22) }}
+                  style={{ width: u(28, 20), height: u(28, 20) }}
                 />
-                <div style={{ marginTop: u(16) }}>
+                <div style={{ marginTop: 0 }}>
                   <p
-                    className="font-bold leading-none text-[#2f7cff]"
-                    style={{ fontSize: u(22, 18) }}
+                    className="font-bold leading-none text-brand-blue"
+                    style={{ fontSize: u(20, 16) }}
                   >
                     {value}
                   </p>
-                  <p className="text-white/70" style={{ marginTop: u(6), fontSize: u(12, 11) }}>
+                  <p className="text-white/70" style={{ marginTop: u(4), fontSize: u(11, 10) }}>
                     {label}
                   </p>
                 </div>
@@ -236,18 +238,32 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* Mobile / tablet fallback: single card */}
-          <div className="relative mx-auto mt-10 aspect-[3/4] w-full max-w-[260px] overflow-hidden rounded-2xl border border-[#3b82f6]/70 shadow-2xl lg:hidden">
-            <img
-              src={slides[current].image}
-              alt={slides[current].title}
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-sm font-bold leading-tight">{slides[current].title}</p>
-              <p className="text-xs text-white/70">{slides[current].subtitle}</p>
-            </div>
+          {/* Mobile CTA buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-3 lg:hidden" style={{ marginTop: u(30) }}>
+            <a
+              href="/contact"
+              className="inline-flex items-center whitespace-nowrap rounded-full font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110"
+              style={{
+                padding: `0 ${u(24)}`,
+                height: u(44, 40),
+                fontSize: u(14, 13),
+                background: 'var(--color-brand-blue-cta)',
+              }}
+            >
+              Join Us
+              <ArrowRight size={16} style={{ marginLeft: u(8) }} />
+            </a>
+            <a
+              href="/activities/events"
+              className="inline-flex items-center whitespace-nowrap rounded-full border border-white/30 font-semibold text-white transition-all hover:border-white/60 hover:bg-white/5"
+              style={{
+                padding: `0 ${u(24)}`,
+                height: u(44, 40),
+                fontSize: u(14, 13),
+              }}
+            >
+              Explore
+            </a>
           </div>
         </div>
 
