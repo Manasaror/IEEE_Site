@@ -1,5 +1,14 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-brand-blue: #2b7bff;
+  --color-brand-blue-light: #5aa2ff;
+  --color-brand-blue-dark: #1f7aff;
+  --color-brand-blue-cta: #0b63ff;
+  --color-brand-navy: #020817;
+  --color-brand-navy-deep: #050b18;
+}
+
 /* Filter dropdown animation */
 @keyframes fadeSlideDown {
   from {

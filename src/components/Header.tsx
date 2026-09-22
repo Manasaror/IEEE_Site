@@ -1,115 +1,42 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { User, ChevronDown, Menu, X, ExternalLink, ChevronRight } from 'lucide-react';
+import { Menu, X, Search, ArrowRight, User } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-
-interface DropdownItem {
-  name: string;
-  href: string;
-  isExternal?: boolean;
-}
-
-interface NavItem {
-  name: string;
-  href?: string;
-  dropdown?: DropdownItem[];
-}
+import { navLinks } from './header/navLinks';
+import { isDropdownActive, isRouteActive } from './header/routeActive';
+import DesktopNavItem from './header/DesktopNavItem';
+import MobileNavItem from './header/MobileNavItem';
 
 export default function Header() {
   const location = useLocation();
 
-  const [adminOpen, setAdminOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
   const [desktopDropdownOpen, setDesktopDropdownOpen] = useState<string | null>(null);
   const [isMounted, setIsMounted] = useState(false);
 
-  const adminRef = useRef<HTMLDivElement>(null);
   const desktopNavRef = useRef<HTMLElement>(null);
 
-  const navLinks: NavItem[] = [
-    {
-      name: 'Home',
-      href: '/',
-    },
-    {
-      name: 'About',
-      dropdown: [
-        {
-          name: 'About IEEE GBPIET',
-          href: '/about',
-          isExternal: false,
-        },
-        {
-          name: 'About IEEE',
-          href: 'https://www.ieee.org',
-          isExternal: true,
-        },
-        {
-          name: 'IEEE UP Section',
-          href: 'https://ieeeup.org',
-          isExternal: true,
-        },
-      ],
-    },
-    {
-      name: 'Activities',
-      dropdown: [
-        {
-          name: 'Events',
-          href: '/activities/events',
-          isExternal: false,
-        },
-        {
-          name: 'Robotics',
-          href: '/activities/robotics',
-          isExternal: false,
-        },
-      ],
-    },
-    {
-      name: 'Teams',
-      href: '/teams',
-    },
-    {
-      name: 'Contact',
-      href: '/contact',
-    },
-  ];
-
-  /* Ensure client-side portal mounting */
+  /*  client-side portal mounting */
   useEffect(() => {
     setIsMounted(true);
   }, []);
-
-  /* Helper to test active routes */
-  const isRouteActive = (href?: string) => {
-    if (!href) return false;
-    if (href === '/') return location.pathname === '/';
-    return location.pathname.startsWith(href);
-  };
-
-  const isDropdownActive = (items?: DropdownItem[]) => {
-    if (!items) return false;
-    return items.some((item) => !item.isExternal && isRouteActive(item.href));
-  };
 
   /* Auto-open active dropdown category on mobile if current route matches */
   useEffect(() => {
     if (mobileMenuOpen) {
       navLinks.forEach((link) => {
-        if (link.dropdown && isDropdownActive(link.dropdown)) {
+        if (link.dropdown && isDropdownActive(location.pathname, link.dropdown)) {
           setMobileDropdownOpen(link.name);
         }
       });
     }
-  }, [mobileMenuOpen]);
+  }, [mobileMenuOpen, location.pathname]);
 
   /* =========================
      CLOSE EVERYTHING ON ROUTE CHANGE
      ========================= */
   useEffect(() => {
-    setAdminOpen(false);
     setMobileMenuOpen(false);
     setDesktopDropdownOpen(null);
     setMobileDropdownOpen(null);
@@ -138,10 +65,6 @@ export default function Header() {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
 
-      if (adminRef.current && !adminRef.current.contains(target)) {
-        setAdminOpen(false);
-      }
-
       if (desktopNavRef.current && !desktopNavRef.current.contains(target)) {
         setDesktopDropdownOpen(null);
       }
@@ -149,7 +72,6 @@ export default function Header() {
 
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        setAdminOpen(false);
         setDesktopDropdownOpen(null);
         setMobileMenuOpen(false);
         setMobileDropdownOpen(null);
@@ -175,198 +97,96 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black/95 backdrop-blur-md">
-        {/* =====================================================
-            TOP NAVBAR CONTAINER
-            ===================================================== */}
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6">
-          {/* =====================================================
-              LOGO & BRANDING
-              ===================================================== */}
+      <header className="sticky top-0 z-40 h-14 w-full border-b border-white/[0.12] bg-gradient-to-b from-brand-navy/40 to-brand-navy/20 backdrop-blur-sm backdrop-saturate-180 sm:h-16 lg:h-[76px] lg:[--u:min(1px,0.052083vw)]">
+        {' '}
+        <div className="mx-auto flex h-full max-w-[1920px] items-center px-4 sm:px-6 lg:pl-[calc(114*var(--u))] lg:pr-[calc(47*var(--u))]">
+          {/* LOGO */}
           <Link
             to="/"
             onClick={closeMobileMenu}
-            className="flex shrink-0 items-center gap-2 sm:gap-3 group focus:outline-none"
+            className="group flex shrink-0 items-center gap-2.5 focus:outline-none lg:gap-3"
           >
             <img
               src="/images/IeeeLogo.webp"
               alt="IEEE Logo"
-              className="h-9 w-9 object-contain sm:h-12 sm:w-12 transition-transform duration-200 group-hover:scale-105"
+              className="h-8 w-8 object-contain transition-transform duration-200 group-hover:scale-105 sm:h-9 sm:w-9 lg:h-[46px] lg:w-[46px]"
             />
-
-            <div className="text-lg font-bold tracking-tight sm:text-2xl">
-              <span className="text-[#00629b] transition-colors group-hover:text-[#007bbd]">
-                IEEE
-              </span>
-              <span className="ml-1 text-white">GBPIET</span>
+            <div className="leading-none">
+              <div className="text-base font-extrabold uppercase tracking-tight sm:text-xl lg:text-[23px]">
+                <span className="text-brand-blue-dark">IEEE</span>
+                <span className="ml-1.5 text-white">GBPIET</span>
+              </div>
+              <p className="mt-1 hidden text-[8.5px] font-medium tracking-[0.32em] text-white/70 sm:block">
+                STUDENT BRANCH
+              </p>
             </div>
           </Link>
 
-          {/* =====================================================
-              DESKTOP NAVIGATION (Visible on lg and up)
-              ===================================================== */}
+          {/* DESKTOP NAV: left-aligned after the logo */}
           <nav
             ref={desktopNavRef}
-            className="hidden items-center gap-6 lg:flex lg:gap-8"
             aria-label="Desktop Navigation"
+            className="hidden items-center lg:ml-8 lg:flex xl:ml-[calc(240*var(--u))]"
+            style={{ gap: 'max(20px, calc(51 * var(--u)))' }}
           >
             {navLinks.map((link) => {
               const dropdownItems = link.dropdown;
-              const isDropdownOpen = desktopDropdownOpen === link.name;
               const isCurrentActive = dropdownItems
-                ? isDropdownActive(dropdownItems)
-                : isRouteActive(link.href);
+                ? isDropdownActive(location.pathname, dropdownItems)
+                : isRouteActive(location.pathname, link.href);
 
               return (
-                <div
+                <DesktopNavItem
                   key={link.name}
-                  className="group relative"
-                  onMouseEnter={() => {
-                    if (dropdownItems) {
-                      setDesktopDropdownOpen(link.name);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    if (dropdownItems) {
-                      setDesktopDropdownOpen(null);
-                    }
-                  }}
-                >
-                  {/* Normal Link */}
-                  {!dropdownItems && link.href && (
-                    <Link
-                      to={link.href}
-                      className={`relative text-base font-medium transition-colors duration-200 lg:text-lg ${
-                        isCurrentActive ? 'text-white' : 'text-white/75 hover:text-white'
-                      }`}
-                    >
-                      {link.name}
-                      <span
-                        className={`absolute -bottom-2 left-0 h-0.5 bg-[#00629b] transition-all duration-300 ${
-                          isCurrentActive ? 'w-full' : 'w-0 group-hover:w-full'
-                        }`}
-                      />
-                    </Link>
-                  )}
-
-                  {/* Dropdown Menu */}
-                  {dropdownItems && (
-                    <>
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setDesktopDropdownOpen((prev) =>
-                            prev === link.name ? null : link.name
-                          )
-                        }
-                        aria-expanded={isDropdownOpen}
-                        className={`flex items-center gap-1.5 text-base font-medium transition-colors duration-200 lg:text-lg ${
-                          isCurrentActive || isDropdownOpen
-                            ? 'text-white'
-                            : 'text-white/75 hover:text-white'
-                        }`}
-                      >
-                        <span>{link.name}</span>
-                        <ChevronDown
-                          size={16}
-                          className={`transition-transform duration-200 ${
-                            isDropdownOpen ? 'rotate-180 text-[#00629b]' : ''
-                          }`}
-                        />
-                      </button>
-
-                      <div
-                        className={`absolute left-1/2 top-full mt-2 w-56 -translate-x-1/2 rounded-xl border border-white/10 bg-[#080b0f] p-2 shadow-2xl transition-all duration-200 ${
-                          isDropdownOpen
-                            ? 'visible translate-y-0 opacity-100'
-                            : 'invisible translate-y-2 opacity-0'
-                        }`}
-                      >
-                        {dropdownItems.map((subItem) => {
-                          if (subItem.isExternal) {
-                            return (
-                              <a
-                                key={subItem.name}
-                                href={subItem.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => setDesktopDropdownOpen(null)}
-                                className="flex items-center justify-between rounded-lg px-4 py-2.5 text-sm font-medium text-white/70 transition-colors hover:bg-white/10 hover:text-white"
-                              >
-                                <span>{subItem.name}</span>
-                                <ExternalLink size={14} className="text-[#00629b]" />
-                              </a>
-                            );
-                          }
-
-                          const isSubActive = isRouteActive(subItem.href);
-
-                          return (
-                            <Link
-                              key={subItem.name}
-                              to={subItem.href}
-                              onClick={() => setDesktopDropdownOpen(null)}
-                              className={`block rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${
-                                isSubActive
-                                  ? 'bg-[#00629b]/15 text-[#00629b] font-semibold'
-                                  : 'text-white/70 hover:bg-white/10 hover:text-white'
-                              }`}
-                            >
-                              {subItem.name}
-                            </Link>
-                          );
-                        })}
-                      </div>
-                    </>
-                  )}
-                </div>
+                  link={link}
+                  pathname={location.pathname}
+                  isOpen={desktopDropdownOpen === link.name}
+                  isActive={isCurrentActive}
+                  onOpen={() => dropdownItems && setDesktopDropdownOpen(link.name)}
+                  onClose={() => setDesktopDropdownOpen(null)}
+                  onToggle={() =>
+                    setDesktopDropdownOpen((prev) => (prev === link.name ? null : link.name))
+                  }
+                />
               );
             })}
           </nav>
 
-          {/* =====================================================
-              RIGHT CONTROLS: Desktop Login & Mobile Hamburger
-              ===================================================== */}
-          <div className="flex items-center gap-2">
-            {/* Desktop Login Dropdown */}
-            <div ref={adminRef} className="relative hidden lg:block">
-              <button
-                type="button"
-                onClick={() => setAdminOpen((prev) => !prev)}
-                aria-expanded={adminOpen}
-                aria-label="Open user menu"
-                className="flex items-center gap-1.5 rounded-full p-2 text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white"
-              >
-                <User size={22} strokeWidth={1.8} />
-                <ChevronDown
-                  size={16}
-                  className={`transition-transform duration-200 ${
-                    adminOpen ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
+          {/* RIGHT CONTROLS */}
+          <div className="ml-auto flex items-center gap-2 sm:gap-3 lg:gap-[18px]">
+            <button
+              type="button"
+              aria-label="Search"
+              className="hidden items-center justify-center rounded-full p-2 text-white transition-colors hover:bg-white/10 lg:flex"
+            >
+              <Search size={22} strokeWidth={1.8} />
+            </button>
 
-              {adminOpen && (
-                <div className="absolute right-0 top-14 z-50 w-48 rounded-xl border border-white/10 bg-[#080b0f] p-2 shadow-2xl">
-                  <Link
-                    to="/login"
-                    onClick={() => setAdminOpen(false)}
-                    className="flex w-full items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white"
-                  >
-                    <User size={18} className="text-[#00629b]" />
-                    <span>Login</span>
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link
+              to="/contact"
+              className="hidden h-[46px] items-center gap-2 whitespace-nowrap rounded-full px-[26px] text-[15px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110 lg:inline-flex"
+              style={{ background: 'var(--color-brand-blue-cta)' }}
+            >
+              Join IEEE
+              <ArrowRight size={16} />
+            </Link>
 
-            {/* Hamburger Button (Mobile & Tablet) */}
+            {/* Corner tagline: left-aligned */}
+            <span className="hidden text-left text-[8.5px] font-medium leading-5 tracking-[0.36em] text-white/55 min-[1400px]:ml-[35px] min-[1400px]:block">
+              IDEAS
+              <br />
+              PEOPLE
+              <br />
+              OPPORTUNITIES
+            </span>
+
+            {/* Hamburger (mobile & tablet) */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileMenuOpen}
-              className="flex items-center justify-center rounded-lg p-2 text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white lg:hidden focus:outline-none focus:ring-2 focus:ring-[#00629b]"
+              className="flex items-center justify-center rounded-lg p-2 text-white/80 transition-all duration-200 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-blue lg:hidden"
             >
               {mobileMenuOpen ? (
                 <X size={27} strokeWidth={2} />
@@ -387,9 +207,7 @@ export default function Header() {
         createPortal(
           <div
             className={`fixed inset-0 z-50 lg:hidden transition-all duration-300 ${
-              mobileMenuOpen
-                ? 'visible pointer-events-auto'
-                : 'invisible pointer-events-none'
+              mobileMenuOpen ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
             }`}
             aria-hidden={!mobileMenuOpen}
           >
@@ -443,115 +261,22 @@ export default function Header() {
               >
                 {navLinks.map((link) => {
                   const dropdownItems = link.dropdown;
-                  const isOpen = mobileDropdownOpen === link.name;
                   const isCurrentActive = dropdownItems
-                    ? isDropdownActive(dropdownItems)
-                    : isRouteActive(link.href);
+                    ? isDropdownActive(location.pathname, dropdownItems)
+                    : isRouteActive(location.pathname, link.href);
 
-                  /* Normal Link without dropdown */
-                  if (!dropdownItems && link.href) {
-                    return (
-                      <Link
-                        key={link.name}
-                        to={link.href}
-                        onClick={closeMobileMenu}
-                        className={`flex items-center justify-between rounded-xl px-4 py-3.5 text-base font-medium transition-all ${
-                          isCurrentActive
-                            ? 'bg-[#00629b]/20 text-[#00a3ff] font-semibold'
-                            : 'text-white/80 hover:bg-white/5 hover:text-white'
-                        }`}
-                      >
-                        <span>{link.name}</span>
-                        <ChevronRight
-                          size={18}
-                          className={`transition-colors ${
-                            isCurrentActive ? 'text-[#00a3ff]' : 'text-white/30'
-                          }`}
-                        />
-                      </Link>
-                    );
-                  }
-
-                  if (!dropdownItems) return null;
-
-                  /* Dropdown Accordion Item */
                   return (
-                    <div
+                    <MobileNavItem
                       key={link.name}
-                      className="rounded-xl overflow-hidden transition-colors"
-                    >
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setMobileDropdownOpen((prev) =>
-                            prev === link.name ? null : link.name
-                          )
-                        }
-                        aria-expanded={isOpen}
-                        className={`flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left text-base font-medium transition-all ${
-                          isCurrentActive
-                            ? 'text-[#00a3ff]'
-                            : 'text-white/80 hover:bg-white/5 hover:text-white'
-                        }`}
-                      >
-                        <span className={isCurrentActive ? 'font-semibold' : ''}>
-                          {link.name}
-                        </span>
-                        <ChevronDown
-                          size={18}
-                          className={`text-white/40 transition-transform duration-200 ${
-                            isOpen ? 'rotate-180 text-[#00629b]' : ''
-                          }`}
-                        />
-                      </button>
-
-                      {/* Expandable Accordion Body */}
-                      <div
-                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                        }`}
-                      >
-                        <div className="ml-3 my-1 space-y-1 border-l-2 border-white/10 pl-3">
-                          {dropdownItems.map((subItem) => {
-                            if (subItem.isExternal) {
-                              return (
-                                <a
-                                  key={subItem.name}
-                                  href={subItem.href}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  onClick={closeMobileMenu}
-                                  className="flex items-center justify-between rounded-lg px-3.5 py-2.5 text-sm font-medium text-white/70 transition-colors hover:bg-white/5 hover:text-white"
-                                >
-                                  <span>{subItem.name}</span>
-                                  <ExternalLink
-                                    size={14}
-                                    className="text-[#00629b]"
-                                  />
-                                </a>
-                              );
-                            }
-
-                            const isSubActive = isRouteActive(subItem.href);
-
-                            return (
-                              <Link
-                                key={subItem.name}
-                                to={subItem.href}
-                                onClick={closeMobileMenu}
-                                className={`block rounded-lg px-3.5 py-2.5 text-sm font-medium transition-colors ${
-                                  isSubActive
-                                    ? 'bg-[#00629b]/20 text-[#00a3ff] font-semibold'
-                                    : 'text-white/70 hover:bg-white/5 hover:text-white'
-                                }`}
-                              >
-                                {subItem.name}
-                              </Link>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </div>
+                      link={link}
+                      pathname={location.pathname}
+                      isOpen={mobileDropdownOpen === link.name}
+                      isActive={isCurrentActive}
+                      onToggle={() =>
+                        setMobileDropdownOpen((prev) => (prev === link.name ? null : link.name))
+                      }
+                      onNavigate={closeMobileMenu}
+                    />
                   );
                 })}
               </nav>
@@ -573,7 +298,7 @@ export default function Header() {
               </div>
             </div>
           </div>,
-          document.body
+          document.body,
         )}
     </>
   );
