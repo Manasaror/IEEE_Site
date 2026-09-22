@@ -163,7 +163,7 @@ export default function Hero() {
             excellence.
           </p>
 
-          <div className="flex flex-wrap items-center" style={{ marginTop: u(30), gap: u(22) }}>
+          <div className="hidden lg:flex flex-wrap items-center" style={{ marginTop: u(30), gap: u(22) }}>
             <a
               href="/contact"
               className="inline-flex items-center whitespace-nowrap rounded-full font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110"
