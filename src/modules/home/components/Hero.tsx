@@ -126,30 +126,6 @@ export default function Hero() {
             STUDENTS &times; TECHNOLOGY &times; SOCIETY
           </p>
 
-<<<<<<< HEAD
-      {/* Hero Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-5 text-center sm:px-6">
-
-        {/* Main Heading */}
-        <div className="flex items-center justify-center gap-3 sm:gap-5">
-
-          {/* IEEE Logo - Desktop Only */}
-          <img
-            src="/images/IeeeLogo.webp"
-            width={1920}
-            height={1080}
-            alt="IEEE Logo"
-            className="hidden h-16 w-16 shrink-0 object-contain sm:h-20 sm:w-20 md:block md:h-24 md:w-24"
-          />
-
-          <h1 className="animate-[fadeUp_1s_ease-out] text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl md:text-8xl">
-            <span className="text-[#00629b] drop-shadow-[0_4px_15px_rgba(0,98,155,0.4)]">
-              IEEE
-            </span>
-
-            <span className="text-white drop-shadow-[0_4px_15px_rgba(0,0,0,0.5)]">
-              {" "}X GBPIET
-=======
           <h1
             className="font-black"
             style={{
@@ -162,7 +138,6 @@ export default function Hero() {
             <span className="text-white">IEEE </span>
             <span className="bg-gradient-to-r from-[#1d6bff] to-[#4db2ff] bg-clip-text text-transparent">
               GBPIET
->>>>>>> b81b6c1 (nav and hero update)
             </span>
           </h1>
 
