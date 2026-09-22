@@ -236,18 +236,32 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* Mobile / tablet fallback: single card */}
-          <div className="relative mx-auto mt-10 aspect-[3/4] w-full max-w-[260px] overflow-hidden rounded-2xl border border-[#3b82f6]/70 shadow-2xl lg:hidden">
-            <img
-              src={slides[current].image}
-              alt={slides[current].title}
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4">
-              <p className="text-sm font-bold leading-tight">{slides[current].title}</p>
-              <p className="text-xs text-white/70">{slides[current].subtitle}</p>
-            </div>
+          {/* Mobile CTA buttons */}
+          <div className="flex flex-wrap items-center justify-center gap-3 lg:hidden" style={{ marginTop: u(30) }}>
+            <a
+              href="/contact"
+              className="inline-flex items-center whitespace-nowrap rounded-full font-semibold text-white transition-all hover:-translate-y-0.5 hover:brightness-110"
+              style={{
+                padding: `0 ${u(24)}`,
+                height: u(44, 40),
+                fontSize: u(14, 13),
+                background: 'var(--color-brand-blue-cta)',
+              }}
+            >
+              Join Us
+              <ArrowRight size={16} style={{ marginLeft: u(8) }} />
+            </a>
+            <a
+              href="/activities/events"
+              className="inline-flex items-center whitespace-nowrap rounded-full border border-white/30 font-semibold text-white transition-all hover:border-white/60 hover:bg-white/5"
+              style={{
+                padding: `0 ${u(24)}`,
+                height: u(44, 40),
+                fontSize: u(14, 13),
+              }}
+            >
+              Explore
+            </a>
           </div>
         </div>
 
