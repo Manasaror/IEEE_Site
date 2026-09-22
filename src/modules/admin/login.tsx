@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function App() {
   const [showPassword, setShowPassword] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -14,10 +14,8 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-white flex items-center justify-center px-5 py-10">
-
       {/* LOGIN CARD */}
       <div className="w-full max-w-[420px] rounded-2xl border border-black/10 bg-white px-7 py-9 shadow-[0_12px_40px_rgba(0,0,0,0.08)] sm:px-10 sm:py-11">
-
         {/* LOGO */}
         <div className="flex justify-center mb-7">
           <img
@@ -29,20 +27,14 @@ export default function App() {
 
         {/* TITLE */}
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-black">
-            IEEE GBPIET Portal
-          </h1>
+          <h1 className="text-2xl font-bold text-black">IEEE GBPIET Portal</h1>
         </div>
 
         {/* FORM */}
         <form onSubmit={handleSubmit} className="space-y-5">
-
           {/* USERNAME */}
           <div>
-            <label
-              htmlFor="username"
-              className="mb-2 block text-sm font-medium text-black"
-            >
+            <label htmlFor="username" className="mb-2 block text-sm font-medium text-black">
               Username
             </label>
 
@@ -76,18 +68,14 @@ export default function App() {
 
           {/* PASSWORD */}
           <div>
-            <label
-              htmlFor="password"
-              className="mb-2 block text-sm font-medium text-black"
-            >
+            <label htmlFor="password" className="mb-2 block text-sm font-medium text-black">
               Password
             </label>
 
             <div className="relative">
-
               <input
                 id="password"
-                type={showPassword ? "text" : "password"}
+                type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter password"
@@ -117,7 +105,7 @@ export default function App() {
               <button
                 type="button"
                 onClick={() => setShowPassword((prev) => !prev)}
-                aria-label={showPassword ? "Hide password" : "Show password"}
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
                 className="
                   absolute
                   right-3
@@ -126,7 +114,7 @@ export default function App() {
                   p-1
                   text-black
                   transition
-                  hover:text-[#00629B]
+                  hover:text-brand-blue-dark
                 "
               >
                 {showPassword ? (
@@ -138,11 +126,7 @@ export default function App() {
                     stroke="currentColor"
                     className="h-5 w-5"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 3l18 18"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 3l18 18" />
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -177,7 +161,6 @@ export default function App() {
                   </svg>
                 )}
               </button>
-
             </div>
           </div>
 
@@ -189,7 +172,7 @@ export default function App() {
               h-12
               w-full
               rounded-lg
-              bg-[#00629B]
+              bg-[#00629b]
               text-sm
               font-semibold
               text-white
@@ -205,9 +188,7 @@ export default function App() {
           >
             Sign In
           </button>
-
         </form>
-
       </div>
     </main>
   );

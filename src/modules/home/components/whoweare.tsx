@@ -13,7 +13,7 @@ export default function WhoWeAre() {
             <div className="mb-6 flex items-center gap-3">
               <span className="h-px w-10 bg-[#00629b]" />
 
-              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#00629b]">
+              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-blue-dark">
                 IEEE GBPIET
               </span>
             </div>
@@ -22,12 +22,12 @@ export default function WhoWeAre() {
             <h2 className="text-6xl font-black leading-[0.9] tracking-[-0.04em] sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl">
               <span className="block text-white">WHO</span>
 
-              <span className="block text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.25)]">
+              <span className="block text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.25)]">
                 WE
               </span>
 
               <span className="block text-white">
-                ARE ????<span className="text-[#00629b]">?</span>
+                ARE ????<span className="text-brand-blue-dark">?</span>
               </span>
             </h2>
 

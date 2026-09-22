@@ -28,14 +28,17 @@ export default function AboutHero() {
         {/* Main heading */}
         <h1 className="animate-[fadeUp_0.7s_ease-out] text-6xl font-black tracking-[-0.05em] text-white sm:text-8xl md:text-9xl lg:text-[10rem] leading-none">
           <span>IEEE</span>
-          <span className="text-[#00629b] drop-shadow-[0_0_40px_rgba(0,98,155,0.45)]"> GBPIET</span>
+          <span className="text-brand-blue-dark drop-shadow-[0_0_40px_rgba(0,98,155,0.45)]">
+            {' '}
+            GBPIET
+          </span>
         </h1>
 
         {/* Decorative divider */}
         <div className="mx-auto mt-6 flex w-fit items-center gap-3">
-          <div className="h-px w-14 bg-gradient-to-r from-transparent to-[#00629b]" />
-          <div className="h-1.5 w-1.5 rotate-45 bg-[#00629b]" />
-          <div className="h-px w-14 bg-gradient-to-l from-transparent to-[#00629b]" />
+          <div className="h-px w-14 bg-gradient-to-r from-transparent to-brand-blue-cta" />
+          <div className="h-1.5 w-1.5 rotate-45 bg-brand-blue-cta" />
+          <div className="h-px w-14 bg-gradient-to-l from-transparent to-brand-blue-cta" />
         </div>
 
         {/* Subtitle */}
@@ -47,7 +50,7 @@ export default function AboutHero() {
         <div className="mt-8 flex animate-[fadeUp_1.1s_ease-out] flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
             href={heroContent.cta.href}
-            className="group relative overflow-hidden rounded-full bg-[#00629b] px-7 py-3 text-sm font-bold text-white shadow-[0_10px_35px_rgba(0,98,155,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_45px_rgba(0,98,155,0.5)]"
+            className="group relative overflow-hidden rounded-full bg-brand-blue-cta px-7 py-3 text-sm font-bold text-white shadow-[0_10px_35px_rgba(0,98,155,0.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_45px_rgba(0,98,155,0.5)]"
           >
             <span className="relative z-10">{heroContent.cta.label}</span>
             <span className="absolute inset-0 -translate-x-full bg-white/10 transition-transform duration-500 group-hover:translate-x-0" />
@@ -55,7 +58,7 @@ export default function AboutHero() {
 
           <a
             href={heroContent.ctaSecondary.href}
-            className="rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#00629b]/40 hover:bg-white/10 hover:text-white"
+            className="rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand-blue-cta/40 hover:bg-white/10 hover:text-white"
           >
             {heroContent.ctaSecondary.label}
           </a>

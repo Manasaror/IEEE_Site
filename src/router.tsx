@@ -6,7 +6,7 @@ import ContactPage from '@/modules/contact/page';
 import HomePage from '@/modules/home/page';
 import TeamsPage from '@/modules/teams/page';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import MainLayout from './layout/Layout';
+import MainLayout from '@/components/layout/Layout';
 
 
 export function AppRouter() {

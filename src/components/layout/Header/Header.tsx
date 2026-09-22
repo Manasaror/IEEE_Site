@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Menu, X, Search, ArrowRight, User } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import { navLinks } from './header/navLinks';
-import { isDropdownActive, isRouteActive } from './header/routeActive';
-import DesktopNavItem from './header/DesktopNavItem';
-import MobileNavItem from './header/MobileNavItem';
+import { navLinks } from './navLinks';
+import { isDropdownActive, isRouteActive } from './routeActive';
+import DesktopNavItem from './DesktopNavItem';
+import MobileNavItem from './MobileNavItem';
 
 export default function Header() {
   const location = useLocation();
@@ -110,6 +110,7 @@ export default function Header() {
               src="/images/IeeeLogo.webp"
               alt="IEEE Logo"
               className="h-8 w-8 object-contain transition-transform duration-200 group-hover:scale-105 sm:h-9 sm:w-9 lg:h-[46px] lg:w-[46px]"
+              style={{ filter: 'hue-rotate(15deg)' }}
             />
             <div className="leading-none">
               <div className="text-base font-extrabold uppercase tracking-tight sm:text-xl lg:text-[23px]">
@@ -237,9 +238,10 @@ export default function Header() {
                     src="/images/IeeeLogo.webp"
                     alt="IEEE Logo"
                     className="h-8 w-8 object-contain sm:h-9 sm:w-9"
+                    style={{ filter: 'hue-rotate(-15deg)' }}
                   />
                   <div className="text-base font-bold tracking-tight sm:text-lg">
-                    <span className="text-[#00629b]">IEEE</span>
+                    <span className="text-brand-blue-dark">IEEE</span>
                     <span className="ml-1 text-white">GBPIET</span>
                   </div>
                 </Link>

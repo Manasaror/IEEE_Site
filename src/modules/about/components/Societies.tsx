@@ -168,12 +168,14 @@ export default function Societies() {
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         {/* Section header */}
         <div className="mb-12 text-center sm:mb-16">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#00629b]">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-brand-blue-dark">
             Expanding Collaboration
           </p>
           <h2 className="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
             Affinity{' '}
-            <span className="text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">Groups</span>
+            <span className="text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">
+              Groups
+            </span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-white/40 sm:text-base">
             Specialized IEEE societies within our branch, enabling focused collaboration across key
@@ -200,7 +202,7 @@ export default function Societies() {
               href="https://www.ieee.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#00629b] transition-colors duration-300 hover:text-blue-400"
+              className="text-brand-blue-dark transition-colors duration-300 hover:text-blue-400"
             >
               IEEE organization
             </a>

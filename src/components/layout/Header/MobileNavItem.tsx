@@ -58,7 +58,7 @@ export default function MobileNavItem({
         <ChevronDown
           size={18}
           className={`text-white/40 transition-transform duration-200 ${
-            isOpen ? 'rotate-180 text-[#00629b]' : ''
+            isOpen ? 'rotate-180 text-brand-blue-dark' : ''
           }`}
         />
       </button>
@@ -81,7 +81,7 @@ export default function MobileNavItem({
                   className="flex items-center justify-between rounded-lg px-3.5 py-2.5 text-sm font-medium text-white/70 transition-colors hover:bg-white/5 hover:text-white"
                 >
                   <span>{subItem.name}</span>
-                  <ExternalLink size={14} className="text-[#00629b]" />
+                  <ExternalLink size={14} className="text-brand-blue-dark" />
                 </a>
               );
             }
