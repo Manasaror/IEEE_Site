@@ -200,35 +200,37 @@ export default function Hero() {
 
           {/* Stats */}
           <div
-            className="flex flex-wrap items-start gap-y-4 lg:w-max lg:flex-nowrap"
-            style={{ marginTop: u(90, 40) }}
+            className="mx-auto w-full grid gap-6 sm:gap-8 lg:w-max lg:flex lg:flex-nowrap"
+            style={{
+              marginTop: u(90, 40),
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              maxWidth: 'calc(100% - 40px)',
+            }}
           >
-            {stats.map(({ icon: Icon, value, label }, index) => (
+            {stats.map(({ icon: Icon, value, label }) => (
               <div
                 key={label}
-                className={`flex items-start whitespace-nowrap ${
-                  index > 0 ? 'border-l border-white/15' : ''
-                }`}
+                className="flex flex-col items-center text-center lg:flex-row lg:text-left lg:items-start"
                 style={{
-                  minHeight: u(70),
                   gap: u(12),
-                  paddingLeft: index > 0 ? u(24) : 0,
-                  paddingRight: u(24),
+                  paddingLeft: 0,
+                  paddingRight: 0,
+                  minHeight: 'auto',
                 }}
               >
                 <Icon
                   strokeWidth={2}
                   className="shrink-0 text-brand-blue"
-                  style={{ width: u(30, 22), height: u(30, 22) }}
+                  style={{ width: u(28, 20), height: u(28, 20) }}
                 />
-                <div style={{ marginTop: u(16) }}>
+                <div style={{ marginTop: 0 }}>
                   <p
-                    className="font-bold leading-none text-[#2f7cff]"
-                    style={{ fontSize: u(22, 18) }}
+                    className="font-bold leading-none text-brand-blue"
+                    style={{ fontSize: u(20, 16) }}
                   >
                     {value}
                   </p>
-                  <p className="text-white/70" style={{ marginTop: u(6), fontSize: u(12, 11) }}>
+                  <p className="text-white/70" style={{ marginTop: u(4), fontSize: u(11, 10) }}>
                     {label}
                   </p>
                 </div>
