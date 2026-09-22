@@ -204,7 +204,7 @@ export default function Hero() {
               <ArrowRight size={17} />
             </a>
             <a
-              href="/activities"
+              href="/activities/events"
               className="inline-flex items-center whitespace-nowrap rounded-full border border-white/30 font-semibold text-white transition-all hover:border-white/60 hover:bg-white/5"
               style={{
                 height: u(52, 46),
