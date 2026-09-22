@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ScrollToTop from "@/components/ScrollToTop";
-import Loader from "@/components/Loader";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ScrollToTop from "@/components/common/ScrollToTop";
+import Loader from "@/components/common/Loader";
 
 export default function MainLayout() {
   const [loading, setLoading] = useState(true);

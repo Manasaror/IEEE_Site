@@ -1,13 +1,11 @@
-
 import { useEffect } from 'react';
 import { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { CheckCircle2, FileText, Mail, Paperclip, Send, User, X } from 'lucide-react';
 
 export default function ContactPage() {
-
-      useEffect(() => {
-    document.title = "Contact Us ";
+  useEffect(() => {
+    document.title = 'Contact Us ';
   }, []);
   // -------------------------------------------------------
   // Form reference
@@ -124,7 +122,7 @@ export default function ContactPage() {
             ================================================= */}
         <div className="mb-10 text-center sm:mb-12">
           <h2 className="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl md:text-6xl">
-            Contact <span className="text-[#00629b]">Us</span>
+            Contact <span className="text-brand-blue-dark">Us</span>
           </h2>
         </div>
 
@@ -356,7 +354,7 @@ export default function ContactPage() {
                   hover:bg-[#00629b]/5
                 "
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#00629b]/10 text-[#00629b]">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#00629b]/10 text-brand-blue-dark">
                   <Paperclip size={19} />
                 </div>
 
@@ -374,7 +372,7 @@ export default function ContactPage() {
             {selectedFile && (
               <div className="flex items-center justify-between gap-3 rounded-xl border border-[#00629b]/20 bg-[#00629b]/5 px-4 py-3">
                 <div className="flex min-w-0 items-center gap-3">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#00629b]/10 text-[#00629b]">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#00629b]/10 text-brand-blue-dark">
                     <FileText size={18} />
                   </div>
 

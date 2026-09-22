@@ -73,7 +73,9 @@ export default function WhatWeDo() {
         <div className="mb-12 text-center sm:mb-16 lg:mb-20">
           <h2 className="animate-[fadeUp_0.8s_ease-out] text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
             What We{' '}
-            <span className="text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">Do</span>
+            <span className="text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">
+              Do
+            </span>
             <span className="text-yellow-400">?</span>
           </h2>
 
@@ -92,7 +94,6 @@ export default function WhatWeDo() {
         {/* ================= CARDS ================= */}
         <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 lg:gap-6">
           {activities.map((item, index) => {
-
             return (
               <article
                 key={item.title}
@@ -116,7 +117,6 @@ export default function WhatWeDo() {
                   <span className="absolute left-3 top-3 text-[10px] font-bold tracking-[0.2em] text-white/60 sm:left-5 sm:top-5 sm:text-xs">
                     0{index + 1}
                   </span>
-
                 </div>
 
                 {/* ================= CONTENT ================= */}

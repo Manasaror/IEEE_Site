@@ -19,12 +19,12 @@ export default function Stats() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         {/* Heading */}
         <div className="mb-10 border-b border-white/10 pb-5 sm:mb-14 sm:pb-6">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#00629b] sm:mb-3 sm:text-sm">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-brand-blue-dark sm:mb-3 sm:text-sm">
             Our Impact
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            By the <span className="text-[#00629b]">Numbers.</span>
+            By the <span className="text-brand-blue-dark">Numbers.</span>
           </h2>
         </div>
 
@@ -48,7 +48,7 @@ export default function Stats() {
                   text-white
                   transition-all
                   duration-500
-                  group-hover:text-[#00629b]
+                  group-hover:text-brand-blue-dark
 
                   sm:text-6xl
                   md:text-7xl

@@ -48,14 +48,14 @@ export default function ScrollToTop() {
         rounded-full
         border
         border-white/20
-        bg-[#00629b]
+bg-brand-blue-cta
         text-white
         shadow-[0_4px_20px_rgba(0,98,155,0.45)]
         backdrop-blur-sm
         transition-all
         duration-300
         hover:border-white/40
-        hover:bg-[#007bbd]
+        hover:bg-brand-blue-light
         hover:shadow-[0_6px_25px_rgba(0,98,155,0.65)]
         hover:-translate-y-1
         active:scale-95

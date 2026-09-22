@@ -152,12 +152,14 @@ export default function EthicsValues() {
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         {/* Section header */}
         <div className="mb-12 text-center sm:mb-16">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#00629b]">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-brand-blue-dark">
             Our Foundation
           </p>
           <h2 className="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl lg:text-6xl">
             Ethics &amp;{' '}
-            <span className="text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">Values</span>
+            <span className="text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">
+              Values
+            </span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-white/40 sm:text-base">
             The core principles that every IEEE GBPIET member embodies in their work and conduct.

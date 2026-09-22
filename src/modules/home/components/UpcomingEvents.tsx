@@ -60,7 +60,7 @@ export default function UpcomingEvents() {
 
           {/* Main heading */}
           <h2 className="text-4xl font-black tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            Upcoming <span className="text-[#00629b]">Events</span>
+            Upcoming <span className="text-brand-blue-dark">Events</span>
             <span className="text-yellow-400">.</span>
           </h2>
 
@@ -136,7 +136,7 @@ export default function UpcomingEvents() {
                   ------------------------------------------------- */}
               <div className="p-5 sm:p-6">
                 {/* Event date */}
-                <div className="mb-3 flex items-center gap-2 text-xs font-medium text-[#00629b] sm:text-sm">
+                <div className="mb-3 flex items-center gap-2 text-xs font-medium text-brand-blue-dark sm:text-sm">
                   <CalendarDays size={15} strokeWidth={1.8} />
 
                   <span>{event.date}</span>
