@@ -7,6 +7,7 @@ import HomePage from '@/modules/home/page';
 import TeamsPage from '@/modules/teams/page';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import MainLayout from './layout/Layout';
+import CertificateForm from './components/Certificate';
 
 
 export function AppRouter() {
@@ -21,7 +22,9 @@ export function AppRouter() {
           <Route path="/activities/robotics" element={<RoboticsPage />} />
           <Route path="/teams" element={<TeamsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path='/certificate' element={<CertificateForm />}/>
         </Route>
+        
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

@@ -75,6 +75,10 @@ export default function Header() {
       name: 'Contact',
       href: '/contact',
     },
+    {
+      name: 'Certificate',
+      href: '/certificate',
+    },
   ];
 
   /* Ensure client-side portal mounting */
@@ -255,9 +259,7 @@ export default function Header() {
                       <button
                         type="button"
                         onClick={() =>
-                          setDesktopDropdownOpen((prev) =>
-                            prev === link.name ? null : link.name
-                          )
+                          setDesktopDropdownOpen((prev) => (prev === link.name ? null : link.name))
                         }
                         aria-expanded={isDropdownOpen}
                         className={`flex items-center gap-1.5 text-base font-medium transition-colors duration-200 lg:text-lg ${
@@ -340,9 +342,7 @@ export default function Header() {
                 <User size={22} strokeWidth={1.8} />
                 <ChevronDown
                   size={16}
-                  className={`transition-transform duration-200 ${
-                    adminOpen ? 'rotate-180' : ''
-                  }`}
+                  className={`transition-transform duration-200 ${adminOpen ? 'rotate-180' : ''}`}
                 />
               </button>
 
@@ -387,9 +387,7 @@ export default function Header() {
         createPortal(
           <div
             className={`fixed inset-0 z-50 lg:hidden transition-all duration-300 ${
-              mobileMenuOpen
-                ? 'visible pointer-events-auto'
-                : 'invisible pointer-events-none'
+              mobileMenuOpen ? 'visible pointer-events-auto' : 'invisible pointer-events-none'
             }`}
             aria-hidden={!mobileMenuOpen}
           >
@@ -476,16 +474,11 @@ export default function Header() {
 
                   /* Dropdown Accordion Item */
                   return (
-                    <div
-                      key={link.name}
-                      className="rounded-xl overflow-hidden transition-colors"
-                    >
+                    <div key={link.name} className="rounded-xl overflow-hidden transition-colors">
                       <button
                         type="button"
                         onClick={() =>
-                          setMobileDropdownOpen((prev) =>
-                            prev === link.name ? null : link.name
-                          )
+                          setMobileDropdownOpen((prev) => (prev === link.name ? null : link.name))
                         }
                         aria-expanded={isOpen}
                         className={`flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left text-base font-medium transition-all ${
@@ -494,9 +487,7 @@ export default function Header() {
                             : 'text-white/80 hover:bg-white/5 hover:text-white'
                         }`}
                       >
-                        <span className={isCurrentActive ? 'font-semibold' : ''}>
-                          {link.name}
-                        </span>
+                        <span className={isCurrentActive ? 'font-semibold' : ''}>{link.name}</span>
                         <ChevronDown
                           size={18}
                           className={`text-white/40 transition-transform duration-200 ${
@@ -524,10 +515,7 @@ export default function Header() {
                                   className="flex items-center justify-between rounded-lg px-3.5 py-2.5 text-sm font-medium text-white/70 transition-colors hover:bg-white/5 hover:text-white"
                                 >
                                   <span>{subItem.name}</span>
-                                  <ExternalLink
-                                    size={14}
-                                    className="text-[#00629b]"
-                                  />
+                                  <ExternalLink size={14} className="text-[#00629b]" />
                                 </a>
                               );
                             }
@@ -573,7 +561,7 @@ export default function Header() {
               </div>
             </div>
           </div>,
-          document.body
+          document.body,
         )}
     </>
   );
