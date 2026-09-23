@@ -21,7 +21,7 @@ export function TeamGrid({ title, members }: TeamGridProps) {
         <span
           className="
             inline-block px-8 py-3 max-sm:px-5 max-sm:py-2.5
-            bg-[#006699] rounded-xl
+            bg-brand-blue-cta rounded-xl
             text-2xl max-sm:text-lg font-extrabold tracking-wide uppercase text-white
             shadow-[0_4px_20px_rgba(0,102,153,0.4)]
             cursor-default select-none

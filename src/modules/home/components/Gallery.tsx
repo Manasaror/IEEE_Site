@@ -251,7 +251,7 @@ export default function Gallery() {
 
             <h2 className="text-4xl font-black tracking-[-0.05em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Gallery <span className="text-amber-300">that</span>
-              <span className="text-[#00629b]"> Matter's</span>
+              <span className="text-brand-blue-dark"> Matter's</span>
               <span className="text-yellow-400">.</span>
             </h2>
           </div>
@@ -355,7 +355,7 @@ export default function Gallery() {
                     >
                       {/* Category */}
 
-                      <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-[#00629b] sm:text-xs">
+                      <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.25em] text-brand-blue-dark sm:text-xs">
                         {image.category}
                       </p>
 
@@ -392,7 +392,7 @@ export default function Gallery() {
                           backdrop-blur-md
                           transition-all
                           duration-300
-                          hover:bg-[#00629b]
+                          hover:bg-brand-blue-cta
                           hover:text-white
                           sm:right-6
                           sm:top-6
@@ -436,7 +436,7 @@ export default function Gallery() {
                   transition-all
                   duration-300
                   hover:scale-110
-                  hover:bg-[#00629b]
+                  hover:bg-brand-blue-cta
                   disabled:pointer-events-none
                   disabled:opacity-40
                   sm:h-13
@@ -478,7 +478,7 @@ export default function Gallery() {
                   transition-all
                   duration-300
                   hover:scale-110
-                  hover:bg-[#00629b]
+                  hover:bg-brand-blue-cta
                   disabled:pointer-events-none
                   disabled:opacity-40
                   sm:h-13
@@ -529,7 +529,7 @@ export default function Gallery() {
                       duration-300
                       ${
                         index === activeIndex
-                          ? 'w-8 bg-[#00629b]'
+                          ? 'w-8 bg-brand-blue-cta'
                           : 'w-1.5 bg-white/20 hover:bg-white/40'
                       }
                     `}

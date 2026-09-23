@@ -42,7 +42,7 @@ function LeaderCard({ leader, index }: { leader: LeaderItem; index: number }) {
         {/* Right Side: Information */}
         <div className="min-w-0 flex-1">
           {leader.isPrimary && (
-            <span className="mb-2 inline-block rounded-full border border-[#00629b]/30 bg-[#00629b]/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#00629b]">
+            <span className="mb-2 inline-block rounded-full border border-[#00629b]/30 bg-[#00629b]/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.2em] text-brand-blue-dark">
               Faculty Advisor
             </span>
           )}
@@ -50,7 +50,7 @@ function LeaderCard({ leader, index }: { leader: LeaderItem; index: number }) {
           {/* Department / Category */}
           <p
             className={`truncate text-xs font-semibold uppercase tracking-[0.2em] ${
-              leader.isPrimary ? 'text-[#00629b]' : 'text-white/35'
+              leader.isPrimary ? 'text-brand-blue-dark' : 'text-white/35'
             }`}
           >
             {leader.department}
@@ -89,13 +89,13 @@ export default function LeadershipStructure() {
         <div className="mb-8 sm:mb-10">
           <div className="mb-3 flex items-center gap-3">
             <span className="h-px w-10 bg-[#00629b]" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#00629b]">
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-blue-dark">
               Leadership
             </span>
           </div>
           <h2 className="text-3xl font-black tracking-[-0.04em] text-white sm:text-4xl lg:text-5xl">
             Our{' '}
-            <span className="text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">
+            <span className="text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.3)]">
               Leadership
             </span>
           </h2>
@@ -123,7 +123,7 @@ export default function LeadershipStructure() {
           </p>
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-5">
             {committee.map((leader, index) => (
-              <LeaderCard key={leader.role} leader={leader} index={index + 1} />
+              <LeaderCard key={leader.name} leader={leader} index={index + 1} />
             ))}
           </div>
         </div>

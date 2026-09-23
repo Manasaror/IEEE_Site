@@ -4,13 +4,10 @@ import { ActivityCard } from './components/ActivityCard';
 import { roboticsActivities } from '@/data/activities/robotics';
 
 export default function RoboticsPage() {
-  const workshops = roboticsActivities.filter(
-    (activity) => activity.category === 'Workshops'
-  );
+  const workshops = roboticsActivities.filter((activity) => activity.category === 'Workshops');
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-black px-4 py-24 sm:px-8 sm:py-32">
-
       {/* =========================
           BACKGROUND EFFECTS
           ========================= */}
@@ -33,12 +30,10 @@ export default function RoboticsPage() {
           PAGE CONTENT
           ========================= */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-16">
-
         {/* =========================
             HEADER
             ========================= */}
         <div className="w-full max-w-4xl rounded-2xl border border-white/10 bg-[#080b0f]/80 p-6 text-center shadow-[0_0_30px_rgba(0,141,204,0.1)] backdrop-blur-md sm:p-8">
-
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#00629b]/20">
             <Cpu className="h-6 w-6 text-[#008dcc]" />
           </div>
@@ -56,7 +51,6 @@ export default function RoboticsPage() {
             WORKSHOPS
             ========================= */}
         <div className="flex w-full flex-col items-center">
-
           {/* Section heading */}
           <div className="mb-10 flex w-full max-w-[800px] items-center gap-4">
             <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#00629b]" />
@@ -78,10 +72,7 @@ export default function RoboticsPage() {
              */
             <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {workshops.map((workshop) => (
-                <div
-                  key={workshop.id}
-                  className="flex min-w-0 justify-center"
-                >
+                <div key={workshop.id} className="flex min-w-0 justify-center">
                   <ActivityCard activity={workshop} />
                 </div>
               ))}
@@ -89,9 +80,7 @@ export default function RoboticsPage() {
           ) : (
             /* No workshops */
             <div className="flex min-h-[350px] w-full max-w-[390px] items-center justify-center rounded-[28px] border border-white/10 bg-[#080b0f] px-6">
-              <p className="text-center text-white/40">
-                No workshops available right now.
-              </p>
+              <p className="text-center text-white/40">No workshops available right now.</p>
             </div>
           )}
         </div>
@@ -115,8 +104,7 @@ export default function RoboticsPage() {
             </h2>
 
             <p className="text-sm leading-6 text-white/60 sm:text-base">
-              Explore all our projects, team members, and comprehensive
-              resources.
+              Explore all our projects, team members, and comprehensive resources.
             </p>
           </div>
 
@@ -125,7 +113,6 @@ export default function RoboticsPage() {
             <ExternalLink className="h-6 w-6" />
           </div>
         </a>
-
       </div>
     </section>
   );

@@ -11,9 +11,9 @@ export default function WhoWeAre() {
           <div className="animate-[fadeUp_0.8s_ease-out]">
             {/* Small label */}
             <div className="mb-6 flex items-center gap-3">
-              <span className="h-px w-10 bg-[#00629b]" />
+              <span className="h-px w-10 bg-brand-blue-cta" />
 
-              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#00629b]">
+              <span className="text-sm font-semibold uppercase tracking-[0.3em] text-brand-blue-dark">
                 IEEE GBPIET
               </span>
             </div>
@@ -22,18 +22,18 @@ export default function WhoWeAre() {
             <h2 className="text-6xl font-black leading-[0.9] tracking-[-0.04em] sm:text-7xl md:text-8xl lg:text-8xl xl:text-9xl">
               <span className="block text-white">WHO</span>
 
-              <span className="block text-[#00629b] drop-shadow-[0_0_25px_rgba(0,98,155,0.25)]">
+              <span className="block text-brand-blue-dark drop-shadow-[0_0_25px_rgba(0,98,155,0.25)]">
                 WE
               </span>
 
               <span className="block text-white">
-                ARE ????<span className="text-[#00629b]">?</span>
+                ARE ????<span className="text-brand-blue-dark">?</span>
               </span>
             </h2>
 
             {/* Decorative line */}
             <div className="mt-8 flex items-center gap-3">
-              <div className="h-1 w-16 bg-[#00629b]" />
+              <div className="h-1 w-16 bg-brand-blue-cta" />
               <div className="h-1 w-5 bg-yellow-400" />
             </div>
           </div>
@@ -41,10 +41,10 @@ export default function WhoWeAre() {
           {/* ================= RIGHT ================= */}
           <div className="animate-[fadeUp_1s_ease-out] lg:pl-4">
             <p className="text-lg leading-8 text-white/70 sm:text-xl sm:leading-9 lg:text-2xl lg:leading-10">
-              <span className="font-semibold text-white">IEEE GBPIET Student Branch</span> is a
-              student-driven technical community at Govind Ballabh Pant Institute of Engineering and
-              Technology, bringing together students who are passionate about technology, innovation
-              and learning beyond the classroom.
+              <span className="font-semibold text-white">The IEEE Student Branch, GBPIET</span> is
+              the complete Institute level association that works under IEEE Uttar Pradesh Section
+              region 10. It consists of IEEE professionals and student members who share technical
+              interest and geographical proximity.
             </p>
 
             <p className="mt-6 text-base leading-7 text-white/50 sm:text-lg sm:leading-8">

@@ -6,9 +6,9 @@ import ContactPage from '@/modules/contact/page';
 import HomePage from '@/modules/home/page';
 import TeamsPage from '@/modules/teams/page';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import MainLayout from './layout/Layout';
+import MainLayout from './components/layout/Layout';
 import CertificateForm from './components/Certificate';
-
+import Login from './modules/admin/authentication/components/login';
 
 export function AppRouter() {
   return (
@@ -24,7 +24,7 @@ export function AppRouter() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path='/certificate' element={<CertificateForm />}/>
         </Route>
-        
+         <Route path='/login' element={<Login />}/>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

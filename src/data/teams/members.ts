@@ -51,7 +51,7 @@ export const teamMembers: TeamMember[] = [
     priority: 1,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/dr-vijay-kumar-banga-200167b',
     },
   },
   {
@@ -62,7 +62,7 @@ export const teamMembers: TeamMember[] = [
     priority: 2,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://in.linkedin.com/in/dr-kamaljit-singh-bhatia-19693049',
     },
   },
   {
@@ -73,7 +73,7 @@ export const teamMembers: TeamMember[] = [
     priority: 3,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://in.linkedin.com/in/mamta-baunthiyal-27780420',
     },
   },
   {
@@ -95,7 +95,7 @@ export const teamMembers: TeamMember[] = [
     priority: 5,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/dr-jitendra-singh-rauthan-86852b306',
     },
   },
   {
@@ -128,7 +128,7 @@ export const teamMembers: TeamMember[] = [
     priority: 8,
     committee: 'executive',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://www.linkedin.com/in/pranshu-dangwal-761967a2',
     },
   },
 
@@ -143,7 +143,7 @@ export const teamMembers: TeamMember[] = [
     priority: 1,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/rachita-pant/',
+      linkedin: 'https://in.linkedin.com/in/rachita-pant',
       github: 'https://github.com/',
       instagram: 'https://www.instagram.com/rachitaa._?stkn=MWJpMTV1YTlyNWJjOA==',
     },
@@ -156,8 +156,7 @@ export const teamMembers: TeamMember[] = [
     priority: 2,
     committee: 'student',
     socials: {
-      linkedin:
-        'https://www.linkedin.com/in/mohit-rawat-00764a290?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      linkedin: 'https://in.linkedin.com/in/mohit-rawat-00764a290',
       github: 'https://github.com/',
       instagram: '',
     },
@@ -170,7 +169,7 @@ export const teamMembers: TeamMember[] = [
     priority: 3,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/janmejay-pant-b2329b289?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      linkedin: 'https://in.linkedin.com/in/janmejay-pant-b2329b289',
       instagram: 'https://instagram.com/',
     },
   },
@@ -182,7 +181,7 @@ export const teamMembers: TeamMember[] = [
     priority: 3,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/ojasviarora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      linkedin: 'https://in.linkedin.com/in/ojasviarora',
       instagram: 'https://instagram.com/',
     },
   },
@@ -194,7 +193,7 @@ export const teamMembers: TeamMember[] = [
     priority: 4,
     committee: 'student',
     socials: {
-      linkedin: 'https://www.linkedin.com/in/harsh-sharma-948186321?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      linkedin: 'https://in.linkedin.com/in/harsh-sharma-948186321',
       instagram: 'https://instagram.com/',
     },
   },
@@ -218,7 +217,7 @@ export const teamMembers: TeamMember[] = [
     priority: 5,
     committee: 'student',
     socials: {
-      linkedin: 'https://linkedin.com/in/',
+      linkedin: 'https://in.linkedin.com/in/rohit-thapliyal-a089b02a2',
       instagram: 'https://instagram.com/',
     },
   },

@@ -12,12 +12,12 @@ export default function QuickLinks() {
           <div>
             <div className="mb-2 flex items-center gap-2">
               <span className="h-px w-8 bg-[#00629b]" />
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#00629b]">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-blue-dark">
                 Resources
               </span>
             </div>
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              Quick <span className="text-[#00629b]">Links</span>
+              Quick <span className="text-brand-blue-dark">Links</span>
             </h2>
           </div>
           <p className="text-xs text-white/40 sm:text-sm">
@@ -59,7 +59,7 @@ export default function QuickLinks() {
                   <p className="mt-2 text-xs leading-relaxed text-white/40">{item.description}</p>
                 </div>
 
-                <div className="mt-4 flex items-center gap-1.5 text-[11px] font-semibold text-[#00629b] transition-colors group-hover:text-blue-300">
+                <div className="mt-4 flex items-center gap-1.5 text-[11px] font-semibold text-brand-blue-dark transition-colors group-hover:text-blue-300">
                   <span>{isExt ? 'Visit portal' : 'View section'}</span>
                   <span>-&gt;</span>
                 </div>

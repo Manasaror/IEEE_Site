@@ -10,13 +10,13 @@ export default function JoinCTA() {
       <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         {/* Small heading */}
         <div className="mb-7 flex items-center justify-center gap-3 sm:mb-9">
-          <span className="h-[2px] w-10 bg-[#00629b] sm:w-16" />
+          <span className="h-[2px] w-10 bg-brand-blue-cta sm:w-16" />
 
           <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/50 sm:text-xs md:text-sm">
             Be a part of something bigger
           </p>
 
-          <span className="h-[2px] w-10 bg-[#00629b] sm:w-16" />
+          <span className="h-[2px] w-10 bg-brand-blue-cta sm:w-16" />
         </div>
 
         {/* CTA wrapper */}
@@ -24,10 +24,10 @@ export default function JoinCTA() {
           {/* Main CTA */}
           <Link
             to="/contact"
-            className="group relative mx-auto flex min-h-[130px] items-center justify-center overflow-visible rounded-[70px] border-2 border-[#00629b] bg-[#03070b] px-6 shadow-[0_0_40px_rgba(0,98,155,0.15)] transition-all duration-500 hover:border-[#007bbd] hover:shadow-[0_0_70px_rgba(0,98,155,0.28)] sm:min-h-[155px] sm:px-10 md:min-h-[175px]"
+            className="group relative mx-auto flex min-h-[130px] items-center justify-center overflow-visible rounded-[70px] border-2 border-brand-blue-cta bg-[#03070b] px-6 shadow-[0_0_40px_rgba(0,98,155,0.15)] transition-all duration-500 hover:border-brand-blue-hover hover:shadow-[0_0_70px_rgba(0,98,155,0.28)] sm:min-h-[155px] sm:px-10 md:min-h-[175px]"
           >
             {/* Blue inner glow */}
-            <div className="pointer-events-none absolute inset-0 rounded-[70px] bg-[#00629b]/[0.04] transition-all duration-500 group-hover:bg-[#00629b]/[0.08]" />
+            <div className="pointer-events-none absolute inset-0 rounded-[70px] bg-brand-blue-cta/[0.04] transition-all duration-500 group-hover:bg-brand-blue-cta/[0.08]" />
 
             <div className="relative z-10 flex items-center justify-center gap-4 sm:gap-7 md:gap-10">
               {/* JOIN NOW */}
@@ -40,10 +40,12 @@ export default function JoinCTA() {
                 <img
                   src="/images/IeeeLogo.webp"
                   alt="IEEE Logo"
+                  style={{ filter: 'hue-rotate(15deg)' }}
+
                   className="h-12 w-12 object-contain sm:h-16 sm:w-16 md:h-20 md:w-20"
                 />
 
-                <span className="text-4xl font-black tracking-[-0.05em] text-[#00629b] sm:text-6xl md:text-7xl lg:text-8xl">
+                <span className="text-4xl font-black tracking-[-0.05em] text-brand-blue-dark sm:text-6xl md:text-7xl lg:text-8xl">
                   IEEE
                 </span>
               </div>
@@ -76,33 +78,33 @@ export default function JoinCTA() {
 
             {/* Click rays */}
             <div className="absolute -right-3 top-1/2 hidden -translate-y-1/2 translate-x-full flex-col gap-3 sm:flex">
-              <span className="h-1 w-8 rotate-[25deg] rounded-full bg-[#00629b]" />
-              <span className="h-1 w-5 rounded-full bg-[#00629b]" />
-              <span className="h-1 w-8 -rotate-[25deg] rounded-full bg-[#00629b]" />
+              <span className="h-1 w-8 rotate-[25deg] rounded-full bg-brand-blue-cta" />
+              <span className="h-1 w-5 rounded-full bg-brand-blue-cta" />
+              <span className="h-1 w-8 -rotate-[25deg] rounded-full bg-brand-blue-cta" />
             </div>
 
             {/* Left decorative rays */}
             <div className="absolute -left-3 top-1/2 hidden -translate-y-1/2 -translate-x-full flex-col gap-3 sm:flex">
-              <span className="h-1 w-8 -rotate-[25deg] rounded-full bg-[#00629b]" />
-              <span className="h-1 w-5 rounded-full bg-[#00629b]" />
-              <span className="h-1 w-8 rotate-[25deg] rounded-full bg-[#00629b]" />
+              <span className="h-1 w-8 -rotate-[25deg] rounded-full bg-brand-blue-cta" />
+              <span className="h-1 w-5 rounded-full bg-brand-blue-cta" />
+              <span className="h-1 w-8 rotate-[25deg] rounded-full bg-brand-blue-cta" />
             </div>
           </Link>
 
           {/* Bottom tagline */}
           <div className="mt-7 flex items-center justify-center gap-3 text-[9px] font-medium uppercase tracking-[0.25em] text-white/45 sm:mt-9 sm:text-xs">
             <span>Learn</span>
-            <span className="text-[#00629b]">|</span>
+            <span className="text-brand-blue-dark">|</span>
             <span>Innovate</span>
-            <span className="text-[#00629b]">|</span>
+            <span className="text-brand-blue-dark">|</span>
             <span>Grow</span>
-            <span className="text-[#00629b]">|</span>
+            <span className="text-brand-blue-dark">|</span>
             <span>Make an Impact</span>
           </div>
 
           {/* Small arrow */}
           <div className="mt-5 flex justify-center">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-white/30 transition-colors group-hover:text-[#00629b]">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-white/30 transition-colors group-hover:text-brand-blue-dark">
               <ArrowUpRight size={15} />
             </div>
           </div>
