@@ -393,7 +393,7 @@ export const activities: Activity[] = [
       'Telegram bot development.',
     ],
     studentsPresent: ['Jiyanshi Batra', 'Shivam Dangwal'],
-    image: '/activities/CSE/CSE25007.jpg',
+    image: '/public/activities/CSE/CSE25004.jpg',
   },
   {
     id: 'CSE25008',
