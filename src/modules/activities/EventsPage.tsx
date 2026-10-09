@@ -4,7 +4,8 @@ import { Sparkles, Calendar, Layers, MapPin, ArrowUpRight, X, CalendarX, ZoomIn 
 import { ActivityCard } from './components/ActivityCard';
 import ActivityDetailedCard from './components/ActivityDetailedCard';
 import ImageModal from '@/components/ImageModal';
-import { adminApi, type DepartmentPost, type UpcomingEvent } from '@/services/adminApi';
+import { activities as localActivities, type Activity as LocalActivity } from '@/data/activities/events';
+import { adminApi, type UpcomingEvent } from '@/services/adminApi';
 import fallbackEventsData from '@/data/upcomingEventsFallback.json';
 
 export interface Activity {
@@ -26,45 +27,22 @@ export interface Activity {
 
 const branches = ['CSE', 'AIML', 'BT', 'EE', 'ECE'];
 
-const formatDepartmentPost = (post: DepartmentPost): Activity => {
-  const imageUrl =
-    typeof post.image === 'object' && post.image?.url
-      ? post.image.url
-      : typeof post.image === 'string' && post.image.trim().length > 0
-      ? post.image
-      : '/images/sih.jpg';
-
-  const parseList = (val: unknown): string[] => {
-    if (Array.isArray(val)) return val.map(String).filter(Boolean);
-    if (typeof val === 'string' && val.trim()) {
-      try {
-        const parsed = JSON.parse(val);
-        if (Array.isArray(parsed)) return parsed.map(String).filter(Boolean);
-      } catch {
-        return val.split(',').map((s) => s.trim()).filter(Boolean);
-      }
-      return [val.trim()];
-    }
-    return [];
-  };
-
-  return {
-    id: (post.postId || post.id || post._id || `DEP-${Math.random()}`) as string,
-    title: post.title || 'Department Activity',
-    category: post.category || 'Workshop',
-    branch: (post.branch || 'CSE').toUpperCase(),
-    date: post.date || 'Recent',
-    time: post.time || '',
-    venue: post.venue || 'GBPIET',
-    organizedBy: post.organizedBy || 'IEEE GBPIET',
-    reportAuthor: post.reportAuthor || 'IEEE Member',
-    overview: post.overview || post.description || '',
-    description: post.description || post.overview || '',
-    keyDiscussion: parseList(post.keyDiscussion),
-    studentsPresent: parseList(post.studentsPresent),
-    image: imageUrl,
-  };
-};
+const formatLocalEventActivity = (eventItem: LocalActivity): Activity => ({
+  id: eventItem.id,
+  title: eventItem.title,
+  category: eventItem.category,
+  branch: eventItem.branch,
+  date: eventItem.date,
+  time: eventItem.time,
+  venue: eventItem.venue,
+  organizedBy: eventItem.organizedBy,
+  reportAuthor: eventItem.reportAuthor,
+  overview: eventItem.overview,
+  description: eventItem.description,
+  keyDiscussion: eventItem.keyDiscussion,
+  studentsPresent: eventItem.studentsPresent,
+  image: eventItem.image,
+});
 
 const formatDisplayDate = (dateStr?: string) => {
   if (!dateStr) return 'TBA';
@@ -104,9 +82,11 @@ export default function EventsPage() {
     }
   }, [searchParams, location.hash]);
 
-  // Department posts state (strictly loaded from backend API)
-  const [departmentActivities, setDepartmentActivities] = useState<Activity[]>([]);
-  const [loadingDepartment, setLoadingDepartment] = useState(true);
+  // Department posts are loaded from the local activity dataset.
+  const [departmentActivities] = useState<Activity[]>(() =>
+    localActivities.map((item) => formatLocalEventActivity(item))
+  );
+  const [loadingDepartment] = useState(false);
 
   // Upcoming events state (strictly loaded from backend API)
   const [upcomingEvents, setUpcomingEvents] = useState<UpcomingEvent[]>([]);
@@ -128,41 +108,6 @@ export default function EventsPage() {
     isOpen: false,
     url: '',
   });
-
-  // Fetch department posts strictly from backend API
-  useEffect(() => {
-    let isMounted = true;
-
-    const fetchDepartmentPosts = async () => {
-      try {
-        setLoadingDepartment(true);
-        const res = await adminApi.getDepartmentPosts();
-        if (isMounted) {
-          if (res.success && Array.isArray(res.posts)) {
-            const apiFormatted = res.posts.map(formatDepartmentPost);
-            setDepartmentActivities(apiFormatted);
-          } else {
-            setDepartmentActivities([]);
-          }
-        }
-      } catch (err) {
-        console.error('Could not fetch department posts from API:', err);
-        if (isMounted) {
-          setDepartmentActivities([]);
-        }
-      } finally {
-        if (isMounted) {
-          setLoadingDepartment(false);
-        }
-      }
-    };
-
-    fetchDepartmentPosts();
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
 
   // Fetch upcoming events strictly from backend API
   useEffect(() => {
